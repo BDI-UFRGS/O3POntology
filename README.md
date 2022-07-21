@@ -5,5 +5,7 @@ Imported ontologies:
   - Basic Formal Ontology (BFO)
   - GeoCore
   - IOF-Core Beta v1
+  - Information Artifact Ontology (IAO)
+  - Relations Ontology (RO)
 
 Ongoing work.
