@@ -637,21 +637,6 @@
         <Class abbreviatedIRI="obo:OBI_0500000"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:PATO_0000051"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:PATO_0000122"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:PATO_0000125"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:PATO_0001018"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:PATO_0001241"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:UO_0000001"/>
     </Declaration>
     <Declaration>
@@ -1675,32 +1660,12 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000408"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:IAO_0000221"/>
-            <Class abbreviatedIRI="obo:PATO_0000122"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000409"/>
         <Class abbreviatedIRI="obo:IAO_0000102"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000414"/>
         <Class abbreviatedIRI="obo:IAO_0000032"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000414"/>
-        <ObjectIntersectionOf>
-            <ObjectAllValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:IAO_0000039"/>
-                <Class abbreviatedIRI="obo:UO_0000002"/>
-            </ObjectAllValuesFrom>
-            <ObjectAllValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:IAO_0000221"/>
-                <Class abbreviatedIRI="obo:PATO_0000125"/>
-            </ObjectAllValuesFrom>
-        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000416"/>
@@ -2024,26 +1989,6 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0500000"/>
         <Class abbreviatedIRI="obo:IAO_0000104"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:PATO_0000051"/>
-        <Class abbreviatedIRI="obo:PATO_0001241"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:PATO_0000122"/>
-        <Class abbreviatedIRI="obo:PATO_0000051"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:PATO_0000125"/>
-        <Class abbreviatedIRI="obo:PATO_0001018"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:PATO_0001018"/>
-        <Class abbreviatedIRI="obo:PATO_0001241"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:PATO_0001241"/>
-        <Class abbreviatedIRI="obo:BFO_0000019"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:UO_0000001"/>
@@ -10504,106 +10449,6 @@ No imports</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:OBI_0500000</AbbreviatedIRI>
         <Literal xml:lang="en">study design</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:PATO_0000051</AbbreviatedIRI>
-        <Literal>morphology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:PATO_0000051</AbbreviatedIRI>
-        <Literal>A quality of a single physical entity inhering in the bearer by virtue of the bearer&apos;s size or shape or structure.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:PATO_0000051</AbbreviatedIRI>
-        <AbbreviatedIRI>obo:pato.owl</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:PATO_0000051</AbbreviatedIRI>
-        <Literal>morphology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:PATO_0000122</AbbreviatedIRI>
-        <Literal>length</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:PATO_0000122</AbbreviatedIRI>
-        <Literal>A 1-D extent quality which is equal to the distance between two points.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:PATO_0000122</AbbreviatedIRI>
-        <AbbreviatedIRI>obo:pato.owl</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:PATO_0000122</AbbreviatedIRI>
-        <Literal>length</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:PATO_0000125</AbbreviatedIRI>
-        <Literal>mass</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:PATO_0000125</AbbreviatedIRI>
-        <Literal>A physical quality that inheres in a bearer by virtue of the proportion of the bearer&apos;s amount of matter.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:PATO_0000125</AbbreviatedIRI>
-        <AbbreviatedIRI>obo:pato.owl</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:PATO_0000125</AbbreviatedIRI>
-        <Literal>mass</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:PATO_0001018</AbbreviatedIRI>
-        <Literal>physical quality</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:PATO_0001018</AbbreviatedIRI>
-        <Literal>A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:PATO_0001018</AbbreviatedIRI>
-        <AbbreviatedIRI>obo:pato.owl</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:PATO_0001018</AbbreviatedIRI>
-        <Literal>physical quality</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:PATO_0001241</AbbreviatedIRI>
-        <Literal>physical object quality</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:PATO_0001241</AbbreviatedIRI>
-        <Literal>A quality which inheres in a continuant.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:PATO_0001241</AbbreviatedIRI>
-        <AbbreviatedIRI>obo:pato.owl</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:PATO_0001241</AbbreviatedIRI>
-        <Literal>physical object quality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
