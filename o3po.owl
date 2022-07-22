@@ -645,9 +645,17 @@ Mara Abel</dc:contributor>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasRelatedSynonym xml:lang="en">fluid flow</oboInOwl:hasRelatedSynonym>
+        <CommonCoreOntologies:definition xml:lang="en">def. a process that has partipant some fluid and the fluid is in continuous movement.</CommonCoreOntologies:definition>
+        <rdfs:comment xml:lang="en">Definition: The continuous movement characteristic of a liquid or gas. [Definition Source: NCI]</rdfs:comment>
         <rdfs:label xml:lang="en">flow</rdfs:label>
         <rdfs:label xml:lang="pt">fluxo</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Flow"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Definition: The continuous movement characteristic of a liquid or gas. [Definition Source: NCI]</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">http://purl.obolibrary.org/obo/NCIT_C41141</rdfs:comment>
+    </owl:Axiom>
     
 
 
@@ -722,13 +730,8 @@ Mara Abel</dc:contributor>
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate">
         <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#WellFlowRate"/>
+        <rdfs:comment xml:lang="en">the rate of a flow that occurs inside an ICV</rdfs:comment>
         <rdfs:label xml:lang="en">ICV flow rate</rdfs:label>
         <rdfs:label xml:lang="pt">vazão na ICV</rdfs:label>
     </owl:Class>
@@ -1112,14 +1115,8 @@ Mara Abel</dc:contributor>
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#WellFlowRate">
         <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Well"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">production rate of a well, injection rate of a well</obo:IAO_0000112>
-        <CommonCoreOntologies:definition xml:lang="en">def. the flow rate that inheres in some well.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition xml:lang="en">def. the flow rate that has only crude oil and water as participants and occurs in a well</CommonCoreOntologies:definition>
         <rdfs:label xml:lang="pt">vazão líquida do poço</rdfs:label>
         <rdfs:label xml:lang="en">well liquid rate</rdfs:label>
         <rdfs:seeAlso xml:lang="en">https://www.glossary.oilfield.slb.com/Terms/w/well_flow_rate.aspx</rdfs:seeAlso>
@@ -1309,6 +1306,12 @@ Mara Abel</dc:contributor>
         <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/ProcessCharacteristic"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/processCharacteristicOf"/>
+                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Flow"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#has_value"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
@@ -1319,11 +1322,18 @@ Mara Abel</dc:contributor>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <CommonCoreOntologies:definition xml:lang="en">def. a BFO:Quality that is volume of fluid which flows per unit of time.</CommonCoreOntologies:definition>
-        <rdfs:comment xml:lang="en">Unified definition: “BFO:Quality that is volume of fluid which flows per unit of time”</rdfs:comment>
+        <CommonCoreOntologies:definition xml:lang="en">def. a IOF:process characteristic that is volume of fluid which flows per unit of time</CommonCoreOntologies:definition>
+        <rdfs:comment xml:lang="en">Definition: A physical quality inhering in a bearer by virtue of the bearer&apos;s motion characteristic. [database_cross_reference: WordNet:WordNet]</rdfs:comment>
+        <rdfs:comment xml:lang="en">The volume of fluid which flows per unit of time</rdfs:comment>
         <rdfs:label xml:lang="en">flow rate</rdfs:label>
         <rdfs:label xml:lang="pt">vazão</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Definition: A physical quality inhering in a bearer by virtue of the bearer&apos;s motion characteristic. [database_cross_reference: WordNet:WordNet]</owl:annotatedTarget>
+        <terms:source xml:lang="en">https://ontobee.org/ontology/PATO?iri=http://purl.obolibrary.org/obo/PATO_0001574</terms:source>
+    </owl:Axiom>
     
 
 
@@ -2019,9 +2029,17 @@ Mara Abel</dc:contributor>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Production_(process)"/>
+        <CommonCoreOntologies:definition xml:lang="en">def. a flow that has an injection well as participant and is towards a reservoir.</CommonCoreOntologies:definition>
+        <rdfs:comment xml:lang="en">Injection of gases or liquids into a reservoir to force oil toward and into producing wells.</rdfs:comment>
         <rdfs:label xml:lang="en">injection (process)</rdfs:label>
         <rdfs:label xml:lang="pt">injeção (processo)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Injection_(process)"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Injection of gases or liquids into a reservoir to force oil toward and into producing wells.</owl:annotatedTarget>
+        <terms:source xml:lang="en">Introduction to Oil &amp; Gas Production (ITOGP), 1983</terms:source>
+    </owl:Axiom>
     
 
 
@@ -2053,9 +2071,17 @@ Mara Abel</dc:contributor>
                 <owl:allValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Production_Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <CommonCoreOntologies:definition xml:lang="en">def. a flow that has a production well as participant and is towards a platform.</CommonCoreOntologies:definition>
+        <rdfs:comment xml:lang="en">The yield of an oil or gas well. Also that branch of the petroleum industry that has to do with bringing the well fluids to the surface and separating them, and with storing, gaging, and otherwise preparing the product for the pipeline.</rdfs:comment>
         <rdfs:label xml:lang="en">production (process)</rdfs:label>
         <rdfs:label xml:lang="pt">produção (processo)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Production_(process)"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">The yield of an oil or gas well. Also that branch of the petroleum industry that has to do with bringing the well fluids to the surface and separating them, and with storing, gaging, and otherwise preparing the product for the pipeline.</owl:annotatedTarget>
+        <oboInOwl:source xml:lang="en">Introduction to Oil &amp; Gas Production (ITOGP), 1983</oboInOwl:source>
+    </owl:Axiom>
     
 
 
