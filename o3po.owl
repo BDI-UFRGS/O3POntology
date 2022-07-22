@@ -638,6 +638,12 @@ Mara Abel</dc:contributor>
                 <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#fluid"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/hasProcessCharacteristic"/>
+                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasRelatedSynonym xml:lang="en">fluid flow</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">flow</rdfs:label>
         <rdfs:label xml:lang="pt">fluxo</rdfs:label>
@@ -1300,13 +1306,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000138"/>
-                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Flow"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/ProcessCharacteristic"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#has_value"/>
@@ -2069,22 +2069,22 @@ Mara Abel</dc:contributor>
         <rdfs:label xml:lang="pt">tag</rdfs:label>
     </owl:Class>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
