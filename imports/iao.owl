@@ -199,13 +199,7 @@
         <Class abbreviatedIRI="obo:APOLLO_SV_00000008"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:APOLLO_SV_00000032"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000033"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:APOLLO_SV_00000522"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000524"/>
@@ -319,34 +313,13 @@
         <Class abbreviatedIRI="obo:BFO_0000182"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000001"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000003"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000005"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000007"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000009"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000010"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000013"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000015"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000017"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000025"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000027"/>
@@ -355,148 +328,31 @@
         <Class abbreviatedIRI="obo:IAO_0000028"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000029"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000030"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000031"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000032"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000033"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000034"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000037"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000038"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000055"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000057"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000064"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000065"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000078"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000079"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000088"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000096"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000098"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000100"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000102"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000104"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000109"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000129"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000131"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000132"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000140"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000178"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000179"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000180"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000181"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000183"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000184"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000186"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000225"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000308"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000309"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000310"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000311"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000312"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000313"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000400"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000401"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000402"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000403"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000408"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000409"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000414"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000416"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000429"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000442"/>
@@ -508,22 +364,13 @@
         <Class abbreviatedIRI="obo:IAO_0000444"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000445"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000572"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000573"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000574"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000575"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000577"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000579"/>
@@ -538,88 +385,7 @@
         <Class abbreviatedIRI="obo:IAO_0000584"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000591"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000592"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000593"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000594"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000595"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000647"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000650"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000000"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000001"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000002"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000003"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000004"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000005"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000006"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000007"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000008"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000009"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000010"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000011"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000012"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000013"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000014"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000015"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000016"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000017"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000018"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000019"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_8000020"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
@@ -632,9 +398,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:OBI_0200000"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:OBI_0500000"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:UO_0000001"/>
@@ -1000,39 +763,6 @@
         <AnnotationProperty abbreviatedIRI="foaf:page"/>
     </Declaration>
     <EquivalentClasses>
-        <Class abbreviatedIRI="obo:APOLLO_SV_00000008"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="obo:OBI_0000011"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
-                <ObjectUnionOf>
-                    <Class abbreviatedIRI="obo:IAO_0000010"/>
-                    <Class abbreviatedIRI="obo:IAO_0000096"/>
-                </ObjectUnionOf>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="obo:APOLLO_SV_00000032"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="obo:IAO_0000027"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-                <Class abbreviatedIRI="obo:APOLLO_SV_00000033"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="obo:APOLLO_SV_00000033"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="obo:OBI_0000011"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
-                <Class abbreviatedIRI="obo:APOLLO_SV_00000032"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000796"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="obo:OBI_0000011"/>
@@ -1065,71 +795,17 @@
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="obo:IAO_0000311"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="obo:IAO_0000310"/>
-            <ObjectAllValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-                <Class abbreviatedIRI="obo:IAO_0000444"/>
-            </ObjectAllValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
     <SubClassOf>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000008"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:APOLLO_SV_00000032"/>
-        <Class abbreviatedIRI="obo:IAO_0000109"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000033"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:APOLLO_SV_00000522"/>
-        <Class abbreviatedIRI="obo:IAO_0000310"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:APOLLO_SV_00000522"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:BFO_0000051"/>
-            <Class abbreviatedIRI="obo:IAO_0000096"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:APOLLO_SV_00000522"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:BFO_0000051"/>
-            <ObjectIntersectionOf>
-                <Class abbreviatedIRI="obo:IAO_0000027"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
-                    <Class abbreviatedIRI="obo:IAO_0000096"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000524"/>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000008"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:APOLLO_SV_00000524"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-                <ObjectUnionOf>
-                    <Class abbreviatedIRI="obo:IAO_0000010"/>
-                    <Class abbreviatedIRI="obo:IAO_0000096"/>
-                </ObjectUnionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
-                <Class abbreviatedIRI="obo:IAO_0000010"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000796"/>
@@ -1276,62 +952,16 @@
         <Class abbreviatedIRI="obo:BFO_0000015"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000001"/>
-        <Class abbreviatedIRI="obo:IAO_0000033"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000003"/>
         <Class abbreviatedIRI="obo:IAO_0000009"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000005"/>
-        <Class abbreviatedIRI="obo:IAO_0000033"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000007"/>
-        <Class abbreviatedIRI="obo:IAO_0000033"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000009"/>
         <Class abbreviatedIRI="obo:IAO_0000030"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000010"/>
-        <Class abbreviatedIRI="obo:IAO_0000104"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000013"/>
-        <Class abbreviatedIRI="obo:IAO_0000088"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000013"/>
-        <Class abbreviatedIRI="obo:IAO_0000311"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000013"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI="obo:IAO_0000444"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000013"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI="obo:IAO_0000444"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000015"/>
         <Class abbreviatedIRI="obo:BFO_0000019"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000017"/>
-        <Class abbreviatedIRI="obo:IAO_0000028"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000025"/>
-        <Class abbreviatedIRI="obo:IAO_0000104"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000027"/>
@@ -1340,10 +970,6 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000028"/>
         <Class abbreviatedIRI="obo:IAO_0000030"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000029"/>
-        <Class abbreviatedIRI="obo:IAO_0000028"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000030"/>
@@ -1355,10 +981,6 @@
             <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
             <Class abbreviatedIRI="obo:BFO_0000001"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000031"/>
-        <Class abbreviatedIRI="obo:IAO_0000029"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000032"/>
@@ -1377,108 +999,11 @@
         </DataMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000033"/>
-        <Class abbreviatedIRI="obo:IAO_0000030"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000033"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
-            <Class abbreviatedIRI="obo:BFO_0000017"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000034"/>
-        <Class abbreviatedIRI="obo:IAO_0000001"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000037"/>
-        <Class abbreviatedIRI="obo:IAO_0000038"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000038"/>
-        <Class abbreviatedIRI="obo:IAO_0000309"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000055"/>
-        <Class abbreviatedIRI="obo:IAO_0000001"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000057"/>
-        <Class abbreviatedIRI="obo:IAO_0000038"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000064"/>
-        <Class abbreviatedIRI="obo:IAO_0000104"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000065"/>
-        <Class abbreviatedIRI="obo:IAO_0000064"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000078"/>
-        <Class abbreviatedIRI="obo:IAO_0000102"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000079"/>
-        <Class abbreviatedIRI="obo:IAO_0000038"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000088"/>
-        <Class abbreviatedIRI="obo:IAO_0000310"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000096"/>
-        <Class abbreviatedIRI="obo:IAO_0000033"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000098"/>
-        <Class abbreviatedIRI="obo:IAO_0000033"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000100"/>
         <Class abbreviatedIRI="obo:IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000102"/>
-        <Class abbreviatedIRI="obo:IAO_0000027"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000104"/>
-        <Class abbreviatedIRI="obo:IAO_0000033"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000104"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:BFO_0000051"/>
-            <Class abbreviatedIRI="obo:IAO_0000005"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000104"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:BFO_0000051"/>
-            <Class abbreviatedIRI="obo:IAO_0000007"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000109"/>
-        <Class abbreviatedIRI="obo:IAO_0000027"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000129"/>
-        <Class abbreviatedIRI="obo:IAO_0000028"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000131"/>
-        <Class abbreviatedIRI="obo:IAO_0000028"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000132"/>
-        <Class abbreviatedIRI="obo:IAO_0000028"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000140"/>
         <Class abbreviatedIRI="obo:IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
@@ -1486,167 +1011,8 @@
         <Class abbreviatedIRI="obo:BFO_0000040"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000179"/>
-        <Class abbreviatedIRI="obo:IAO_0000038"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000180"/>
-        <Class abbreviatedIRI="obo:IAO_0000038"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000181"/>
-        <Class abbreviatedIRI="obo:IAO_0000038"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000183"/>
-        <Class abbreviatedIRI="obo:IAO_0000038"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000184"/>
-        <Class abbreviatedIRI="obo:IAO_0000038"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000186"/>
         <Class abbreviatedIRI="obo:IAO_0000178"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000225"/>
-        <Class abbreviatedIRI="obo:IAO_0000102"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000308"/>
-        <Class abbreviatedIRI="obo:IAO_0000030"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000309"/>
-        <Class abbreviatedIRI="obo:IAO_0000308"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000310"/>
-        <Class abbreviatedIRI="obo:IAO_0000030"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000311"/>
-        <Class abbreviatedIRI="obo:IAO_0000310"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000312"/>
-        <Class abbreviatedIRI="obo:IAO_0000311"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000312"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
-            <Class abbreviatedIRI="obo:OBI_0000066"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000313"/>
-        <Class abbreviatedIRI="obo:IAO_0000310"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000400"/>
-        <Class abbreviatedIRI="obo:IAO_0000027"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000400"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
-            <Class abbreviatedIRI="obo:BFO_0000018"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000400"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI="obo:IAO_0000407"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000401"/>
-        <Class abbreviatedIRI="obo:IAO_0000400"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000401"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
-            <ObjectIntersectionOf>
-                <Class abbreviatedIRI="obo:BFO_0000018"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
-                    <Class abbreviatedIRI="obo:BFO_0000026"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000401"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="obo:IAO_0000404"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000402"/>
-        <Class abbreviatedIRI="obo:IAO_0000400"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000402"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
-            <ObjectIntersectionOf>
-                <Class abbreviatedIRI="obo:BFO_0000018"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
-                    <Class abbreviatedIRI="obo:BFO_0000009"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000402"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="obo:IAO_0000404"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000402"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="obo:IAO_0000406"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000403"/>
-        <Class abbreviatedIRI="obo:IAO_0000400"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000403"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
-            <ObjectIntersectionOf>
-                <Class abbreviatedIRI="obo:BFO_0000018"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
-                    <Class abbreviatedIRI="obo:BFO_0000028"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000403"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="obo:IAO_0000404"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000403"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="obo:IAO_0000405"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000403"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="obo:IAO_0000406"/>
-        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000408"/>
@@ -1658,10 +1024,6 @@
             <ObjectProperty abbreviatedIRI="obo:IAO_0000039"/>
             <Class abbreviatedIRI="obo:UO_0000001"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000409"/>
-        <Class abbreviatedIRI="obo:IAO_0000102"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000414"/>
@@ -1685,23 +1047,12 @@
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000429"/>
-        <Class abbreviatedIRI="obo:IAO_0000030"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000442"/>
         <Class abbreviatedIRI="obo:BFO_0000023"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000443"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000443"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-            <Class abbreviatedIRI="obo:IAO_0000013"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000443"/>
@@ -1715,10 +1066,6 @@
         <Class abbreviatedIRI="obo:OBI_0000011"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000445"/>
-        <Class abbreviatedIRI="obo:IAO_0000310"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000572"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
     </SubClassOf>
@@ -1730,26 +1077,8 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000572"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
-            <Class abbreviatedIRI="obo:IAO_0000310"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000573"/>
-        <Class abbreviatedIRI="obo:IAO_0000038"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000574"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000574"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
-            <Class abbreviatedIRI="obo:IAO_0000577"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000574"/>
@@ -1772,20 +1101,9 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000575"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-            <Class abbreviatedIRI="obo:IAO_0000577"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000575"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:RO_0000057"/>
             <Class abbreviatedIRI="obo:IAO_0000579"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000577"/>
-        <Class abbreviatedIRI="obo:IAO_0000028"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000579"/>
@@ -1794,13 +1112,6 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000580"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000580"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-            <Class abbreviatedIRI="obo:IAO_0000577"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000580"/>
@@ -1845,30 +1156,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000591"/>
-        <Class abbreviatedIRI="obo:IAO_0000010"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000592"/>
-        <Class abbreviatedIRI="obo:IAO_0000010"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000593"/>
-        <Class abbreviatedIRI="obo:IAO_0000010"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000594"/>
-        <Class abbreviatedIRI="obo:IAO_0000010"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000595"/>
-        <Class abbreviatedIRI="obo:IAO_0000010"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000647"/>
-        <Class abbreviatedIRI="obo:IAO_0000104"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000650"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
     </SubClassOf>
@@ -1887,90 +1174,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000000"/>
-        <Class abbreviatedIRI="obo:IAO_0000102"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000001"/>
-        <Class abbreviatedIRI="obo:IAO_8000000"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000002"/>
-        <Class abbreviatedIRI="obo:IAO_8000000"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000003"/>
-        <Class abbreviatedIRI="obo:IAO_8000000"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000004"/>
-        <Class abbreviatedIRI="obo:IAO_8000000"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000005"/>
-        <Class abbreviatedIRI="obo:IAO_8000006"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000006"/>
-        <Class abbreviatedIRI="obo:IAO_8000000"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000007"/>
-        <Class abbreviatedIRI="obo:IAO_8000006"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000008"/>
-        <Class abbreviatedIRI="obo:IAO_8000006"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000009"/>
-        <Class abbreviatedIRI="obo:IAO_8000006"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000010"/>
-        <Class abbreviatedIRI="obo:IAO_8000006"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000011"/>
-        <Class abbreviatedIRI="obo:IAO_8000005"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000012"/>
-        <Class abbreviatedIRI="obo:IAO_8000006"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000013"/>
-        <Class abbreviatedIRI="obo:IAO_8000000"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000014"/>
-        <Class abbreviatedIRI="obo:IAO_8000000"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000015"/>
-        <Class abbreviatedIRI="obo:IAO_8000014"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000016"/>
-        <Class abbreviatedIRI="obo:IAO_8000004"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000017"/>
-        <Class abbreviatedIRI="obo:IAO_8000006"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000018"/>
-        <Class abbreviatedIRI="obo:IAO_8000017"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000019"/>
-        <Class abbreviatedIRI="obo:IAO_8000017"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_8000020"/>
-        <Class abbreviatedIRI="obo:IAO_8000019"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
         <Class abbreviatedIRI="obo:BFO_0000015"/>
     </SubClassOf>
@@ -1985,10 +1188,6 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0200000"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:OBI_0500000"/>
-        <Class abbreviatedIRI="obo:IAO_0000104"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:UO_0000001"/>
@@ -2343,10 +1542,6 @@
         <Class abbreviatedIRI="obo:BFO_0000001"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="obo:IAO_0000407"/>
-        <Class abbreviatedIRI="obo:IAO_0000400"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="obo:IAO_0000413"/>
         <Class abbreviatedIRI="obo:IAO_0000416"/>
     </ObjectPropertyDomain>
@@ -2559,18 +1754,6 @@
         <DataProperty abbreviatedIRI="obo:IAO_0000004"/>
         <Class abbreviatedIRI="obo:IAO_0000032"/>
     </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="obo:IAO_0000404"/>
-        <Class abbreviatedIRI="obo:IAO_0000400"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="obo:IAO_0000405"/>
-        <Class abbreviatedIRI="obo:IAO_0000400"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="obo:IAO_0000406"/>
-        <Class abbreviatedIRI="obo:IAO_0000400"/>
-    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty abbreviatedIRI="obo:IAO_0000004"/>
         <Datatype abbreviatedIRI="xsd:double"/>
@@ -2619,26 +1802,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:APOLLO_SV_00000032</AbbreviatedIRI>
-        <Literal xml:lang="en">A measurement datum that is the output of counting.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:APOLLO_SV_00000032</AbbreviatedIRI>
-        <Literal>Mathias Brochhausen</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000600"/>
-        <AbbreviatedIRI>obo:APOLLO_SV_00000032</AbbreviatedIRI>
-        <Literal xml:lang="en">A measurement datum that is the output of counting.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:APOLLO_SV_00000032</AbbreviatedIRI>
-        <Literal xml:lang="en">count</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:APOLLO_SV_00000033</AbbreviatedIRI>
         <Literal xml:lang="en">The planned process of finding the number of elements in a finite set of objects.</Literal>
     </AnnotationAssertion>
@@ -2661,31 +1824,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:APOLLO_SV_00000033</AbbreviatedIRI>
         <Literal xml:lang="en">counting</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:APOLLO_SV_00000522</AbbreviatedIRI>
-        <Literal xml:lang="en">software source code version control repository</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:APOLLO_SV_00000522</AbbreviatedIRI>
-        <Literal xml:lang="en">A document that comprises at least one source code module and provenance data about who contributed the set of files making up the module(s), and optionally comprises also multiple versions of files with detailed change history about who committed files and when, a license for the software, readme files, documentation, executables, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:APOLLO_SV_00000522</AbbreviatedIRI>
-        <Literal xml:lang="en">William R. Hogan</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>obo:APOLLO_SV_00000522</AbbreviatedIRI>
-        <Literal xml:lang="en">Refers to the stuff that lives on GitHub, not to GitHub or the git software on which it is based</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:APOLLO_SV_00000522</AbbreviatedIRI>
-        <Literal xml:lang="en">source code repository</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
@@ -5752,36 +4890,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000001</AbbreviatedIRI>
-        <Literal xml:lang="en">conditional specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000001</AbbreviatedIRI>
-        <Literal xml:lang="en">A directive information entity that specifies what should happen if the trigger condition is fulfilled.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000001</AbbreviatedIRI>
-        <Literal xml:lang="en">PlanAndPlannedProcess Branch</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000001</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI branch derived</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000001</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0000349</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000001</AbbreviatedIRI>
-        <Literal xml:lang="en">conditional specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
         <AbbreviatedIRI>obo:IAO_0000003</AbbreviatedIRI>
         <Literal xml:lang="en">measurement unit label</Literal>
     </AnnotationAssertion>
@@ -5831,101 +4939,6 @@ of this, different, term.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000005</AbbreviatedIRI>
-        <Literal xml:lang="en">objective specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000005</AbbreviatedIRI>
-        <Literal xml:lang="en">In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000005</AbbreviatedIRI>
-        <Literal xml:lang="en">A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000005</AbbreviatedIRI>
-        <Literal xml:lang="en">2009-03-16: original definition when imported from OBI read: &quot;objective is an non realizable information entity which can serve as that  proper part of a plan towards which the realization of the plan is directed.&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000005</AbbreviatedIRI>
-        <Literal xml:lang="en">2014-03-31: In the example of usage (&quot;In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction&quot;) there is a protocol which is the ChIP assay protocol. In addition to being concretized on paper, the protocol can be concretized as a realizable entity, such as a plan that inheres in a person. The objective specification is the part that says that some protein and DNA interactions are identified. This is a specification of a process endpoint: the boundary in the process before which they are not identified and after which they are. During the realization of the plan, the goal is to get to the point of having the interactions, and participants in the realization of the plan try to do that.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000005</AbbreviatedIRI>
-        <Literal xml:lang="en">Answers the question, why did you do this experiment?</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000005</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000005</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Barry Smith</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000005</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Bjoern Peters</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000005</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Jennifer Fostel</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_0000005</AbbreviatedIRI>
-        <Literal xml:lang="en">goal specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000005</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI Plan and Planned Process/Roles Branch</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000005</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0000217</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000005</AbbreviatedIRI>
-        <Literal xml:lang="en">objective specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000007</AbbreviatedIRI>
-        <Literal xml:lang="en">Pour the contents of flask 1 into flask 2</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000007</AbbreviatedIRI>
-        <Literal xml:lang="en">A directive information entity that describes an action the bearer will take.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000007</AbbreviatedIRI>
-        <Literal xml:lang="en">Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000007</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI Plan and Planned Process branch</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000007</AbbreviatedIRI>
-        <Literal xml:lang="en">action specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
         <AbbreviatedIRI>obo:IAO_0000009</AbbreviatedIRI>
         <Literal xml:lang="en">datum label</Literal>
     </AnnotationAssertion>
@@ -5954,92 +4967,6 @@ of this, different, term.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:IAO_0000009</AbbreviatedIRI>
         <Literal xml:lang="en">datum label</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000010</AbbreviatedIRI>
-        <Literal xml:lang="en">software</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000010</AbbreviatedIRI>
-        <Literal xml:lang="en">Software is a plan specification composed of a series of instructions that can be 
-interpreted by or directly executed by a processing unit.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000010</AbbreviatedIRI>
-        <Literal xml:lang="en">see sourceforge tracker discussion at http://sourceforge.net/tracker/index.php?func=detail&amp;aid=1958818&amp;group_id=177891&amp;atid=886178</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000010</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000010</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Bjoern Peters</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000010</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000010</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Melanie Courtot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000010</AbbreviatedIRI>
-        <Literal xml:lang="en">GROUP: OBI</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000010</AbbreviatedIRI>
-        <Literal xml:lang="en">software</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000013</AbbreviatedIRI>
-        <Literal xml:lang="en">journal article</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000013</AbbreviatedIRI>
-        <Literal xml:lang="en">Examples are articles published in the journals, Nature and Science. The content can often be cited by reference to a paper based encoding, e.g.  Authors, Title of article, Journal name, date or year of publication, volume and page number.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000013</AbbreviatedIRI>
-        <Literal xml:lang="en">A report that is published in a journal.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000013</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000013</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000013</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0000159</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000013</AbbreviatedIRI>
-        <Literal xml:lang="en">group:OBI</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000013</AbbreviatedIRI>
-        <Literal xml:lang="en">journal article</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
@@ -6080,71 +5007,6 @@ interpreted by or directly executed by a processing unit.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:IAO_0000015</AbbreviatedIRI>
         <Literal xml:lang="en">information carrier</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000017</AbbreviatedIRI>
-        <Literal xml:lang="en">model number</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000017</AbbreviatedIRI>
-        <Literal xml:lang="en">A model number is an information content entity specifically borne by catalogs, design specifications, advertising materials, inventory systems and similar  that is about manufactured objects of the same class. The model number is an alternative term for the class. The manufactered objects may or may not also bear the model number. Model numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000017</AbbreviatedIRI>
-        <Literal xml:lang="en">manufactered items may have more than one model number, sometimes by rebranding, or because companies are sold and the products issued new model numbers</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000017</AbbreviatedIRI>
-        <Literal xml:lang="en">Person: Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000017</AbbreviatedIRI>
-        <Literal xml:lang="en">model number</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000025</AbbreviatedIRI>
-        <Literal xml:lang="en">programming language</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000025</AbbreviatedIRI>
-        <Literal xml:lang="en">R, Perl, Java</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000025</AbbreviatedIRI>
-        <Literal xml:lang="en">A language in which source code is written that is intended to be executed/run by a software interpreter. Programming languages are ways to write instructions that specify what to do, and sometimes, how to do it.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000025</AbbreviatedIRI>
-        <Literal xml:lang="en">person:Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000025</AbbreviatedIRI>
-        <Literal xml:lang="en">person:Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000025</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0000058</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000025</AbbreviatedIRI>
-        <Literal xml:lang="en">group:OBI</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000025</AbbreviatedIRI>
-        <Literal xml:lang="en">programming language</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
@@ -6274,26 +5136,6 @@ JAR: A data item is an approximately justified approximately true approximate be
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000029</AbbreviatedIRI>
-        <Literal xml:lang="en">numeral</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000029</AbbreviatedIRI>
-        <Literal xml:lang="en">A symbol that denotes a number.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000029</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Jonathan Rees</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000029</AbbreviatedIRI>
-        <Literal xml:lang="en">numeral</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
         <AbbreviatedIRI>obo:IAO_0000030</AbbreviatedIRI>
         <Literal xml:lang="en">information content entity</Literal>
     </AnnotationAssertion>
@@ -6335,26 +5177,6 @@ Previous. An information content entity is a non-realizable information entity t
         <Literal xml:lang="en">information content entity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000031</AbbreviatedIRI>
-        <Literal xml:lang="en">integer numeral</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000031</AbbreviatedIRI>
-        <Literal xml:lang="en">A numeral that denotes an integer</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000031</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Jonathan Rees</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000031</AbbreviatedIRI>
-        <Literal xml:lang="en">integer numeral</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
         <AbbreviatedIRI>obo:IAO_0000032</AbbreviatedIRI>
         <Literal xml:lang="en">10 feet. 3 ml.</Literal>
@@ -6391,542 +5213,9 @@ this case we explicitly refer to the singular form</Literal>
         <Literal xml:lang="en">scalar measurement datum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000033</AbbreviatedIRI>
-        <Literal xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000033</AbbreviatedIRI>
-        <Literal xml:lang="en">2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  &quot;is the specification of a process that can be concretized and realized by an actor&quot; with alternative term  &quot;instruction&quot;.It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000033</AbbreviatedIRI>
-        <Literal xml:lang="en">2013-05-30 Alan Ruttenberg: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000033</AbbreviatedIRI>
-        <Literal xml:lang="en">8/6/2009 Alan Ruttenberg: Changed label from &quot;information entity about a realizable&quot; after discussions at ICBO</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000033</AbbreviatedIRI>
-        <Literal xml:lang="en">Werner pushed back on calling it realizable information entity as it isn&apos;t realizable. However this name isn&apos;t right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn&apos;t about the plan, it, once concretized, *is* the plan. -Alan</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000033</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000033</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Bjoern Peters</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000033</AbbreviatedIRI>
-        <Literal xml:lang="en">directive information entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000034</AbbreviatedIRI>
-        <Literal xml:lang="en">time trigger</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000034</AbbreviatedIRI>
-        <Literal xml:lang="en">PlanAndPlannedProcess Branch</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000034</AbbreviatedIRI>
-        <Literal xml:lang="en">time trigger</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000037</AbbreviatedIRI>
-        <Literal xml:lang="en">dot plot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000037</AbbreviatedIRI>
-        <Literal xml:lang="en">Dot plot of SSC-H and FSC-H.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000037</AbbreviatedIRI>
-        <Literal xml:lang="en">A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000037</AbbreviatedIRI>
-        <Literal xml:lang="en">person:Allyson Lister</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000037</AbbreviatedIRI>
-        <Literal xml:lang="en">person:Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000037</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0000123</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000037</AbbreviatedIRI>
-        <Literal xml:lang="en">group:OBI</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000037</AbbreviatedIRI>
-        <Literal xml:lang="en">dot plot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000038</AbbreviatedIRI>
-        <Literal xml:lang="en">graph</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000038</AbbreviatedIRI>
-        <Literal xml:lang="en">A diagram that presents one or more tuples of information by mapping those tuples in to a two dimensional space in a non arbitrary way.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000038</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Lawrence Hunter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000038</AbbreviatedIRI>
-        <Literal xml:lang="en">person:Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000038</AbbreviatedIRI>
-        <Literal xml:lang="en">person:Allyson Lister</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000038</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0000240</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000038</AbbreviatedIRI>
-        <Literal xml:lang="en">group:OBI</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000038</AbbreviatedIRI>
-        <Literal xml:lang="en">graph</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:IAO_0000039</AbbreviatedIRI>
         <Literal xml:lang="en">has measurement unit label</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000055</AbbreviatedIRI>
-        <Literal xml:lang="en">rule</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000055</AbbreviatedIRI>
-        <Literal xml:lang="en">example to be added</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000055</AbbreviatedIRI>
-        <Literal xml:lang="en">A rule is an executable which guides, defines, restricts actions.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000055</AbbreviatedIRI>
-        <Literal xml:lang="en">MSI</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000055</AbbreviatedIRI>
-        <Literal xml:lang="en">PRS</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000055</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0500021</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000055</AbbreviatedIRI>
-        <Literal xml:lang="en">PRS</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000055</AbbreviatedIRI>
-        <Literal xml:lang="en">rule</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000057</AbbreviatedIRI>
-        <Literal xml:lang="en">contour plot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000057</AbbreviatedIRI>
-        <Literal xml:lang="en">Contour plot of SSC-H, FSC-H, and FL1-H.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000057</AbbreviatedIRI>
-        <Literal xml:lang="en">generically_dependent_continuants</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000057</AbbreviatedIRI>
-        <Literal xml:lang="en">person:Allyson Lister</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000057</AbbreviatedIRI>
-        <Literal xml:lang="en">person:Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000057</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0000246</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000057</AbbreviatedIRI>
-        <Literal xml:lang="en">group:Flow Cytometry community</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000057</AbbreviatedIRI>
-        <Literal xml:lang="en">contour plot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000064</AbbreviatedIRI>
-        <Literal xml:lang="en">algorithm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000064</AbbreviatedIRI>
-        <Literal xml:lang="en">PMID: 18378114.Genomics. 2008 Mar 28. LINKGEN: A new algorithm to process data in genetic linkage studies.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000064</AbbreviatedIRI>
-        <Literal xml:lang="en">A plan specification which describes the inputs and output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000064</AbbreviatedIRI>
-        <Literal xml:lang="en">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000064</AbbreviatedIRI>
-        <Literal xml:lang="en">PlanAndPlannedProcess Branch</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000064</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0000270</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000064</AbbreviatedIRI>
-        <Literal xml:lang="en">adapted from discussion on OBI list (Matthew Pocock, Christian Cocos, Alan Ruttenberg)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000064</AbbreviatedIRI>
-        <Literal xml:lang="en">algorithm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000065</AbbreviatedIRI>
-        <Literal xml:lang="en">software interpreter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000065</AbbreviatedIRI>
-        <Literal xml:lang="en">R program, Perl interpreter, Java virtual machine</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000065</AbbreviatedIRI>
-        <Literal xml:lang="en">A software interpreter is a software application that executes some specified input software.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000065</AbbreviatedIRI>
-        <Literal xml:lang="en">Do we care? Jennifer: Yes, there was a particular version of R that had a bug and it was fixed later. That would imply that we mean specific version of an interpreter. So an instance of this would be a particular version of the interpreter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000065</AbbreviatedIRI>
-        <Literal xml:lang="en">person:Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000065</AbbreviatedIRI>
-        <Literal xml:lang="en">person:Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000065</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0000199</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000065</AbbreviatedIRI>
-        <Literal xml:lang="en">group:OBI</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000065</AbbreviatedIRI>
-        <Literal xml:lang="en">software interpreter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000078</AbbreviatedIRI>
-        <Literal xml:lang="en">curation status specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000078</AbbreviatedIRI>
-        <Literal xml:lang="en">The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000078</AbbreviatedIRI>
-        <Literal xml:lang="en">Better to represent curation as a process with parts and then relate labels to that process (in IAO meeting)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000078</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:Bill Bug</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000078</AbbreviatedIRI>
-        <Literal xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000078</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0000266</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000078</AbbreviatedIRI>
-        <Literal xml:lang="en">curation status specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000079</AbbreviatedIRI>
-        <Literal xml:lang="en">density plot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000079</AbbreviatedIRI>
-        <Literal xml:lang="en">Density plot of SSC-H and FSC-H.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000079</AbbreviatedIRI>
-        <Literal xml:lang="en">A density plot is a report graph which is a graphical representation of data where the tint of a particular pixel corresponds to some kind of function corresponding the the amount of data points relativelly with their distance from the the pixel.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000079</AbbreviatedIRI>
-        <Literal xml:lang="en">person:Allyson Lister</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000079</AbbreviatedIRI>
-        <Literal xml:lang="en">person:Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000079</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0000179</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000079</AbbreviatedIRI>
-        <Literal xml:lang="en">group:Flow Cytometry community</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000079</AbbreviatedIRI>
-        <Literal xml:lang="en">density plot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000088</AbbreviatedIRI>
-        <Literal xml:lang="en">report</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000088</AbbreviatedIRI>
-        <Literal xml:lang="en">Examples of reports are gene lists and investigation reports. These are not published (journal) articles but may be included in a journal article.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000088</AbbreviatedIRI>
-        <Literal xml:lang="en">A document assembled by an author for the purpose of providing information for the audience. A report is the output of a documenting process and has the objective to be consumed by a specific audience. Topic of the report is on something that has completed. A report is not a single figure. Examples of reports are journal article, patent application, grant progress report, case report (not patient record).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000088</AbbreviatedIRI>
-        <Literal xml:lang="en">2009-03-16: comment from Darren Natale: I am slightly uneasy with the sentence &quot;Topic of the report is on 
-something that has completed.&quot;  Should it be restricted to those things 
-that are completed?  For example, a progress report is (usually) about 
-something that definitely has *not* been completed, or may include 
-(only) projections.  I think the definition would not suffer if the 
-whole sentence is deleted.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000088</AbbreviatedIRI>
-        <Literal xml:lang="en">2009-03-16: this was report of results with definition: A report is a narrative object that is a formal statement of the results of an investigation, or of any matter on which definite information is required, made by some person or body instructed or required to do so.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000088</AbbreviatedIRI>
-        <Literal xml:lang="en">2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000088</AbbreviatedIRI>
-        <Literal xml:lang="en">2009-08-10 Alan Ruttenberg: Larry Hunter suggests that this be obsoleted and replaced by &apos;document&apos;. Alan restored as there are OBI dependencies and this merits further discussion</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000088</AbbreviatedIRI>
-        <Literal xml:lang="en">disagreement about where reports go. alan: only some gene lists are reports. Is a report all the content of some document? The example of usage suggests that a report may be part of  some article. Term needs clarification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000088</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000088</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000088</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Melanie Courtot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000088</AbbreviatedIRI>
-        <Literal xml:lang="en">GROUP: OBI</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000088</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0000099</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000088</AbbreviatedIRI>
-        <Literal xml:lang="en">report</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000096</AbbreviatedIRI>
-        <Literal xml:lang="en">source code module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000096</AbbreviatedIRI>
-        <Literal xml:lang="en">The written source code that implements part of an algorithm. Test - if you know that it was written in a specific language, then it can be source code module. We mean here, roughly, the wording of a document such as a perl script.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000096</AbbreviatedIRI>
-        <Literal xml:lang="en">A source code module is a directive information entity that specifies, using a programming language, some algorithm.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000096</AbbreviatedIRI>
-        <Literal xml:lang="en">person:Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000096</AbbreviatedIRI>
-        <Literal xml:lang="en">person:Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000096</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0000039</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000096</AbbreviatedIRI>
-        <Literal xml:lang="en">group:OBI</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000096</AbbreviatedIRI>
-        <Literal xml:lang="en">source code module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000098</AbbreviatedIRI>
-        <Literal xml:lang="en">data format specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000098</AbbreviatedIRI>
-        <Literal xml:lang="en">A data format specification is the information content borne by the document published defining the specification.
-Example: The ISO document specifying what encompasses an XML document; The instructions in a XSD file</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000098</AbbreviatedIRI>
-        <Literal xml:lang="en">2009-03-16: provenance: term imported from OBI_0000187, which had original definition &quot;A data format specification is a plan which organizes
-information. Example: The ISO document specifying what encompasses an
-XML document; The instructions in a XSD file&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000098</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000098</AbbreviatedIRI>
-        <Literal xml:lang="en">PlanAndPlannedProcess Branch</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000098</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI branch derived</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000098</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0000187</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000098</AbbreviatedIRI>
-        <Literal xml:lang="en">data format specification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
@@ -6977,87 +5266,6 @@ XML document; The instructions in a XSD file&quot;</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:IAO_0000100</AbbreviatedIRI>
         <Literal xml:lang="en">data set</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000102</AbbreviatedIRI>
-        <Literal xml:lang="en">data about an ontology part</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000102</AbbreviatedIRI>
-        <Literal xml:lang="en">Data about an ontology part is a data item about a part of an ontology, for example a term</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000102</AbbreviatedIRI>
-        <Literal xml:lang="en">Person:Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000102</AbbreviatedIRI>
-        <Literal xml:lang="en">data about an ontology part</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000104</AbbreviatedIRI>
-        <Literal xml:lang="en">plan specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000104</AbbreviatedIRI>
-        <Literal xml:lang="en">PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000104</AbbreviatedIRI>
-        <Literal xml:lang="en">A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000104</AbbreviatedIRI>
-        <Literal xml:lang="en">2009-03-16: provenance: a term a plan was proposed for OBI (OBI_0000344) , edited by the PlanAndPlannedProcess branch. Original definition was &quot; a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan&quot;. It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000104</AbbreviatedIRI>
-        <Literal xml:lang="en">2014-03-31: A plan specification can have other parts, such as conditional specifications.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000104</AbbreviatedIRI>
-        <Literal xml:lang="en">Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000104</AbbreviatedIRI>
-        <Literal xml:lang="en">Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000104</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI Plan and Planned Process branch</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000104</AbbreviatedIRI>
-        <Literal xml:lang="en">OBI_0000344</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>obo:IAO_0000104</AbbreviatedIRI>
-        <Literal xml:lang="en">2/3/2009 Comment from OBI review.
-
-Action specification not well enough specified.
-Conditional specification not well enough specified.
-Question whether all plan specifications have objective specifications.
-
-Request that IAO either clarify these or change definitions not to use them</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000104</AbbreviatedIRI>
-        <Literal xml:lang="en">plan specification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
@@ -7359,81 +5567,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <Literal xml:lang="en">definition source</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000129</AbbreviatedIRI>
-        <Literal xml:lang="en">version number</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000129</AbbreviatedIRI>
-        <Literal xml:lang="en">A version number is an information content entity which is a sequence of characters borne by part of each of a class of manufactured products or its packaging and indicates its order within a set of other products having the same name.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000129</AbbreviatedIRI>
-        <Literal xml:lang="en">Note: we feel that at the moment we are happy with a general version number, and that we will subclass as needed in the future. For example, see 7. genome sequence version</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000129</AbbreviatedIRI>
-        <Literal xml:lang="en">GROUP: IAO</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000129</AbbreviatedIRI>
-        <Literal xml:lang="en">version number</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000131</AbbreviatedIRI>
-        <Literal xml:lang="en">serial number</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000131</AbbreviatedIRI>
-        <Literal xml:lang="en">A serial number is an information content entity which is a unique sequence of characters borne by part of manufactured product or its packaging that is assigned to each individual in some class of products, and so can serve as a way to identify an individual product within the class. Serial numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000131</AbbreviatedIRI>
-        <Literal xml:lang="en">Note: during the call there was some confusion between serial number and model number. We agreed that it would be very helpful for all those terms to have example of usages - please add if you have any :-)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000131</AbbreviatedIRI>
-        <Literal xml:lang="en">GROUP: IAO</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000131</AbbreviatedIRI>
-        <Literal xml:lang="en">serial number</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000132</AbbreviatedIRI>
-        <Literal xml:lang="en">lot number</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000132</AbbreviatedIRI>
-        <Literal xml:lang="en">A lot number is an information content entity which is an identical sequence of character borne by part of manufactured product or its packaging for each instances of a product class in a discrete batch of an item. Lot numbers are usually assigned to each separate production run of an item. Manufacturing as a lot might be due to a variety of reasons, for example,  a single process during which many individuals are made from the same portion of source material. Lot numbers can be encoded in a pattern  of other information objects, such as bar codes, numerals, or patterns of dots.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000132</AbbreviatedIRI>
-        <Literal xml:lang="en">GROUP: IAO</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_0000132</AbbreviatedIRI>
-        <Literal xml:lang="en">batch number</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000132</AbbreviatedIRI>
-        <Literal xml:lang="en">lot number</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
         <AbbreviatedIRI>obo:IAO_0000135</AbbreviatedIRI>
         <Literal>The process of creation is, for example,  writing down on paper the name of a friend by deliberately creating a certain pattern using ink.
@@ -7530,31 +5663,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000140</AbbreviatedIRI>
-        <Literal xml:lang="en">A settings datum is a datum that denotes some configuration of an instrument.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000140</AbbreviatedIRI>
-        <Literal xml:lang="en">2/3/2009 Feedback from OBI
-
-This should be a &quot;setting specification&quot;. There is a question of whether it is information about a realizable or not.
-
-Pro other specification are about realizables.
-Cons sometimes specifies a quality which is not a realizable.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000140</AbbreviatedIRI>
-        <Literal xml:lang="en">Alan grouped these in placeholder for the moment. Name by analogy to measurement datum.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000140</AbbreviatedIRI>
-        <Literal xml:lang="en">setting datum</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:IAO_0000142</AbbreviatedIRI>
         <Literal xml:lang="en">An information artifact IA mentions an entity E exactly when it has a component/part that denotes E</Literal>
     </AnnotationAssertion>
@@ -7617,203 +5725,6 @@ Cons sometimes specifies a quality which is not a realizable.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:IAO_0000178</AbbreviatedIRI>
         <Literal xml:lang="en">material information bearer</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000179</AbbreviatedIRI>
-        <Literal xml:lang="en">histogram</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000179</AbbreviatedIRI>
-        <Literal xml:lang="en">A histogram is a report graph which is a statistical description of a
-distribution in terms of occurrence frequencies of different event classes.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000179</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000179</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:James Malone</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000179</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:Melanie Courtot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000179</AbbreviatedIRI>
-        <Literal xml:lang="en">GROUP:OBI</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000179</AbbreviatedIRI>
-        <Literal xml:lang="en">histogram</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000180</AbbreviatedIRI>
-        <Literal xml:lang="en">heatmap</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000180</AbbreviatedIRI>
-        <Literal xml:lang="en">A heatmap is a report graph which is a graphical representation of data
-where the values taken by a variable(s) are shown as colors in a
-two-dimensional map.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000180</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000180</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:James Malone</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000180</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:Melanie Courtot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000180</AbbreviatedIRI>
-        <Literal xml:lang="en">GROUP:OBI</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000180</AbbreviatedIRI>
-        <Literal xml:lang="en">heatmap</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000181</AbbreviatedIRI>
-        <Literal xml:lang="en">Venn diagram</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000181</AbbreviatedIRI>
-        <Literal xml:lang="en">A Venn diagram is a report graph showing all hypothetically possible
-logical relations between a finite collection of sets.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000181</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000181</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:James Malone</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000181</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:Melanie Courtot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000181</AbbreviatedIRI>
-        <Literal xml:lang="en">WEB: http://en.wikipedia.org/wiki/Venn_diagram</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000181</AbbreviatedIRI>
-        <Literal xml:lang="en">Venn diagram</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000183</AbbreviatedIRI>
-        <Literal xml:lang="en">dendrogram</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000183</AbbreviatedIRI>
-        <Literal xml:lang="en">Dendrograms are often used in computational biology to
-illustrate the clustering of genes.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000183</AbbreviatedIRI>
-        <Literal xml:lang="en">A dendrogram is a report graph which is a tree diagram
-frequently used to illustrate the arrangement of the clusters produced by a
-clustering algorithm.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000183</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000183</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:James Malone</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000183</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:Melanie Courtot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000183</AbbreviatedIRI>
-        <Literal xml:lang="en">WEB: http://en.wikipedia.org/wiki/Dendrogram</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000183</AbbreviatedIRI>
-        <Literal xml:lang="en">dendrogram</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000184</AbbreviatedIRI>
-        <Literal xml:lang="en">scatter plot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000184</AbbreviatedIRI>
-        <Literal xml:lang="en">Comparison of gene expression values in two samples can be displayed in a scatter plot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000184</AbbreviatedIRI>
-        <Literal xml:lang="en">A scatterplot is a graph which uses Cartesian coordinates to display values for two variables for a set of data. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000184</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000184</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:James Malone</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000184</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:Melanie Courtot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_0000184</AbbreviatedIRI>
-        <Literal xml:lang="en">scattergraph</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000184</AbbreviatedIRI>
-        <Literal xml:lang="en">WEB: http://en.wikipedia.org/wiki/Scatterplot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000184</AbbreviatedIRI>
-        <Literal xml:lang="en">scatter plot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
@@ -7987,36 +5898,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000225</AbbreviatedIRI>
-        <Literal xml:lang="en">obsolescence reason specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000225</AbbreviatedIRI>
-        <Literal xml:lang="en">The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000225</AbbreviatedIRI>
-        <Literal xml:lang="en">The creation of this class has been inspired in part by Werner Ceusters&apos; paper, Applying evolutionary terminology auditing to the Gene Ontology.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000225</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000225</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Melanie Courtot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000225</AbbreviatedIRI>
-        <Literal xml:lang="en">obsolescence reason specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
         <AbbreviatedIRI>obo:IAO_0000231</AbbreviatedIRI>
         <Literal xml:lang="en">has obsolescence reason</Literal>
     </AnnotationAssertion>
@@ -8146,261 +6027,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <Literal xml:lang="en">denoted by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000308</AbbreviatedIRI>
-        <Literal xml:lang="en">figure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000308</AbbreviatedIRI>
-        <Literal xml:lang="en">Any picture, diagram or table</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000308</AbbreviatedIRI>
-        <Literal xml:lang="en">An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000308</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Lawrence Hunter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000308</AbbreviatedIRI>
-        <Literal xml:lang="en">figure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000309</AbbreviatedIRI>
-        <Literal xml:lang="en">diagram</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000309</AbbreviatedIRI>
-        <Literal xml:lang="en">A molecular structure ribbon cartoon showing helices, turns and sheets and their relations to each other in space.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000309</AbbreviatedIRI>
-        <Literal xml:lang="en">A figure that expresses one or more propositions</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000309</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Lawrence Hunter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000309</AbbreviatedIRI>
-        <Literal xml:lang="en">diagram</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000310</AbbreviatedIRI>
-        <Literal xml:lang="en">document</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000310</AbbreviatedIRI>
-        <Literal xml:lang="en">A journal article, patent application, laboratory notebook, or a book</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000310</AbbreviatedIRI>
-        <Literal xml:lang="en">A collection of information content entities intended to be understood together as a whole</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000310</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Lawrence Hunter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000310</AbbreviatedIRI>
-        <Literal xml:lang="en">document</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000311</AbbreviatedIRI>
-        <Literal xml:lang="en">publication</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000311</AbbreviatedIRI>
-        <Literal xml:lang="en">journal article, newspaper story, book, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000311</AbbreviatedIRI>
-        <Literal xml:lang="en">A document that is the output of a publishing process.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000311</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000311</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Jie Zheng</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000311</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Lawrence Hunter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_0000311</AbbreviatedIRI>
-        <Literal xml:lang="en">published document</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000233"/>
-        <AbbreviatedIRI>obo:IAO_0000311</AbbreviatedIRI>
-        <IRI>https://github.com/information-artifact-ontology/IAO/issues/232</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>obo:IAO_0000311</AbbreviatedIRI>
-        <Literal xml:lang="en">Revisit the term in Octorber 2020. Improve the defintion.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000311</AbbreviatedIRI>
-        <Literal xml:lang="en">publication</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000312</AbbreviatedIRI>
-        <Literal xml:lang="en">publication about an investigation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000312</AbbreviatedIRI>
-        <Literal xml:lang="en">Most scientific journal articles</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000312</AbbreviatedIRI>
-        <Literal xml:lang="en">A publication that is about an investigation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000312</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Lawrence Hunter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_0000312</AbbreviatedIRI>
-        <Literal xml:lang="en">scientific publication</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000312</AbbreviatedIRI>
-        <Literal xml:lang="en">publication about an investigation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000313</AbbreviatedIRI>
-        <Literal xml:lang="en">patent</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000313</AbbreviatedIRI>
-        <Literal xml:lang="en">US Patent 6,449,603</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000313</AbbreviatedIRI>
-        <Literal xml:lang="en">A document that has been accepted by a patent authority</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000313</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Lawrence Hunter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000313</AbbreviatedIRI>
-        <Literal xml:lang="en">patent</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000400</AbbreviatedIRI>
-        <Literal xml:lang="en">A cartesian spatial coordinate datum is a representation of a point in a spatial region, in which equal changes in the magnitude of a coordinate value denote length qualities with the same magnitude</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000400</AbbreviatedIRI>
-        <Literal xml:lang="en">2009-08-18 Alan Ruttenberg - question to BFO list about whether the BFO sense of the lower dimensional regions is that they are always part of actual space (the three dimensional sort) http://groups.google.com/group/bfo-discuss/browse_thread/thread/9d04e717e39fb617</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000400</AbbreviatedIRI>
-        <Literal xml:lang="en">Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000232"/>
-        <AbbreviatedIRI>obo:IAO_0000400</AbbreviatedIRI>
-        <Literal>AR notes: We need to discuss whether it should include site.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000400</AbbreviatedIRI>
-        <Literal xml:lang="en">cartesian spatial coordinate datum</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AbbreviatedIRI>obo:IAO_0000400</AbbreviatedIRI>
-        <Literal xml:lang="en">http://groups.google.com/group/bfo-discuss/browse_thread/thread/9d04e717e39fb617</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000401</AbbreviatedIRI>
-        <Literal xml:lang="en">A cartesion spatial coordinate datum that  uses one value to specify a position along a one dimensional spatial region</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000401</AbbreviatedIRI>
-        <Literal xml:lang="en">Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000401</AbbreviatedIRI>
-        <Literal xml:lang="en">one dimensional cartesian spatial coordinate datum</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000402</AbbreviatedIRI>
-        <Literal xml:lang="en">A cartesion spatial coordinate datum that  uses two values to specify a position within a two dimensional spatial region</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000402</AbbreviatedIRI>
-        <Literal xml:lang="en">Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000402</AbbreviatedIRI>
-        <Literal xml:lang="en">two dimensional cartesian spatial coordinate datum</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000403</AbbreviatedIRI>
-        <Literal xml:lang="en">A cartesion spatial coordinate datum that  uses three values to specify a position within a three dimensional spatial region</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000403</AbbreviatedIRI>
-        <Literal xml:lang="en">Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000403</AbbreviatedIRI>
-        <Literal xml:lang="en">three dimensional cartesian spatial coordinate datum</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:IAO_0000404</AbbreviatedIRI>
         <Literal xml:lang="en">has x coordinate value</Literal>
@@ -8439,36 +6065,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:IAO_0000408</AbbreviatedIRI>
         <Literal xml:lang="en">length measurement datum</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000409</AbbreviatedIRI>
-        <Literal xml:lang="en">denotator type</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000409</AbbreviatedIRI>
-        <Literal xml:lang="en">The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are &quot;natural kinds&quot; and the latter arbitrary collections of entities.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000409</AbbreviatedIRI>
-        <Literal xml:lang="en">A denotator type indicates how a term should be interpreted from an ontological perspective.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000409</AbbreviatedIRI>
-        <Literal xml:lang="en">Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000409</AbbreviatedIRI>
-        <Literal xml:lang="en">Barry Smith, Werner Ceusters</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000409</AbbreviatedIRI>
-        <Literal xml:lang="en">denotator type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
@@ -8743,31 +6339,6 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000429</AbbreviatedIRI>
-        <Literal xml:lang="en">email address</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_0000429</AbbreviatedIRI>
-        <Literal xml:lang="en">Alan Ruttenberg 1/3/2012 - Provisional id, see issue at https://github.com/information-artifact-ontology/IAO/issues/130&amp;thanks=130&amp;ts=1325636583</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000429</AbbreviatedIRI>
-        <Literal xml:lang="en">Person:Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000429</AbbreviatedIRI>
-        <Literal xml:lang="en">Person:Chris Stoeckart</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000429</AbbreviatedIRI>
-        <Literal xml:lang="en">email address</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
         <AbbreviatedIRI>obo:IAO_0000442</AbbreviatedIRI>
         <Literal xml:lang="en">author role</Literal>
     </AnnotationAssertion>
@@ -8837,36 +6408,6 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
         <Literal xml:lang="en">publishing process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000445</AbbreviatedIRI>
-        <Literal xml:lang="en">A document that is in preparation for submission to be published.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000445</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Jie Zheng</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000445</AbbreviatedIRI>
-        <Literal xml:lang="en">EFO_0001795 in preparation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000233"/>
-        <AbbreviatedIRI>obo:IAO_0000445</AbbreviatedIRI>
-        <IRI>https://github.com/information-artifact-ontology/IAO/issues/232</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000234"/>
-        <AbbreviatedIRI>obo:IAO_0000445</AbbreviatedIRI>
-        <Literal xml:lang="en">VEuPathDB</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000445</AbbreviatedIRI>
-        <Literal xml:lang="en">document in preparation for publication</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
         <AbbreviatedIRI>obo:IAO_0000572</AbbreviatedIRI>
         <Literal xml:lang="en">Recording the current temperature in a laboratory notebook. Writing a journal article. Updating a patient record in a database.</Literal>
@@ -8895,47 +6436,6 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:IAO_0000572</AbbreviatedIRI>
         <Literal xml:lang="en">documenting</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000573</AbbreviatedIRI>
-        <Literal xml:lang="en">line graph</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000573</AbbreviatedIRI>
-        <Literal xml:lang="en">A line graph is a type of graph created by connecting a series of data
-points together with a line.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000573</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:Chris Stoeckert</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000573</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:Melanie Courtot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_0000573</AbbreviatedIRI>
-        <Literal xml:lang="en">line chart</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000573</AbbreviatedIRI>
-        <Literal xml:lang="en">GROUP:OBI</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000573</AbbreviatedIRI>
-        <Literal xml:lang="en">WEB: http://en.wikipedia.org/wiki/Line_chart</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000573</AbbreviatedIRI>
-        <Literal xml:lang="en">line graph</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
@@ -9001,51 +6501,6 @@ points together with a line.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:IAO_0000575</AbbreviatedIRI>
         <Literal xml:lang="en">associating information with a centrally registered identifier in its registry</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000577</AbbreviatedIRI>
-        <Literal xml:lang="en">The sentence &quot;The article has Pubmed ID 12345.&quot; contains a CRID that has two parts: one part is the CRID symbol, which is &apos;12345&apos;; the other part denotes the CRID registry, which is Pubmed.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000577</AbbreviatedIRI>
-        <Literal xml:lang="en">A symbol that is part of a CRID and that is sufficient to look up a record from the CRID&apos;s registry.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000577</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000577</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Bill Hogan</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000577</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Bjoern Peters</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000577</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Melanie Courtot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_0000577</AbbreviatedIRI>
-        <Literal>CRID symbol</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000577</AbbreviatedIRI>
-        <Literal xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000577</AbbreviatedIRI>
-        <Literal xml:lang="en">centrally registered identifier symbol</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
@@ -9236,131 +6691,6 @@ points together with a line.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:IAO_0000589</AbbreviatedIRI>
         <Literal xml:lang="en">OBO foundry unique label</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000591</AbbreviatedIRI>
-        <Literal xml:lang="en">A software method (also called subroutine, subprogram, procedure, method, function, or routine) is software designed to execute a specific task.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000591</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Melanie Courtot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000591</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Michel Dumontier</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000591</AbbreviatedIRI>
-        <Literal xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000591</AbbreviatedIRI>
-        <Literal xml:lang="en">software method</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000592</AbbreviatedIRI>
-        <Literal xml:lang="en">A software module is software composed of a collection of software methods.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000592</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Melanei Courtot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000592</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Michel Dumontier</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000592</AbbreviatedIRI>
-        <Literal xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000592</AbbreviatedIRI>
-        <Literal xml:lang="en">software module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000593</AbbreviatedIRI>
-        <Literal xml:lang="en">A software library is software composed of a collection of software modules and/or software methods in a form that can be statically or dynamically linked to some software application.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000593</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Melanie Courtot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000593</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Michel Dumontier</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000593</AbbreviatedIRI>
-        <Literal xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000593</AbbreviatedIRI>
-        <Literal xml:lang="en">software library</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000594</AbbreviatedIRI>
-        <Literal xml:lang="en">A software application is software that can be directly executed by some processing unit.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000594</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Melanie Courtot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000594</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Michel Dumontier</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000594</AbbreviatedIRI>
-        <Literal xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000594</AbbreviatedIRI>
-        <Literal xml:lang="en">software application</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000595</AbbreviatedIRI>
-        <Literal xml:lang="en">A software script is software whose instructions can be executed using a software interpreter.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000595</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Melanie Courtot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000595</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON: Michel Dumontier</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>obo:IAO_0000595</AbbreviatedIRI>
-        <Literal xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000595</AbbreviatedIRI>
-        <Literal xml:lang="en">software script</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
@@ -9606,21 +6936,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <Literal>retired from use as of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000647</AbbreviatedIRI>
-        <Literal xml:lang="en">A plan specification that if realized, is realized by the delivery of mail to some facility or mailbox within some geographical region.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000647</AbbreviatedIRI>
-        <Literal xml:lang="en">Mathias Brochhausen</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000647</AbbreviatedIRI>
-        <Literal xml:lang="en">Postal delivery route</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
         <AbbreviatedIRI>obo:IAO_0000650</AbbreviatedIRI>
         <Literal xml:lang="en">database extract, transform, and load process</Literal>
@@ -9822,436 +7137,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000000</AbbreviatedIRI>
-        <Literal xml:lang="en">ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_8000000</AbbreviatedIRI>
-        <Literal xml:lang="en">I have placed this under &apos;data about an ontology part&apos;, but this can be discussed. I think this is OK if &apos;part&apos; is interpreted reflexively, as an ontology module is the whole ontology rather than part of it.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_8000000</AbbreviatedIRI>
-        <Literal xml:lang="en">ontology file</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000232"/>
-        <AbbreviatedIRI>obo:IAO_8000000</AbbreviatedIRI>
-        <Literal xml:lang="en">This class and it&apos;s subclasses are applied to OWL ontologies. Using an rdf:type triple will result in problems with OWL-DL. I propose that dcterms:type is instead used to connect an ontology URI with a class from this hierarchy. The class hierarchy is not disjoint, so multiple assertions can be made about a single ontology.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000000</AbbreviatedIRI>
-        <Literal xml:lang="en">ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000001</AbbreviatedIRI>
-        <Literal xml:lang="en">base ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_8000001</AbbreviatedIRI>
-        <Literal xml:lang="en">An ontology module that comprises only of asserted axioms local to the ontology, excludes import directives, and excludes axioms or declarations from external ontologies.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000001</AbbreviatedIRI>
-        <Literal xml:lang="en">base ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AbbreviatedIRI>obo:IAO_8000001</AbbreviatedIRI>
-        <IRI>https://github.com/INCATools/ontology-starter-kit/issues/50</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000002</AbbreviatedIRI>
-        <Literal xml:lang="en">editors ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_8000002</AbbreviatedIRI>
-        <Literal xml:lang="en">An ontology module that is intended to be directly edited, typically managed in source control, and typically not intended for direct consumption by end-users.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_8000002</AbbreviatedIRI>
-        <Literal xml:lang="en">source ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000002</AbbreviatedIRI>
-        <Literal xml:lang="en">editors ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000003</AbbreviatedIRI>
-        <Literal xml:lang="en">main release ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_8000003</AbbreviatedIRI>
-        <Literal xml:lang="en">An ontology module that is intended to be the primary release product and the one consumed by the majority of tools.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_8000003</AbbreviatedIRI>
-        <Literal xml:lang="en">TODO: Add logical axioms that state that a main release ontology module is derived from (directly or indirectly) an editors module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000003</AbbreviatedIRI>
-        <Literal xml:lang="en">main release ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000004</AbbreviatedIRI>
-        <Literal xml:lang="en">bridge ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_8000004</AbbreviatedIRI>
-        <Literal xml:lang="en">An ontology module that consists entirely of axioms that connect or bridge two distinct ontology modules. For example, the Uberon-to-ZFA bridge module.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000004</AbbreviatedIRI>
-        <Literal xml:lang="en">bridge ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AbbreviatedIRI>obo:IAO_8000004</AbbreviatedIRI>
-        <IRI>https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000005</AbbreviatedIRI>
-        <Literal xml:lang="en">import ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_8000005</AbbreviatedIRI>
-        <Literal xml:lang="en">A subset ontology module that is intended to be imported from another ontology.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_8000005</AbbreviatedIRI>
-        <Literal xml:lang="en">TODO: add axioms that indicate this is the output of a module extraction process.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_8000005</AbbreviatedIRI>
-        <Literal xml:lang="en">import file</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000005</AbbreviatedIRI>
-        <Literal xml:lang="en">import ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AbbreviatedIRI>obo:IAO_8000005</AbbreviatedIRI>
-        <IRI>http://robot.obolibrary.org/extract</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000006</AbbreviatedIRI>
-        <Literal xml:lang="en">subset ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_8000006</AbbreviatedIRI>
-        <Literal xml:lang="en">An ontology module that is extracted from a main ontology module and includes only a subset of entities or axioms.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_8000006</AbbreviatedIRI>
-        <Literal xml:lang="en">ontology slim</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_8000006</AbbreviatedIRI>
-        <Literal xml:lang="en">subset ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000006</AbbreviatedIRI>
-        <Literal xml:lang="en">subset ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AbbreviatedIRI>obo:IAO_8000006</AbbreviatedIRI>
-        <IRI>http://robot.obolibrary.org/filter</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AbbreviatedIRI>obo:IAO_8000006</AbbreviatedIRI>
-        <IRI>http://www.geneontology.org/page/go-slim-and-subset-guide</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000007</AbbreviatedIRI>
-        <Literal xml:lang="en">curation subset ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_8000007</AbbreviatedIRI>
-        <Literal xml:lang="en">A subset ontology that is intended as a whitelist for curators using the ontology. Such a subset will exclude classes that curators should not use for curation.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000007</AbbreviatedIRI>
-        <Literal xml:lang="en">curation subset ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000008</AbbreviatedIRI>
-        <Literal xml:lang="en">analysis ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_8000008</AbbreviatedIRI>
-        <Literal xml:lang="en">An ontology module that is intended for usage in analysis or discovery applications.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000008</AbbreviatedIRI>
-        <Literal xml:lang="en">analysis subset ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000009</AbbreviatedIRI>
-        <Literal xml:lang="en">single layer ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_8000009</AbbreviatedIRI>
-        <Literal xml:lang="en">A subset ontology that is largely comprised of a single layer or strata in an ontology class hierarchy. The purpose is typically for rolling up for visualization. The classes in the layer need not be disjoint.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_8000009</AbbreviatedIRI>
-        <Literal xml:lang="en">ribbon subset</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000009</AbbreviatedIRI>
-        <Literal xml:lang="en">single layer subset ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000010</AbbreviatedIRI>
-        <Literal xml:lang="en">exclusion subset ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_8000010</AbbreviatedIRI>
-        <Literal xml:lang="en">A subset of an ontology that is intended to be excluded for some purpose. For example, a blacklist of classes.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_8000010</AbbreviatedIRI>
-        <Literal xml:lang="en">antislim</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000010</AbbreviatedIRI>
-        <Literal xml:lang="en">exclusion subset ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000011</AbbreviatedIRI>
-        <Literal xml:lang="en">external import ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_8000011</AbbreviatedIRI>
-        <Literal xml:lang="en">An imported ontology module that is derived from an external ontology. Derivation methods include the OWLAPI SLME approach.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_8000011</AbbreviatedIRI>
-        <Literal xml:lang="en">external import</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000011</AbbreviatedIRI>
-        <Literal xml:lang="en">external import ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000012</AbbreviatedIRI>
-        <Literal xml:lang="en">species subset ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_8000012</AbbreviatedIRI>
-        <Literal xml:lang="en">A subset ontology that is crafted to either include or exclude a taxonomic grouping of species.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>obo:IAO_8000012</AbbreviatedIRI>
-        <Literal xml:lang="en">taxon subset</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000012</AbbreviatedIRI>
-        <Literal xml:lang="en">species subset ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AbbreviatedIRI>obo:IAO_8000012</AbbreviatedIRI>
-        <IRI>https://github.com/obophenotype/uberon/wiki/Taxon-constraints</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000013</AbbreviatedIRI>
-        <Literal xml:lang="en">reasoned ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_8000013</AbbreviatedIRI>
-        <Literal xml:lang="en">An ontology module that contains axioms generated by a reasoner. The generated axioms are typically direct SubClassOf axioms, but other possibilities are available.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000013</AbbreviatedIRI>
-        <Literal xml:lang="en">reasoned ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AbbreviatedIRI>obo:IAO_8000013</AbbreviatedIRI>
-        <IRI>http://robot.obolibrary.org/reason</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000014</AbbreviatedIRI>
-        <Literal xml:lang="en">generated ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_8000014</AbbreviatedIRI>
-        <Literal xml:lang="en">An ontology module that is automatically generated, for example via a SPARQL query or via template and a CSV.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>obo:IAO_8000014</AbbreviatedIRI>
-        <Literal xml:lang="en">TODO: Add axioms (using PROV-O?) that indicate this is the output-of some reasoning process</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000014</AbbreviatedIRI>
-        <Literal xml:lang="en">generated ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000015</AbbreviatedIRI>
-        <Literal xml:lang="en">template generated ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_8000015</AbbreviatedIRI>
-        <Literal xml:lang="en">An ontology module that is automatically generated from a template specification and fillers for slots in that template.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000015</AbbreviatedIRI>
-        <Literal xml:lang="en">template generated ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AbbreviatedIRI>obo:IAO_8000015</AbbreviatedIRI>
-        <IRI>http://robot.obolibrary.org/template</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AbbreviatedIRI>obo:IAO_8000015</AbbreviatedIRI>
-        <IRI>https://doi.org/10.1186/s13326-017-0126-0</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AbbreviatedIRI>obo:IAO_8000015</AbbreviatedIRI>
-        <IRI>https://github.com/dosumis/dead_simple_owl_design_patterns/</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000016</AbbreviatedIRI>
-        <Literal xml:lang="en">taxonomic bridge ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000016</AbbreviatedIRI>
-        <Literal xml:lang="en">taxonomic bridge ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000017</AbbreviatedIRI>
-        <Literal xml:lang="en">ontology module subsetted by expressivity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000017</AbbreviatedIRI>
-        <Literal xml:lang="en">ontology module subsetted by expressivity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000018</AbbreviatedIRI>
-        <Literal xml:lang="en">obo basic subset ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_8000018</AbbreviatedIRI>
-        <Literal xml:lang="en">A subset ontology that is designed for basic applications to continue to make certain simplifying assumptions; many of these simplifying assumptions were based on the initial version of the Gene Ontology, and have become enshrined in many popular and useful tools such as term enrichment tools.
-
-Examples of such assumptions include: traversing the ontology graph ignoring relationship types using a naive algorithm will not lead to cycles (i.e. the ontology is a DAG); every referenced term is declared in the ontology (i.e. there are no dangling clauses).
-
-An ontology is OBO Basic if and only if it has the following characteristics:
-DAG
-Unidirectional
-No Dangling Clauses
-Fully Asserted
-Fully Labeled
-No equivalence axioms
-Singly labeled edges
-No qualifier lists
-No disjointness axioms
-No owl-axioms header
-No imports</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000018</AbbreviatedIRI>
-        <Literal xml:lang="en">obo basic subset ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AbbreviatedIRI>obo:IAO_8000018</AbbreviatedIRI>
-        <IRI>http://owlcollab.github.io/oboformat/doc/obo-syntax.html#6.2</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000019</AbbreviatedIRI>
-        <Literal xml:lang="en">ontology module subsetted by OWL profile</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000019</AbbreviatedIRI>
-        <Literal xml:lang="en">ontology module subsetted by OWL profile</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_8000020</AbbreviatedIRI>
-        <Literal xml:lang="en">EL++ ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_8000020</AbbreviatedIRI>
-        <Literal xml:lang="en">EL++ ontology module</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
         <AbbreviatedIRI>obo:OBI_0000011</AbbreviatedIRI>
         <Literal xml:lang="en">planned process</Literal>
     </AnnotationAssertion>
@@ -10434,21 +7319,6 @@ No imports</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:OBI_0200000</AbbreviatedIRI>
         <Literal xml:lang="en">data transformation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:OBI_0500000</AbbreviatedIRI>
-        <Literal xml:lang="en">study design</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:OBI_0500000</AbbreviatedIRI>
-        <Literal>A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:OBI_0500000</AbbreviatedIRI>
-        <Literal xml:lang="en">study design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
