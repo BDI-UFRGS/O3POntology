@@ -638,12 +638,6 @@ Mara Abel</dc:contributor>
                 <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#fluid"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/hasProcessCharacteristic"/>
-                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:hasRelatedSynonym xml:lang="en">fluid flow</oboInOwl:hasRelatedSynonym>
         <CommonCoreOntologies:definition xml:lang="en">def. a process that has partipant some fluid and the fluid is in continuous movement.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">Definition: The continuous movement characteristic of a liquid or gas. [Definition Source: NCI]</rdfs:comment>
@@ -742,12 +736,6 @@ Mara Abel</dc:contributor>
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate_ICV_method">
         <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ICV flow rate ICV method</rdfs:label>
         <rdfs:label xml:lang="pt">vazão da ICV método ICV</rdfs:label>
     </owl:Class>
@@ -758,12 +746,6 @@ Mara Abel</dc:contributor>
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate_IPR_method">
         <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ICV flow rate IPR method</rdfs:label>
         <rdfs:label xml:lang="pt">vazão da ICV método IPR</rdfs:label>
     </owl:Class>
@@ -774,12 +756,6 @@ Mara Abel</dc:contributor>
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate_reconciled_method">
         <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ICV flow rate reconciled method</rdfs:label>
         <rdfs:label xml:lang="pt">vazão da ICV método reconciliado</rdfs:label>
     </owl:Class>
@@ -1308,18 +1284,6 @@ Mara Abel</dc:contributor>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/processCharacteristicOf"/>
                 <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Flow"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#has_value"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#has_value"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">def. a IOF:process characteristic that is volume of fluid which flows per unit of time</CommonCoreOntologies:definition>
@@ -2013,19 +1977,13 @@ Mara Abel</dc:contributor>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#fluid"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#reservoir"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_earth_fluid"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:allValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#InjectionWell"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Production_(process)"/>
@@ -2063,12 +2021,6 @@ Mara Abel</dc:contributor>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_earth_fluid"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:allValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Production_Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">def. a flow that has a production well as participant and is towards a platform.</CommonCoreOntologies:definition>
