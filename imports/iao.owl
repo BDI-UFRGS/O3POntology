@@ -340,12 +340,6 @@
         <Class abbreviatedIRI="obo:IAO_0000109"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000178"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:IAO_0000186"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:IAO_0000408"/>
     </Declaration>
     <Declaration>
@@ -782,19 +776,6 @@
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="obo:IAO_0000178"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="obo:BFO_0000040"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:RO_0000053"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
-                    <Class abbreviatedIRI="obo:IAO_0000030"/>
-                </ObjectSomeValuesFrom>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
     <SubClassOf>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000008"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
@@ -1005,14 +986,6 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000109"/>
         <Class abbreviatedIRI="obo:IAO_0000027"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000178"/>
-        <Class abbreviatedIRI="obo:BFO_0000040"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0000186"/>
-        <Class abbreviatedIRI="obo:IAO_0000178"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0000408"/>
@@ -5690,66 +5663,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:IAO_0000142</AbbreviatedIRI>
         <Literal xml:lang="en">mentions</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000178</AbbreviatedIRI>
-        <Literal xml:lang="en">material information bearer</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000178</AbbreviatedIRI>
-        <Literal xml:lang="en">A page of a paperback novel with writing on it. The paper itself is a material information bearer, the pattern of ink is the information carrier.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000178</AbbreviatedIRI>
-        <Literal xml:lang="en">a brain</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <AbbreviatedIRI>obo:IAO_0000178</AbbreviatedIRI>
-        <Literal xml:lang="en">a hard drive</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000178</AbbreviatedIRI>
-        <Literal xml:lang="en">A material entity in which a concretization of an information content entity inheres.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000178</AbbreviatedIRI>
-        <Literal xml:lang="en">GROUP: IAO</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000178</AbbreviatedIRI>
-        <Literal xml:lang="en">material information bearer</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
-        <AbbreviatedIRI>obo:IAO_0000186</AbbreviatedIRI>
-        <Literal xml:lang="en">photographic print</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:IAO_0000186</AbbreviatedIRI>
-        <Literal xml:lang="en">A photographic print is a material entity upon which a photograph generically depends.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000186</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:Alan Ruttenberg</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>obo:IAO_0000186</AbbreviatedIRI>
-        <Literal xml:lang="en">PERSON:Melanie Courtot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:IAO_0000186</AbbreviatedIRI>
-        <Literal xml:lang="en">photographic print</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
