@@ -38,7 +38,6 @@
     <owl:Ontology rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl">
         <owl:versionIRI rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl/0.0.1"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <owl:imports rdf:resource="https://purl.industrialontologies.org/ontology/core/20220506/Core/"/>
         <owl:imports rdf:resource="https://w3id.org/fso/0.1.0"/>
         <owl:imports rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology"/>
@@ -2035,18 +2034,6 @@ Mara Abel</dc:contributor>
         <owl:annotatedTarget xml:lang="en">The yield of an oil or gas well. Also that branch of the petroleum industry that has to do with bringing the well fluids to the surface and separating them, and with storing, gaging, and otherwise preparing the product for the pipeline.</owl:annotatedTarget>
         <oboInOwl:source xml:lang="en">Introduction to Oil &amp; Gas Production (ITOGP), 1983</oboInOwl:source>
     </owl:Axiom>
-    
-
-
-    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#tag -->
-
-    <owl:Class rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#tag">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
-        <obo:IAO_0000600 xml:lang="en">Poco_RJS_751_SCM_3_IWIS_MA2_P is the tag that is about the Top ICV annular pressure of Well X.</obo:IAO_0000600>
-        <CommonCoreOntologies:definition xml:lang="en">def. a symbol that represents an time-sampled measurement dataset.</CommonCoreOntologies:definition>
-        <rdfs:label xml:lang="en">tag</rdfs:label>
-        <rdfs:label xml:lang="pt">tag</rdfs:label>
-    </owl:Class>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
