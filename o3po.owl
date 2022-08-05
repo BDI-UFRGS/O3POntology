@@ -808,7 +808,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Manifold -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Manifold">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#has_component"/>
@@ -1111,7 +1111,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Wellhead -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Wellhead">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/Assembly"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#component_of"/>
@@ -1439,6 +1439,22 @@ Mara Abel</dc:contributor>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">observation role</rdfs:label>
         <rdfs:label xml:lang="pt">papel de observação</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#plant -->
+
+    <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#plant">
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#has_component"/>
+                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Platform"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">plant</rdfs:label>
+        <rdfs:label xml:lang="pt">planta</rdfs:label>
     </owl:Class>
     
 
