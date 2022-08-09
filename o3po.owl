@@ -191,7 +191,6 @@ Mara Abel</dc:contributor>
     <owl:ObjectProperty rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#feeds_fluid_to">
         <rdfs:subPropertyOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#exchanges_fluid_with"/>
         <owl:inverseOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#has_fluid_fed_by"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:comment xml:lang="en">Relation from a thing feeding fluid to the thing it is feeding fluid to.</rdfs:comment>
         <rdfs:label xml:lang="pt">alimenta fluido para</rdfs:label>
         <rdfs:label xml:lang="en">feeds fluid to</rdfs:label>
@@ -221,7 +220,6 @@ Mara Abel</dc:contributor>
 
     <owl:ObjectProperty rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#has_fluid_fed_by">
         <rdfs:subPropertyOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#exchanges_fluid_with"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:comment xml:lang="en">Relation from a thing that is fed fluid to the thing feeding the fluid.</rdfs:comment>
         <rdfs:label xml:lang="en">has fluid fed by</rdfs:label>
         <rdfs:label xml:lang="pt">tem fluido alimentado por</rdfs:label>
@@ -241,7 +239,6 @@ Mara Abel</dc:contributor>
     <owl:ObjectProperty rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#has_fluid_returned_by">
         <rdfs:subPropertyOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#feeds_fluid_to"/>
         <owl:inverseOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#returns_fluid_to"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:comment xml:lang="en">Relation between a thing that has fluid returned to it and the thing returning the fluid.</rdfs:comment>
         <rdfs:label xml:lang="en">has fluid returned by</rdfs:label>
         <rdfs:label xml:lang="pt">tem fluido retornado por</rdfs:label>
@@ -261,7 +258,6 @@ Mara Abel</dc:contributor>
     <owl:ObjectProperty rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#has_fluid_supplied_by">
         <rdfs:subPropertyOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#feeds_fluid_to"/>
         <owl:inverseOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#supplies_fluid_to"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:comment xml:lang="en">Relation between a thing that has fluid supplied to it and the thing supplying the fluid.</rdfs:comment>
         <rdfs:label xml:lang="en">has fluid supplied by</rdfs:label>
         <rdfs:label xml:lang="pt">tem fluido fornecido por</rdfs:label>
@@ -306,7 +302,6 @@ Mara Abel</dc:contributor>
 
     <owl:ObjectProperty rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#returns_fluid_to">
         <rdfs:subPropertyOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#has_fluid_fed_by"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:comment xml:lang="en">Relation implying logical return flow from a thing to another.</rdfs:comment>
         <rdfs:label xml:lang="pt">retorna fluido para</rdfs:label>
         <rdfs:label xml:lang="en">returns fluid to</rdfs:label>
@@ -348,7 +343,6 @@ Mara Abel</dc:contributor>
 
     <owl:ObjectProperty rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#supplies_fluid_to">
         <rdfs:subPropertyOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#has_fluid_fed_by"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:comment xml:lang="en">Relation implying logical supply flow from a thing to another.</rdfs:comment>
         <rdfs:label xml:lang="pt">fornece fluido para</rdfs:label>
         <rdfs:label xml:lang="en">supplies fluid to</rdfs:label>
@@ -478,12 +472,6 @@ Mara Abel</dc:contributor>
     <!-- http://www.industrialontologies.org/core/RO_0000085 -->
 
     <owl:ObjectProperty rdf:about="http://www.industrialontologies.org/core/RO_0000085"/>
-    
-
-
-    <!-- http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#component_of -->
-
-    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/~nosantos/ontologias/production_plant#component_of"/>
     
 
 
@@ -2062,16 +2050,16 @@ Mara Abel</dc:contributor>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
