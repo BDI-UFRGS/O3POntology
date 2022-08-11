@@ -1271,6 +1271,12 @@ Mara Abel</dc:contributor>
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#field">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000146"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#basin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">Unified definition: An area where one or more reservoirs, grouped on by the same individual geological structural feature and/or stratigraphic condition, exist in the subsurface with the possibility of sufficient economic benefit worthy of commercial attention for exploration and production of hydrocarbons.</CommonCoreOntologies:definition>
         <rdfs:label xml:lang="pt">campo</rdfs:label>
         <rdfs:label xml:lang="en">field</rdfs:label>
