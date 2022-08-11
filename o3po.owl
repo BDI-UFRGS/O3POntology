@@ -1284,6 +1284,22 @@ Mara Abel</dc:contributor>
     
 
 
+    <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#field_name -->
+
+    <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#field_name">
+        <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#name"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#field"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">field name</rdfs:label>
+        <rdfs:label xml:lang="pt">nome do campo</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate">
@@ -1417,6 +1433,14 @@ Mara Abel</dc:contributor>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">injector role</rdfs:label>
         <rdfs:label xml:lang="pt">papel de injetor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#name -->
+
+    <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#name">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </owl:Class>
     
 
@@ -1931,6 +1955,22 @@ Mara Abel</dc:contributor>
         <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#WellFlowRate"/>
         <rdfs:label xml:lang="pt">vazão de líquido do poço em condições padrão</rdfs:label>
         <rdfs:label xml:lang="en">well liquid rate standard conditions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#well_name -->
+
+    <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#well_name">
+        <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#name"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Well"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="pt">nome do poço</rdfs:label>
+        <rdfs:label xml:lang="en">well name</rdfs:label>
     </owl:Class>
     
 
