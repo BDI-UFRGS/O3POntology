@@ -574,7 +574,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ChristmasTree -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ChristmasTree">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/Assembly"/>
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes"/>
@@ -908,7 +908,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Pipeline -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Pipeline">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/Assembly"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#has_component"/>
@@ -972,7 +972,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Pump -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Pump">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/Machine"/>
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
         <oboInOwl:source xml:lang="en">https://www.lexico.com/en/definition/pump</oboInOwl:source>
         <CommonCoreOntologies:definition xml:lang="en">def. a machine that moves fluids or fluid-like amounts (e.g., slurries) by increasing pressure of the fluid or pressure difference in a fluid flow.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">Lexico: &quot;A mechanical device using suction or pressure to raise or move liquids, compress gases, or force air into inflatable objects such as tires&quot;</rdfs:comment>
@@ -1064,14 +1064,14 @@ Mara Abel</dc:contributor>
         <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#BottomholePressure"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Borehole"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Borehole"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#BottomholePressure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:source xml:lang="en">https://petrowiki.spe.org/Glossary:Completed_well</oboInOwl:source>
@@ -2050,16 +2050,16 @@ Mara Abel</dc:contributor>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
