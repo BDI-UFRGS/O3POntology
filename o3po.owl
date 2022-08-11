@@ -1643,6 +1643,12 @@ Mara Abel</dc:contributor>
                 <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Petroleum"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_earth_fluid"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">A sedimentary rock that contains one or more individual and separate natural accumulations of petroleum that is confined (the oil, not the reservoir) by impermeable rock.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">A porous and permeable rock (defined in GeoCore) containing one or more individual and separate natural accumulations of petroleum that is confined (the oil, not the reservoir) by impermeable rock.</rdfs:comment>
         <rdfs:label xml:lang="pt">reservatório</rdfs:label>
