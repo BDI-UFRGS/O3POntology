@@ -34,13 +34,13 @@
      xmlns:production_plant1="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/production_plant.owl#"
      xmlns:AnnotationVocabulary="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/"
+     xmlns:AnnotationVocabulary1="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
      xmlns:IOFAnnotationVocabulary="http://www.industrialontologies.org/IOFAnnotationVocabulary/">
     <owl:Ontology rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl">
         <owl:versionIRI rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl/0.0.1"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
-        <owl:imports rdf:resource="https://purl.industrialontologies.org/ontology/core/20220506/Core/"/>
-        <owl:imports rdf:resource="https://w3id.org/fso/0.1.0"/>
+        <owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/202202/core/Core/"/>
         <owl:imports rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology"/>
         <dc:contributor>Fabrício Rodrigues
 Mara Abel</dc:contributor>
@@ -125,6 +125,26 @@ Mara Abel</dc:contributor>
     <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+    
+
+
+    <!-- https://purl.industrialontologies.org/ontology/core/Core/componentPartOfAtAllTimes -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.industrialontologies.org/ontology/core/Core/componentPartOfAtAllTimes"/>
+    
+
+
+    <!-- https://purl.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime">
+        <rdfs:subPropertyOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/componentPartOfAtAllTimes"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom"/>
     
 
 
@@ -482,11 +502,39 @@ Mara Abel</dc:contributor>
     
 
 
-    <!-- https://purl.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime -->
+    <!-- https://purl.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes -->
 
-    <rdf:Description rdf:about="https://purl.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime">
-        <rdfs:subPropertyOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/componentPartOfAtAllTimes"/>
-    </rdf:Description>
+    <owl:ObjectProperty rdf:about="https://purl.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes"/>
+    
+
+
+    <!-- https://purl.industrialontologies.org/ontology/core/Core/hasQuality -->
+
+    <owl:ObjectProperty rdf:about="https://purl.industrialontologies.org/ontology/core/Core/hasQuality"/>
+    
+
+
+    <!-- https://purl.industrialontologies.org/ontology/core/Core/hasRole -->
+
+    <owl:ObjectProperty rdf:about="https://purl.industrialontologies.org/ontology/core/Core/hasRole"/>
+    
+
+
+    <!-- https://purl.industrialontologies.org/ontology/core/Core/processCharacteristicOf -->
+
+    <owl:ObjectProperty rdf:about="https://purl.industrialontologies.org/ontology/core/Core/processCharacteristicOf"/>
+    
+
+
+    <!-- https://purl.industrialontologies.org/ontology/core/Core/qualityOf -->
+
+    <owl:ObjectProperty rdf:about="https://purl.industrialontologies.org/ontology/core/Core/qualityOf"/>
+    
+
+
+    <!-- https://purl.industrialontologies.org/ontology/core/Core/roleOf -->
+
+    <owl:ObjectProperty rdf:about="https://purl.industrialontologies.org/ontology/core/Core/roleOf"/>
     
 
 
@@ -575,7 +623,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ChristmasTree -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ChristmasTree">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes"/>
@@ -745,6 +793,22 @@ Mara Abel</dc:contributor>
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate">
         <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/processCharacteristicOf"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Flow"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
+                                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#WellFlowRate"/>
         <rdfs:comment xml:lang="en">the rate of a flow that occurs inside an ICV</rdfs:comment>
         <rdfs:label xml:lang="en">ICV flow rate</rdfs:label>
@@ -756,7 +820,13 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate_ICV_method -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate_ICV_method">
-        <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate"/>
+        <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate_measurement_datum"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/isAbout"/>
+                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ICV flow rate ICV method</rdfs:label>
         <rdfs:label xml:lang="pt">vazão da ICV método ICV</rdfs:label>
     </owl:Class>
@@ -766,7 +836,13 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate_IPR_method -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate_IPR_method">
-        <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate"/>
+        <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate_measurement_datum"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/isAbout"/>
+                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ICV flow rate IPR method</rdfs:label>
         <rdfs:label xml:lang="pt">vazão da ICV método IPR</rdfs:label>
     </owl:Class>
@@ -776,7 +852,13 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate_reconciled_method -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate_reconciled_method">
-        <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate"/>
+        <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate_measurement_datum"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/isAbout"/>
+                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#ICV_flow_rate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ICV flow rate reconciled method</rdfs:label>
         <rdfs:label xml:lang="pt">vazão da ICV método reconciliado</rdfs:label>
     </owl:Class>
@@ -821,7 +903,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Manifold -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Manifold">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#has_component"/>
@@ -933,7 +1015,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Pipeline -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Pipeline">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/Assembly"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Assembly"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#has_component"/>
@@ -954,7 +1036,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Platform -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Platform">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
@@ -1003,7 +1085,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Pump -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Pump">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
         <oboInOwl:source xml:lang="en">https://www.lexico.com/en/definition/pump</oboInOwl:source>
         <CommonCoreOntologies:definition xml:lang="en">def. a machine that moves fluids or fluid-like amounts (e.g., slurries) by increasing pressure of the fluid or pressure difference in a fluid flow.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">Lexico: &quot;A mechanical device using suction or pressure to raise or move liquids, compress gases, or force air into inflatable objects such as tires&quot;</rdfs:comment>
@@ -1053,7 +1135,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Separator -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Separator">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
         <oboInOwl:source xml:lang="en">https://petrowiki.spe.org/Glossary:Separator</oboInOwl:source>
         <CommonCoreOntologies:definition xml:lang="en">def. a material artifact that facilitates the separation of gas, oil, and/or water from a produced fluid stream.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">A production treating vessel designed to facilitate the separation of gas, oil, and/or water from a produced fluid stream.</rdfs:comment>
@@ -1092,7 +1174,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Well -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Well">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -1118,6 +1200,22 @@ Mara Abel</dc:contributor>
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#WellFlowRate">
         <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/processCharacteristicOf"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Flow"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
+                                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Well"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">production rate of a well, injection rate of a well</obo:IAO_0000112>
         <CommonCoreOntologies:definition xml:lang="en">def. the flow rate that has only crude oil and water as participants and occurs in a well</CommonCoreOntologies:definition>
         <rdfs:label xml:lang="pt">vazão líquida do poço</rdfs:label>
@@ -1130,7 +1228,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Wellhead -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#Wellhead">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/Assembly"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Assembly"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#component_of"/>
@@ -1328,7 +1426,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/ProcessCharacteristic"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/processCharacteristicOf"/>
@@ -1347,6 +1445,15 @@ Mara Abel</dc:contributor>
         <owl:annotatedTarget xml:lang="en">Definition: A physical quality inhering in a bearer by virtue of the bearer&apos;s motion characteristic. [database_cross_reference: WordNet:WordNet]</owl:annotatedTarget>
         <terms:source xml:lang="en">https://ontobee.org/ontology/PATO?iri=http://purl.obolibrary.org/obo/PATO_0001574</terms:source>
     </owl:Axiom>
+    
+
+
+    <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate_measurement_datum -->
+
+    <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:label xml:lang="en">flow rate measurement datum</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1495,7 +1602,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#plant -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#plant">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#has_component"/>
@@ -1745,7 +1852,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#sensor -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#sensor">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
         <obo:IAO_0000112 xml:lang="en">SSN: &quot;Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of Sensors include the human eyes.&quot;</obo:IAO_0000112>
         <CommonCoreOntologies:definition xml:lang="en">def. a material artifact that generates a result in response to some stimulus (e.g., a change in its environment) or input data from results of prior observations, with such result corresponding to the measurement of a physical property.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">SSN: &quot;Sensor - Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a Stimulus, e.g., a change in the environment, or Input data composed from the Results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.&quot;</rdfs:comment>
@@ -1856,7 +1963,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#tube -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#tube">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
         <oboInOwl:hasRelatedSynonym xml:lang="en">duct</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym xml:lang="en">pipe</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym xml:lang="en">tubular</oboInOwl:hasRelatedSynonym>
@@ -1946,7 +2053,7 @@ Mara Abel</dc:contributor>
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#valve -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#valve">
-        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
         <CommonCoreOntologies:definition xml:lang="en">def. a functional complex that controls flow of fluids or fluid-like amounts (e.g., slurries, fluidized solids).</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">Unified definition: &quot;Device that controls (e.g., permits, obstructs, regulates, directs) a stream/flow of fluids (e.g., gases, liquids) or fluid-like amounts (e.g., slurries, fluidized solids)&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">valve</rdfs:label>
@@ -2158,13 +2265,13 @@ Mara Abel</dc:contributor>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
