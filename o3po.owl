@@ -1278,6 +1278,21 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
+    <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#being_operated_capability -->
+
+    <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#being_operated_capability">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Capability"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/capabilityOf"/>
+                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#operated_valve"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">being operated capability</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#casing -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#casing">
@@ -1584,6 +1599,39 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
+    <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#nozzle -->
+
+    <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#nozzle">
+        <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#tube"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasCapability"/>
+                <owl:someValuesFrom rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#being_operated_capability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">A nozzle is a device designed to control the direction or characteristics of a fluid flow (specially to increase velocity) as it exits (or enters) an enclosed chamber or pipe.
+
+A nozzle is often a pipe or tube of varying cross sectional area, and it can be used to direct or modify the flow of a fluid (liquid or gas). Nozzles are frequently used to control the rate of flow, speed, direction, mass, shape, and/or the pressure of the stream that emerges from them. In a nozzle, the velocity of fluid increases at the expense of its pressure energy.</dc:description>
+        <dc:description xml:lang="en">A physical object that has a protruding part through which a stream of fluid is directed.</dc:description>
+        <rdfs:label xml:lang="en">nozzle</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#nozzle"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+        <owl:annotatedTarget xml:lang="en">A nozzle is a device designed to control the direction or characteristics of a fluid flow (specially to increase velocity) as it exits (or enters) an enclosed chamber or pipe.
+
+A nozzle is often a pipe or tube of varying cross sectional area, and it can be used to direct or modify the flow of a fluid (liquid or gas). Nozzles are frequently used to control the rate of flow, speed, direction, mass, shape, and/or the pressure of the stream that emerges from them. In a nozzle, the velocity of fluid increases at the expense of its pressure energy.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Nozzle</obo:IAO_0000119>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#nozzle"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+        <owl:annotatedTarget xml:lang="en">A physical object that has a protruding part through which a stream of fluid is directed.</owl:annotatedTarget>
+        <obo:IAO_0000119 xml:lang="en">http://data.posccaesar.org/rdl/RDS415214</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#observation_role -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#observation_role">
@@ -1603,6 +1651,22 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
         <rdfs:label xml:lang="en">observation role</rdfs:label>
         <rdfs:label xml:lang="pt">papel de observação</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#operated_valve -->
+
+    <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#operated_valve">
+        <rdfs:subClassOf rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#valve"/>
+        <CommonCoreOntologies:definition xml:lang="en">A valve that includes an external means of operation. (E.g. handwheel / lever / actuator.)</CommonCoreOntologies:definition>
+        <rdfs:label xml:lang="en">operated valve</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#operated_valve"/>
+        <owl:annotatedProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
+        <owl:annotatedTarget xml:lang="en">A valve that includes an external means of operation. (E.g. handwheel / lever / actuator.)</owl:annotatedTarget>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://data.posccaesar.org/rdl/RDS11141590</rdfs:isDefinedBy>
+    </owl:Axiom>
     
 
 
@@ -2266,16 +2330,16 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
         <oboInOwl:source xml:lang="en">Introduction to Oil &amp; Gas Production (ITOGP), 1983</oboInOwl:source>
     </owl:Axiom>
     <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
