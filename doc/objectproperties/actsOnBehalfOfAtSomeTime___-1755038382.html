@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='../classes/index.html' class='' >Classes</a>
+<a href='index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Object Property: actsOnBehalfOfAtSomeTime</h2>
+
+<div id='annotations_(5)'>
+<h4>Annotations (5)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"acts on behalf of at some time"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/example___119732751.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#example">skos:example</a> <span class='literal'>"An agent acts on behalf of a business organization. A laywer acts on behalf of a person."</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/firstOrderLogicAxiom___366383519.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom">firstOrderLogicAxiom</a> <span class='literal'>"actsOnBehalfOfAtSomeTime(x,y) → (MaterialEntity(x) ∧ ¬(FiatObjectPart(x)) ∧ (Person(y) ∨ GroupOfAgents(y) ∨ EngineeredSystem(y)) ∧ ∃p,∃d (PlannedProcess(p) ∧ ObjectiveSpecification(d) ∧ participatesInAtSomeTime(x,p) ∧achievesAtSomeTime(p,d) ∧ genericallyDependsOnAtSomeTime(d,y))"</span></li>
+<li class="asserted"><a href="../annotationproperties/naturalLanguageDefinition___-616823901.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition">naturalLanguageDefinition</a> <span class='literal'>"relation from a material entity to a person or a group of agents or engineered system that holds when the material entity participates in some planned process in order to fulfill an objective for the person or group of agents or engineered system"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/semiFormalNaturalLanguageAxiom___-2002047045.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom">semiFormalNaturalLanguageAxiom</a> <span class='literal'>"x acts on behalf of at some time y holds when x is a 'material entity' (that is not a 'fiat object part') and y is some 'person' or 'group of agents' or 'engineered system' and at some time t, there exists a 'planned process' p such that x 'participates in' p and p 'achieves at some time' some 'objective specification' d that 'generically depends on at some time' y"</span></li>
+</ul>
+</div>
+</div><!-- annotations (5) -->
+
+
+<div id='domains_(1)'>
+<h4>Domains (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/BFO_0000040___-324348568.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000040">'material&nbsp;entity'</a> <span class='keyword'>and</span> <span class='keyword'>not</span> <a href="../classes/BFO_0000024___-324348626.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000024">'fiat&nbsp;object&nbsp;part'</a></li>
+</ul>
+</div>
+</div><!-- domains (1) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

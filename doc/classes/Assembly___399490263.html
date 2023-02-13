@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='index.html' class='' >Classes</a>
+<a href='../objectproperties/index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Class: Assembly</h2>
+
+<div id='annotations_(13)'>
+<h4>Annotations (13)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"assembly"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/example___119732751.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#example">skos:example</a> <span class='literal'>"powertrain assembly; partially-assembled powertrain + transmission assembly lying nearby; driveshaft assembly temporarily disassembled for repair or routine maintenance; separator assembly consisting of variously-shaped separator parts that safeguard wine bottles in a case of wine during transport; a material artifact produced entirely through additive manufacturing (provided it is a component somewhere, and can it can be disassembled without damage/destruction)."</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/adaptedFrom___-882845862.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom">adaptedFrom</a> <span class='literal'>"APICS 14 ed., 2013, term by the same name; DoD Standard Practice, Identification Marking of US Military Property (MIL-STD-130N Nov. 2012) https://dodprocurementtoolbox.com/cms/sites/default/files/resources/2016-03/MIL-Std130N_Ch1_4.pdf, term by the same name"</span></li>
+<li class="asserted"><a href="../annotationproperties/counterExample___1916604573.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/counterExample">'counter&nbsp;example'</a> <span class='literal'>"a portion of material; a piece of glass; a rod of aluminum; a roll of aluminum; an engine block"</span></li>
+<li class="asserted"><a href="../annotationproperties/explanatoryNote___-261398936.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote">explanatoryNote</a> <span class='literal'>"Although the term is polysemous and used in a number of other domains beyond manufacturing, it is introduced here as a covering term for any man-made artifact that satisfies the conditions provided, and independent of modality. We expect various subclasses of assembly to be introduced in future along with more precise heuristics for the various modalities in which they exist."</span></li>
+<li class="asserted"><a href="../annotationproperties/firstOrderLogicAxiom___366383519.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom">firstOrderLogicAxiom</a> <span class='literal'>"LA1: Assembly(x) → MaterialArtifact(x) ∧ ∃c,∃c'(MaterialComponent(c) ∧ MaterialComponent(c') componentPartOfAtAllTimes(c,x) ∧ componentPartOfAtAllTimes(c',x) ∧ ¬(c=c'∨ (componentPartOfAtAllTimes(c,c') ∨ componentPartOfAtAllTimes(c',c))))"</span></li>
+<li class="asserted"><a href="../annotationproperties/firstOrderLogicAxiom___366383519.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom">firstOrderLogicAxiom</a> <span class='literal'>"LA2: MaterialArtifact(x) ∧ ∃p(AssemblyProcess(p) ∧ isSpecifiedOutputOf(x,p)) → Assembly(x)"</span></li>
+<li class="asserted"><a href="../annotationproperties/isPrimitive___-2111275092.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive">isPrimitive</a> <span class='literal'>"true"</span>(<a href="../datatypes/boolean___1756652655.html" class='Datatype' title="http://www.w3.org/2001/XMLSchema#boolean">xsd:boolean</a>)</li>
+<li class="asserted"><a href="../annotationproperties/naturalLanguageDefinition___-616823901.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition">naturalLanguageDefinition</a> <span class='literal'>"material artifact that is composed of material components that are physically connected and that is capable of disassembly"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/primitiveRationale___-911956833.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale">primitiveRationale</a> <span class='literal'>"There are insufficient constructs in the ontology to provide necessary and sufficient conditions. Namely, 'disassembly capability' is missing."</span></li>
+<li class="asserted"><a href="../annotationproperties/semiFormalNaturalLanguageAxiom___-2002047045.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom">semiFormalNaturalLanguageAxiom</a> <span class='literal'>"LA1: if x is an 'assembly' then x is a 'material artifact' and there are at least two distinct 'material component' that are 'component part of at all times' x"</span></li>
+<li class="asserted"><a href="../annotationproperties/semiFormalNaturalLanguageAxiom___-2002047045.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom">semiFormalNaturalLanguageAxiom</a> <span class='literal'>"LA2: Material Artifact x that 'is specified output of' some Assembly Process p implies x is an Assembly"</span></li>
+<li class="asserted"><a href="../annotationproperties/usageNote___-680912382.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote">usageNote</a> <span class='literal'>"Every assembly has a plurality of material components. While this is captured in the FOL, due to reasoning limitations with cardinality restrictions and complex properties, the OWL axiom uses 'some' instead of min 2. Hence, this class should be modeled as having at least two material components on the instance level."</span></li>
+</ul>
+</div>
+</div><!-- annotations (13) -->
+
+
+<div id='superclasses_(2)'>
+<h4>Superclasses (2)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="MaterialArtifact___-677177590.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact">MaterialArtifact</a></li>
+<li class="asserted"><span class='keyword'>InverseOf</span> <a href="../objectproperties/componentPartOfAtAllTimes___-1379068368.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtAllTimes">componentPartOfAtAllTimes</a> <span class='some'>some</span> <a href="MaterialComponent___-1252323769.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MaterialComponent">MaterialComponent</a></li>
+</ul>
+</div>
+</div><!-- superclasses (2) -->
+
+
+<div id='usage_(2)'>
+<h4>Usage (2)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="AssemblyProcess___-2146370470.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/AssemblyProcess">AssemblyProcess</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/hasSpecifiedOutput___1531754408.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/hasSpecifiedOutput">hasSpecifiedOutput</a> <span class='some'>some</span> (<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Class active-entity'>Assembly</span> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../objectproperties/hasComponentPartAtAllTimes___1087844607.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes">hasComponentPartAtAllTimes</a> <span class='some'>some</span> (<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="MaterialComponent___-1252323769.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MaterialComponent">MaterialComponent</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../objectproperties/isInputOf___2083322248.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/isInputOf">isInputOf</a> <span class='some'>some</span> <a href="ManufacturingProcess___1176034882.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/ManufacturingProcess">ManufacturingProcess</a>))</li>
+<li class="asserted"><a href="MaterialArtifact___-677177590.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact">MaterialArtifact</a> <span class='keyword'>and</span> <a href="../objectproperties/isSpecifiedOutputOf___-1074995377.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/isSpecifiedOutputOf">isSpecifiedOutputOf</a> <span class='some'>some</span> <a href="AssemblyProcess___-2146370470.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/AssemblyProcess">AssemblyProcess</a> <span class='keyword'>&sube;</span> <span class='Class active-entity'>Assembly</span></li>
+</ul>
+</div>
+</div><!-- usage (2) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

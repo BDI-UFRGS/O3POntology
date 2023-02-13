@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='index.html' class='' >Classes</a>
+<a href='../objectproperties/index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Class: MaterialResourceRole</h2>
+
+<div id='annotations_(8)'>
+<h4>Annotations (8)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"material resource role"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/example___119732751.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#example">skos:example</a> <span class='literal'>"factory has a material resource role when it is available to be used for producing a product; a body of water has a material resource role when it is available to cool a reactor; money has a material resource role when it is available to a person to buy an item; a portion of raw material has a material resource role when it is available to produce a good or service"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/adaptedFrom___-882845862.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom">adaptedFrom</a> <span class='literal'>"<a href='http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology' target='ext_ref'>http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology</a>"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/firstOrderLogicAxiom___366383519.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom">firstOrderLogicAxiom</a> <span class='literal'>"MaterialResourceRole(x) → Role(x) ∧ ∃a,∃y((Person(a) ∨ GroupOfAgents(a) ∨ EngineeredSystem(y)) ∧ MaterialEntity(y) ∧ isAvailableToAtSomeTime(y,a) ∧ roleOf(x,y))"</span></li>
+<li class="asserted"><a href="../annotationproperties/isPrimitive___-2111275092.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive">isPrimitive</a> <span class='literal'>"true"</span>(<a href="../datatypes/boolean___1756652655.html" class='Datatype' title="http://www.w3.org/2001/XMLSchema#boolean">xsd:boolean</a>)</li>
+<li class="asserted"><a href="../annotationproperties/naturalLanguageDefinition___-616823901.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition">naturalLanguageDefinition</a> <span class='literal'>"role played by a material entity that consists in it being available to a person or group of agents or engineered system"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/primitiveRationale___-911956833.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale">primitiveRationale</a> <span class='literal'>"This term is expected to remain primitive. While 'is available to at some time' captures the essence of being a material resource, the realization of the material resource role is expected to have too generic of a scope to define a sufficient condition that would not cause conflict (overlap) with the realization of other roles."</span></li>
+<li class="asserted"><a href="../annotationproperties/semiFormalNaturalLanguageAxiom___-2002047045.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom">semiFormalNaturalLanguageAxiom</a> <span class='literal'>"if x is a 'material resource role' x then x is a 'role' that is the 'role of' some 'material entity' when it 'is available to at some time' some 'person' or 'group of agents' or 'engineered system'"</span></li>
+</ul>
+</div>
+</div><!-- annotations (8) -->
+
+
+<div id='superclasses_(1)'>
+<h4>Superclasses (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="BFO_0000023___-324348627.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000023">role</a></li>
+</ul>
+</div>
+</div><!-- superclasses (1) -->
+
+
+<div id='usage_(1)'>
+<h4>Usage (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="MaterialResource___210556230.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MaterialResource">MaterialResource</a> <span class='keyword'>&equiv;</span> <a href="BFO_0000040___-324348568.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000040">'material&nbsp;entity'</a> <span class='keyword'>and</span> <a href="../objectproperties/hasRole___1405142273.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/hasRole">hasRole</a> <span class='some'>some</span> <span class='Class active-entity'>MaterialResourceRole</span></li>
+</ul>
+</div>
+</div><!-- usage (1) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

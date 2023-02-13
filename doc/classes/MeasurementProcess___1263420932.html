@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='index.html' class='' >Classes</a>
+<a href='../objectproperties/index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Class: MeasurementProcess</h2>
+
+<div id='annotations_(9)'>
+<h4>Annotations (9)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"measurement process"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/example___119732751.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#example">skos:example</a> <span class='literal'>"measuring the pH of a buffer by a pH probe; measuring of a weight of a bulk of a substance by an industrial scale; measuring the rate of an enzymatic reaction by a spectrophotometer; measuring the time it takes to produce a unit of a product"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/adaptedFrom___-882845862.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom">adaptedFrom</a> <span class='literal'>"ISO 9000:2015(en), 3.11.5"</span></li>
+<li class="asserted"><a href="../annotationproperties/explanatoryNote___-261398936.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote">explanatoryNote</a> <span class='literal'>"1. Determining the value here is to be interpreted in the context of qualitative, semi-quantitative, and quantitative measurements. As such, it comprehends both categorical and numerical measurements.<br />2. Typically, the results of measurements are recorded and stored as a measurement information content entity.<br />3. Measurement processes can have as temporal or occurrent parts other measurement processes as well data transformation processes which transform the raw measurement data.<br />4. The entity whose attribute is measured might either participate in the process if it is a continuant or occupy a temporal interval that precedes or partially coincides with the measurement process if it is an occurrent.<br />5. The material entity measuring the attribute must be capable of measuring that attribute. This is axiomatically captured by mandating that the material entity that is measuring the attribute must have a measurement capability."</span></li>
+<li class="asserted"><a href="../annotationproperties/firstOrderLogicAxiom___366383519.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom">firstOrderLogicAxiom</a> <span class='literal'>"MeasurementProcess ↔ PlannedProcess(x) ∧ ∃m,∃y,∃z,∃c(MaterialEntity(m) ∧ MeasurementCapability(c) ∧ hasCapability(m,c)<br />∧ ((IndependentContinuant(y) ∧ ¬(SpatialRegion(y) ∧ SpecificallyDependentContinuant(z) ∧ bearerOf(y,z) ∧ participatesInAtSomeTime(y,x))<br />∨ (Process(y) ∨ ProcessBoundary(y) ∧ TemporalRegion(z) ∧ occupiesTemporalRegion(y,z) ∧ ∃t(temporalRegion(t) ∧ occupiesTemporalRegion(x,t) ∧ ( occurrentPartOf(t,z) ∨ hasOccurrentPart(t,z)))<br />∨ (Process(y) ∧ ProcessCharacteristic(z) ∧ processCharacteristicOf(z,y)∧ (preceedes(y,x) ∨ ∃t'(temporalRegion(t') ∧ occupiesTemporalRegion(x,t') ∧ ( occurrentPartOf(t',z) ∨ hasOccurrentPart(t',z))))<br />∧ measuresAtSomeTime(m,z)) ∧ ∀b(hasSpecifiedOutput(x,b) → MeasurementInformationContentEntity(b))"</span></li>
+<li class="asserted"><a href="../annotationproperties/isPrimitive___-2111275092.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive">isPrimitive</a> <span class='literal'>"true"</span>(<a href="../datatypes/boolean___1756652655.html" class='Datatype' title="http://www.w3.org/2001/XMLSchema#boolean">xsd:boolean</a>)</li>
+<li class="asserted"><a href="../annotationproperties/naturalLanguageDefinition___-616823901.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition">naturalLanguageDefinition</a> <span class='literal'>"planned process to determine the value of an attribute (specifically dependent continuant or temporal region or process characteristic) of an entity of interest"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/primitiveRationale___-911956833.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale">primitiveRationale</a> <span class='literal'>"There are insufficient constructs to create necessary and sufficient conditions. Namely, n-ary constructs that are able to adequately capture the relation between the process, attribute and the entity of interest are still lacking. Also formalization of being an entity of interest is lacking."</span></li>
+<li class="asserted"><a href="../annotationproperties/semiFormalNaturalLanguageAxiom___-2002047045.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom">semiFormalNaturalLanguageAxiom</a> <span class='literal'>"if x is a 'measurement process' then x is a 'planned process' that 'has participant at some time' some 'material entity' y that 'has measurement capability' and y 'measures at some time' either <br />1) 'process characteristic' that is 'process characteristic of' a 'process' that 'preceedes' or (partially or fully) temporally coincides with x) or <br />2)'specifically dependent continuant' that 'inheres in' an 'independent continuant' (that is not a 'spatial region') which 'participates in at some time' x or <br />3) 'temporal region' that is temporally occupied by some 'process' or 'process boundary' and that 'has occurrent part' or 'occurent part of' a 'temporal region' temporally occupied by x <br />and whenever x 'has specified output' b that b must be a 'measurement information content entity'"</span></li>
+</ul>
+</div>
+</div><!-- annotations (9) -->
+
+
+<div id='superclasses_(3)'>
+<h4>Superclasses (3)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="PlannedProcess___-1632962820.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess">PlannedProcess</a></li>
+<li class="asserted"><a href="../objectproperties/BFO_0000057___-324348530.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000057">'has&nbsp;participant&nbsp;at&nbsp;some&nbsp;time'</a> <span class='some'>some</span> (<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="BFO_0000040___-324348568.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000040">'material&nbsp;entity'</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../objectproperties/hasCapability___614053411.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/hasCapability">hasCapability</a> <span class='some'>some</span> <a href="MeasurementCapability___-1450914651.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MeasurementCapability">MeasurementCapability</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../objectproperties/measuresAtSomeTime___1961617082.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/measuresAtSomeTime">measuresAtSomeTime</a> <span class='some'>some</span> (<a href="ProcessCharacteristic___-795318117.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic">ProcessCharacteristic</a> <span class='keyword'>or</span> <a href="BFO_0000020___-324348630.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000020">'specifically&nbsp;dependent&nbsp;continuant'</a> <span class='keyword'>or</span> <a href="BFO_0000008___-324348684.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000008">'temporal&nbsp;region'</a>))</li>
+<li class="asserted"><a href="../objectproperties/hasSpecifiedOutput___1531754408.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/hasSpecifiedOutput">hasSpecifiedOutput</a> <span class='only'>only</span> <a href="MeasurementInformationContentEntity___735721085.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity">MeasurementInformationContentEntity</a></li>
+</ul>
+</div>
+</div><!-- superclasses (3) -->
+
+
+<div id='usage_(2)'>
+<h4>Usage (2)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="MeasurementInformationContentEntity___735721085.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity">MeasurementInformationContentEntity</a> <span class='keyword'>&equiv;</span> <a href="InformationContentEntity___1135068897.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity">InformationContentEntity</a> <span class='keyword'>and</span> <a href="../objectproperties/BFO_0000110___-324347700.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000110">'has&nbsp;continuant&nbsp;part&nbsp;at&nbsp;all&nbsp;times'</a> <span class='some'>some</span> <a href="MeasuredValueExpression___-1952438796.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression">MeasuredValueExpression</a> <span class='keyword'>and</span> <a href="../objectproperties/describes___-2086847015.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/describes">describes</a> <span class='some'>some</span> (<a href="ProcessCharacteristic___-795318117.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic">ProcessCharacteristic</a> <span class='keyword'>or</span> <a href="BFO_0000020___-324348630.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000020">'specifically&nbsp;dependent&nbsp;continuant'</a> <span class='keyword'>or</span> <a href="BFO_0000008___-324348684.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000008">'temporal&nbsp;region'</a>) <span class='keyword'>and</span> <a href="../objectproperties/isAbout___-1532695724.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/isAbout">isAbout</a> <span class='some'>some</span> (<a href="BFO_0000035___-324348594.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000035">'process&nbsp;boundary'</a> <span class='keyword'>or</span> <a href="BFO_0000015___-324348656.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000015">process</a> <span class='keyword'>or</span> <a href="BFO_0000004___-324348688.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000004">'independent&nbsp;continuant'</a> <span class='keyword'>and</span> <span class='keyword'>not</span> <a href="BFO_0000006___-324348686.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000006">'spatial&nbsp;region'</a>) <span class='keyword'>and</span> <a href="../objectproperties/isOutputOf___-14833453.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/isOutputOf">isOutputOf</a> <span class='some'>some</span> <span class='Class active-entity'>MeasurementProcess</span></li>
+<li class="asserted"><a href="MeasurementCapability___-1450914651.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MeasurementCapability">MeasurementCapability</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/BFO_0000054___-324348533.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000054">'realized&nbsp;in'</a> <span class='only'>only</span> <span class='Class active-entity'>MeasurementProcess</span></li>
+</ul>
+</div>
+</div><!-- usage (2) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

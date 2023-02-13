@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='index.html' class='' >Classes</a>
+<a href='../objectproperties/index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Class: DesignSpecification</h2>
+
+<div id='annotations_(12)'>
+<h4>Annotations (12)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"design specification"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/example___119732751.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#example">skos:example</a> <span class='literal'>"document specifying the characteristics of a pharmaceutical product; the design of a software program to schedule the work orders in a factory"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/adaptedFrom___-882845862.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom">adaptedFrom</a> <span class='literal'>"http://en.wikipedia.org/wiki/Design and from http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology, term under the name 'artifact design'"</span></li>
+<li class="asserted"><a href="../annotationproperties/counterExample___1916604573.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/counterExample">'counter&nbsp;example'</a> <span class='literal'>"process design"</span></li>
+<li class="asserted"><a href="../annotationproperties/explanatoryNote___-261398936.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote">explanatoryNote</a> <span class='literal'>"1. Design specification may be a model or a textual or graphical specification.<br /><br />2. This class is not intended to be used to represent the design of planned processes. For this purpose, plan specification should be used.<br /><br />3. Something 'man-made' comprehends those physical and non-physical things that are intentionally created by human beings. Hence the thing specified by a design specification may be either BFO:GDC or BFO:Material Entity.<br /><br />4. A design specification specifies what the thing should be, such as its shape, size, tolerance, and performance but not necessarily how the thing should be made. If it contains information on how a thing should be made, this should be modeled separately through a 'plan specification' that is 'part of' the design specification<br /><br />5. Typically, a design specification satisfies a set of requirements"</span></li>
+<li class="asserted"><a href="../annotationproperties/firstOrderLogicAxiom___366383519.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom">firstOrderLogicAxiom</a> <span class='literal'>"LA1: DesignSpecification(x) → InformationContentEntity(x) ∧ ∀c (prescribes(x,c) → Continuant(c))"</span></li>
+<li class="asserted"><a href="../annotationproperties/firstOrderLogicAxiom___366383519.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom">firstOrderLogicAxiom</a> <span class='literal'>"LA2: InformationContentEntity(x) ∧ ∃c, ∃r (Continuant(c) ∧ RequirementSpecification(r) ∧ satisfiesRequirement(x,r) ∧ prescribes(x,c)) ∧ ∀c'(prescribes(x,c') → Continuant(c')) → DesignSpecification(x)"</span></li>
+<li class="asserted"><a href="../annotationproperties/isPrimitive___-2111275092.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive">isPrimitive</a> <span class='literal'>"true"</span>(<a href="../datatypes/boolean___1756652655.html" class='Datatype' title="http://www.w3.org/2001/XMLSchema#boolean">xsd:boolean</a>)</li>
+<li class="asserted"><a href="../annotationproperties/naturalLanguageDefinition___-616823901.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition">naturalLanguageDefinition</a> <span class='literal'>"information content entity that prescribes something man-made"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/primitiveRationale___-911956833.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale">primitiveRationale</a> <span class='literal'>"See the general discussion and rationale provided for informational entities under 'information content entity'."</span></li>
+<li class="asserted"><a href="../annotationproperties/semiFormalNaturalLanguageAxiom___-2002047045.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom">semiFormalNaturalLanguageAxiom</a> <span class='literal'>"LA1: if d is a 'design specification' then d is an 'information content entity' and whenever d 'prescribes' y that y must be a 'continuant'"</span></li>
+<li class="asserted"><a href="../annotationproperties/semiFormalNaturalLanguageAxiom___-2002047045.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom">semiFormalNaturalLanguageAxiom</a> <span class='literal'>"LA2: if d is an 'information content entity' that 'prescribes' some 'continuant' and that 'satisfies requirement' some 'requirement specification' and if all y that d 'presribes' are instance of 'continuant' then d is a 'design specification'"</span></li>
+</ul>
+</div>
+</div><!-- annotations (12) -->
+
+
+<div id='superclasses_(2)'>
+<h4>Superclasses (2)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="InformationContentEntity___1135068897.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity">InformationContentEntity</a></li>
+<li class="asserted"><a href="../objectproperties/prescribes___2138885495.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/prescribes">prescribes</a> <span class='only'>only</span> <a href="BFO_0000002___-324348690.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000002">continuant</a></li>
+</ul>
+</div>
+</div><!-- superclasses (2) -->
+
+
+<div id='usage_(4)'>
+<h4>Usage (4)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="EngineeredSystem___-183290354.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem">EngineeredSystem</a> <span class='keyword'>&equiv;</span> <a href="System___-1095206624.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/System">System</a> <span class='keyword'>and</span> <a href="../objectproperties/BFO_0000196___-324347446.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000196">'bearer&nbsp;of'</a> <span class='some'>some</span> <a href="BFO_0000034___-324348595.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000034">function</a> <span class='keyword'>and</span> <a href="../objectproperties/prescribedBy___1155173407.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy">prescribedBy</a> <span class='some'>some</span> <span class='Class active-entity'>DesignSpecification</span></li>
+<li class="asserted"><a href="MaterialArtifact___-677177590.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact">MaterialArtifact</a> <span class='keyword'>&equiv;</span> <a href="BFO_0000030___-324348599.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000030">object</a> <span class='keyword'>and</span> <a href="../objectproperties/BFO_0000196___-324347446.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000196">'bearer&nbsp;of'</a> <span class='some'>some</span> (<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="BFO_0000034___-324348595.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000034">function</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../objectproperties/prescribedBy___1155173407.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy">prescribedBy</a> <span class='some'>some</span> <span class='Class active-entity'>DesignSpecification</span>)</li>
+<li class="asserted"><a href="ManufacturingProcess___1176034882.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/ManufacturingProcess">ManufacturingProcess</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/hasSpecifiedOutput___1531754408.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/hasSpecifiedOutput">hasSpecifiedOutput</a> <span class='some'>some</span> (<a href="MaterialArtifact___-677177590.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact">MaterialArtifact</a> <span class='keyword'>or</span> <a href="BFO_0000040___-324348568.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000040">'material&nbsp;entity'</a> <span class='keyword'>and</span> <a href="../objectproperties/prescribedBy___1155173407.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy">prescribedBy</a> <span class='some'>some</span> <span class='Class active-entity'>DesignSpecification</span>)</li>
+<li class="asserted"><a href="InformationContentEntity___1135068897.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity">InformationContentEntity</a> <span class='keyword'>and</span> <a href="../objectproperties/prescribes___2138885495.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/prescribes">prescribes</a> <span class='some'>some</span> <a href="BFO_0000002___-324348690.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000002">continuant</a> <span class='keyword'>and</span> <a href="../objectproperties/satisfiesRequirement___448530451.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/satisfiesRequirement">satisfiesRequirement</a> <span class='some'>some</span> <a href="RequirementSpecification___959912049.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/RequirementSpecification">RequirementSpecification</a> <span class='keyword'>and</span> <a href="../objectproperties/prescribes___2138885495.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/prescribes">prescribes</a> <span class='only'>only</span> <a href="BFO_0000002___-324348690.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000002">continuant</a> <span class='keyword'>&sube;</span> <span class='Class active-entity'>DesignSpecification</span></li>
+</ul>
+</div>
+</div><!-- usage (4) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

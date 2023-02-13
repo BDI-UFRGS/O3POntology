@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='../classes/index.html' class='' >Classes</a>
+<a href='index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Object Property: roleOf</h2>
+
+<div id='annotations_(6)'>
+<h4>Annotations (6)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"role of"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/example___119732751.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#example">skos:example</a> <span class='literal'>"this investigator role is a role of this person"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/adaptedFrom___-882845862.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom">adaptedFrom</a> <span class='literal'>"<a href='http://purl.obolibrary.org/obo/RO_0000081' target='ext_ref'>http://purl.obolibrary.org/obo/RO_0000081</a>"</span></li>
+<li class="asserted"><a href="../annotationproperties/firstOrderLogicAxiom___366383519.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom">firstOrderLogicAxiom</a> <span class='literal'>"roleOf(x,y) → Role(x) ∧ IndependentContinuant(y) ∧ inheresIn(x,y)"</span></li>
+<li class="asserted"><a href="../annotationproperties/naturalLanguageDefinition___-616823901.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition">naturalLanguageDefinition</a> <span class='literal'>"relation from a role to an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/semiFormalNaturalLanguageAxiom___-2002047045.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom">semiFormalNaturalLanguageAxiom</a> <span class='literal'>"x disposition of y holds when x is a 'role' and y is a 'independent continuant' and x is 'inheres in' y"</span></li>
+</ul>
+</div>
+</div><!-- annotations (6) -->
+
+
+<div id='domains_(1)'>
+<h4>Domains (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/BFO_0000023___-324348627.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000023">role</a></li>
+</ul>
+</div>
+</div><!-- domains (1) -->
+
+
+<div id='ranges_(1)'>
+<h4>Ranges (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/BFO_0000004___-324348688.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000004">'independent&nbsp;continuant'</a></li>
+</ul>
+</div>
+</div><!-- ranges (1) -->
+
+
+<div id='inverses_(1)'>
+<h4>Inverses (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="hasRole___1405142273.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/hasRole">hasRole</a></li>
+</ul>
+</div>
+</div><!-- inverses (1) -->
+
+
+<div id='superproperties_(1)'>
+<h4>Superproperties (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="BFO_0000197___-324347445.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000197">'inheres&nbsp;in'</a></li>
+</ul>
+</div>
+</div><!-- superproperties (1) -->
+
+
+<div id='usage_(5)'>
+<h4>Usage (5)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/EquipmentRole___-780423723.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/EquipmentRole">EquipmentRole</a> <span class='keyword'>&sube;</span> <span class='Object Property active-entity'>roleOf</span> <span class='some'>some</span> (<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../classes/MaterialArtifact___-677177590.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact">MaterialArtifact</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="prescribedBy___1155173407.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy">prescribedBy</a> <span class='some'>some</span> (<a href="../classes/PlanSpecification___533687051.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification">PlanSpecification</a> <span class='keyword'>or</span> <a href="BFO_0000177___-324347507.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000177">'continuant&nbsp;part&nbsp;of&nbsp;at&nbsp;all&nbsp;times'</a> <span class='some'>some</span> <a href="../classes/PlanSpecification___533687051.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification">PlanSpecification</a>)) <span class='keyword'>or</span> <a href="satisfiesRequirement___448530451.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/satisfiesRequirement">satisfiesRequirement</a> <span class='some'>some</span> (<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../classes/RequirementSpecification___959912049.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/RequirementSpecification">RequirementSpecification</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="BFO_0000177___-324347507.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000177">'continuant&nbsp;part&nbsp;of&nbsp;at&nbsp;all&nbsp;times'</a> <span class='some'>some</span> <a href="../classes/PlanSpecification___533687051.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification">PlanSpecification</a>)</li>
+<li class="asserted"><a href="../classes/EquipmentRole___-780423723.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/EquipmentRole">EquipmentRole</a> <span class='keyword'>&sube;</span> <span class='Object Property active-entity'>roleOf</span> <span class='only'>only</span> <a href="../classes/MaterialArtifact___-677177590.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact">MaterialArtifact</a></li>
+<li class="asserted"><a href="../classes/MaterialComponentRole___-758163491.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MaterialComponentRole">MaterialComponentRole</a> <span class='keyword'>&sube;</span> <span class='Object Property active-entity'>roleOf</span> <span class='some'>some</span> <a href="../classes/BFO_0000040___-324348568.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000040">'material&nbsp;entity'</a></li>
+<li class="asserted"><span class='Object Property active-entity'>roleOf</span> <span class='keyword'>&sube;</span> <a href="BFO_0000197___-324347445.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000197">'inheres&nbsp;in'</a></li>
+<li class="asserted"><a href="hasRole___1405142273.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/hasRole">hasRole</a> <span class='keyword'>inverse</span> <span class='Object Property active-entity'>roleOf</span></li>
+</ul>
+</div>
+</div><!-- usage (5) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

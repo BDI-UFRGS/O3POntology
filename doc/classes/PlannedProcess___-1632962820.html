@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='index.html' class='' >Classes</a>
+<a href='../objectproperties/index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Class: PlannedProcess</h2>
+
+<div id='annotations_(8)'>
+<h4>Annotations (8)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"planned process"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/example___119732751.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#example">skos:example</a> <span class='literal'>"A tire manufacturing process occurs as prescribed by a manufacturing plan specification."</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/adaptedFrom___-882845862.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom">adaptedFrom</a> <span class='literal'>"<a href='http://purl.obolibrary.org/obo/OBI_0000011' target='ext_ref'>http://purl.obolibrary.org/obo/OBI_0000011</a>"</span></li>
+<li class="asserted"><a href="../annotationproperties/counterExample___1916604573.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/counterExample">'counter&nbsp;example'</a> <span class='literal'>"unexpected failure events; unexpected malfunctioning of a machine; safety occurrence (that lacks explicit plan specifications);"</span></li>
+<li class="asserted"><a href="../annotationproperties/explanatoryNote___-261398936.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote">explanatoryNote</a> <span class='literal'>"1. 'Planned' is here functioning as a specifier, rather than as a modifier analogous to 'cancelled' or 'averted'. Therefore, to say that a process is planned is not to say that it has not yet taken place. Rather, it is to say that it is (was or will have been) protocol-driven, instruction-driven, command-driven, or software-driven, or in some combination thereof.<br />				 <br />2. 'Planned' means 'protocol driven'. Protocols may be written, spoken, or simply thought – as when upon waking up, we plan, for instance, what to eat for breakfast."</span></li>
+<li class="asserted"><a href="../annotationproperties/firstOrderLogicDefinition___-2011705918.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition">firstOrderLogicDefinition</a> <span class='literal'>"PlannedProcess(x) ↔ Process(x) ∧ ∃s (PlanSpecification(s) ∧ prescribes(s, x))"</span></li>
+<li class="asserted"><a href="../annotationproperties/naturalLanguageDefinition___-616823901.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition">naturalLanguageDefinition</a> <span class='literal'>"process that is prescribed by a plan specification"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/semiFormalNaturalLanguageDefinition___-2026004186.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition">semiFormalNaturalLanguageDefinition</a> <span class='literal'>"every instance of 'planned process' is defined as exactly an instance of 'process' that is 'prescribed by' some 'plan specification'"</span></li>
+</ul>
+</div>
+</div><!-- annotations (8) -->
+
+
+<div id='equivalents_(1)'>
+<h4>Equivalents (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="BFO_0000015___-324348656.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000015">process</a> <span class='keyword'>and</span> <a href="../objectproperties/prescribedBy___1155173407.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy">prescribedBy</a> <span class='some'>some</span> <a href="PlanSpecification___533687051.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification">PlanSpecification</a></li>
+</ul>
+</div>
+</div><!-- equivalents (1) -->
+
+
+<div id='superclasses_(1)'>
+<h4>Superclasses (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="BFO_0000015___-324348656.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000015">process</a></li>
+</ul>
+</div>
+</div><!-- superclasses (1) -->
+
+
+<div id='usage_(5)'>
+<h4>Usage (5)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="EquipmentRole___-780423723.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/EquipmentRole">EquipmentRole</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/BFO_0000054___-324348533.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000054">'realized&nbsp;in'</a> <span class='only'>only</span> (<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Class active-entity'>PlannedProcess</span> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../objectproperties/BFO_0000055___-324348532.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000055">realizes</a> <span class='some'>some</span> (<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="BFO_0000034___-324348595.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000034">function</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../objectproperties/functionOf___645464736.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/functionOf">functionOf</a> <span class='some'>some</span> <a href="MaterialArtifact___-677177590.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact">MaterialArtifact</a>))</li>
+<li class="asserted"><a href="MaterialLocationChangeProcess___-904618316.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MaterialLocationChangeProcess">MaterialLocationChangeProcess</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/BFO_0000057___-324348530.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000057">'has&nbsp;participant&nbsp;at&nbsp;some&nbsp;time'</a> <span class='some'>some</span> (<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="BFO_0000040___-324348568.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000040">'material&nbsp;entity'</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class='keyword'>InverseOf</span> <a href="../objectproperties/BFO_0000170___-324347514.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000170">'location&nbsp;of&nbsp;at&nbsp;all&nbsp;times'</a> <span class='some'>some</span> (<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="BFO_0000004___-324348688.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000004">'independent&nbsp;continuant'</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../objectproperties/BFO_0000082___-324348442.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000082">'located&nbsp;in&nbsp;at&nbsp;all&nbsp;times'</a> <span class='some'>some</span> <a href="BFO_0000029___-324348621.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000029">site</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../objectproperties/BFO_0000108___-324347723.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000108">'exists&nbsp;at'</a> <span class='some'>some</span> (<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="BFO_0000203___-324346767.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000203">'temporal&nbsp;instant'</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../objectproperties/BFO_0000221___-324346707.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000221">'first&nbsp;instant&nbsp;of'</a> <span class='some'>some</span> <a href="BFO_0000008___-324348684.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000008">'temporal&nbsp;region'</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='keyword'>InverseOf</span> <a href="../objectproperties/BFO_0000199___-324347443.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000199">'occupies&nbsp;temporal&nbsp;region'</a> <span class='some'>some</span> <span class='Class active-entity'>PlannedProcess</span>)) <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class='keyword'>InverseOf</span> <a href="../objectproperties/BFO_0000170___-324347514.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000170">'location&nbsp;of&nbsp;at&nbsp;all&nbsp;times'</a> <span class='some'>some</span> (<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="BFO_0000004___-324348688.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000004">'independent&nbsp;continuant'</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../objectproperties/BFO_0000082___-324348442.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000082">'located&nbsp;in&nbsp;at&nbsp;all&nbsp;times'</a> <span class='some'>some</span> <a href="BFO_0000029___-324348621.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000029">site</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../objectproperties/BFO_0000108___-324347723.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000108">'exists&nbsp;at'</a> <span class='some'>some</span> (<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="BFO_0000203___-324346767.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000203">'temporal&nbsp;instant'</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../objectproperties/BFO_0000223___-324346705.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000223">'last&nbsp;instant&nbsp;of'</a> <span class='some'>some</span> (<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="BFO_0000008___-324348684.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000008">'temporal&nbsp;region'</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='keyword'>InverseOf</span> <a href="../objectproperties/BFO_0000199___-324347443.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000199">'occupies&nbsp;temporal&nbsp;region'</a> <span class='some'>some</span> <span class='Class active-entity'>PlannedProcess</span>))))</li>
+<li class="asserted"><a href="InformationContentEntity___1135068897.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity">InformationContentEntity</a> <span class='keyword'>and</span> <a href="../objectproperties/BFO_0000110___-324347700.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000110">'has&nbsp;continuant&nbsp;part&nbsp;at&nbsp;all&nbsp;times'</a> <span class='some'>some</span> <a href="ActionSpecification___-106291938.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/ActionSpecification">ActionSpecification</a> <span class='keyword'>and</span> <a href="../objectproperties/BFO_0000110___-324347700.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000110">'has&nbsp;continuant&nbsp;part&nbsp;at&nbsp;all&nbsp;times'</a> <span class='some'>some</span> <a href="ObjectiveSpecification___-1465318597.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/ObjectiveSpecification">ObjectiveSpecification</a> <span class='keyword'>and</span> <a href="../objectproperties/prescribes___2138885495.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/prescribes">prescribes</a> <span class='some'>some</span> <span class='Class active-entity'>PlannedProcess</span> <span class='keyword'>&sube;</span> <a href="PlanSpecification___533687051.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification">PlanSpecification</a></li>
+<li class="asserted"><a href="../objectproperties/hasSpecifiedOutput___1531754408.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/hasSpecifiedOutput">hasSpecifiedOutput</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>PlannedProcess</span></li>
+<li class="asserted"><a href="../objectproperties/isSpecifiedOutputOf___-1074995377.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/isSpecifiedOutputOf">isSpecifiedOutputOf</a> <span class='keyword'>Range</span> <span class='Class active-entity'>PlannedProcess</span></li>
+</ul>
+</div>
+</div><!-- usage (5) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

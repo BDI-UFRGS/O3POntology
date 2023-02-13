@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='../classes/index.html' class='' >Classes</a>
+<a href='index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Object Property: measuresAtSomeTime</h2>
+
+<div id='annotations_(4)'>
+<h4>Annotations (4)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"measures at some time"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/example___119732751.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#example">skos:example</a> <span class='literal'>"a tempearture sensor measures the temperature within a production vessel at certain points in time during the chemical production process; a scale measures the weight of a material bulk"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/explanatoryNote___-261398936.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote">explanatoryNote</a> <span class='literal'>"In this context, value is always determined relative to some classification scheme or on a quantitative scale"</span></li>
+<li class="asserted"><a href="../annotationproperties/naturalLanguageDefinition___-616823901.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition">naturalLanguageDefinition</a> <span class='literal'>"relation from a material entity to an entity indicating that the measurement capability of the material entity got realized to determine the value of the entity, at some time"</span> <span style='color: black;'>@en-us</span></li>
+</ul>
+</div>
+</div><!-- annotations (4) -->
+
+
+<div id='domains_(1)'>
+<h4>Domains (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/BFO_0000040___-324348568.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000040">'material&nbsp;entity'</a></li>
+</ul>
+</div>
+</div><!-- domains (1) -->
+
+
+<div id='ranges_(1)'>
+<h4>Ranges (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/BFO_0000001___-324348691.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000001">entity</a></li>
+</ul>
+</div>
+</div><!-- ranges (1) -->
+
+
+<div id='inverses_(1)'>
+<h4>Inverses (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="measuredByAtSomeTime___-132787294.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/measuredByAtSomeTime">measuredByAtSomeTime</a></li>
+</ul>
+</div>
+</div><!-- inverses (1) -->
+
+
+<div id='superproperties_(1)'>
+<h4>Superproperties (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="topObjectProperty___-102535691.html" class='Object Property' title="http://www.w3.org/2002/07/owl#topObjectProperty">owl:topObjectProperty</a></li>
+</ul>
+</div>
+</div><!-- superproperties (1) -->
+
+
+<div id='usage_(3)'>
+<h4>Usage (3)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/MeasurementProcess___1263420932.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess">MeasurementProcess</a> <span class='keyword'>&sube;</span> <a href="BFO_0000057___-324348530.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000057">'has&nbsp;participant&nbsp;at&nbsp;some&nbsp;time'</a> <span class='some'>some</span> (<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../classes/BFO_0000040___-324348568.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000040">'material&nbsp;entity'</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="hasCapability___614053411.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/hasCapability">hasCapability</a> <span class='some'>some</span> <a href="../classes/MeasurementCapability___-1450914651.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/MeasurementCapability">MeasurementCapability</a> <span class='keyword'>and</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class='Object Property active-entity'>measuresAtSomeTime</span> <span class='some'>some</span> (<a href="../classes/ProcessCharacteristic___-795318117.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic">ProcessCharacteristic</a> <span class='keyword'>or</span> <a href="../classes/BFO_0000020___-324348630.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000020">'specifically&nbsp;dependent&nbsp;continuant'</a> <span class='keyword'>or</span> <a href="../classes/BFO_0000008___-324348684.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000008">'temporal&nbsp;region'</a>))</li>
+<li class="asserted"><span class='Object Property active-entity'>measuresAtSomeTime</span> <span class='keyword'>&sube;</span> <a href="topObjectProperty___-102535691.html" class='Object Property' title="http://www.w3.org/2002/07/owl#topObjectProperty">owl:topObjectProperty</a></li>
+<li class="asserted"><a href="measuredByAtSomeTime___-132787294.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/measuredByAtSomeTime">measuredByAtSomeTime</a> <span class='keyword'>inverse</span> <span class='Object Property active-entity'>measuresAtSomeTime</span></li>
+</ul>
+</div>
+</div><!-- usage (3) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

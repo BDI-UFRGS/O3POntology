@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='../classes/index.html' class='' >Classes</a>
+<a href='index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Object Property: achievesAtSomeTime</h2>
+
+<div id='annotations_(5)'>
+<h4>Annotations (5)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"achieves at some time"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/example___119732751.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#example">skos:example</a> <span class='literal'>"The staffing and ramping up of production to 2 shifts per work day acheives the company plan of satisfying a surge in demand for its products."</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/firstOrderLogicAxiom___366383519.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom">firstOrderLogicAxiom</a> <span class='literal'>"achievesAtSomeTime(x,y) → Process(x) ∧ InformationContentEntity(y) ∧ (concretizesAtSomeTime(x,y) ∨ ∃z(continuantPartOfAtAllTimes(z,y) ∧ InformationContentEntity(z) ∧ concretizesAtSomeTime(x,z))"</span></li>
+<li class="asserted"><a href="../annotationproperties/naturalLanguageDefinition___-616823901.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition">naturalLanguageDefinition</a> <span class='literal'>"relation from a process to an information content entity wherein the process partially or fully concretizes the information content entity"</span> <span style='color: black;'>@en-us</span></li>
+<li class="asserted"><a href="../annotationproperties/semiFormalNaturalLanguageAxiom___-2002047045.html" class='Annotation Property' title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom">semiFormalNaturalLanguageAxiom</a> <span class='literal'>"x achieves at some time y holds when x is a 'process' and y is an 'information content entity' and x 'concretizes at some time' y or a 'continuant part of at all times' y"</span></li>
+</ul>
+</div>
+</div><!-- annotations (5) -->
+
+
+<div id='domains_(1)'>
+<h4>Domains (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/BFO_0000015___-324348656.html" class='Class' title="http://purl.obolibrary.org/obo/BFO_0000015">process</a></li>
+</ul>
+</div>
+</div><!-- domains (1) -->
+
+
+<div id='ranges_(1)'>
+<h4>Ranges (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/InformationContentEntity___1135068897.html" class='Class' title="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity">InformationContentEntity</a></li>
+</ul>
+</div>
+</div><!-- ranges (1) -->
+
+
+<div id='inverses_(1)'>
+<h4>Inverses (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="isAchievedByAtSomeTime___-366323239.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/isAchievedByAtSomeTime">isAchievedByAtSomeTime</a></li>
+</ul>
+</div>
+</div><!-- inverses (1) -->
+
+
+<div id='superproperties_(1)'>
+<h4>Superproperties (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="BFO_0000059___-324348528.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000059">'concretizes&nbsp;at&nbsp;some&nbsp;time'</a></li>
+</ul>
+</div>
+</div><!-- superproperties (1) -->
+
+
+<div id='usage_(2)'>
+<h4>Usage (2)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><span class='Object Property active-entity'>achievesAtSomeTime</span> <span class='keyword'>&sube;</span> <a href="BFO_0000059___-324348528.html" class='Object Property' title="http://purl.obolibrary.org/obo/BFO_0000059">'concretizes&nbsp;at&nbsp;some&nbsp;time'</a></li>
+<li class="asserted"><span class='Object Property active-entity'>achievesAtSomeTime</span> <span class='keyword'>inverse</span> <a href="isAchievedByAtSomeTime___-366323239.html" class='Object Property' title="https://spec.industrialontologies.org/ontology/core/Core/isAchievedByAtSomeTime">isAchievedByAtSomeTime</a></li>
+</ul>
+</div>
+</div><!-- usage (2) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>
