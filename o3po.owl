@@ -43,7 +43,7 @@
         <dc:contributor>Fabrício Rodrigues
 Mara Abel</dc:contributor>
         <dc:creator xml:lang="en">Nicolau Santos</dc:creator>
-        <dc:description xml:lang="en">Domain ontology for offshore petroleum production plants using BFO as a top-level ontology.</dc:description>
+        <dc:description xml:lang="en">A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies.</dc:description>
         <dc:license xml:lang="en">MIT License
 
 Copyright (c) 2023 Nicolau Oyhenard dos Santos
