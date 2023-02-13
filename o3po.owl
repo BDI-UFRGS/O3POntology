@@ -38,9 +38,7 @@
      xmlns:IOFAnnotationVocabulary="http://www.industrialontologies.org/IOFAnnotationVocabulary/">
     <owl:Ontology rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl">
         <owl:versionIRI rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl/0.0.1"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
-        <owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/202202/core/Core/"/>
+        <owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/202301/core/Core/"/>
         <owl:imports rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology"/>
         <dc:contributor>Fabrício Rodrigues
 Mara Abel</dc:contributor>
@@ -1473,7 +1471,7 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate_measurement_datum -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#flow_rate_measurement_datum">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity"/>
         <rdfs:label xml:lang="en">flow rate measurement datum</rdfs:label>
     </owl:Class>
     
@@ -1938,7 +1936,7 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#tag -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#tag">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Identifier"/>
     </owl:Class>
     
 
@@ -2136,7 +2134,7 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     <!-- http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#variable -->
 
     <owl:Class rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl#variable">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
     </owl:Class>
     
 
@@ -2339,10 +2337,10 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
