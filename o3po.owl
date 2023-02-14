@@ -38,7 +38,7 @@
      xmlns:IOFAnnotationVocabulary="http://www.industrialontologies.org/IOFAnnotationVocabulary/">
     <owl:Ontology rdf:about="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl">
         <owl:versionIRI rdf:resource="http://html.inf.ufrgs.br/home/pos/nosantos/public_html/o3po.owl/0.0.1"/>
-        <owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/202301/core/Core/"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BDI-UFRGS/O3POntology/main/imports/Core.rdf"/>
         <owl:imports rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology"/>
         <dc:contributor>Fabrício Rodrigues
 Mara Abel</dc:contributor>
