@@ -13,7 +13,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:iof-core="https://spec.industrialontologies.org/ontology/core/Core/">
     <owl:Ontology rdf:about="https://spec.industrialontologies.org/ontology/core/Core/">
-        <owl:versionIRI rdf:resource="https://spec.industrialontologies.org/ontology/202301/core/Core/"/>
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/BDI-UFRGS/O3POntology/main/imports/Core.rdf"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl"/>
         <owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"/>
         <dcterms:abstract>The IOF Core Ontology contains notions found to be common across multiple manufacturing domains. This file is an RDF implementation of these notions. The ontology utilizes the Basic Formal Ontology or BFO as a top-level ontology but also borrows terms from various domain-independent or mid-level ontologies. The purpose of the ontology is to serve as a foundation for ensuring consistency and interoperability across various domain-specific reference ontologies the IOF publishes.</dcterms:abstract>
