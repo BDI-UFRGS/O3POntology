@@ -5,4 +5,3 @@ Directly imported ontologies:
   - Basic Formal Ontology (BFO)
   - GeoCore
   - IOF-Core
-  - Information Artifact Ontology (IAO)
