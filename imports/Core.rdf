@@ -1028,16 +1028,6 @@ category within a classification scheme of an entity that the value expression i
 
     <owl:Class rdf:about="https://spec.industrialontologies.org/ontology/core/Core/Assembly">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtAllTimes"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialComponent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en-us">assembly</rdfs:label>
         <skos:example xml:lang="en-us">powertrain assembly; partially-assembled powertrain + transmission assembly lying nearby; driveshaft assembly temporarily disassembled for repair or routine maintenance; separator assembly consisting of variously-shaped separator parts that safeguard wine bottles in a case of wine during transport; a material artifact produced entirely through additive manufacturing (provided it is a component somewhere, and can it can be disassembled without damage/destruction).</skos:example>
         <iof-av:adaptedFrom>APICS 14 ed., 2013, term by the same name; DoD Standard Practice, Identification Marking of US Military Property (MIL-STD-130N Nov. 2012) https://dodprocurementtoolbox.com/cms/sites/default/files/resources/2016-03/MIL-Std130N_Ch1_4.pdf, term by the same name</iof-av:adaptedFrom>
@@ -1059,38 +1049,6 @@ category within a classification scheme of an entity that the value expression i
 
     <owl:Class rdf:about="https://spec.industrialontologies.org/ontology/core/Core/AssemblyProcess">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/ManufacturingProcess"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasInput"/>
-                <owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialComponent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasSpecifiedOutput"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/Assembly"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/MaterialComponent"/>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/isInputOf"/>
-                                                <owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/ManufacturingProcess"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en-us">assembly process</rdfs:label>
         <skos:example xml:lang="en-us">Driving a lug nut to hold the wheel of a car in place; welding two metal parts into a single object; automated drilling and riveting of a skin panel operation during fuselage assembly;</skos:example>
         <iof-av:adaptedFrom>http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology</iof-av:adaptedFrom>
@@ -1529,36 +1487,6 @@ category within a classification scheme of an entity that the value expression i
     
 
 
-    <!-- https://spec.industrialontologies.org/ontology/core/Core/MaintainableMaterialItem -->
-
-    <owl:Class rdf:about="https://spec.industrialontologies.org/ontology/core/Core/MaintainableMaterialItem">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
-                            <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
-                        <owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaintainableMaterialItemRole"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:label xml:lang="en-us">maintainable material item</rdfs:label>
-        <skos:example xml:lang="en-us">CNC machine on which routine maintenance is performed</skos:example>
-        <iof-av:explanatoryNote>See the expanded definition under the corresponding role class. The term is formalized here as a defined class by referring to its corresponding role class and exists primarily for ontological modeling and implementation convenience.</iof-av:explanatoryNote>
-        <iof-av:firstOrderLogicDefinition>MaintainableMaterialItem(x) ↔ (MaterialArtifact(x) ∨ EngineeredSystem(x)) ∧ ∃r (MaintainableMaterialItemRole(r) ∧ hasRole(x,r))</iof-av:firstOrderLogicDefinition>
-        <iof-av:naturalLanguageDefinition xml:lang="en-us">material artifact or engineered system which has the maintainable material item role</iof-av:naturalLanguageDefinition>
-        <iof-av:semiFormalNaturalLanguageDefinition>every instance of &apos;maintainable material item&apos; is defined as exactly an instance of &apos;material artifact&apos; or an &apos;engineered system&apos; which &apos;has role&apos; some &apos;maintainable material item role&apos;</iof-av:semiFormalNaturalLanguageDefinition>
-    </owl:Class>
-    
-
-
     <!-- https://spec.industrialontologies.org/ontology/core/Core/MaintainableMaterialItemRole -->
 
     <owl:Class rdf:about="https://spec.industrialontologies.org/ontology/core/Core/MaintainableMaterialItemRole">
@@ -1658,37 +1586,6 @@ This is addressed by output in the axiom. Setup =&gt; does not have output. Tear
         <iof-av:firstOrderLogicDefinition>MaterialArtifact(x) ↔ Object(x) ∧ ∃f,∃d(Function(f) ∧ DesignSpecification(d) ∧ bearerOf(x,f) ∧ prescribes(d,f))</iof-av:firstOrderLogicDefinition>
         <iof-av:naturalLanguageDefinition xml:lang="en-us">object that is deliberately created to have a certain function</iof-av:naturalLanguageDefinition>
         <iof-av:semiFormalNaturalLanguageDefinition>every instance of &apos;material artifact&apos; is defined as exactly an instance of &apos;object&apos; that is the &apos;bearer of&apos; some &apos;function&apos; &apos;prescribed by&apos; some &apos;design specification&apos;</iof-av:semiFormalNaturalLanguageDefinition>
-    </owl:Class>
-    
-
-
-    <!-- https://spec.industrialontologies.org/ontology/core/Core/MaterialComponent -->
-
-    <owl:Class rdf:about="https://spec.industrialontologies.org/ontology/core/Core/MaterialComponent">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
-                        <owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialComponentRole"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:label xml:lang="en-us">material component</rdfs:label>
-        <skos:example xml:lang="en-us">portion of water; portion of crude oil; sea shells; bolt; transmission assembly;engine in an airplane</skos:example>
-        <iof-av:counterExample>Braking subsystem -- systems and subsystems are object aggregates and often have fiat boundaries, in which case they may be incorrectly inferred as product components. Othertimes, they are systems with bonafide boundaries and should be inferred as a product component.</iof-av:counterExample>
-        <iof-av:explanatoryNote>1. Assemblies that are components for one manufacturer may be final products for another (e.g., the selling of diesel engines is a primary product line of Cummins diesel engine yet a component assembly for its customers, Freightliner Trucks). In other words, the context in which a material entity is used must be considered to determine whether it bears the component role.
-
-2. In most manufacturing use cases, material components will be a subclass of &apos;material artifact&apos;.
-
-3. See the expanded definition under the corresponding role class. The term is formalized here as a defined class by referring to its corresponding role class and exists primarily for ontological modeling and implementation convenience.</iof-av:explanatoryNote>
-        <iof-av:firstOrderLogicDefinition>MaterialComponent(x) ↔ MaterialEntity(x) ∧ ∃r(MaterialComponentRole(r) ∧ hasRole(x,r))</iof-av:firstOrderLogicDefinition>
-        <iof-av:naturalLanguageDefinition xml:lang="en-us">material entity which has the material component role</iof-av:naturalLanguageDefinition>
-        <iof-av:semiFormalNaturalLanguageDefinition>every instance of &apos;material component&apos; is defined as exactly an instance of &apos;material entity&apos; that &apos;has role&apos; some &apos;material component role&apos;</iof-av:semiFormalNaturalLanguageDefinition>
-        <iof-av:synonym xml:lang="en-us">part</iof-av:synonym>
     </owl:Class>
     
 
@@ -1834,36 +1731,6 @@ This is addressed by output in the axiom. Setup =&gt; does not have output. Tear
         <iof-av:naturalLanguageDefinition xml:lang="en-us">planned process that results in a material entity moving from one physical location to another</iof-av:naturalLanguageDefinition>
         <iof-av:primitiveRationale>Patterns for adequate reification of the n-ary pattern that is change of location need further refinement and testing.</iof-av:primitiveRationale>
         <iof-av:semiFormalNaturalLanguageAxiom>if x is a &apos;material location change process&apos; then x is a &apos;planned process&apos; in which a &apos;material entity&apos; is moved from one &apos;site&apos; to another.</iof-av:semiFormalNaturalLanguageAxiom>
-    </owl:Class>
-    
-
-
-    <!-- https://spec.industrialontologies.org/ontology/core/Core/MaterialResource -->
-
-    <owl:Class rdf:about="https://spec.industrialontologies.org/ontology/core/Core/MaterialResource">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
-                        <owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialResourceRole"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:label xml:lang="en-us">material resource</rdfs:label>
-        <skos:example xml:lang="en-us">factory available to be used for producing a product; a body of water available to cool a reactor; money available to a person to buy an item; a portion of raw material available to produce a good or service</skos:example>
-        <iof-av:counterExample>(ambiguous/undesirable): a portion of water on my factory floor that formed after a recent rainshower.</iof-av:counterExample>
-        <iof-av:explanatoryNote>1. This defined class is designed to group material entities according to a very broad criterion and is not intended to be used as a parent class for resource types that can be more specifically asserted under another class.
-
-2. Skills and capabilities or other entities in the SDC branch are not resources but they can be considered resources indirectly through their bearer
-
-3. See expanded definition under the corresponding role class. The term is formalized here as a defined class by referring to its corresponding role class and exists primarily for ontological modeling and implementation convenience.</iof-av:explanatoryNote>
-        <iof-av:firstOrderLogicDefinition>MaterialResource(x) ↔ MaterialEntity(x) ∧ ∃r(MaterialResourceRole(r) ∧ hasRole(x,r))</iof-av:firstOrderLogicDefinition>
-        <iof-av:naturalLanguageDefinition xml:lang="en-us">material entity which has the material resource role</iof-av:naturalLanguageDefinition>
-        <iof-av:semiFormalNaturalLanguageDefinition>every instance of &apos;material resource&apos; is defined as exactly an instance of &apos;material entity&apos; that &apos;has role&apos; some &apos;material resource role&apos;</iof-av:semiFormalNaturalLanguageDefinition>
     </owl:Class>
     
 
