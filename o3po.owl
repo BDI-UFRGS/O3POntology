@@ -41,6 +41,7 @@
      xmlns:IOFAnnotationVocabulary="http://www.industrialontologies.org/IOFAnnotationVocabulary/">
     <owl:Ontology rdf:about="https://www.petwin.org/o3po-resources/o3po">
         <owl:versionIRI rdf:resource="https://www.petwin.org/o3po-resources/o3po/0.1"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/BDI-UFRGS/O3POntology/main/imports/Core.rdf"/>
         <owl:imports rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology"/>
         <dc:contributor>Fabrício Rodrigues
@@ -176,6 +177,12 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000167 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000167"/>
     
 
 
@@ -631,7 +638,7 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     <!-- https://www.petwin.org/o3po-resources/o3po#ChristmasTree -->
 
     <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#ChristmasTree">
-        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Assembly"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes"/>
@@ -676,7 +683,7 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
         <CommonCoreOntologies:acronym xml:lang="en">FPSO</CommonCoreOntologies:acronym>
         <CommonCoreOntologies:definition xml:lang="en">def. an offshore platform that serve as gathering, processing and storage facilities for fluids produced from subsea wells.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">Abbreviation for floating production, storage, and offloading vessel. FPSOs are commonly deployed for offshore production in locations that have little infrastructure. They serve as gathering, processing and storage facilities for fluids produced from subsea wells. Processed using equipment on the ship’s deck, the fluids are then stored in the ship’s hull before they are offloaded to pipelines, barges, or ships.</rdfs:comment>
-        <rdfs:label xml:lang="en">FPSO</rdfs:label>
+        <rdfs:label xml:lang="en">floating production, storage, and offloading vessel</rdfs:label>
     </owl:Class>
     
 
@@ -911,7 +918,7 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     <!-- https://www.petwin.org/o3po-resources/o3po#Manifold -->
 
     <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Manifold">
-        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Assembly"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_component"/>
@@ -925,7 +932,7 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:source xml:lang="en">https://www.glossary.oilfield.slb.com/en/Terms/m/manifold.aspx</dc:source>
-        <CommonCoreOntologies:definition xml:lang="en">def. an engineered system that has disposition to connect several flowlines and designed to control, distribute and typically monitor fluid flow from or to multiple wells.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition xml:lang="en">def. an assembly that has disposition to connect several flowlines and designed to control, distribute and typically monitor fluid flow from or to multiple wells.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">An arrangement of piping or valves designed to control, distribute and typically monitor fluid flow.</rdfs:comment>
         <rdfs:comment xml:lang="en">Unified definition: &quot;An assembly of pipe, valves, and fittings for connecting several pipes designed to control, distribute and typically monitor fluid flow from or to multiple wells.”</rdfs:comment>
         <rdfs:label xml:lang="en">manifold</rdfs:label>
@@ -1031,7 +1038,7 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:source xml:lang="en">https://petrowiki.org/Glossary:Flowline</oboInOwl:source>
-        <CommonCoreOntologies:definition xml:lang="en">def. an engineered system that is necessarily composed of tubes which are connected to one another in a single, maximal/end-to-end line, and that is intended for conveying liquids, gases or finely divided solids.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition xml:lang="en">def. an assembly that is necessarily composed of tubes which are connected to one another in a single, maximal/end-to-end line, and that is intended for conveying liquids, gases or finely divided solids.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">The pipe connection between the well and the separators or tank battery.</rdfs:comment>
         <rdfs:comment xml:lang="en">Unified definition: &quot;System that is necessarily (but not necessarily exclusively, e.g., may include pipe joints, pumps, valves, and control devices) composed of tubes/pipes/ducts which are connected [open-to-open?] one another in a single, maximal/end-to-end line, and that [‘intended for’/’able to’ conveying liquids, gases or finely divided solids.&quot;</rdfs:comment>
         <rdfs:comment xml:lang="en">possible components, but not necessarily exclusively, e.g., may include pipe joints, pumps, valves, and control devices) &quot;</rdfs:comment>
@@ -1243,7 +1250,7 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
                 <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <CommonCoreOntologies:definition xml:lang="en">def. an object aggregate that is located at the top of the casing strings of a well and that provide pressure control of a well, and the means for hanging and isolating the various tubular strings.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition xml:lang="en">def. an assembly that is located at the top of the casing strings of a well and that provide pressure control of a well, and the means for hanging and isolating the various tubular strings.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">Unified definition: &quot;An equipment (or assembly) located to the top of the casing strings of a well [composed by spools, valves, fittings,  tubing and casing heads] (that provide pressure control of a well), and the means for hanging and isolating the various tubular strings”</rdfs:comment>
         <rdfs:label xml:lang="pt">cabeça do poço</rdfs:label>
         <rdfs:label xml:lang="en">wellhead</rdfs:label>
@@ -1274,7 +1281,7 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#basin">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000146"/>
         <rdfs:label xml:lang="pt">bacia</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basin</rdfs:label>
+        <rdfs:label>basin</rdfs:label>
     </owl:Class>
     
 
@@ -1283,12 +1290,6 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 
     <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#being_operated_capability">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Capability"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/capabilityOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#operated_valve"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">being operated capability</rdfs:label>
     </owl:Class>
     
@@ -1529,6 +1530,15 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
+    <!-- https://www.petwin.org/o3po-resources/o3po#gas-lift_valve -->
+
+    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#gas-lift_valve">
+        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#valve"/>
+        <rdfs:label xml:lang="en">gas-lift valve</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.petwin.org/o3po-resources/o3po#injection_fluid -->
 
     <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#injection_fluid">
@@ -1646,28 +1656,6 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
         <rdfs:label xml:lang="en">observation role</rdfs:label>
         <rdfs:label xml:lang="pt">papel de observação</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#operated_valve -->
-
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#operated_valve">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#valve"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasCapability"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#being_operated_capability"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <CommonCoreOntologies:definition xml:lang="en">A valve that includes an external means of operation. (E.g. handwheel / lever / actuator.)</CommonCoreOntologies:definition>
-        <rdfs:label xml:lang="en">operated valve</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://www.petwin.org/o3po-resources/o3po#operated_valve"/>
-        <owl:annotatedProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
-        <owl:annotatedTarget xml:lang="en">A valve that includes an external means of operation. (E.g. handwheel / lever / actuator.)</owl:annotatedTarget>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://data.posccaesar.org/rdl/RDS11141590</rdfs:isDefinedBy>
-    </owl:Axiom>
     
 
 
@@ -1864,7 +1852,7 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     <!-- https://www.petwin.org/o3po-resources/o3po#reservoir -->
 
     <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#reservoir">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#sedimentary_rock"/>
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_rock"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -1873,14 +1861,28 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#stores"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Petroleum"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#reservoir_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <CommonCoreOntologies:definition xml:lang="en">A sedimentary rock that contains one or more individual and separate natural accumulations of petroleum that is confined (the oil, not the reservoir) by impermeable rock.</CommonCoreOntologies:definition>
-        <rdfs:comment xml:lang="en">A porous and permeable rock (defined in GeoCore) containing one or more individual and separate natural accumulations of petroleum that is confined (the oil, not the reservoir) by impermeable rock.</rdfs:comment>
+        <CommonCoreOntologies:definition xml:lang="en">A rock that contains one or more individual and separate natural accumulations of petroleum that is confined (the oil, not the reservoir) by impermeable rock.</CommonCoreOntologies:definition>
+        <rdfs:comment xml:lang="en">A rock (defined in GeoCore) containing one or more individual and separate natural accumulations of petroleum that is confined (the oil, not the reservoir) by impermeable rock.</rdfs:comment>
         <rdfs:label xml:lang="pt">reservatório</rdfs:label>
         <rdfs:label xml:lang="en">reservoir</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.petwin.org/o3po-resources/o3po#reservoir_role -->
+
+    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#reservoir_role">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#reservoir"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1898,25 +1900,6 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
         <CommonCoreOntologies:definition xml:lang="en">def. a pipeline that vertically carries fluids or fluid-like amounts or artifacts (e.g., cables, pipes) and that connects a wellhead or a manifold on the seafloor to a platform.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">Unified definition: &quot;Pipe or pipeline that vertically carries materials (e.g., production fluids, drilling mud, drilling cuttings) or ‘ARTIFACTS’ (e.g., cables, pipes) and that connects a wellhead or a manifold on the seafloor to a (production and/or drilling) platform”</rdfs:comment>
         <rdfs:label xml:lang="en">riser</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#sedimentary_rock -->
-
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#sedimentary_rock">
-        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_rock"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/hasQuality"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Permeability"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <oboInOwl:source xml:lang="en">https://en.wikipedia.org/wiki/Sedimentary_rock</oboInOwl:source>
-        <CommonCoreOntologies:definition xml:lang="en">def. an amount of rock that is formed by the accumulation or deposition of mineral and organic particles at Earth&apos; surface, followed by cementation.</CommonCoreOntologies:definition>
-        <rdfs:comment xml:lang="en">Sedimentary rocks are types of rock that are formed by the accumulation or deposition of mineral or organic particles at Earth&apos;s surface, followed by cementation.</rdfs:comment>
-        <rdfs:label xml:lang="pt">rocha sedimentar</rdfs:label>
-        <rdfs:label xml:lang="en">sedimentary rock</rdfs:label>
     </owl:Class>
     
 
@@ -2334,13 +2317,13 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -2406,6 +2389,14 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV"/>
+            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#choke"/>
+            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#gas-lift_valve"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV_annular_temperature"/>
             <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#temperature_downstream_of_choke"/>
             <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#temperature_upstream_of_choke"/>
@@ -2433,5 +2424,5 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 
