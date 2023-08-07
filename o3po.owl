@@ -1150,7 +1150,7 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     <!-- https://www.petwin.org/o3po-resources/o3po#Separator -->
 
     <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Separator">
-        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
         <oboInOwl:source xml:lang="en">https://petrowiki.spe.org/Glossary:Separator</oboInOwl:source>
         <CommonCoreOntologies:definition xml:lang="en">def. a material artifact that facilitates the separation of gas, oil, and/or water from a produced fluid stream.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">A production treating vessel designed to facilitate the separation of gas, oil, and/or water from a produced fluid stream.</rdfs:comment>
@@ -1907,7 +1907,7 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     <!-- https://www.petwin.org/o3po-resources/o3po#sensor -->
 
     <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#sensor">
-        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
         <obo:IAO_0000112 xml:lang="en">SSN: &quot;Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of Sensors include the human eyes.&quot;</obo:IAO_0000112>
         <CommonCoreOntologies:definition xml:lang="en">def. a material artifact that generates a result in response to some stimulus (e.g., a change in its environment) or input data from results of prior observations, with such result corresponding to the measurement of a physical property.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">SSN: &quot;Sensor - Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a Stimulus, e.g., a change in the environment, or Input data composed from the Results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.&quot;</rdfs:comment>
@@ -2018,7 +2018,7 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     <!-- https://www.petwin.org/o3po-resources/o3po#tube -->
 
     <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#tube">
-        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
         <oboInOwl:hasRelatedSynonym xml:lang="en">duct</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym xml:lang="en">pipe</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym xml:lang="en">tubular</oboInOwl:hasRelatedSynonym>
@@ -2108,7 +2108,7 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     <!-- https://www.petwin.org/o3po-resources/o3po#valve -->
 
     <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#valve">
-        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
         <CommonCoreOntologies:definition xml:lang="en">def. a functional complex that controls flow of fluids or fluid-like amounts (e.g., slurries, fluidized solids).</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">Unified definition: &quot;Device that controls (e.g., permits, obstructs, regulates, directs) a stream/flow of fluids (e.g., gases, liquids) or fluid-like amounts (e.g., slurries, fluidized solids)&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">valve</rdfs:label>
@@ -2323,13 +2323,13 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
