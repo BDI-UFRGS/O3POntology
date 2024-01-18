@@ -1,0 +1,1835 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="static/custom/favicon.ico">
+
+	
+		<title>Ontospy > https://www.petwin.org/o3po-resources/o3po</title>
+	
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="static/libs/bootstrap-3_3_7-dist/css/bootstrap.min.css" rel="stylesheet">  -->
+    <!-- Bootswatch:  -->
+    <!-- cerulean  | cyborg |  flatly |  lumen |  sandstone |   spacelab  |  yeti | cosmo |  darkly |  paper | simplex | superhero |  journal | readable  |   slate |  united -->
+    <link href="static/libs/bootswatch3_2/simplex/bootstrap.min.css" rel="stylesheet">
+    <link href="static/custom/css/simple-sidebar.css" rel="stylesheet">
+    <link href="static/custom/css/familytree.css" rel="stylesheet">
+    <link href="static/custom/css/tabletree.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="static/libs/bootstrap-3_3_7-dist/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/custom/css/sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style type="text/css">
+
+  .lead-plus {font-size: 26.5px;}
+  .label-xs {font-size: 10px;}
+  .label-dark {background: #2c3e50; color: white; padding: 1px;}
+  .margin50 {margin-top: 50px; margin-bottom: 50px;}
+
+  .namespaces {background: #ced2d6; width: 100%;}
+
+
+  /*so that the d3plus tooltip panel doesnt cover the top banner*/
+  .navbar {z-index: 3000;}
+
+
+  .panel-body dt {margin-top: 5px;}
+  .page-header  {margin-top: 30px;}
+  #wrapper {margin-top: 50px;}
+
+  .implementation-panel {
+    overflow: auto;
+    /*max-height: 500px;*/
+  }
+
+  tr.table-classproperties {
+      /*background: #f5f5f5;*/
+  }
+  tr.table-classproperties th {
+      font-size: 80%;
+      font-weight: normal;
+  }
+
+
+  tr.table-inheritanceinfo {
+      /*background: #f5f5f5;*/
+      text-align: left;
+  }
+
+  tr.table-inheritanceinfo th {
+      font-size: 90%;
+      font-weight: normal;
+  }
+
+
+  .breadcrumb {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .breadcrumb a {
+      text-transform: capitalize;
+  }
+  .breadcrumb li {
+      text-transform: none;
+      /*so to catch the uri @todo improve*/
+  }
+
+
+  .fromclass_link {
+    /*color: white;
+    text-decoration: underline;*/
+    /*background: #1c1e52;*/
+    color: inherit;
+    /*padding: 1px;*/
+  }
+
+		.mythumbnail {
+			display: block;
+			padding: 13px;
+			margin-bottom: 30px;
+			line-height: 13.428571;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 30px;
+		}
+
+		.mythumbnail:hover {
+			background: lightyellow;
+			text-decoration: none;
+		}
+
+
+		.img-container{
+		    height:100%;
+			overflow: hidden;
+		    max-height:200px;
+			padding: 10px;
+/*			margin: 20px 0px 20px 0px;*/
+			border: 1em #EAE5E5 solid;
+		}
+
+		.img-container:hover {
+			border: 1px grey solid;
+		}
+
+		img{
+/*		    height:100% !important;*/
+		}
+
+
+		.icon-xxs {
+			font-size: 15px;
+		}
+
+
+    /* dropdown open on hover */
+
+    @media (min-width: 979px) {
+      ul.nav li.dropdown:hover > ul.dropdown-menu {
+        display: block;
+      }
+    }
+
+
+
+/*pygments css*/
+
+
+/*overloading this class from pygments*/
+.highlight {
+  overflow: auto;
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+  </head>
+
+  <body>
+
+
+  
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" id="menu-toggle" title="Toggle sidebar">
+        
+        <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li ><a href="index.html"><code style="font-size: 115%;">https://www.petwin.org/o3po-resources/o3po</code></a></li>
+
+        <li  ><a href="entities-az.html">Entities A-Z</a></li>
+        
+        <li ><a href="entities-tree-classes.html">Classes</a></li>
+        
+        
+        <li ><a href="entities-tree-properties.html">Properties</a></li>
+        
+        
+        
+        
+        <li  ><a href="statistics.html">Statistics</a></li>
+
+
+
+
+
+      </ul>
+      
+    </div><!--/.nav-collapse -->
+
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+<div id="wrapper" class="toggled">
+
+
+    
+  
+    
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+
+
+        <li>
+          <input style="margin-top: 30px;  margin-bottom: 20px;" type="text" id="search-input-sidebar" name="" value="" placeholder="Type to search">
+        </li>
+
+        
+          <li class="-second-level" id="sd_classes"><a href="entities-tree-classes.html">Classes (115)</a>
+          </li>
+
+            
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_19"><a  href="class-geocoreearth_fluid.html">geocore:earth_fluid</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_20"><a  href="class-geocorerock.html">geocore:rock</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_11"><a  href="class-httpsspecindustrialontologiesorgontologycorecoreassembly.html">https://spec.industrialontologies.org/ontology/core/Core/Assembly</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_12"><a  href="class-httpsspecindustrialontologiesorgontologycorecorecapability.html">https://spec.industrialontologies.org/ontology/core/Core/Capability</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_13"><a  href="class-httpsspecindustrialontologiesorgontologycorecoreengineeredsystem.html">https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_14"><a class="active" href="class-httpsspecindustrialontologiesorgontologycorecoreidentifier.html">https://spec.industrialontologies.org/ontology/core/Core/Identifier</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_15"><a  href="class-httpsspecindustrialontologiesorgontologycorecoreinformationcontententity.html">https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_16"><a  href="class-httpsspecindustrialontologiesorgontologycorecorematerialartifact.html">https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_17"><a  href="class-httpsspecindustrialontologiesorgontologycorecoremeasurementinformationcontententity.html">https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_18"><a  href="class-httpsspecindustrialontologiesorgontologycorecoreprocesscharacteristic.html">https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_21"><a  href="class-o3po2borehole.html">o3po2:Borehole</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_22"><a  href="class-o3po2bottomholepressure.html">o3po2:BottomholePressure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_23"><a  href="class-o3po2centrifugalpump.html">o3po2:CentrifugalPump</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_24"><a  href="class-o3po2christmastree.html">o3po2:ChristmasTree</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_25"><a  href="class-o3po2crudeoil.html">o3po2:CrudeOil</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_26"><a  href="class-o3po2fpso.html">o3po2:FPSO</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_27"><a  href="class-o3po2flow.html">o3po2:Flow</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_28"><a  href="class-o3po2icv.html">o3po2:ICV</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_29"><a  href="class-o3po2icv_annular_pressure.html">o3po2:ICV_annular_pressure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_30"><a  href="class-o3po2icv_annular_temperature.html">o3po2:ICV_annular_temperature</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_31"><a  href="class-o3po2icv_delta_pressure.html">o3po2:ICV_delta_pressure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_32"><a  href="class-o3po2icv_flow_rate.html">o3po2:ICV_flow_rate</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_33"><a  href="class-o3po2icv_flow_rate_icv_method.html">o3po2:ICV_flow_rate_ICV_method</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_34"><a  href="class-o3po2icv_flow_rate_ipr_method.html">o3po2:ICV_flow_rate_IPR_method</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_35"><a  href="class-o3po2icv_flow_rate_reconciled_method.html">o3po2:ICV_flow_rate_reconciled_method</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_36"><a  href="class-o3po2icv_open_control_line_pressure.html">o3po2:ICV_open_control_line_pressure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_37"><a  href="class-o3po2injectionwell.html">o3po2:InjectionWell</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_38"><a  href="class-o3po2injection_process.html">o3po2:Injection_(process)</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_39"><a  href="class-o3po2manifold.html">o3po2:Manifold</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_40"><a  href="class-o3po2naturalgas.html">o3po2:NaturalGas</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_41"><a  href="class-o3po2observation_well.html">o3po2:Observation_well</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_42"><a  href="class-o3po2plem.html">o3po2:PLEM</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_43"><a  href="class-o3po2permeability.html">o3po2:Permeability</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_44"><a  href="class-o3po2petroleum.html">o3po2:Petroleum</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_45"><a  href="class-o3po2pipeline.html">o3po2:Pipeline</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_46"><a  href="class-o3po2platform.html">o3po2:Platform</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_47"><a  href="class-o3po2positive-displacementpump.html">o3po2:Positive-DisplacementPump</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_48"><a  href="class-o3po2production_process.html">o3po2:Production_(process)</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_49"><a  href="class-o3po2production_well.html">o3po2:Production_Well</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_50"><a  href="class-o3po2pump.html">o3po2:Pump</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_51"><a  href="class-o3po2riser.html">o3po2:Riser</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_52"><a  href="class-o3po2semisubmersible.html">o3po2:Semisubmersible</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_53"><a  href="class-o3po2separator.html">o3po2:Separator</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_54"><a  href="class-o3po2subseatree.html">o3po2:SubseaTree</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_55"><a  href="class-o3po2water.html">o3po2:Water</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_56"><a  href="class-o3po2well.html">o3po2:Well</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_57"><a  href="class-o3po2wellflowrate.html">o3po2:WellFlowRate</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_58"><a  href="class-o3po2wellhead.html">o3po2:Wellhead</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_59"><a  href="class-o3po2annulus.html">o3po2:annulus</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_60"><a  href="class-o3po2basin.html">o3po2:basin</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_61"><a  href="class-o3po2being_operated_capability.html">o3po2:being_operated_capability</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_62"><a  href="class-o3po2casing.html">o3po2:casing</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_63"><a  href="class-o3po2choke.html">o3po2:choke</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_64"><a  href="class-o3po2choke_position.html">o3po2:choke_position</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_65"><a  href="class-o3po2choke_size.html">o3po2:choke_size</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_66"><a  href="class-o3po2common_close_control_line_pressure.html">o3po2:common_close_control_line_pressure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_67"><a  href="class-o3po2condensate.html">o3po2:condensate</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_68"><a  href="class-o3po2control_line.html">o3po2:control_line</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_69"><a  href="class-o3po2delta_pressure.html">o3po2:delta_pressure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_70"><a  href="class-o3po2field.html">o3po2:field</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_71"><a  href="class-o3po2field_name.html">o3po2:field_name</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_72"><a  href="class-o3po2flow_rate.html">o3po2:flow_rate</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_73"><a  href="class-o3po2flow_rate_measurement_datum.html">o3po2:flow_rate_measurement_datum</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_74"><a  href="class-o3po2flowline.html">o3po2:flowline</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_75"><a  href="class-o3po2flowmeter.html">o3po2:flowmeter</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_76"><a  href="class-o3po2fluid.html">o3po2:fluid</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_77"><a  href="class-o3po2gas-lift_valve.html">o3po2:gas-lift_valve</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_78"><a  href="class-o3po2injection_fluid.html">o3po2:injection_fluid</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_79"><a  href="class-o3po2injection_role.html">o3po2:injection_role</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_80"><a  href="class-o3po2injector_role.html">o3po2:injector_role</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_81"><a  href="class-o3po2name.html">o3po2:name</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_82"><a  href="class-o3po2nozzle.html">o3po2:nozzle</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_83"><a  href="class-o3po2observation_role.html">o3po2:observation_role</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_84"><a  href="class-o3po2plant.html">o3po2:plant</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_85"><a  href="class-o3po2pressure.html">o3po2:pressure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_86"><a  href="class-o3po2pressure_downstream_of_choke.html">o3po2:pressure_downstream_of_choke</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_87"><a  href="class-o3po2pressure_sensor.html">o3po2:pressure_sensor</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_88"><a  href="class-o3po2pressure_upstream_of_choke.html">o3po2:pressure_upstream_of_choke</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_89"><a  href="class-o3po2producer_role.html">o3po2:producer_role</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_90"><a  href="class-o3po2production_fluid.html">o3po2:production_fluid</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_91"><a  href="class-o3po2production_role.html">o3po2:production_role</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_92"><a  href="class-o3po2production_separator.html">o3po2:production_separator</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_93"><a  href="class-o3po2production_zone.html">o3po2:production_zone</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_94"><a  href="class-o3po2reservoir.html">o3po2:reservoir</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_95"><a  href="class-o3po2reservoir_role.html">o3po2:reservoir_role</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_96"><a  href="class-o3po2sensor.html">o3po2:sensor</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_97"><a  href="class-o3po2tag.html">o3po2:tag</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_98"><a  href="class-o3po2temperature.html">o3po2:temperature</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_99"><a  href="class-o3po2temperature_downstream_of_choke.html">o3po2:temperature_downstream_of_choke</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_100"><a  href="class-o3po2temperature_sensor.html">o3po2:temperature_sensor</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_101"><a  href="class-o3po2temperature_upstream_of_choke.html">o3po2:temperature_upstream_of_choke</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_102"><a  href="class-o3po2test_separator.html">o3po2:test_separator</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_103"><a  href="class-o3po2tube.html">o3po2:tube</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_104"><a  href="class-o3po2tubing.html">o3po2:tubing</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_105"><a  href="class-o3po2tubing_downhole_pressure.html">o3po2:tubing_downhole_pressure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_106"><a  href="class-o3po2tubing_downhole_temperature.html">o3po2:tubing_downhole_temperature</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_107"><a  href="class-o3po2tubing_role.html">o3po2:tubing_role</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_108"><a  href="class-o3po2valve.html">o3po2:valve</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_109"><a  href="class-o3po2variable.html">o3po2:variable</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_110"><a  href="class-o3po2volume.html">o3po2:volume</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_111"><a  href="class-o3po2well_liquid_rate_in-situ_conditions.html">o3po2:well_liquid_rate_in-situ_conditions</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_112"><a  href="class-o3po2well_liquid_rate_standard_conditions.html">o3po2:well_liquid_rate_standard_conditions</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_113"><a  href="class-o3po2well_name.html">o3po2:well_name</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_114"><a  href="class-o3po2well_status_flag.html">o3po2:well_status_flag</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_115"><a  href="class-o3po2wellhead_pressure.html">o3po2:wellhead_pressure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_116"><a  href="class-o3po2wellhead_temperature.html">o3po2:wellhead_temperature</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_2"><a  href="class-obobfo_0000015.html">obo:BFO_0000015</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_3"><a  href="class-obobfo_0000019.html">obo:BFO_0000019</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_4"><a  href="class-obobfo_0000023.html">obo:BFO_0000023</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_5"><a  href="class-obobfo_0000027.html">obo:BFO_0000027</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_6"><a  href="class-obobfo_0000029.html">obo:BFO_0000029</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_7"><a  href="class-obobfo_0000030.html">obo:BFO_0000030</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_8"><a  href="class-obobfo_0000040.html">obo:BFO_0000040</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_9"><a  href="class-obobfo_0000145.html">obo:BFO_0000145</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_10"><a  href="class-obobfo_0000146.html">obo:BFO_0000146</a></li>
+          
+        
+
+        
+            <li class="-second-level" id="sd_properties"><a  href="entities-tree-properties.html">Properties (55)</a>
+            </li>
+
+            
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_129"><a   href="prop-annotationvocabularyadaptedfrom.html">AnnotationVocabulary:adaptedFrom</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_123"><a   href="prop-commoncoreontologiesacronym.html">CommonCoreOntologies:acronym</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_124"><a   href="prop-commoncoreontologiesdefinition.html">CommonCoreOntologies:definition</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_150"><a   href="prop-commoncoreontologiesuses_measurement_unit.html">CommonCoreOntologies:uses_measurement_unit</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_149"><a   href="prop-core1ro_0000085.html">core1:RO_0000085</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_117"><a   href="prop-dccreator.html">dc:creator</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_118"><a   href="prop-dcdescription.html">dc:description</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_119"><a   href="prop-dcsource.html">dc:source</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_120"><a   href="prop-dctitle.html">dc:title</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_127"><a   href="prop-iof-corecomponentpartofatalltimes.html">iof-core:componentPartOfAtAllTimes</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_128"><a   href="prop-iof-corecomponentpartofatsometime.html">iof-core:componentPartOfAtSomeTime</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_151"><a   href="prop-iof-corehascomponentpartatalltimes.html">iof-core:hasComponentPartAtAllTimes</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_152"><a   href="prop-iof-corehasquality.html">iof-core:hasQuality</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_153"><a   href="prop-iof-corehasrole.html">iof-core:hasRole</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_154"><a   href="prop-iof-coreprocesscharacteristicof.html">iof-core:processCharacteristicOf</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_155"><a   href="prop-iof-corequalityof.html">iof-core:qualityOf</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_156"><a   href="prop-iof-coreroleof.html">iof-core:roleOf</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_130"><a   href="prop-o3po2author.html">o3po2:author</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_157"><a   href="prop-o3po2component_of.html">o3po2:component_of</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_158"><a   href="prop-o3po2connected_to.html">o3po2:connected_to</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_159"><a   href="prop-o3po2exchanges_fluid_with.html">o3po2:exchanges_fluid_with</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_160"><a   href="prop-o3po2feeds_fluid_to.html">o3po2:feeds_fluid_to</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_161"><a   href="prop-o3po2has_component.html">o3po2:has_component</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_162"><a   href="prop-o3po2has_fluid_fed_by.html">o3po2:has_fluid_fed_by</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_163"><a   href="prop-o3po2has_fluid_returned_by.html">o3po2:has_fluid_returned_by</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_164"><a   href="prop-o3po2has_fluid_supplied_by.html">o3po2:has_fluid_supplied_by</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_133"><a   href="prop-o3po2has_value.html">o3po2:has_value</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_165"><a   href="prop-o3po2injects.html">o3po2:injects</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_166"><a   href="prop-o3po2measures.html">o3po2:measures</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_167"><a   href="prop-o3po2produces.html">o3po2:produces</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_168"><a   href="prop-o3po2returns_fluid_to.html">o3po2:returns_fluid_to</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_169"><a   href="prop-o3po2separates.html">o3po2:separates</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_131"><a   href="prop-o3po2stores.html">o3po2:stores</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_170"><a   href="prop-o3po2supplies_fluid_to.html">o3po2:supplies_fluid_to</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_171"><a   href="prop-o3po2transports.html">o3po2:transports</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_132"><a   href="prop-o3po2treats.html">o3po2:treats</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_134"><a   href="prop-obobfo_0000050.html">obo:BFO_0000050</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_135"><a   href="prop-obobfo_0000051.html">obo:BFO_0000051</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_136"><a   href="prop-obobfo_0000167.html">obo:BFO_0000167</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_137"><a   href="prop-obocob_0000039.html">obo:COB_0000039</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_138"><a   href="prop-obocob_0000040.html">obo:COB_0000040</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_139"><a   href="prop-oboro_0000052.html">obo:RO_0000052</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_140"><a   href="prop-oboro_0000079.html">obo:RO_0000079</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_141"><a   href="prop-oboro_0000080.html">obo:RO_0000080</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_142"><a   href="prop-oboro_0000081.html">obo:RO_0000081</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_143"><a   href="prop-oboro_0000085.html">obo:RO_0000085</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_144"><a   href="prop-oboro_0000086.html">obo:RO_0000086</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_145"><a   href="prop-oboro_0000087.html">obo:RO_0000087</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_146"><a   href="prop-oboro_0001018.html">obo:RO_0001018</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_147"><a   href="prop-oboro_0001019.html">obo:RO_0001019</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_148"><a   href="prop-oboro_0001025.html">obo:RO_0001025</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_121"><a   href="prop-oboinowlhasrelatedsynonym.html">oboInOwl:hasRelatedSynonym</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_122"><a   href="prop-oboinowlsource.html">oboInOwl:source</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_125"><a   href="prop-owlminqualifiedcardinality.html">owl:minQualifiedCardinality</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_126"><a   href="prop-owlqualifiedcardinality.html">owl:qualifiedCardinality</a></li>
+          
+
+        
+
+        
+
+
+        
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+    </ul>
+
+</div>
+
+
+<!-- /#sidebar-wrapper -->
+  
+
+
+
+    <!-- Begin page content -->
+    <div class="container" id="page-content-wrapper">
+
+      
+
+	
+
+      
+
+    
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <ol class="breadcrumb">
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+          <a href="entities-az.html">Entities</a>
+    </li>
+    <li>
+          <a href="entities-tree-classes.html">Classes</a>
+    </li>
+      <li class="active">
+            https://spec.industrialontologies.org/ontology/core/Core/Identifier
+        </li>
+  </ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+    <h1>
+      https://spec.industrialontologies.org/ontology/core/Core/Identifier
+      
+    </h1>
+
+    <hr>  
+
+    
+    <div class="tree-container">
+      <div class="tree">
+        <ul>
+          
+            <li><a href="entities-tree-classes.html">owl:Thing</a>
+              <ul>
+                <li><a style="font-weight: bold;" title="'Identifier'">https://spec.industrialontologies.org/ontology/core/Core/Identifier</a>
+                  
+                    <ul>
+                      
+                        <li><a href="class-o3po2tag.html" title="'tag'">o3po2:tag</a></li>
+                      
+                    </ul>
+                  
+                </li>
+              </ul>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+
+
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">URI</h3>
+          </div>
+          <div class="panel-body">
+            <code>https://spec.industrialontologies.org/ontology/core/Core/Identifier</code>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+    
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Label</h3>
+          </div>
+          <div class="panel-body">
+            Identifier
+          </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+    
+    
+
+
+    
+    
+
+
+    
+    
+
+
+    
+    
+
+
+    
+    
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Usage</h3>
+            </div>
+            <div class="panel-body" style="overflow: auto;">
+              <p>Instances of https://spec.industrialontologies.org/ontology/core/Core/Identifier can have the following properties:</p>
+            </div>
+            <table class="table table-bordered" style="overflow: auto;">
+              <tr class="table-classproperties">
+                <th>PROPERTY</th><th>TYPE</th><th>DESCRIPTION</th><th>RANGE</th>
+              </tr>
+              
+                
+                  
+                
+              
+                
+                  
+                      <tr class="table-inheritanceinfo">
+                        <th colspan="4" class="treeinfo">
+                          <span class="label label-default">From class <a title="owl:Thing" href="class-owlthing.html" class="fromclass_link">owl:Thing</a></span>
+                        </th>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="AnnotationVocabulary:adaptedFrom" href="prop-annotationvocabularyadaptedfrom.html">AnnotationVocabulary:adaptedFrom</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="CommonCoreOntologies:acronym" href="prop-commoncoreontologiesacronym.html">CommonCoreOntologies:acronym</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="CommonCoreOntologies:definition" href="prop-commoncoreontologiesdefinition.html">CommonCoreOntologies:definition</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="CommonCoreOntologies:uses_measurement_unit" href="prop-commoncoreontologiesuses_measurement_unit.html">CommonCoreOntologies:uses_measurement_unit</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="core1:RO_0000085" href="prop-core1ro_0000085.html">core1:RO_0000085</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:creator" href="prop-dccreator.html">dc:creator</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:description" href="prop-dcdescription.html">dc:description</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:source" href="prop-dcsource.html">dc:source</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:title" href="prop-dctitle.html">dc:title</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="iof-core:componentPartOfAtAllTimes" href="prop-iof-corecomponentpartofatalltimes.html">iof-core:componentPartOfAtAllTimes</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="iof-core:componentPartOfAtSomeTime" href="prop-iof-corecomponentpartofatsometime.html">iof-core:componentPartOfAtSomeTime</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="iof-core:hasComponentPartAtAllTimes" href="prop-iof-corehascomponentpartatalltimes.html">iof-core:hasComponentPartAtAllTimes</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="iof-core:hasQuality" href="prop-iof-corehasquality.html">iof-core:hasQuality</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="iof-core:hasRole" href="prop-iof-corehasrole.html">iof-core:hasRole</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="iof-core:processCharacteristicOf" href="prop-iof-coreprocesscharacteristicof.html">iof-core:processCharacteristicOf</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="iof-core:qualityOf" href="prop-iof-corequalityof.html">iof-core:qualityOf</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="iof-core:roleOf" href="prop-iof-coreroleof.html">iof-core:roleOf</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="o3po2:author" href="prop-o3po2author.html">o3po2:author</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="o3po2:feeds_fluid_to" href="prop-o3po2feeds_fluid_to.html">o3po2:feeds_fluid_to</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Relation from a thing feeding fluid to the thing it is feeding fluid to.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="o3po2:has_component" href="prop-o3po2has_component.html">o3po2:has_component</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="o3po2:has_fluid_fed_by" href="prop-o3po2has_fluid_fed_by.html">o3po2:has_fluid_fed_by</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Relation from a thing that is fed fluid to the thing feeding the fluid.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="o3po2:has_fluid_returned_by" href="prop-o3po2has_fluid_returned_by.html">o3po2:has_fluid_returned_by</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Relation between a thing that has fluid returned to it and the thing returning the fluid.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="o3po2:has_fluid_supplied_by" href="prop-o3po2has_fluid_supplied_by.html">o3po2:has_fluid_supplied_by</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Relation between a thing that has fluid supplied to it and the thing supplying the fluid.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="o3po2:injects" href="prop-o3po2injects.html">o3po2:injects</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="o3po2:measures" href="prop-o3po2measures.html">o3po2:measures</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="o3po2:produces" href="prop-o3po2produces.html">o3po2:produces</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="o3po2:returns_fluid_to" href="prop-o3po2returns_fluid_to.html">o3po2:returns_fluid_to</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Relation implying logical return flow from a thing to another.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="o3po2:separates" href="prop-o3po2separates.html">o3po2:separates</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="o3po2:stores" href="prop-o3po2stores.html">o3po2:stores</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AsymmetricProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="o3po2:supplies_fluid_to" href="prop-o3po2supplies_fluid_to.html">o3po2:supplies_fluid_to</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Relation implying logical supply flow from a thing to another.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="o3po2:transports" href="prop-o3po2transports.html">o3po2:transports</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="o3po2:treats" href="prop-o3po2treats.html">o3po2:treats</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AsymmetricProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:BFO_0000050" href="prop-obobfo_0000050.html">obo:BFO_0000050</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:BFO_0000051" href="prop-obobfo_0000051.html">obo:BFO_0000051</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:BFO_0000167" href="prop-obobfo_0000167.html">obo:BFO_0000167</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:COB_0000039" href="prop-obocob_0000039.html">obo:COB_0000039</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:COB_0000040" href="prop-obocob_0000040.html">obo:COB_0000040</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0000052" href="prop-oboro_0000052.html">obo:RO_0000052</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0000079" href="prop-oboro_0000079.html">obo:RO_0000079</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0000080" href="prop-oboro_0000080.html">obo:RO_0000080</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0000081" href="prop-oboro_0000081.html">obo:RO_0000081</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0000085" href="prop-oboro_0000085.html">obo:RO_0000085</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0000086" href="prop-oboro_0000086.html">obo:RO_0000086</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0000087" href="prop-oboro_0000087.html">obo:RO_0000087</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0001018" href="prop-oboro_0001018.html">obo:RO_0001018</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0001019" href="prop-oboro_0001019.html">obo:RO_0001019</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0001025" href="prop-oboro_0001025.html">obo:RO_0001025</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="oboInOwl:hasRelatedSynonym" href="prop-oboinowlhasrelatedsynonym.html">oboInOwl:hasRelatedSynonym</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="oboInOwl:source" href="prop-oboinowlsource.html">oboInOwl:source</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="owl:minQualifiedCardinality" href="prop-owlminqualifiedcardinality.html">owl:minQualifiedCardinality</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="owl:qualifiedCardinality" href="prop-owlqualifiedcardinality.html">owl:qualifiedCardinality</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                  
+                
+              
+            </table>
+          </div>
+        </div>
+      </div>
+    
+
+
+    
+    
+
+
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Implementation</h3>
+          </div>
+          <div class="panel-body implementation-panel">
+            
+              <div class="implementation">
+                <code style="background-color: white;"></code>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        
+
+
+
+
+	</div><!-- /#page-content-wrapper -->
+
+
+  
+
+
+
+  
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+    
+      <p class="text-muted">Documentation automatically generated on Wed, 17 Jan 2024 19:01:32 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+
+    
+    </div>
+  </footer>
+
+
+</div><!-- /#wrapper -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="static/libs/jquery/1_12_4/jquery.min.js"></script>
+<script src="static/libs/bootstrap-3_3_7-dist/js/bootstrap.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="static/libs/bootstrap-3_3_7-dist/js/ie10-viewport-bug-workaround.js"></script>
+
+<script src="static/libs/chartjs-2_4_0/chart.bundle.js"></script>
+
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+$('#search-input-sidebar').keyup(function() {
+
+  var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+  // var $rows = $(this).next(".entities-list").find("div");
+  var $rows = $(this).parent().parent().find("li.second-level");
+
+  $rows.show().filter(function() {
+      var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+      return !~text.indexOf(val);
+  }).hide();
+});
+
+</script>
+
+
+
+
+  <!-- Scroll Sidebar Script -->
+
+  
+  
+
+  <script type="text/javascript">
+
+    $(document).ready(function (){
+      $('#sidebar-wrapper').animate({
+          scrollTop: $("#sd_14").offset().top - 100
+      }, 100);
+    });
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
