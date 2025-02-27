@@ -2103,11 +2103,11 @@ say that it generated this new geological object or earth material. Thus, every 
     obo:IAO_0000115 "It is a BFO temporal interval that corresponds to a time interval within the Geological Time Scale."@en ;
     rdfs:subClassOf obo:BFO_0000038 .
 
-<https://www.petwin.org/o3po-resources/o3po-vip> a owl:Ontology ;
-    rdfs:label "O3PO-VIP Ontology" ;
+<https://www.petwin.org/o3po> a owl:Ontology ;
+    rdfs:label "O3PO Ontology" ;
     dc:creator "Fabrício Rodrigues"@en,
         "Nicolau Santos"@en ;
-    rdfs:comment "Módulo criado para instanciamento de entidades do catálogo do VIP da Petrobras."@pt-br ;
+    rdfs:comment "A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies."@en ;
     owl:imports <http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl> .
 
 :VIPO_0000001 a owl:Class ;
