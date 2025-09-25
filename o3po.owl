@@ -22,6 +22,7 @@
      xmlns:core1="http://www.industrialontologies.org/core/"
      xmlns:o3po1="https://www.petwin.org/o3po-resources/o3po/#"
      xmlns:o3po2="https://www.petwin.org/o3po-resources/o3po#"
+     xmlns:o3po3="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/"
@@ -39,11 +40,10 @@
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/"
      xmlns:AnnotationVocabulary1="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
      xmlns:IOFAnnotationVocabulary="http://www.industrialontologies.org/IOFAnnotationVocabulary/">
-    <owl:Ontology rdf:about="https://www.petwin.org/o3po-resources/o3po">
-        <owl:versionIRI rdf:resource="https://www.petwin.org/o3po-resources/o3po/0.1"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2022-11-07/iao"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/BDI-UFRGS/O3POntology/main/imports/Core"/>
-        <owl:imports rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology"/>
+    <owl:Ontology rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po">
+        <owl:versionIRI rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po/2.0"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/BDI-UFRGS/O3POntology/main/imports/Core.rdf"/>
         <dc:contributor>Fabrício Rodrigues
 Mara Abel</dc:contributor>
         <dc:creator xml:lang="en">Nicolau Santos</dc:creator>
@@ -56,6 +56,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS ORIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</dc:license>
         <dc:title xml:lang="en">Offshore Petroleum Production Plant Ontology (O3PO)</dc:title>
+        <owl:backwardCompatibleWith rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.petwin.org/o3po-resources/o3po</owl:backwardCompatibleWith>
     </owl:Ontology>
     
 
@@ -107,6 +108,12 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#author -->
+
+    <owl:AnnotationProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#author"/>
+    
+
+
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/acronym -->
 
     <owl:AnnotationProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/acronym"/>
@@ -148,12 +155,6 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     <!-- https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom -->
 
     <owl:AnnotationProperty rdf:about="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom"/>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#author -->
-
-    <owl:AnnotationProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#author"/>
     
 
 
@@ -268,6 +269,249 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#component_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#component_of">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <owl:inverseOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_component"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <CommonCoreOntologies:definition xml:lang="en">def. a part of relation that holds betweentwo material entities</CommonCoreOntologies:definition>
+        <rdfs:label xml:lang="en">component of</rdfs:label>
+        <rdfs:label xml:lang="pt">componente de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#connected_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#connected_to">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="pt">conectado a</rdfs:label>
+        <rdfs:label xml:lang="en">connected to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#exchanges_fluid_with -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#exchanges_fluid_with">
+        <rdfs:subPropertyOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#connected_to"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:comment xml:lang="en">Relation between two things which have a fluid exchange connection</rdfs:comment>
+        <rdfs:label xml:lang="en">exchanges fluid with</rdfs:label>
+        <rdfs:label xml:lang="pt">troca fluido com</rdfs:label>
+        <AnnotationVocabulary:adaptedFrom xml:lang="en">http://www.w3id.org/fso</AnnotationVocabulary:adaptedFrom>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#exchanges_fluid_with"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Relation between two things which have a fluid exchange connection</owl:annotatedTarget>
+        <terms:source xml:lang="en">Flow Systems Ontology (FSO)</terms:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#feeds_fluid_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#feeds_fluid_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#exchanges_fluid_with"/>
+        <owl:inverseOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_fluid_fed_by"/>
+        <rdfs:comment xml:lang="en">Relation from a thing feeding fluid to the thing it is feeding fluid to.</rdfs:comment>
+        <rdfs:label xml:lang="pt">alimenta fluido para</rdfs:label>
+        <rdfs:label xml:lang="en">feeds fluid to</rdfs:label>
+        <AnnotationVocabulary:adaptedFrom xml:lang="en">http://www.w3id.org/fso</AnnotationVocabulary:adaptedFrom>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#feeds_fluid_to"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Relation from a thing feeding fluid to the thing it is feeding fluid to.</owl:annotatedTarget>
+        <terms:source xml:lang="en">Flow Systems Ontology (FSO)</terms:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_component -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_component">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has component</rdfs:label>
+        <rdfs:label xml:lang="pt">tem component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_fluid_fed_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_fluid_fed_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#exchanges_fluid_with"/>
+        <rdfs:comment xml:lang="en">Relation from a thing that is fed fluid to the thing feeding the fluid.</rdfs:comment>
+        <rdfs:label xml:lang="en">has fluid fed by</rdfs:label>
+        <rdfs:label xml:lang="pt">tem fluido alimentado por</rdfs:label>
+        <AnnotationVocabulary:adaptedFrom xml:lang="en">http://www.w3id.org/fso</AnnotationVocabulary:adaptedFrom>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_fluid_fed_by"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Relation from a thing that is fed fluid to the thing feeding the fluid.</owl:annotatedTarget>
+        <terms:source xml:lang="en">Flow Systems Ontology (FSO)</terms:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_fluid_returned_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_fluid_returned_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#feeds_fluid_to"/>
+        <owl:inverseOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#returns_fluid_to"/>
+        <rdfs:comment xml:lang="en">Relation between a thing that has fluid returned to it and the thing returning the fluid.</rdfs:comment>
+        <rdfs:label xml:lang="en">has fluid returned by</rdfs:label>
+        <rdfs:label xml:lang="pt">tem fluido retornado por</rdfs:label>
+        <AnnotationVocabulary:adaptedFrom xml:lang="en">http://www.w3id.org/fso</AnnotationVocabulary:adaptedFrom>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_fluid_returned_by"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Relation between a thing that has fluid returned to it and the thing returning the fluid.</owl:annotatedTarget>
+        <terms:source xml:lang="en">Flow Systems Ontology (FSO)</terms:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_fluid_supplied_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_fluid_supplied_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#feeds_fluid_to"/>
+        <owl:inverseOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#supplies_fluid_to"/>
+        <rdfs:comment xml:lang="en">Relation between a thing that has fluid supplied to it and the thing supplying the fluid.</rdfs:comment>
+        <rdfs:label xml:lang="en">has fluid supplied by</rdfs:label>
+        <rdfs:label xml:lang="pt">tem fluido fornecido por</rdfs:label>
+        <AnnotationVocabulary:adaptedFrom xml:lang="en">http://www.w3id.org/fso</AnnotationVocabulary:adaptedFrom>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_fluid_supplied_by"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Relation between a thing that has fluid supplied to it and the thing supplying the fluid.</owl:annotatedTarget>
+        <terms:source xml:lang="en">Flow Systems Ontology (FSO)</terms:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#injects -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#injects">
+        <CommonCoreOntologies:definition xml:lang="en">def. to introduce (something) into a passage, cavity, or solid material under pressure.</CommonCoreOntologies:definition>
+        <rdfs:label xml:lang="en">injects</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.lexico.com/en/definition/inject</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#measures -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#measures"/>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#produces">
+        <rdfs:label xml:lang="en">produces</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">def. to make or manufacture from components or raw materials.</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">https://www.lexico.com/en/definition/produce</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#returns_fluid_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#returns_fluid_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_fluid_fed_by"/>
+        <rdfs:comment xml:lang="en">Relation implying logical return flow from a thing to another.</rdfs:comment>
+        <rdfs:label xml:lang="pt">retorna fluido para</rdfs:label>
+        <rdfs:label xml:lang="en">returns fluid to</rdfs:label>
+        <AnnotationVocabulary:adaptedFrom xml:lang="en">http://www.w3id.org/fso</AnnotationVocabulary:adaptedFrom>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#returns_fluid_to"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Relation implying logical return flow from a thing to another.</owl:annotatedTarget>
+        <terms:source xml:lang="en">Flow Systems Ontology (FSO)</terms:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#separates -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#separates">
+        <CommonCoreOntologies:definition xml:lang="en">def. to cause to move or be apart.</CommonCoreOntologies:definition>
+        <rdfs:label xml:lang="en">separates</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.lexico.com/en/definition/separate</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#stores -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#stores">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <CommonCoreOntologies:definition xml:lang="en">def. to keep or accumulate (something) for future use.</CommonCoreOntologies:definition>
+        <rdfs:label xml:lang="en">stores</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.lexico.com/en/definition/store</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#supplies_fluid_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#supplies_fluid_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_fluid_fed_by"/>
+        <rdfs:comment xml:lang="en">Relation implying logical supply flow from a thing to another.</rdfs:comment>
+        <rdfs:label xml:lang="pt">fornece fluido para</rdfs:label>
+        <rdfs:label xml:lang="en">supplies fluid to</rdfs:label>
+        <AnnotationVocabulary:adaptedFrom xml:lang="en">http://www.w3id.org/fso</AnnotationVocabulary:adaptedFrom>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#supplies_fluid_to"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Relation implying logical supply flow from a thing to another.</owl:annotatedTarget>
+        <terms:source xml:lang="en">Flow Systems Ontology (FSO)</terms:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#transports -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#transports">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <CommonCoreOntologies:definition xml:lang="en">def. the action of transporting something or the state of being transported</CommonCoreOntologies:definition>
+        <rdfs:label xml:lang="en">transports</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.lexico.com/en/definition/transport</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#treats -->
+
+    <owl:ObjectProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#treats">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <CommonCoreOntologies:definition xml:lang="en">def. to apply a process or a substance to (something) to protect or preserve it or to give it particular properties.</CommonCoreOntologies:definition>
+        <rdfs:label xml:lang="en">treats</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.lexico.com/en/definition/treat</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit"/>
@@ -310,249 +554,6 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#component_of -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#component_of">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <owl:inverseOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_component"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <CommonCoreOntologies:definition xml:lang="en">def. a part of relation that holds betweentwo material entities</CommonCoreOntologies:definition>
-        <rdfs:label xml:lang="en">component of</rdfs:label>
-        <rdfs:label xml:lang="pt">componente de</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#connected_to -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#connected_to">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:label xml:lang="pt">conectado a</rdfs:label>
-        <rdfs:label xml:lang="en">connected to</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#exchanges_fluid_with -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#exchanges_fluid_with">
-        <rdfs:subPropertyOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#connected_to"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:comment xml:lang="en">Relation between two things which have a fluid exchange connection</rdfs:comment>
-        <rdfs:label xml:lang="en">exchanges fluid with</rdfs:label>
-        <rdfs:label xml:lang="pt">troca fluido com</rdfs:label>
-        <AnnotationVocabulary:adaptedFrom xml:lang="en">http://www.w3id.org/fso</AnnotationVocabulary:adaptedFrom>
-    </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://www.petwin.org/o3po-resources/o3po#exchanges_fluid_with"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget xml:lang="en">Relation between two things which have a fluid exchange connection</owl:annotatedTarget>
-        <terms:source xml:lang="en">Flow Systems Ontology (FSO)</terms:source>
-    </owl:Axiom>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#feeds_fluid_to -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#feeds_fluid_to">
-        <rdfs:subPropertyOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#exchanges_fluid_with"/>
-        <owl:inverseOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_fluid_fed_by"/>
-        <rdfs:comment xml:lang="en">Relation from a thing feeding fluid to the thing it is feeding fluid to.</rdfs:comment>
-        <rdfs:label xml:lang="pt">alimenta fluido para</rdfs:label>
-        <rdfs:label xml:lang="en">feeds fluid to</rdfs:label>
-        <AnnotationVocabulary:adaptedFrom xml:lang="en">http://www.w3id.org/fso</AnnotationVocabulary:adaptedFrom>
-    </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://www.petwin.org/o3po-resources/o3po#feeds_fluid_to"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget xml:lang="en">Relation from a thing feeding fluid to the thing it is feeding fluid to.</owl:annotatedTarget>
-        <terms:source xml:lang="en">Flow Systems Ontology (FSO)</terms:source>
-    </owl:Axiom>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#has_component -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#has_component">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:label xml:lang="en">has component</rdfs:label>
-        <rdfs:label xml:lang="pt">tem component</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#has_fluid_fed_by -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#has_fluid_fed_by">
-        <rdfs:subPropertyOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#exchanges_fluid_with"/>
-        <rdfs:comment xml:lang="en">Relation from a thing that is fed fluid to the thing feeding the fluid.</rdfs:comment>
-        <rdfs:label xml:lang="en">has fluid fed by</rdfs:label>
-        <rdfs:label xml:lang="pt">tem fluido alimentado por</rdfs:label>
-        <AnnotationVocabulary:adaptedFrom xml:lang="en">http://www.w3id.org/fso</AnnotationVocabulary:adaptedFrom>
-    </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_fluid_fed_by"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget xml:lang="en">Relation from a thing that is fed fluid to the thing feeding the fluid.</owl:annotatedTarget>
-        <terms:source xml:lang="en">Flow Systems Ontology (FSO)</terms:source>
-    </owl:Axiom>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#has_fluid_returned_by -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#has_fluid_returned_by">
-        <rdfs:subPropertyOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#feeds_fluid_to"/>
-        <owl:inverseOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#returns_fluid_to"/>
-        <rdfs:comment xml:lang="en">Relation between a thing that has fluid returned to it and the thing returning the fluid.</rdfs:comment>
-        <rdfs:label xml:lang="en">has fluid returned by</rdfs:label>
-        <rdfs:label xml:lang="pt">tem fluido retornado por</rdfs:label>
-        <AnnotationVocabulary:adaptedFrom xml:lang="en">http://www.w3id.org/fso</AnnotationVocabulary:adaptedFrom>
-    </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_fluid_returned_by"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget xml:lang="en">Relation between a thing that has fluid returned to it and the thing returning the fluid.</owl:annotatedTarget>
-        <terms:source xml:lang="en">Flow Systems Ontology (FSO)</terms:source>
-    </owl:Axiom>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#has_fluid_supplied_by -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#has_fluid_supplied_by">
-        <rdfs:subPropertyOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#feeds_fluid_to"/>
-        <owl:inverseOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#supplies_fluid_to"/>
-        <rdfs:comment xml:lang="en">Relation between a thing that has fluid supplied to it and the thing supplying the fluid.</rdfs:comment>
-        <rdfs:label xml:lang="en">has fluid supplied by</rdfs:label>
-        <rdfs:label xml:lang="pt">tem fluido fornecido por</rdfs:label>
-        <AnnotationVocabulary:adaptedFrom xml:lang="en">http://www.w3id.org/fso</AnnotationVocabulary:adaptedFrom>
-    </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_fluid_supplied_by"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget xml:lang="en">Relation between a thing that has fluid supplied to it and the thing supplying the fluid.</owl:annotatedTarget>
-        <terms:source xml:lang="en">Flow Systems Ontology (FSO)</terms:source>
-    </owl:Axiom>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#injects -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#injects">
-        <CommonCoreOntologies:definition xml:lang="en">def. to introduce (something) into a passage, cavity, or solid material under pressure.</CommonCoreOntologies:definition>
-        <rdfs:label xml:lang="en">injects</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">https://www.lexico.com/en/definition/inject</rdfs:seeAlso>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#measures -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#measures"/>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#produces -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#produces">
-        <rdfs:label xml:lang="en">produces</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">def. to make or manufacture from components or raw materials.</rdfs:seeAlso>
-        <rdfs:seeAlso xml:lang="en">https://www.lexico.com/en/definition/produce</rdfs:seeAlso>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#returns_fluid_to -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#returns_fluid_to">
-        <rdfs:subPropertyOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_fluid_fed_by"/>
-        <rdfs:comment xml:lang="en">Relation implying logical return flow from a thing to another.</rdfs:comment>
-        <rdfs:label xml:lang="pt">retorna fluido para</rdfs:label>
-        <rdfs:label xml:lang="en">returns fluid to</rdfs:label>
-        <AnnotationVocabulary:adaptedFrom xml:lang="en">http://www.w3id.org/fso</AnnotationVocabulary:adaptedFrom>
-    </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://www.petwin.org/o3po-resources/o3po#returns_fluid_to"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget xml:lang="en">Relation implying logical return flow from a thing to another.</owl:annotatedTarget>
-        <terms:source xml:lang="en">Flow Systems Ontology (FSO)</terms:source>
-    </owl:Axiom>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#separates -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#separates">
-        <CommonCoreOntologies:definition xml:lang="en">def. to cause to move or be apart.</CommonCoreOntologies:definition>
-        <rdfs:label xml:lang="en">separates</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">https://www.lexico.com/en/definition/separate</rdfs:seeAlso>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#stores -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#stores">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <CommonCoreOntologies:definition xml:lang="en">def. to keep or accumulate (something) for future use.</CommonCoreOntologies:definition>
-        <rdfs:label xml:lang="en">stores</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">https://www.lexico.com/en/definition/store</rdfs:seeAlso>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#supplies_fluid_to -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#supplies_fluid_to">
-        <rdfs:subPropertyOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_fluid_fed_by"/>
-        <rdfs:comment xml:lang="en">Relation implying logical supply flow from a thing to another.</rdfs:comment>
-        <rdfs:label xml:lang="pt">fornece fluido para</rdfs:label>
-        <rdfs:label xml:lang="en">supplies fluid to</rdfs:label>
-        <AnnotationVocabulary:adaptedFrom xml:lang="en">http://www.w3id.org/fso</AnnotationVocabulary:adaptedFrom>
-    </owl:ObjectProperty>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://www.petwin.org/o3po-resources/o3po#supplies_fluid_to"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-        <owl:annotatedTarget xml:lang="en">Relation implying logical supply flow from a thing to another.</owl:annotatedTarget>
-        <terms:source xml:lang="en">Flow Systems Ontology (FSO)</terms:source>
-    </owl:Axiom>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#transports -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#transports">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <CommonCoreOntologies:definition xml:lang="en">def. the action of transporting something or the state of being transported</CommonCoreOntologies:definition>
-        <rdfs:label xml:lang="en">transports</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">https://www.lexico.com/en/definition/transport</rdfs:seeAlso>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.petwin.org/o3po-resources/o3po#treats -->
-
-    <owl:ObjectProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#treats">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <CommonCoreOntologies:definition xml:lang="en">def. to apply a process or a substance to (something) to protect or preserve it or to give it particular properties.</CommonCoreOntologies:definition>
-        <rdfs:label xml:lang="en">treats</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">https://www.lexico.com/en/definition/treat</rdfs:seeAlso>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -564,9 +565,9 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#has_value -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_value -->
 
-    <owl:DatatypeProperty rdf:about="https://www.petwin.org/o3po-resources/o3po#has_value">
+    <owl:DatatypeProperty rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_value">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:label xml:lang="en">has value</rdfs:label>
         <rdfs:label xml:lang="pt">tem valor</rdfs:label>
@@ -585,14 +586,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Borehole -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Borehole -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Borehole">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Borehole">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasRelatedSynonym xml:lang="en">borehole</oboInOwl:hasRelatedSynonym>
@@ -605,14 +606,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#BottomholePressure -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#BottomholePressure -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#BottomholePressure">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#pressure"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#BottomholePressure">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/qualityOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">def. pressure at the bottom of the well.</CommonCoreOntologies:definition>
@@ -622,11 +623,11 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#CentrifugalPump -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#CentrifugalPump -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#CentrifugalPump">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Pump"/>
-        <owl:disjointWith rdf:resource="https://www.petwin.org/o3po-resources/o3po#Positive-DisplacementPump"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#CentrifugalPump">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Pump"/>
+        <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Positive-DisplacementPump"/>
         <CommonCoreOntologies:definition xml:lang="en">def. a pump where the rotary motion applies centrifugal force to discharge fluids from the pump.</CommonCoreOntologies:definition>
         <rdfs:label xml:lang="pt">bomba centrífuga</rdfs:label>
         <rdfs:label xml:lang="en">centrifugal pump</rdfs:label>
@@ -635,14 +636,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#ChristmasTree -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ChristmasTree -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#ChristmasTree">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ChristmasTree">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Assembly"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#valve"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#valve"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasRelatedSynonym xml:lang="en">Tree</oboInOwl:hasRelatedSynonym>
@@ -656,17 +657,17 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#CrudeOil -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#CrudeOil -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#CrudeOil">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Petroleum"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#CrudeOil">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Petroleum"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Petroleum"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Petroleum"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://www.petwin.org/o3po-resources/o3po#NaturalGas"/>
+        <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#NaturalGas"/>
         <CommonCoreOntologies:definition xml:lang="en">def. petroleum that exists as a liquid in underground geologic formations and remains a liquid when brought to the surface.</CommonCoreOntologies:definition>
         <rdfs:label xml:lang="en">crude oil</rdfs:label>
         <rdfs:seeAlso>https://en.wikipedia.org/wiki/Petroleum</rdfs:seeAlso>
@@ -674,11 +675,11 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#FPSO -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#FPSO -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#FPSO">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Platform"/>
-        <owl:disjointWith rdf:resource="https://www.petwin.org/o3po-resources/o3po#Semisubmersible"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#FPSO">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Platform"/>
+        <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Semisubmersible"/>
         <oboInOwl:source xml:lang="en">https://www.glossary.oilfield.slb.com/Terms/f/fpso.aspx</oboInOwl:source>
         <CommonCoreOntologies:acronym xml:lang="en">FPSO</CommonCoreOntologies:acronym>
         <CommonCoreOntologies:definition xml:lang="en">def. an offshore platform that serve as gathering, processing and storage facilities for fluids produced from subsea wells.</CommonCoreOntologies:definition>
@@ -688,14 +689,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Flow -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Flow -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Flow">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Flow">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#fluid"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#fluid"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasRelatedSynonym xml:lang="en">fluid flow</oboInOwl:hasRelatedSynonym>
@@ -705,7 +706,7 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
         <rdfs:label xml:lang="pt">fluxo</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://www.petwin.org/o3po-resources/o3po#Flow"/>
+        <owl:annotatedSource rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Flow"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
         <owl:annotatedTarget xml:lang="en">Definition: The continuous movement characteristic of a liquid or gas. [Definition Source: NCI]</owl:annotatedTarget>
         <rdfs:comment xml:lang="en">http://purl.obolibrary.org/obo/NCIT_C41141</rdfs:comment>
@@ -713,41 +714,41 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#ICV -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#valve"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#valve"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/hasQuality"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#ICV_annular_pressure"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#component_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tubing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/hasQuality"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#ICV_annular_temperature"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_annular_pressure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/hasQuality"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#ICV_delta_pressure"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_annular_temperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/hasQuality"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#ICV_open_control_line_pressure"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_delta_pressure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#component_of"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#tubing"/>
+                <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/hasQuality"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_open_control_line_pressure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://www.petwin.org/o3po-resources/o3po#choke"/>
+        <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#choke"/>
         <obo:IAO_0000118 xml:lang="pt">válvula de completação inteligente</obo:IAO_0000118>
         <CommonCoreOntologies:acronym xml:lang="en">ICV</CommonCoreOntologies:acronym>
         <rdfs:label xml:lang="en">inflow control valve</rdfs:label>
@@ -756,14 +757,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#ICV_annular_pressure -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_annular_pressure -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV_annular_pressure">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#pressure"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_annular_pressure">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#ICV"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ICV annular pressure</rdfs:label>
@@ -772,14 +773,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#ICV_annular_temperature -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_annular_temperature -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV_annular_temperature">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#temperature"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_annular_temperature">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#temperature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#ICV"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ICV annular temperature</rdfs:label>
@@ -788,14 +789,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#ICV_delta_pressure -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_delta_pressure -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV_delta_pressure">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#pressure"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_delta_pressure">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#ICV"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ICV delta pressure</rdfs:label>
@@ -804,27 +805,27 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#ICV_flow_rate -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_flow_rate -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV_flow_rate">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#flow_rate"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_flow_rate">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#flow_rate"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/processCharacteristicOf"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#Flow"/>
+                            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Flow"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
-                                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#ICV"/>
+                                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://www.petwin.org/o3po-resources/o3po#WellFlowRate"/>
+        <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#WellFlowRate"/>
         <rdfs:comment xml:lang="en">the rate of a flow that occurs inside an ICV</rdfs:comment>
         <rdfs:label xml:lang="en">ICV flow rate</rdfs:label>
         <rdfs:label xml:lang="pt">vazão na ICV</rdfs:label>
@@ -832,14 +833,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#ICV_flow_rate_ICV_method -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_flow_rate_ICV_method -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV_flow_rate_ICV_method">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#flow_rate_measurement_datum"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_flow_rate_ICV_method">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#flow_rate_measurement_datum"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/isAbout"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#ICV_flow_rate"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_flow_rate"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ICV flow rate ICV method</rdfs:label>
@@ -848,14 +849,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#ICV_flow_rate_IPR_method -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_flow_rate_IPR_method -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV_flow_rate_IPR_method">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#flow_rate_measurement_datum"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_flow_rate_IPR_method">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#flow_rate_measurement_datum"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/isAbout"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#ICV_flow_rate"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_flow_rate"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ICV flow rate IPR method</rdfs:label>
@@ -864,14 +865,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#ICV_flow_rate_reconciled_method -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_flow_rate_reconciled_method -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV_flow_rate_reconciled_method">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#flow_rate_measurement_datum"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_flow_rate_reconciled_method">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#flow_rate_measurement_datum"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/isAbout"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#ICV_flow_rate"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_flow_rate"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ICV flow rate reconciled method</rdfs:label>
@@ -880,14 +881,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#ICV_open_control_line_pressure -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_open_control_line_pressure -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV_open_control_line_pressure">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#pressure"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_open_control_line_pressure">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#ICV"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ICV open control line pressure</rdfs:label>
@@ -896,17 +897,17 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#InjectionWell -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#InjectionWell -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#InjectionWell">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#InjectionWell">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#injector_role"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#injector_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://www.petwin.org/o3po-resources/o3po#Production_Well"/>
+        <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Production_Well"/>
         <CommonCoreOntologies:definition xml:lang="en">def. a well where fluids are injected rather than produced, the primary objective typically being to maintain reservoir pressure.</CommonCoreOntologies:definition>
         <rdfs:label xml:lang="en">injection well</rdfs:label>
         <rdfs:label xml:lang="pt">poço de injeção</rdfs:label>
@@ -915,20 +916,20 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Manifold -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Manifold -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Manifold">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Manifold">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Assembly"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_component"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#tube"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_component"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tube"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_component"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#valve"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_component"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#valve"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:source xml:lang="en">https://www.glossary.oilfield.slb.com/en/Terms/m/manifold.aspx</dc:source>
@@ -940,11 +941,11 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#NaturalGas -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#NaturalGas -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#NaturalGas">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Petroleum"/>
-        <owl:disjointWith rdf:resource="https://www.petwin.org/o3po-resources/o3po#Water"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#NaturalGas">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Petroleum"/>
+        <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Water"/>
         <CommonCoreOntologies:definition xml:lang="en">def. petroleum that is composed of a hydrocarbon gas mixture consisting primarily of methane, but commonly includes varying amounts of other higher alkanes and sometimes a usually lesser percentage of carbon dioxide, nitrogen, and/or hydrogen sulfide.</CommonCoreOntologies:definition>
         <rdfs:label xml:lang="pt">gás natural</rdfs:label>
         <rdfs:label xml:lang="en">natural gas</rdfs:label>
@@ -953,14 +954,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Observation_well -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Observation_well -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Observation_well">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Observation_well">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/hasRole"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#observation_role"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#observation_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:source xml:lang="en">Oil and Gas Wells, Pennsylvania Code, Title 25, Chapter 78, December 2012.</oboInOwl:source>
@@ -973,10 +974,10 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#PLEM -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#PLEM -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#PLEM">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Manifold"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#PLEM">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Manifold"/>
         <oboInOwl:source>https://oilstates.com/offshore/subsea-pipeline-products/plem-plet-structures/#:~:text=Offshore-,PLEM%2FPLET%20Structures,or%20termination%20of%20a%20pipeline.</oboInOwl:source>
         <CommonCoreOntologies:acronym>PLEM</CommonCoreOntologies:acronym>
         <CommonCoreOntologies:definition>def. a manifold that splits the product flow into multiple routes that may feed into an FPSO, refinery and holding tanks concurrently.</CommonCoreOntologies:definition>
@@ -985,19 +986,19 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Permeability -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Permeability -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Permeability">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Permeability">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_value"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_value"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_value"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_value"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1009,17 +1010,17 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Petroleum -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Petroleum -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Petroleum">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Petroleum">
         <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_earth_fluid"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#CrudeOil"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#CrudeOil"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://www.petwin.org/o3po-resources/o3po#Water"/>
+        <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Water"/>
         <CommonCoreOntologies:definition xml:lang="en">def. an earth fluid that consists of a complex mixture of hydrocarbons of various molecular weights and other liquid organic compounds, that are found in geologic formations beneath the planetary surfaces.</CommonCoreOntologies:definition>
         <rdfs:label xml:lang="en">petroleum</rdfs:label>
         <rdfs:seeAlso>https://en.wikipedia.org/wiki/Petroleum</rdfs:seeAlso>
@@ -1027,14 +1028,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Pipeline -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Pipeline -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Pipeline">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Pipeline">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Assembly"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_component"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#tube"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_component"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tube"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:source xml:lang="en">https://petrowiki.org/Glossary:Flowline</oboInOwl:source>
@@ -1048,17 +1049,17 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Platform -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Platform -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Platform">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Platform">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#field"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#field"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+        <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
         <oboInOwl:source xml:lang="en">https://petrowiki.spe.org/Glossary:Platform</oboInOwl:source>
         <CommonCoreOntologies:definition xml:lang="en">def. an engineered system that is an offshore structure from which a well may be drilled or produced.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">An offshore structure from which a well may be drilled or produced.</rdfs:comment>
@@ -1067,10 +1068,10 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Positive-DisplacementPump -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Positive-DisplacementPump -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Positive-DisplacementPump">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Pump"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Positive-DisplacementPump">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Pump"/>
         <CommonCoreOntologies:definition>A type of fluid pump in which the displacement volume of the pump is fixed for each rotation of the pump.</CommonCoreOntologies:definition>
         <rdfs:label xml:lang="pt">bomba de deslocamento positivo</rdfs:label>
         <rdfs:label xml:lang="en">positive-displacement pump</rdfs:label>
@@ -1079,14 +1080,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Production_Well -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Production_Well -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Production_Well">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Production_Well">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#producer_role"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#producer_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:source xml:lang="en">https://petrowiki.spe.org/Glossary:Producing_well</oboInOwl:source>
@@ -1097,9 +1098,9 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Pump -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Pump -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Pump">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Pump">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <oboInOwl:source xml:lang="en">https://www.lexico.com/en/definition/pump</oboInOwl:source>
         <CommonCoreOntologies:definition xml:lang="en">def. a machine that moves fluids or fluid-like amounts (e.g., slurries) by increasing pressure of the fluid or pressure difference in a fluid flow.</CommonCoreOntologies:definition>
@@ -1111,20 +1112,20 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Riser -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Riser -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Riser">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Riser">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/roleOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Pipeline"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Pipeline"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/roleOf"/>
-                <owl:allValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Pipeline"/>
+                <owl:allValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Pipeline"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:source xml:lang="en">https://petrowiki.org/Glossary:Riser</oboInOwl:source>
@@ -1135,10 +1136,10 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Semisubmersible -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Semisubmersible -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Semisubmersible">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Platform"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Semisubmersible">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Platform"/>
         <oboInOwl:source xml:lang="en">https://www.glossary.oilfield.slb.com/Terms/s/semisubmersible.aspx</oboInOwl:source>
         <CommonCoreOntologies:definition xml:lang="en">def. offshore platform that can be used for drilling, workover operations, and production platforms, depending on the equipment with which they are equipped.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">A particular type of floating vessel that is supported primarily on large pontoon-like structures submerged below the sea surface. The operating decks are elevated perhaps 100 or more feet above the pontoons on large steel columns. Semisubmersibles can operate in a wide range of water depths, including deep water. Semisubmersibles (called semisubs or simply semis) can be used for drilling, workover operations, and production platforms, depending on the equipment with which they are equipped.</rdfs:comment>
@@ -1147,9 +1148,9 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Separator -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Separator -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Separator">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Separator">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
         <oboInOwl:source xml:lang="en">https://petrowiki.spe.org/Glossary:Separator</oboInOwl:source>
         <CommonCoreOntologies:definition xml:lang="en">def. a material artifact that facilitates the separation of gas, oil, and/or water from a produced fluid stream.</CommonCoreOntologies:definition>
@@ -1160,10 +1161,10 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#SubseaTree -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#SubseaTree -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#SubseaTree">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#ChristmasTree"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#SubseaTree">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ChristmasTree"/>
         <obo:IAO_0000118 xml:lang="en">subsea christmas tree</obo:IAO_0000118>
         <CommonCoreOntologies:definition xml:lang="en">def. a christmas tree that is projected to work at subsea.</CommonCoreOntologies:definition>
         <rdfs:label xml:lang="en">subsea tree</rdfs:label>
@@ -1173,11 +1174,11 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Water -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Water -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Water">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Water">
         <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_earth_fluid"/>
-        <owl:disjointWith rdf:resource="https://www.petwin.org/o3po-resources/o3po#condensate"/>
+        <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#condensate"/>
         <CommonCoreOntologies:definition xml:lang="en">def. an earth fluid that has chemical formula H2O and is inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">Wikipedia:&quot;Water (chemical formula H2O) is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth&apos;s hydrosphere and the fluids of all known living organisms (in which it acts as a solvent[1])&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">water</rdfs:label>
@@ -1186,20 +1187,20 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Well -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Well">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Borehole"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Borehole"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#BottomholePressure"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#BottomholePressure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:source xml:lang="en">https://petrowiki.spe.org/Glossary:Completed_well</oboInOwl:source>
@@ -1211,20 +1212,20 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#WellFlowRate -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#WellFlowRate -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#WellFlowRate">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#flow_rate"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#WellFlowRate">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#flow_rate"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/processCharacteristicOf"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#Flow"/>
+                            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Flow"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
-                                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+                                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1240,14 +1241,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Wellhead -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Wellhead -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Wellhead">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Wellhead">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Assembly"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#component_of"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#component_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">def. an assembly that is located at the top of the casing strings of a well and that provide pressure control of a well, and the means for hanging and isolating the various tubular strings.</CommonCoreOntologies:definition>
@@ -1258,14 +1259,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#annulus -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#annulus -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#annulus">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#annulus">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">def. a BFO:Site that occupies a well and is delimited by any void between any piping, tubing or casing and the piping, tubing, or casing immediately surrounding it.</CommonCoreOntologies:definition>
@@ -1276,9 +1277,9 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#basin -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#basin -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#basin">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#basin">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000146"/>
         <rdfs:label xml:lang="pt">bacia</rdfs:label>
         <rdfs:label>basin</rdfs:label>
@@ -1286,23 +1287,23 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#being_operated_capability -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#being_operated_capability -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#being_operated_capability">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#being_operated_capability">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Capability"/>
         <rdfs:label xml:lang="en">being operated capability</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#casing -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#casing -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#casing">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#casing">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#component_of"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#component_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">casing</rdfs:label>
@@ -1311,30 +1312,30 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#choke -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#choke -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#choke">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#valve"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#choke">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#valve"/>
         <rdfs:label xml:lang="en">choke valve</rdfs:label>
         <rdfs:label xml:lang="pt">válvula de choke</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#choke_position -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#choke_position -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#choke_position">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#choke_position">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#choke"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#choke"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/qualityOf"/>
-                <owl:allValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#choke"/>
+                <owl:allValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#choke"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">choke position</rdfs:label>
@@ -1343,20 +1344,20 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#choke_size -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#choke_size -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#choke_size">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#choke_size">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/qualityOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#choke"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#choke"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/qualityOf"/>
-                <owl:allValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#choke"/>
+                <owl:allValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#choke"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">choke size</rdfs:label>
@@ -1365,14 +1366,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#common_close_control_line_pressure -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#common_close_control_line_pressure -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#common_close_control_line_pressure">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#pressure"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#common_close_control_line_pressure">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#control_line"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#control_line"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">common close control line pressure</rdfs:label>
@@ -1381,10 +1382,10 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#condensate -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#condensate -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#condensate">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#CrudeOil"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#condensate">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#CrudeOil"/>
         <oboInOwl:source xml:lang="en">https://www.mckinseyenergyinsights.com/resources/refinery-reference-desk/condensate/</oboInOwl:source>
         <rdfs:comment xml:lang="en">Condensate is a mixture of light liquid hydrocarbons, similar to a very light (high API) crude oil. It is typically separated out of a natural gas stream at the point of production (field separation) when the temperature and pressure of the gas is dropped to atmospheric conditions.</rdfs:comment>
         <rdfs:label xml:lang="pt">condensado</rdfs:label>
@@ -1393,10 +1394,10 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#control_line -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#control_line -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#control_line">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#tube"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#control_line">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tube"/>
         <rdfs:comment xml:lang="en">SLB Oilfield Glossary: &quot;A small-diameter hydraulic line used to operate downhole completion equipment such as the surface controlled subsurface safety valve (SCSSV). Most systems operated by control line operate on a fail-safe basis. In this mode, the control line remains pressurized at all times. Any leak or failure results in loss of control line pressure, acting to close the safety valve and render the well safe.&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">control line</rdfs:label>
         <rdfs:label xml:lang="pt">linha de controle</rdfs:label>
@@ -1404,9 +1405,9 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#delta_pressure -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#delta_pressure -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#delta_pressure">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#delta_pressure">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
         <rdfs:label xml:lang="en">delta pressure</rdfs:label>
         <rdfs:label xml:lang="pt">diferencial de pressão</rdfs:label>
@@ -1414,14 +1415,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#field -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#field -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#field">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#field">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000146"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#basin"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#basin"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">Unified definition: An area where one or more reservoirs, grouped on by the same individual geological structural feature and/or stratigraphic condition, exist in the subsurface with the possibility of sufficient economic benefit worthy of commercial attention for exploration and production of hydrocarbons.</CommonCoreOntologies:definition>
@@ -1431,14 +1432,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#field_name -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#field_name -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#field_name">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#name"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#field_name">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#name"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#field"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#field"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">field name</rdfs:label>
@@ -1447,14 +1448,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#flow_rate -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#flow_rate -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#flow_rate">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#flow_rate">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/processCharacteristicOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Flow"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Flow"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">def. a IOF:process characteristic that is volume of fluid which flows per unit of time</CommonCoreOntologies:definition>
@@ -1464,7 +1465,7 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
         <rdfs:label xml:lang="pt">vazão</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://www.petwin.org/o3po-resources/o3po#flow_rate"/>
+        <owl:annotatedSource rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#flow_rate"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
         <owl:annotatedTarget xml:lang="en">Definition: A physical quality inhering in a bearer by virtue of the bearer&apos;s motion characteristic. [database_cross_reference: WordNet:WordNet]</owl:annotatedTarget>
         <terms:source xml:lang="en">https://ontobee.org/ontology/PATO?iri=http://purl.obolibrary.org/obo/PATO_0001574</terms:source>
@@ -1472,23 +1473,23 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#flow_rate_measurement_datum -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#flow_rate_measurement_datum -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#flow_rate_measurement_datum">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#flow_rate_measurement_datum">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity"/>
         <rdfs:label xml:lang="en">flow rate measurement datum</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#flowline -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#flowline -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#flowline">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Pipeline"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#flowline">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Pipeline"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#connected_to"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#ChristmasTree"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#connected_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ChristmasTree"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">def. a pipeline that carries oil, gas or water that connects the wellhead to a manifold or to a platform.</CommonCoreOntologies:definition>
@@ -1497,14 +1498,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#flowmeter -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#flowmeter -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#flowmeter">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#sensor"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#flowmeter">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#sensor"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#measures"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#flow_rate"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#measures"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#flow_rate"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">def. a sensor that measures the flow rate of fluids through a pipeline.</CommonCoreOntologies:definition>
@@ -1516,9 +1517,9 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#fluid -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#fluid -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#fluid">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#fluid">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <obo:IAO_0000112 xml:lang="en">A puddle of water, this particular pile of sand, a barrel of oil.</obo:IAO_0000112>
         <CommonCoreOntologies:definition xml:lang="en">def. a BFO:Object that is in liquid or gas form and is able to flow in response to external pressure and has no fixed shape.</CommonCoreOntologies:definition>
@@ -1530,26 +1531,26 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#gas-lift_valve -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#gas-lift_valve -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#gas-lift_valve">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#valve"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#gas-lift_valve">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#valve"/>
         <rdfs:label xml:lang="en">gas-lift valve</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#injection_fluid -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#injection_fluid -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#injection_fluid">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#fluid"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#injection_fluid">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#fluid"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/hasRole"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#injection_role"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#injection_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://www.petwin.org/o3po-resources/o3po#production_fluid"/>
+        <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#production_fluid"/>
         <rdfs:comment xml:lang="en">Fluid injected by an injection well.</rdfs:comment>
         <rdfs:label xml:lang="pt">fluido de injeção</rdfs:label>
         <rdfs:label xml:lang="en">injection fluid</rdfs:label>
@@ -1557,20 +1558,20 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#injection_role -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#injection_role -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#injection_role">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#injection_role">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/roleOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#injection_fluid"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#injection_fluid"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/roleOf"/>
-                <owl:allValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#injection_fluid"/>
+                <owl:allValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#injection_fluid"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Role assumed by a fluid that is being injected into a well.</rdfs:comment>
@@ -1580,20 +1581,20 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#injector_role -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#injector_role -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#injector_role">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#injector_role">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/roleOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/roleOf"/>
-                <owl:allValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+                <owl:allValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">injector role</rdfs:label>
@@ -1602,17 +1603,17 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#name -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#name -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#name">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#name">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </owl:Class>
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#nozzle -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#nozzle -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#nozzle">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#nozzle">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
         <dc:description xml:lang="en">A nozzle is a device designed to control the direction or characteristics of a fluid flow (specially to increase velocity) as it exits (or enters) an enclosed chamber or pipe.
 
@@ -1621,7 +1622,7 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
         <rdfs:label xml:lang="en">nozzle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://www.petwin.org/o3po-resources/o3po#nozzle"/>
+        <owl:annotatedSource rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#nozzle"/>
         <owl:annotatedProperty rdf:resource="http://purl.org/dc/elements/1.1/description"/>
         <owl:annotatedTarget xml:lang="en">A nozzle is a device designed to control the direction or characteristics of a fluid flow (specially to increase velocity) as it exits (or enters) an enclosed chamber or pipe.
 
@@ -1629,7 +1630,7 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Nozzle</obo:IAO_0000119>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://www.petwin.org/o3po-resources/o3po#nozzle"/>
+        <owl:annotatedSource rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#nozzle"/>
         <owl:annotatedProperty rdf:resource="http://purl.org/dc/elements/1.1/description"/>
         <owl:annotatedTarget xml:lang="en">A physical object that has a protruding part through which a stream of fluid is directed.</owl:annotatedTarget>
         <obo:IAO_0000119 xml:lang="en">http://data.posccaesar.org/rdl/RDS415214</obo:IAO_0000119>
@@ -1637,20 +1638,20 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#observation_role -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#observation_role -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#observation_role">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#observation_role">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/roleOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Observation_well"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Observation_well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/roleOf"/>
-                <owl:allValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Observation_well"/>
+                <owl:allValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Observation_well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">observation role</rdfs:label>
@@ -1659,20 +1660,20 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#plant -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#plant -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#plant">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#plant">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#field"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#field"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_component"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Platform"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_component"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Platform"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">plant</rdfs:label>
@@ -1681,19 +1682,19 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#pressure -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#pressure">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_value"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_value"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_value"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_value"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1705,14 +1706,14 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#pressure_downstream_of_choke -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure_downstream_of_choke -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#pressure_downstream_of_choke">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#pressure"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure_downstream_of_choke">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#choke"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#choke"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">pressure downstream of choke</rdfs:label>
@@ -1721,14 +1722,14 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#pressure_sensor -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure_sensor -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#pressure_sensor">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#sensor"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#sensor"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#measures"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#pressure"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#measures"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">def. a sensor that measures the pressure of a fluid.</CommonCoreOntologies:definition>
@@ -1740,14 +1741,14 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#pressure_upstream_of_choke -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure_upstream_of_choke -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#pressure_upstream_of_choke">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#pressure"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure_upstream_of_choke">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#choke"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#choke"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">pressure upstream of choke</rdfs:label>
@@ -1756,20 +1757,20 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#producer_role -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#producer_role -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#producer_role">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#producer_role">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/roleOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/roleOf"/>
-                <owl:allValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+                <owl:allValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt">papel de produtor</rdfs:label>
@@ -1778,14 +1779,14 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#production_fluid -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#production_fluid -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#production_fluid">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#fluid"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#production_fluid">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#fluid"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/hasRole"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#production_role"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#production_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">def. a fluid that has_role production_role</CommonCoreOntologies:definition>
@@ -1796,20 +1797,20 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#production_role -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#production_role -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#production_role">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#production_role">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/roleOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#production_fluid"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#production_fluid"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/roleOf"/>
-                <owl:allValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#production_fluid"/>
+                <owl:allValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#production_fluid"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Role assumed by a fluid that is produced by a well such a natural gas or crude oil that are being produced by a well.</rdfs:comment>
@@ -1819,10 +1820,10 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#production_separator -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#production_separator -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#production_separator">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Separator"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#production_separator">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Separator"/>
         <rdfs:comment xml:lang="en">Wikipedia: &quot;The term separator in oilfield terminology designates a pressure vessel used for separating well fluids produced from oil and gas wells into gaseous and liquid components. A separator for petroleum production is a large vessel designed to separate production fluids into their constituent components of oil, gas and water.&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">production separator</rdfs:label>
         <rdfs:label xml:lang="pt">separador de produção</rdfs:label>
@@ -1832,14 +1833,14 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#production_zone -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#production_zone -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#production_zone">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#reservoir"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#production_zone">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#reservoir"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#stores"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Petroleum"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#stores"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Petroleum"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">A reservoir or a section of a reservoir that is drilled into and from which hydrocarbons are produced or into which fluids are injected.</CommonCoreOntologies:definition>
@@ -1849,9 +1850,9 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#reservoir -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#reservoir -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#reservoir">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#reservoir">
         <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_rock"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1862,7 +1863,7 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#reservoir_role"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#reservoir_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">A rock that contains one or more individual and separate natural accumulations of petroleum that is confined (the oil, not the reservoir) by impermeable rock.</CommonCoreOntologies:definition>
@@ -1873,28 +1874,28 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#reservoir_role -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#reservoir_role -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#reservoir_role">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#reservoir_role">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#reservoir"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#reservoir"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#riser -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#riser -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#riser">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Pipeline"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#riser">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Pipeline"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#connected_to"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Platform"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#connected_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Platform"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">def. a pipeline that vertically carries fluids or fluid-like amounts or artifacts (e.g., cables, pipes) and that connects a wellhead or a manifold on the seafloor to a platform.</CommonCoreOntologies:definition>
@@ -1904,9 +1905,9 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#sensor -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#sensor -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#sensor">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#sensor">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
         <obo:IAO_0000112 xml:lang="en">SSN: &quot;Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of Sensors include the human eyes.&quot;</obo:IAO_0000112>
         <CommonCoreOntologies:definition xml:lang="en">def. a material artifact that generates a result in response to some stimulus (e.g., a change in its environment) or input data from results of prior observations, with such result corresponding to the measurement of a physical property.</CommonCoreOntologies:definition>
@@ -1919,27 +1920,27 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#tag -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tag -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#tag">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tag">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Identifier"/>
     </owl:Class>
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#temperature -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#temperature -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#temperature">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#temperature">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_value"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_value"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_value"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_value"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1951,14 +1952,14 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#temperature_downstream_of_choke -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#temperature_downstream_of_choke -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#temperature_downstream_of_choke">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#temperature"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#temperature_downstream_of_choke">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#temperature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#choke"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#choke"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt">temperatura à jusante do choke</rdfs:label>
@@ -1967,14 +1968,14 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#temperature_sensor -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#temperature_sensor -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#temperature_sensor">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#sensor"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#temperature_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#sensor"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#measures"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#temperature"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#measures"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#temperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">def. a sensor that measures the temperature of a fluid.</CommonCoreOntologies:definition>
@@ -1986,14 +1987,14 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#temperature_upstream_of_choke -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#temperature_upstream_of_choke -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#temperature_upstream_of_choke">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#temperature"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#temperature_upstream_of_choke">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#temperature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#choke"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#choke"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt">temperatura à montante do choke</rdfs:label>
@@ -2002,10 +2003,10 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#test_separator -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#test_separator -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#test_separator">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Separator"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#test_separator">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Separator"/>
         <CommonCoreOntologies:definition xml:lang="en">def. a separator that is used to separate and meter relatively small quantities of oil and gas.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">SLB Oilfield Glossary: &quot;A vessel used to separate and meter relatively small quantities of oil and gas. Test separators can be two-phase or three-phase, or horizontal, vertical or spherical. They can also be permanent or portable. Test separators sometimes are equipped with different meters to determine oil, water and gas rates, which are important to diagnose well problems, evaluate production performance of individual wells and manage reserves properly. Test separators can also be called well testers or a well checkers.&quot;</rdfs:comment>
         <rdfs:label xml:lang="pt">separador de teste</rdfs:label>
@@ -2015,9 +2016,9 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#tube -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tube -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#tube">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tube">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
         <oboInOwl:hasRelatedSynonym xml:lang="en">duct</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym xml:lang="en">pipe</oboInOwl:hasRelatedSynonym>
@@ -2030,20 +2031,20 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#tubing -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tubing -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#tubing">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Pipeline"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tubing">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Pipeline"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#tubing_role"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tubing_role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">def. a pipeline that is inside a well.</CommonCoreOntologies:definition>
@@ -2052,14 +2053,14 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#tubing_downhole_pressure -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tubing_downhole_pressure -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#tubing_downhole_pressure">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#pressure"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tubing_downhole_pressure">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/qualityOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#tubing"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tubing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt">pressão de fundo do tubing</rdfs:label>
@@ -2068,14 +2069,14 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#tubing_downhole_temperature -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tubing_downhole_temperature -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#tubing_downhole_temperature">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#temperature"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tubing_downhole_temperature">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#temperature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/qualityOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#tubing"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tubing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt">temperatura de fundo do tubing</rdfs:label>
@@ -2084,20 +2085,20 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#tubing_role -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tubing_role -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#tubing_role">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tubing_role">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/roleOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Pipeline"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Pipeline"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/roleOf"/>
-                <owl:allValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Pipeline"/>
+                <owl:allValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Pipeline"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">tubing role</rdfs:label>
@@ -2105,9 +2106,9 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#valve -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#valve -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#valve">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#valve">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
         <CommonCoreOntologies:definition xml:lang="en">def. a functional complex that controls flow of fluids or fluid-like amounts (e.g., slurries, fluidized solids).</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">Unified definition: &quot;Device that controls (e.g., permits, obstructs, regulates, directs) a stream/flow of fluids (e.g., gases, liquids) or fluid-like amounts (e.g., slurries, fluidized solids)&quot;</rdfs:comment>
@@ -2117,22 +2118,22 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#variable -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#variable -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#variable">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#variable">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
     </owl:Class>
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#volume -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#volume -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#volume">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#volume">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/qualityOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#fluid"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#fluid"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">volume</rdfs:label>
@@ -2141,35 +2142,35 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#well_liquid_rate_in-situ_conditions -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#well_liquid_rate_in-situ_conditions -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#well_liquid_rate_in-situ_conditions">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#WellFlowRate"/>
-        <owl:disjointWith rdf:resource="https://www.petwin.org/o3po-resources/o3po#well_liquid_rate_standard_conditions"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#well_liquid_rate_in-situ_conditions">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#WellFlowRate"/>
+        <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#well_liquid_rate_standard_conditions"/>
         <rdfs:label xml:lang="pt">vazão de líquido do poço em condições de reservatório</rdfs:label>
         <rdfs:label xml:lang="en">well liquid rate in-situ conditions</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#well_liquid_rate_standard_conditions -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#well_liquid_rate_standard_conditions -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#well_liquid_rate_standard_conditions">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#WellFlowRate"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#well_liquid_rate_standard_conditions">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#WellFlowRate"/>
         <rdfs:label xml:lang="pt">vazão de líquido do poço em condições padrão</rdfs:label>
         <rdfs:label xml:lang="en">well liquid rate standard conditions</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#well_name -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#well_name -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#well_name">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#name"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#well_name">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#name"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt">nome do poço</rdfs:label>
@@ -2178,31 +2179,31 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#well_status_flag -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#well_status_flag -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#well_status_flag">
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#well_status_flag">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/qualityOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
-                <owl:allValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Well"/>
+                <owl:allValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Well"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_value"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_value"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.petwin.org/o3po-resources/o3po#has_value"/>
+                <owl:onProperty rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#has_value"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2211,14 +2212,14 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#wellhead_pressure -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#wellhead_pressure -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#wellhead_pressure">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#pressure"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#wellhead_pressure">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/qualityOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Wellhead"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Wellhead"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt">pressão na cabeça do poço</rdfs:label>
@@ -2227,14 +2228,14 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#wellhead_temperature -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#wellhead_temperature -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#wellhead_temperature">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#temperature"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#wellhead_temperature">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#temperature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/qualityOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Wellhead"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Wellhead"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="pt">temperatura na cabeça do poço</rdfs:label>
@@ -2243,36 +2244,36 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Injection_(process) -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Injection_(process) -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Injection_(process)">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Flow"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Injection_(process)">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Flow"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#InjectionWell"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#InjectionWell"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#fluid"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#fluid"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#reservoir"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#reservoir"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://www.petwin.org/o3po-resources/o3po#Production_(process)"/>
+        <owl:disjointWith rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Production_(process)"/>
         <CommonCoreOntologies:definition xml:lang="en">def. a flow that has an injection well as participant and is towards a reservoir.</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">Injection of gases or liquids into a reservoir to force oil toward and into producing wells.</rdfs:comment>
         <rdfs:label xml:lang="en">injection (process)</rdfs:label>
         <rdfs:label xml:lang="pt">injeção (processo)</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://www.petwin.org/o3po-resources/o3po#Injection_(process)"/>
+        <owl:annotatedSource rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Injection_(process)"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
         <owl:annotatedTarget xml:lang="en">Injection of gases or liquids into a reservoir to force oil toward and into producing wells.</owl:annotatedTarget>
         <terms:source xml:lang="en">Introduction to Oil &amp; Gas Production (ITOGP), 1983</terms:source>
@@ -2280,26 +2281,26 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     
 
 
-    <!-- https://www.petwin.org/o3po-resources/o3po#Production_(process) -->
+    <!-- http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Production_(process) -->
 
-    <owl:Class rdf:about="https://www.petwin.org/o3po-resources/o3po#Production_(process)">
-        <rdfs:subClassOf rdf:resource="https://www.petwin.org/o3po-resources/o3po#Flow"/>
+    <owl:Class rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Production_(process)">
+        <rdfs:subClassOf rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Flow"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Production_Well"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#reservoir"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_earth_fluid"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#Production_Well"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="https://www.petwin.org/o3po-resources/o3po#reservoir"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">def. a flow that has a production well as participant and is towards a platform.</CommonCoreOntologies:definition>
@@ -2308,28 +2309,40 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
         <rdfs:label xml:lang="pt">produção (processo)</rdfs:label>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://www.petwin.org/o3po-resources/o3po#Production_(process)"/>
+        <owl:annotatedSource rdf:resource="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Production_(process)"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
         <owl:annotatedTarget xml:lang="en">The yield of an oil or gas well. Also that branch of the petroleum industry that has to do with bringing the well fluids to the surface and separating them, and with storing, gaging, and otherwise preparing the product for the pipeline.</owl:annotatedTarget>
         <oboInOwl:source xml:lang="en">Introduction to Oil &amp; Gas Production (ITOGP), 1983</oboInOwl:source>
     </owl:Axiom>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_earth_fluid -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_earth_fluid"/>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_rock -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_rock"/>
     <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -2365,64 +2378,64 @@ A nozzle is often a pipe or tube of varying cross sectional area, and it can be 
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#BottomholePressure"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV_annular_pressure"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV_delta_pressure"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV_open_control_line_pressure"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#common_close_control_line_pressure"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#pressure_downstream_of_choke"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#pressure_upstream_of_choke"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#tubing_downhole_pressure"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#wellhead_pressure"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#BottomholePressure"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_annular_pressure"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_delta_pressure"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_open_control_line_pressure"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#common_close_control_line_pressure"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure_downstream_of_choke"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#pressure_upstream_of_choke"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tubing_downhole_pressure"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#wellhead_pressure"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#ChristmasTree"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#Separator"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#sensor"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#tube"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#valve"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ChristmasTree"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Separator"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#sensor"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tube"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#valve"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#choke"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#gas-lift_valve"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#choke"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#gas-lift_valve"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV_annular_temperature"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#temperature_downstream_of_choke"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#temperature_upstream_of_choke"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#tubing_downhole_temperature"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#wellhead_temperature"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_annular_temperature"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#temperature_downstream_of_choke"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#temperature_upstream_of_choke"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#tubing_downhole_temperature"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#wellhead_temperature"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV_flow_rate_ICV_method"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV_flow_rate_IPR_method"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#ICV_flow_rate_reconciled_method"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_flow_rate_ICV_method"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_flow_rate_IPR_method"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#ICV_flow_rate_reconciled_method"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#InjectionWell"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#Observation_well"/>
-            <rdf:Description rdf:about="https://www.petwin.org/o3po-resources/o3po#Production_Well"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#InjectionWell"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Observation_well"/>
+            <rdf:Description rdf:about="http://www.inf.ufrgs.br/INF-UFRGS-ENERGIA/ontologies/engineering/o3po#Production_Well"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
