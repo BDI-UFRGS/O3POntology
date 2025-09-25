@@ -1,0 +1,534 @@
+@prefix : <https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix Core: <https://spec.industrialontologies.org/ontology/core/Core/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix o3po: <https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ontodebug: <http://ainf.aau.at/ontodebug#> .
+@prefix AnnotationVocabulary: <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/> .
+@prefix CommonCoreOntologies: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@base <https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#> .
+
+<https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl> rdf:type owl:Ontology ;
+                                                                 owl:versionIRI <https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl/2.0> ;
+                                                                 owl:imports <http://purl.obolibrary.org/obo/bfo/2020/bfo.owl> ,
+                                                                             <http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl> ,
+                                                                             <https://spec.industrialontologies.org/ontology/202401/core/Core/> ,
+                                                                             <https://www.inf.ufrgs.br/bdi/ontologies/geocore/releases/2024-04-06/geocore.owl> ;
+                                                                 dc:contributor "Fabrício H. Rodrigues"@en ,
+                                                                                "Haroldo Rojas"@en ,
+                                                                                "Mara Abel"@en ;
+                                                                 dc:creator "Nicolau Santos"@en ;
+                                                                 dc:description "A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies."@en ,
+                                                                                "Uma ontologia de domínio para plantas de produção de petróleo offshore foi estabelecida utilizando BFO como a ontologia de topo e incorporando IOF-Core e GeoCore como ontologias de nível intermediário."@pt-br ;
+                                                                 dc:license """MIT License
+
+Copyright (c) 2025 Nicolau Oyhenard dos Santos
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS ORIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."""@en ;
+                                                                 dc:title "Offshore Petroleum Production Plant Ontology (O3PO)"@en ,
+                                                                          "Ontologia de Planta de Produção de Petróleo Offshore (O3PO)"@pt-br ;
+                                                                 owl:backwardCompatibleWith "https://www.petwin.org/o3po-resources/o3po"^^xsd:anyURI .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#ICV_annular_pressure
+o3po:ICV_annular_pressure rdf:type owl:Class ;
+                          rdfs:subClassOf o3po:pressure .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#ICV_annular_temperature
+o3po:ICV_annular_temperature rdf:type owl:Class ;
+                             rdfs:subClassOf o3po:temperature .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#ICV_delta_pressure
+o3po:ICV_delta_pressure rdf:type owl:Class ;
+                        rdfs:subClassOf o3po:pressure .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#ICV_flow_rate
+o3po:ICV_flow_rate rdf:type owl:Class ;
+                   rdfs:subClassOf o3po:flow_rate .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#ICV_flow_rate_ICV_method
+o3po:ICV_flow_rate_ICV_method rdf:type owl:Class ;
+                              rdfs:subClassOf o3po:flow_rate_measurement_datum .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#ICV_flow_rate_IPR_method
+o3po:ICV_flow_rate_IPR_method rdf:type owl:Class ;
+                              rdfs:subClassOf o3po:flow_rate_measurement_datum .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#ICV_flow_rate_reconciled_method
+o3po:ICV_flow_rate_reconciled_method rdf:type owl:Class ;
+                                     rdfs:subClassOf o3po:flow_rate_measurement_datum .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#ICV_open_control_line_pressure
+o3po:ICV_open_control_line_pressure rdf:type owl:Class ;
+                                    rdfs:subClassOf o3po:pressure .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#annulus
+o3po:annulus rdf:type owl:Class ;
+             rdfs:subClassOf obo:BFO_0000029 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#basin
+o3po:basin rdf:type owl:Class ;
+           rdfs:subClassOf obo:BFO_0000146 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#being_operated_capability
+o3po:being_operated_capability rdf:type owl:Class ;
+                               rdfs:subClassOf Core:Capability .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#bottomhole_pressure
+o3po:bottomhole_pressure rdf:type owl:Class ;
+                         rdfs:subClassOf o3po:pressure .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#casing
+o3po:casing rdf:type owl:Class ;
+            rdfs:subClassOf obo:BFO_0000027 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#centrifugal_pump
+o3po:centrifugal_pump rdf:type owl:Class ;
+                      rdfs:subClassOf o3po:pump .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#choke_position
+o3po:choke_position rdf:type owl:Class ;
+                    rdfs:subClassOf obo:BFO_0000019 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#choke_size
+o3po:choke_size rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000019 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#choke_valve
+o3po:choke_valve rdf:type owl:Class ;
+                 rdfs:subClassOf o3po:valve .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#christmas_tree
+o3po:christmas_tree rdf:type owl:Class ;
+                    rdfs:subClassOf Core:Assembly .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#common_close_control_line_pressure
+o3po:common_close_control_line_pressure rdf:type owl:Class ;
+                                        rdfs:subClassOf o3po:pressure .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#condensate
+o3po:condensate rdf:type owl:Class ;
+                rdfs:subClassOf o3po:crude_oil .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#control_line
+o3po:control_line rdf:type owl:Class ;
+                  rdfs:subClassOf o3po:tube .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#crude_oil
+o3po:crude_oil rdf:type owl:Class ;
+               rdfs:subClassOf o3po:petroleum .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#delta_pressure
+o3po:delta_pressure rdf:type owl:Class ;
+                    rdfs:subClassOf obo:BFO_0000145 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#field
+o3po:field rdf:type owl:Class ;
+           rdfs:subClassOf obo:BFO_0000146 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#field_name
+o3po:field_name rdf:type owl:Class ;
+                rdfs:subClassOf o3po:name .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#flow
+o3po:flow rdf:type owl:Class ;
+          rdfs:subClassOf obo:BFO_0000015 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#flow_rate
+o3po:flow_rate rdf:type owl:Class ;
+               rdfs:subClassOf Core:ProcessCharacteristic .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#flow_rate_measurement_datum
+o3po:flow_rate_measurement_datum rdf:type owl:Class ;
+                                 rdfs:subClassOf Core:MeasurementInformationContentEntity .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#flowline
+o3po:flowline rdf:type owl:Class ;
+              rdfs:subClassOf o3po:pipeline .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#flowmeter
+o3po:flowmeter rdf:type owl:Class ;
+               rdfs:subClassOf o3po:sensor .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#fluid
+o3po:fluid rdf:type owl:Class ;
+           rdfs:subClassOf obo:BFO_0000030 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#fpso
+o3po:fpso rdf:type owl:Class ;
+          rdfs:subClassOf o3po:platform .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#gas-lift_valve
+o3po:gas-lift_valve rdf:type owl:Class ;
+                    rdfs:subClassOf o3po:valve .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#inflow_control_valve
+o3po:inflow_control_valve rdf:type owl:Class ;
+                          rdfs:subClassOf o3po:valve .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#injection_fluid
+o3po:injection_fluid rdf:type owl:Class ;
+                     rdfs:subClassOf o3po:fluid .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#injection_role
+o3po:injection_role rdf:type owl:Class ;
+                    rdfs:subClassOf obo:BFO_0000023 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#injection_well
+o3po:injection_well rdf:type owl:Class ;
+                    rdfs:subClassOf o3po:well .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#injector_role
+o3po:injector_role rdf:type owl:Class ;
+                   rdfs:subClassOf obo:BFO_0000023 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#manifold
+o3po:manifold rdf:type owl:Class ;
+              rdfs:subClassOf Core:Assembly .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#name
+o3po:name rdf:type owl:Class ;
+          rdfs:subClassOf obo:BFO_0000019 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#natural_gas
+o3po:natural_gas rdf:type owl:Class ;
+                 rdfs:subClassOf o3po:petroleum .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#nozzle
+o3po:nozzle rdf:type owl:Class ;
+            rdfs:subClassOf Core:MaterialArtifact .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#observation_role
+o3po:observation_role rdf:type owl:Class ;
+                      rdfs:subClassOf obo:BFO_0000023 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#observation_well
+o3po:observation_well rdf:type owl:Class ;
+                      rdfs:subClassOf o3po:well .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#petroleum
+o3po:petroleum rdf:type owl:Class ;
+               rdfs:subClassOf <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009> .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#pipeline
+o3po:pipeline rdf:type owl:Class ;
+              rdfs:subClassOf Core:Assembly .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#pipeline_end_manifold
+o3po:pipeline_end_manifold rdf:type owl:Class ;
+                           rdfs:subClassOf o3po:manifold .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#plant
+o3po:plant rdf:type owl:Class ;
+           rdfs:subClassOf Core:EngineeredSystem .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#platform
+o3po:platform rdf:type owl:Class ;
+              rdfs:subClassOf obo:BFO_0000030 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#positive-displacement_pump
+o3po:positive-displacement_pump rdf:type owl:Class ;
+                                rdfs:subClassOf o3po:pump .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#pressure
+o3po:pressure rdf:type owl:Class ;
+              rdfs:subClassOf obo:BFO_0000019 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#pressure_downstream_of_choke
+o3po:pressure_downstream_of_choke rdf:type owl:Class ;
+                                  rdfs:subClassOf o3po:pressure .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#pressure_sensor
+o3po:pressure_sensor rdf:type owl:Class ;
+                     rdfs:subClassOf o3po:sensor .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#pressure_upstream_of_choke
+o3po:pressure_upstream_of_choke rdf:type owl:Class ;
+                                rdfs:subClassOf o3po:pressure .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#producer_role
+o3po:producer_role rdf:type owl:Class ;
+                   rdfs:subClassOf obo:BFO_0000023 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#production_fluid
+o3po:production_fluid rdf:type owl:Class ;
+                      rdfs:subClassOf o3po:fluid .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#production_role
+o3po:production_role rdf:type owl:Class ;
+                     rdfs:subClassOf obo:BFO_0000023 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#production_separator
+o3po:production_separator rdf:type owl:Class ;
+                          rdfs:subClassOf o3po:separator .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#production_well
+o3po:production_well rdf:type owl:Class ;
+                     rdfs:subClassOf o3po:well .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#production_zone
+o3po:production_zone rdf:type owl:Class ;
+                     rdfs:subClassOf o3po:reservoir .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#pump
+o3po:pump rdf:type owl:Class ;
+          rdfs:subClassOf obo:BFO_0000030 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#reservoir
+o3po:reservoir rdf:type owl:Class ;
+               rdfs:subClassOf <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008> .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#reservoir_role
+o3po:reservoir_role rdf:type owl:Class ;
+                    rdfs:subClassOf obo:BFO_0000023 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#riser
+o3po:riser rdf:type owl:Class ;
+           rdfs:subClassOf o3po:pipeline .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#riser_role
+o3po:riser_role rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000023 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#semisubmersible
+o3po:semisubmersible rdf:type owl:Class ;
+                     rdfs:subClassOf o3po:platform .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#sensor
+o3po:sensor rdf:type owl:Class ;
+            rdfs:subClassOf Core:MaterialArtifact .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#separator
+o3po:separator rdf:type owl:Class ;
+               rdfs:subClassOf Core:MaterialArtifact .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#subsea_tree
+o3po:subsea_tree rdf:type owl:Class ;
+                 rdfs:subClassOf o3po:christmas_tree .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#tag
+o3po:tag rdf:type owl:Class ;
+         rdfs:subClassOf Core:Identifier .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#temperature
+o3po:temperature rdf:type owl:Class ;
+                 rdfs:subClassOf obo:BFO_0000019 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#temperature_downstream_of_choke
+o3po:temperature_downstream_of_choke rdf:type owl:Class ;
+                                     rdfs:subClassOf o3po:temperature .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#temperature_sensor
+o3po:temperature_sensor rdf:type owl:Class ;
+                        rdfs:subClassOf o3po:sensor .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#temperature_upstream_of_choke
+o3po:temperature_upstream_of_choke rdf:type owl:Class ;
+                                   rdfs:subClassOf o3po:temperature .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#test_separator
+o3po:test_separator rdf:type owl:Class ;
+                    rdfs:subClassOf o3po:separator .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#tube
+o3po:tube rdf:type owl:Class ;
+          rdfs:subClassOf Core:MaterialArtifact .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#tubing
+o3po:tubing rdf:type owl:Class ;
+            rdfs:subClassOf o3po:pipeline .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#tubing_downhole_pressure
+o3po:tubing_downhole_pressure rdf:type owl:Class ;
+                              rdfs:subClassOf o3po:pressure .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#tubing_downhole_temperature
+o3po:tubing_downhole_temperature rdf:type owl:Class ;
+                                 rdfs:subClassOf o3po:temperature .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#tubing_role
+o3po:tubing_role rdf:type owl:Class ;
+                 rdfs:subClassOf obo:BFO_0000023 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#valve
+o3po:valve rdf:type owl:Class ;
+           rdfs:subClassOf Core:MaterialArtifact .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#variable
+o3po:variable rdf:type owl:Class ;
+              rdfs:subClassOf Core:InformationContentEntity .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#volume
+o3po:volume rdf:type owl:Class ;
+            rdfs:subClassOf obo:BFO_0000019 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#water
+o3po:water rdf:type owl:Class ;
+           rdfs:subClassOf <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009> .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#well
+o3po:well rdf:type owl:Class ;
+          rdfs:subClassOf obo:BFO_0000030 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#well_liquid_rate
+o3po:well_liquid_rate rdf:type owl:Class ;
+                      rdfs:subClassOf o3po:flow_rate .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#well_liquid_rate_in-situ_conditions
+o3po:well_liquid_rate_in-situ_conditions rdf:type owl:Class ;
+                                         rdfs:subClassOf o3po:well_liquid_rate .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#well_liquid_rate_standard_conditions
+o3po:well_liquid_rate_standard_conditions rdf:type owl:Class ;
+                                          rdfs:subClassOf o3po:well_liquid_rate .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#well_name
+o3po:well_name rdf:type owl:Class ;
+               rdfs:subClassOf o3po:name .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#well_status_flag
+o3po:well_status_flag rdf:type owl:Class ;
+                      rdfs:subClassOf obo:BFO_0000019 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#wellbore
+o3po:wellbore rdf:type owl:Class ;
+              rdfs:subClassOf obo:BFO_0000029 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#wellhead
+o3po:wellhead rdf:type owl:Class ;
+              rdfs:subClassOf Core:Assembly .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#wellhead_pressure
+o3po:wellhead_pressure rdf:type owl:Class ;
+                       rdfs:subClassOf o3po:pressure .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#wellhead_temperature
+o3po:wellhead_temperature rdf:type owl:Class ;
+                          rdfs:subClassOf o3po:temperature .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#injection_(process)
+<https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#injection_(process)> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf o3po:flow .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#permeability_(quality)
+<https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#permeability_(quality)> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf obo:BFO_0000019 .
+
+
+###  https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#production_(process)
+<https://raw.githubusercontent.com/n0santos/O3PO/main/o3po.owl#production_(process)> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf o3po:flow .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
