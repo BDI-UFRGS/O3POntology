@@ -1,0 +1,1508 @@
+@prefix : <https://www.inf.ufrgs.br/ontologies/o3po#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix o3po: <https://www.inf.ufrgs.br/ontologies/o3po#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geocore: <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_> .
+@prefix iof-core: <https://spec.industrialontologies.org/ontology/core/Core/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix AnnotationVocabulary: <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/> .
+@prefix CommonCoreOntologies: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@base <https://www.inf.ufrgs.br/ontologies/o3po#> .
+
+<https://www.inf.ufrgs.br/ontologies/o3po> rdf:type owl:Ontology ;
+                                            owl:versionIRI <https://www.inf.ufrgs.br/ontologies/o3po/2.0> ;
+                                            owl:imports <http://purl.obolibrary.org/obo/bfo/2020/bfo.owl> ,
+                                                        <http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl> ,
+                                                        <https://spec.industrialontologies.org/ontology/202401/core/Core/> ,
+                                                        <https://www.inf.ufrgs.br/bdi/ontologies/geocore/releases/2024-04-06/geocore.owl> ;
+                                            dc:contributor "Fabrício H. Rodrigues"@en ,
+                                                           "Haroldo Rojas"@en ,
+                                                           "Mara Abel"@en ;
+                                            dc:creator "Nicolau Santos"@en ;
+                                            dc:description "A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies."@en ,
+                                                           "Uma ontologia de domínio para plantas de produção de petróleo offshore foi estabelecida utilizando BFO como a ontologia de topo e incorporando IOF-Core e GeoCore como ontologias de nível intermediário."@pt-br ;
+                                            dc:license """MIT License
+
+Copyright (c) 2025 Nicolau Oyhenard dos Santos
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."""@en ;
+                                            dc:title "Offshore Petroleum Production Plant Ontology (O3PO)"@en ,
+                                                     "Ontologia de Planta de Produção de Petróleo Offshore (O3PO)"@pt-br ;
+                                            dcterms:abstract "A comprehensive domain ontology for modeling offshore petroleum production plants, their components, processes, and operational relationships."@en ;
+                                            dcterms:created "2023-01-15"^^xsd:date ;
+                                            dcterms:modified "2025-01-15"^^xsd:date ;
+                                            dcterms:publisher "Federal University of Rio Grande do Sul (UFRGS) - Institute of Informatics"@en ;
+                                            rdfs:comment "O3PO provides a comprehensive formal representation of offshore petroleum production systems based on BFO. The ontology follows aristotelian definition patterns as recommended in Barry Smith's 'Building Ontologies with Basic Formal Ontology'."@en ;
+                                            owl:backwardCompatibleWith <https://www.petwin.org/O3PO/o3po/> ;
+                                            owl:versionInfo "2.0" ;
+                                            foaf:homepage <https://www.inf.ufrgs.br/ontologies/o3po> ;
+                                            schema:codeRepository <https://github.com/BDI-UFRGS/O3POntology> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#componentOf
+o3po:componentOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf obo:BFO_0000050 ;
+                 owl:inverseOf o3po:hasComponent ;
+                 rdf:type owl:TransitiveProperty ;
+                 rdfs:domain obo:BFO_0000040 ;
+                 rdfs:range obo:BFO_0000040 ;
+                 CommonCoreOntologies:definition "def. a part of relation that holds between two material entities"@en ;
+                 rdfs:label "component of"@en ,
+                            "componente de"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#connectedTo
+o3po:connectedTo rdf:type owl:ObjectProperty ,
+                          owl:SymmetricProperty ;
+                 rdfs:domain obo:BFO_0000040 ;
+                 rdfs:range obo:BFO_0000040 ;
+                 rdfs:label "conectado a"@pt-br ,
+                            "connected to"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#exchangesFluidWith
+o3po:exchangesFluidWith rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf o3po:connectedTo ;
+                        rdf:type owl:SymmetricProperty ;
+                        rdfs:domain obo:BFO_0000040 ;
+                        rdfs:range obo:BFO_0000040 ;
+                        rdfs:comment "Relation between two things which have a fluid exchange connection"@en ;
+                        rdfs:label "exchanges fluid with"@en ,
+                                   "troca fluido com"@pt-br ;
+                        AnnotationVocabulary:adaptedFrom "http://www.w3id.org/fso"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#feedsFluidTo
+o3po:feedsFluidTo rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf o3po:exchangesFluidWith ;
+                  owl:inverseOf o3po:hasFluidFedBy ;
+                  rdfs:comment "Relation from a thing feeding fluid to the thing it is feeding fluid to."@en ;
+                  rdfs:label "alimenta fluido para"@pt-br ,
+                             "feeds fluid to"@en ;
+                  AnnotationVocabulary:adaptedFrom "http://www.w3id.org/fso"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#hasComponent
+o3po:hasComponent rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf obo:BFO_0000051 ;
+                  rdf:type owl:TransitiveProperty ;
+                  rdfs:label "has component"@en ,
+                             "tem componente"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#hasFluidFedBy
+o3po:hasFluidFedBy rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf o3po:exchangesFluidWith ;
+                   rdfs:comment "Relation from a thing that is fed fluid to the thing feeding the fluid."@en ;
+                   rdfs:label "has fluid fed by"@en ,
+                              "tem fluido alimentado por"@pt-br ;
+                   AnnotationVocabulary:adaptedFrom "http://www.w3id.org/fso"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#hasFluidReturnedBy
+o3po:hasFluidReturnedBy rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf o3po:feedsFluidTo ;
+                        owl:inverseOf o3po:returnsFluidTo ;
+                        rdfs:comment "Relation between a thing that has fluid returned to it and the thing returning the fluid."@en ;
+                        rdfs:label "has fluid returned by"@en ,
+                                   "tem fluido retornado por"@pt-br ;
+                        AnnotationVocabulary:adaptedFrom "http://www.w3id.org/fso"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#hasFluidSuppliedBy
+o3po:hasFluidSuppliedBy rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf o3po:feedsFluidTo ;
+                        owl:inverseOf o3po:suppliesFluidTo ;
+                        rdfs:comment "Relation between a thing that has fluid supplied to it and the thing supplying the fluid."@en ;
+                        rdfs:label "has fluid supplied by"@en ,
+                                   "tem fluido fornecido por"@pt-br ;
+                        AnnotationVocabulary:adaptedFrom "http://www.w3id.org/fso"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#injects
+o3po:injects rdf:type owl:ObjectProperty ;
+             owl:inverseOf o3po:isInjectedBy ;
+             CommonCoreOntologies:definition "def. to introduce (something) into a passage, cavity, or solid material under pressure"@en ;
+             rdfs:label "injects"@en ,
+                        "injeta"@pt-br ;
+             rdfs:seeAlso "https://www.lexico.com/en/definition/inject"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#isInjectedBy
+o3po:isInjectedBy rdf:type owl:ObjectProperty ;
+                  CommonCoreOntologies:definition "def. inverse of injects"@en ;
+                  rdfs:label "is injected by"@en ,
+                             "é injetado por"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#isProducedBy
+o3po:isProducedBy rdf:type owl:ObjectProperty ;
+                  CommonCoreOntologies:definition "def. inverse of produces"@en ;
+                  rdfs:label "is produced by"@en ,
+                             "é produzido por"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#isSeparatedBy
+o3po:isSeparatedBy rdf:type owl:ObjectProperty ;
+                   CommonCoreOntologies:definition "def. inverse of separates"@en ;
+                   rdfs:label "is separated by"@en ,
+                              "é separado por"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#isTreatedBy
+o3po:isTreatedBy rdf:type owl:ObjectProperty ;
+                 owl:inverseOf o3po:treats ;
+                 CommonCoreOntologies:definition "def. inverse of treats"@en ;
+                 rdfs:label "is treated by"@en ,
+                            "é tratado por"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#measures
+o3po:measures rdf:type owl:ObjectProperty ;
+              rdfs:domain o3po:Sensor ;
+              rdfs:range [ rdf:type owl:Class ;
+                           owl:unionOf ( obo:BFO_0000019
+                                         iof-core:ProcessCharacteristic
+                                       )
+                         ] ;
+              CommonCoreOntologies:definition "def. a relation between a sensor and a quality that the sensor is designed to measure"@en ;
+              rdfs:label "measures"@en ,
+                         "mede"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#returnsFluidTo
+o3po:returnsFluidTo rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf o3po:hasFluidFedBy ;
+                    rdfs:comment "Relation implying logical return flow from a thing to another."@en ;
+                    rdfs:label "retorna fluido para"@pt-br ,
+                               "returns fluid to"@en ;
+                    AnnotationVocabulary:adaptedFrom "http://www.w3id.org/fso"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#suppliesFluidTo
+o3po:suppliesFluidTo rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf o3po:hasFluidFedBy ;
+                     rdfs:comment "Relation implying logical supply flow from a thing to another."@en ;
+                     rdfs:label "fornece fluido para"@pt-br ,
+                                "supplies fluid to"@en ;
+                     AnnotationVocabulary:adaptedFrom "http://www.w3id.org/fso"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#transports
+o3po:transports rdf:type owl:ObjectProperty ;
+                CommonCoreOntologies:definition "def. the action of transporting something or the state of being transported"@en ;
+                rdfs:label "transporta"@pt-br ,
+                           "transports"@en ;
+                rdfs:seeAlso "https://www.lexico.com/en/definition/transport"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#treats
+o3po:treats rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ,
+                     owl:AsymmetricProperty ,
+                     owl:IrreflexiveProperty ;
+            CommonCoreOntologies:definition "def. to apply a process or a substance to (something) to protect or preserve it or to give it particular properties"@en ;
+            rdfs:label "trata"@pt-br ,
+                       "treats"@en ;
+            rdfs:seeAlso "https://www.lexico.com/en/definition/treat"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#hasFlowRateValue
+o3po:hasFlowRateValue rdf:type owl:DatatypeProperty ;
+                      rdfs:domain o3po:FlowRate ;
+                      rdfs:range xsd:float ;
+                      CommonCoreOntologies:definition "def. a relation between a flow rate and a float value representing the volumetric flow magnitude"@en ;
+                      rdfs:comment "Flow rate typically expressed in cubic meters per day (m³/d) or barrels per day (bbl/d)."@en ;
+                      rdfs:label "has flow rate value"@en ,
+                                 "tem valor de vazão"@pt-br .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Annulus
+o3po:Annulus rdf:type owl:Class ;
+             rdfs:subClassOf obo:BFO_0000029 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:BFO_0000050 ;
+                               owl:someValuesFrom o3po:Well
+                             ] ;
+             CommonCoreOntologies:definition "def. a BFO:Site that occupies a well and is delimited by any void between any piping, tubing or casing and the piping, tubing, or casing immediately surrounding it"@en ;
+             rdfs:comment "The annulus of an oil well or water well is any void between any piping, tubing or casing and the piping, tubing, or casing immediately surrounding it."@en ;
+             rdfs:label "annulus"@en ,
+                        "anular"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Basin
+o3po:Basin rdf:type owl:Class ;
+           rdfs:subClassOf obo:BFO_0000146 ;
+           CommonCoreOntologies:definition "def. a two-dimensional continuant faunal boundary"@en ;
+           rdfs:label "bacia"@pt-br ,
+                      "basin"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#BeingOperatedCapability
+o3po:BeingOperatedCapability rdf:type owl:Class ;
+                             rdfs:subClassOf iof-core:Capability ;
+                             CommonCoreOntologies:definition "def. a capability to be operated"@en ;
+                             rdfs:label "being operated capability"@en ,
+                                        "capacidade de ser operado"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Borehole
+o3po:Borehole rdf:type owl:Class ;
+              rdfs:subClassOf obo:BFO_0000029 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty obo:BFO_0000050 ;
+                                owl:someValuesFrom o3po:Well
+                              ] ;
+              oboInOwl:hasRelatedSynonym "borehole"@en ;
+              oboInOwl:source "https://www.lexico.com/en/definition/well"@en ;
+              CommonCoreOntologies:definition "def. a BFO:Site that is a boring in the Earth designed to bring oil, gas or water to the surface"@en ;
+              rdfs:comment "A shaft sunk into the ground to obtain water, oil, or gas."@en ;
+              rdfs:label "furo do poço"@pt-br ,
+                         "wellbore"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#BottomholePressure
+o3po:BottomholePressure rdf:type owl:Class ;
+                        rdfs:subClassOf o3po:Pressure ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty iof-core:qualityOf ;
+                                          owl:someValuesFrom o3po:Well
+                                        ] ;
+                        CommonCoreOntologies:definition "def. pressure at the bottom of the well"@en ;
+                        rdfs:label "bottomhole pressure"@en ,
+                                   "pressão de fundo"@pt-br ;
+                        rdfs:seeAlso "https://www.glossary.oilfield.slb.com/Terms/b/bottomhole_pressure.aspx"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Casing
+o3po:Casing rdf:type owl:Class ;
+            rdfs:subClassOf iof-core:MaterialArtifact ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty o3po:componentOf ;
+                              owl:someValuesFrom o3po:Well
+                            ] ;
+            CommonCoreOntologies:definition "def. a material artifact that is a component of a well and provides structural integrity to the wellbore"@en ;
+            rdfs:label "casing"@en ,
+                       "revestimento"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#CentrifugalPump
+o3po:CentrifugalPump rdf:type owl:Class ;
+                     rdfs:subClassOf o3po:Pump ;
+                     owl:disjointWith o3po:PositiveDisplacementPump ;
+                     CommonCoreOntologies:definition "def. a pump where the rotary motion applies centrifugal force to discharge fluids from the pump"@en ;
+                     rdfs:label "bomba centrífuga"@pt-br ,
+                                "centrifugal pump"@en ;
+                     rdfs:seeAlso "https://www.glossary.oilfield.slb.com/Terms/c/centrifugal_pump.aspx" .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Choke
+o3po:Choke rdf:type owl:Class ;
+           rdfs:subClassOf o3po:Valve ;
+           owl:disjointWith o3po:ICV ;
+           CommonCoreOntologies:definition "def. a valve that restricts flow"@en ;
+           rdfs:label "choke valve"@en ,
+                      "válvula de choke"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ChokePosition
+o3po:ChokePosition rdf:type owl:Class ;
+                   rdfs:subClassOf obo:BFO_0000019 ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty obo:RO_0000080 ;
+                                     owl:someValuesFrom o3po:Choke
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty iof-core:qualityOf ;
+                                     owl:allValuesFrom o3po:Choke
+                                   ] ;
+                   CommonCoreOntologies:definition "def. a quality that represents the position of a choke"@en ;
+                   rdfs:label "choke position"@en ,
+                              "posição do choke"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ChokeSize
+o3po:ChokeSize rdf:type owl:Class ;
+               rdfs:subClassOf obo:BFO_0000019 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty iof-core:qualityOf ;
+                                 owl:someValuesFrom o3po:Choke
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty iof-core:qualityOf ;
+                                 owl:allValuesFrom o3po:Choke
+                               ] ;
+               CommonCoreOntologies:definition "def. a quality that represents the size of a choke"@en ;
+               rdfs:label "choke size"@en ,
+                          "tamanho do choke"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree
+o3po:ChristmasTree rdf:type owl:Class ;
+                   rdfs:subClassOf iof-core:Assembly ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty iof-core:hasComponentPartAtAllTimes ;
+                                     owl:someValuesFrom o3po:Valve
+                                   ] ;
+                   oboInOwl:hasRelatedSynonym "Tree"@en ;
+                   oboInOwl:source <https://en.wikipedia.org/wiki/Christmas_tree_(oil_well)> ;
+                   CommonCoreOntologies:definition "def. an assembly that is composed of valves and that is located above a well and that is directly or indirectly connected to the well to control the flow of fluids from/into the well"@en ;
+                   rdfs:comment "In petroleum and natural gas extraction, a Christmas tree, or 'tree', is an assembly of valves, spools, and fittings used to regulate the flow of pipes in an oil well, gas well, water injection well, water disposal well, gas injection well, condensate well and other types of wells."@en ;
+                   rdfs:label "christmas tree"@en ,
+                              "árvore de natal"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#CommonCloseControlLinePressure
+o3po:CommonCloseControlLinePressure rdf:type owl:Class ;
+                                    rdfs:subClassOf o3po:Pressure ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty obo:RO_0000080 ;
+                                                      owl:someValuesFrom o3po:ControlLine
+                                                    ] ;
+                                    CommonCoreOntologies:definition "def. a pressure in a control line"@en ;
+                                    rdfs:label "common close control line pressure"@en ,
+                                               "pressão de linha de controle comum de fechamento"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Condensate
+o3po:Condensate rdf:type owl:Class ;
+                rdfs:subClassOf o3po:CrudeOil ;
+                owl:disjointWith o3po:Water ;
+                oboInOwl:source "https://www.mckinseyenergyinsights.com/resources/refinery-reference-desk/condensate/"@en ;
+                CommonCoreOntologies:definition "def. crude oil that is a mixture of light liquid hydrocarbons, similar to a very light crude oil"@en ;
+                rdfs:comment "Condensate is a mixture of light liquid hydrocarbons, similar to a very light (high API) crude oil. It is typically separated out of a natural gas stream at the point of production (field separation) when the temperature and pressure of the gas is dropped to atmospheric conditions."@en ;
+                rdfs:label "condensado"@pt-br ,
+                           "condensate"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ControlLine
+o3po:ControlLine rdf:type owl:Class ;
+                 rdfs:subClassOf o3po:Tube ;
+                 CommonCoreOntologies:definition "def. a tube that is a small-diameter hydraulic line used to operate downhole completion equipment"@en ;
+                 rdfs:comment "A small-diameter hydraulic line used to operate downhole completion equipment such as the surface controlled subsurface safety valve (SCSSV). Most systems operated by control line operate on a fail-safe basis."@en ;
+                 rdfs:label "control line"@en ,
+                            "linha de controle"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#CrudeOil
+o3po:CrudeOil rdf:type owl:Class ;
+              rdfs:subClassOf o3po:Petroleum ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty obo:BFO_0000050 ;
+                                owl:someValuesFrom o3po:Petroleum
+                              ] ;
+              owl:disjointWith o3po:NaturalGas ;
+              CommonCoreOntologies:definition "def. petroleum that exists as a liquid in underground geologic formations and remains a liquid when brought to the surface"@en ;
+              rdfs:label "crude oil"@en ,
+                         "óleo cru"@pt-br ;
+              rdfs:seeAlso "https://en.wikipedia.org/wiki/Petroleum" .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#DeltaPressure
+o3po:DeltaPressure rdf:type owl:Class ;
+                   rdfs:subClassOf obo:BFO_0000145 ;
+                   CommonCoreOntologies:definition "def. a relational quality that is a pressure difference"@en ;
+                   rdfs:label "delta pressure"@en ,
+                              "diferencial de pressão"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#FPSO
+o3po:FPSO rdf:type owl:Class ;
+          rdfs:subClassOf o3po:Platform ;
+          owl:disjointWith o3po:Semisubmersible ;
+          oboInOwl:source "https://www.glossary.oilfield.slb.com/Terms/f/fpso.aspx"@en ;
+          CommonCoreOntologies:acronym "FPSO"@en ;
+          CommonCoreOntologies:definition "def. an offshore platform that serves as gathering, processing and storage facilities for fluids produced from subsea wells"@en ;
+          rdfs:comment "Abbreviation for floating production, storage, and offloading vessel. FPSOs are commonly deployed for offshore production in locations that have little infrastructure. They serve as gathering, processing and storage facilities for fluids produced from subsea wells. Processed using equipment on the ship's deck, the fluids are then stored in the ship's hull before they are offloaded to pipelines, barges, or ships."@en ;
+          rdfs:label "FPSO"@pt-br ,
+                     "floating production, storage, and offloading vessel"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Field
+o3po:Field rdf:type owl:Class ;
+           rdfs:subClassOf obo:BFO_0000146 ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty obo:RO_0001025 ;
+                             owl:someValuesFrom o3po:Basin
+                           ] ;
+           CommonCoreOntologies:definition "def. a two-dimensional continuant faunal boundary that is an area where one or more reservoirs, grouped on by the same individual geological structural feature and/or stratigraphic condition, exist in the subsurface with the possibility of sufficient economic benefit worthy of commercial attention for exploration and production of hydrocarbons"@en ;
+           rdfs:label "campo"@pt-br ,
+                      "field"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#FieldName
+o3po:FieldName rdf:type owl:Class ;
+               rdfs:subClassOf o3po:Name ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:BFO_0000197 ;
+                                 owl:someValuesFrom o3po:Field
+                               ] ;
+               CommonCoreOntologies:definition "def. a name that specifically denominates a field"@en ;
+               rdfs:label "field name"@en ,
+                          "nome do campo"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Flow
+o3po:Flow rdf:type owl:Class ;
+          rdfs:subClassOf obo:BFO_0000015 ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty obo:RO_0000057 ;
+                            owl:someValuesFrom o3po:Fluid
+                          ] ;
+          oboInOwl:hasRelatedSynonym "fluid flow"@en ;
+          CommonCoreOntologies:definition "def. a process that has participant some fluid and the fluid is in continuous movement"@en ;
+          rdfs:comment "The continuous movement characteristic of a liquid or gas."@en ;
+          rdfs:label "flow"@en ,
+                     "fluxo"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#FlowRate
+o3po:FlowRate rdf:type owl:Class ;
+              rdfs:subClassOf iof-core:ProcessCharacteristic ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty iof-core:processCharacteristicOf ;
+                                owl:someValuesFrom o3po:Flow
+                              ] ;
+              CommonCoreOntologies:definition "def. a IOF:process characteristic that is volume of fluid which flows per unit of time"@en ;
+              rdfs:comment "The volume of fluid which flows per unit of time"@en ;
+              rdfs:label "flow rate"@en ,
+                         "vazão"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#FlowRateMeasurementDatum
+o3po:FlowRateMeasurementDatum rdf:type owl:Class ;
+                              rdfs:subClassOf iof-core:MeasurementInformationContentEntity ;
+                              CommonCoreOntologies:definition "def. a measurement information content entity about flow rate"@en ;
+                              rdfs:label "dado de medição de vazão"@pt-br ,
+                                         "flow rate measurement datum"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Flowline
+o3po:Flowline rdf:type owl:Class ;
+              rdfs:subClassOf o3po:Pipeline ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty o3po:connectedTo ;
+                                owl:someValuesFrom o3po:ChristmasTree
+                              ] ;
+              CommonCoreOntologies:definition "def. a pipeline that carries oil, gas or water that connects the wellhead to a manifold or to a platform"@en ;
+              rdfs:label "flowline"@en ,
+                         "linha de fluxo"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Flowmeter
+o3po:Flowmeter rdf:type owl:Class ;
+               rdfs:subClassOf o3po:Sensor ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty o3po:measures ;
+                                 owl:someValuesFrom o3po:FlowRate
+                               ] ;
+               CommonCoreOntologies:definition "def. a sensor that measures the flow rate of fluids through a pipeline"@en ;
+               rdfs:comment "An instrument that measures the flow rate of fluids through a pipeline."@en ;
+               rdfs:label "flowmeter"@en ,
+                          "medidor de vazão"@pt-br ;
+               rdfs:seeAlso "https://glossary.oilfield.slb.com/en/Terms/f/flowmeter.aspx"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Fluid
+o3po:Fluid rdf:type owl:Class ;
+           rdfs:subClassOf obo:BFO_0000030 ;
+           obo:IAO_0000112 "A puddle of water, this particular pile of sand, a barrel of oil."@en ;
+           CommonCoreOntologies:definition "def. a BFO:Object that is in liquid or gas form and is able to flow in response to external pressure and has no fixed shape"@en ;
+           rdfs:comment "Portion of Substance (e.g., liquid or gas) that tends/is able to flow in response to external pressure and has no fixed shape."@en ;
+           rdfs:label "fluid (portion of)"@en ,
+                      "fluido (porção de)"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#GasLiftValve
+o3po:GasLiftValve rdf:type owl:Class ;
+                  rdfs:subClassOf o3po:Valve ;
+                  CommonCoreOntologies:definition "def. a valve used in gas-lift operations"@en ;
+                  rdfs:label "gas-lift valve"@en ,
+                             "válvula de gas-lift"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ICV
+o3po:ICV rdf:type owl:Class ;
+         rdfs:subClassOf o3po:Valve ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty iof-core:hasQuality ;
+                           owl:someValuesFrom o3po:ICVAnnularPressure
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty iof-core:hasQuality ;
+                           owl:someValuesFrom o3po:ICVAnnularTemperature
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty iof-core:hasQuality ;
+                           owl:someValuesFrom o3po:ICVDeltaPressure
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty iof-core:hasQuality ;
+                           owl:someValuesFrom o3po:ICVOpenControlLinePressure
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty o3po:componentOf ;
+                           owl:someValuesFrom o3po:Tubing
+                         ] ;
+         obo:IAO_0000118 "válvula de completação inteligente"@pt-br ;
+         CommonCoreOntologies:acronym "ICV"@en ;
+         rdfs:label "inflow control valve"@en ,
+                    "válvula de controle de influxo"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularPressure
+o3po:ICVAnnularPressure rdf:type owl:Class ;
+                        rdfs:subClassOf o3po:Pressure ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty obo:RO_0000080 ;
+                                          owl:someValuesFrom o3po:ICV
+                                        ] ;
+                        CommonCoreOntologies:definition "def. a pressure quality that inheres in the annular space of an ICV"@en ;
+                        rdfs:label "ICV annular pressure"@en ,
+                                   "pressão no anular do ICV"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularTemperature
+o3po:ICVAnnularTemperature rdf:type owl:Class ;
+                           rdfs:subClassOf o3po:Temperature ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty obo:RO_0000080 ;
+                                             owl:someValuesFrom o3po:ICV
+                                           ] ;
+                           CommonCoreOntologies:definition "def. a temperature quality that inheres in the annular space of an ICV"@en ;
+                           rdfs:label "ICV annular temperature"@en ,
+                                      "temperatura no anular do ICV"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ICVDeltaPressure
+o3po:ICVDeltaPressure rdf:type owl:Class ;
+                      rdfs:subClassOf o3po:Pressure ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty obo:RO_0000080 ;
+                                        owl:someValuesFrom o3po:ICV
+                                      ] ;
+                      CommonCoreOntologies:definition "def. a pressure quality that represents the pressure difference across an ICV"@en ;
+                      rdfs:label "ICV delta pressure"@en ,
+                                 "pressão delta do ICV"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRate
+o3po:ICVFlowRate rdf:type owl:Class ;
+                 rdfs:subClassOf o3po:FlowRate ;
+                 owl:disjointWith o3po:WellFlowRate ;
+                 CommonCoreOntologies:definition "def. a flow rate that is a process characteristic of a flow that occurs inside an ICV"@en ;
+                 rdfs:comment "the rate of a flow that occurs inside an ICV"@en ;
+                 rdfs:label "ICV flow rate"@en ,
+                            "vazão na ICV"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateICVMethod
+o3po:ICVFlowRateICVMethod rdf:type owl:Class ;
+                          rdfs:subClassOf o3po:FlowRateMeasurementDatum ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty iof-core:isAbout ;
+                                            owl:someValuesFrom o3po:ICVFlowRate
+                                          ] ;
+                          CommonCoreOntologies:definition "def. a flow rate measurement datum about ICV flow rate determined using the ICV method"@en ;
+                          rdfs:label "ICV flow rate ICV method"@en ,
+                                     "vazão da ICV método ICV"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateIPRMethod
+o3po:ICVFlowRateIPRMethod rdf:type owl:Class ;
+                          rdfs:subClassOf o3po:FlowRateMeasurementDatum ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty iof-core:isAbout ;
+                                            owl:someValuesFrom o3po:ICVFlowRate
+                                          ] ;
+                          CommonCoreOntologies:definition "def. a flow rate measurement datum about ICV flow rate determined using the IPR (Inflow Performance Relationship) method"@en ;
+                          rdfs:label "ICV flow rate IPR method"@en ,
+                                     "vazão da ICV método IPR"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateReconciledMethod
+o3po:ICVFlowRateReconciledMethod rdf:type owl:Class ;
+                                 rdfs:subClassOf o3po:FlowRateMeasurementDatum ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty iof-core:isAbout ;
+                                                   owl:someValuesFrom o3po:ICVFlowRate
+                                                 ] ;
+                                 CommonCoreOntologies:definition "def. a flow rate measurement datum about ICV flow rate determined using a reconciled method that combines multiple measurement sources"@en ;
+                                 rdfs:label "ICV flow rate reconciled method"@en ,
+                                            "vazão da ICV método reconciliado"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ICVOpenControlLinePressure
+o3po:ICVOpenControlLinePressure rdf:type owl:Class ;
+                                rdfs:subClassOf o3po:Pressure ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty obo:RO_0000080 ;
+                                                  owl:someValuesFrom o3po:ICV
+                                                ] ;
+                                CommonCoreOntologies:definition "def. a pressure quality that inheres in the open control line of an ICV"@en ;
+                                rdfs:label "ICV open control line pressure"@en ,
+                                           "pressão na linha de controle aberta do ICV"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#InjectionFluid
+o3po:InjectionFluid rdf:type owl:Class ;
+                    rdfs:subClassOf o3po:Fluid ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty iof-core:hasRole ;
+                                      owl:someValuesFrom o3po:InjectionRole
+                                    ] ;
+                    owl:disjointWith o3po:ProductionFluid ;
+                    CommonCoreOntologies:definition "def. a fluid that has role some injection role"@en ;
+                    rdfs:comment "Fluid injected by an injection well."@en ;
+                    rdfs:label "fluido de injeção"@pt-br ,
+                               "injection fluid"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#InjectionProcess
+o3po:InjectionProcess rdf:type owl:Class ;
+                      rdfs:subClassOf o3po:Flow ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty obo:RO_0000057 ;
+                                        owl:someValuesFrom o3po:Fluid
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty obo:RO_0000057 ;
+                                        owl:someValuesFrom o3po:InjectionWell
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty obo:RO_0000057 ;
+                                        owl:someValuesFrom o3po:Reservoir
+                                      ] ;
+                      owl:disjointWith o3po:ProductionProcess ;
+                      CommonCoreOntologies:definition "def. a flow that has an injection well as participant and is towards a reservoir"@en ;
+                      rdfs:comment "Injection of gases or liquids into a reservoir to force oil toward and into producing wells."@en ;
+                      rdfs:label "injection (process)"@en ,
+                                 "injeção (processo)"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#InjectionRole
+o3po:InjectionRole rdf:type owl:Class ;
+                   rdfs:subClassOf obo:BFO_0000023 ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty iof-core:roleOf ;
+                                     owl:someValuesFrom o3po:InjectionFluid
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty iof-core:roleOf ;
+                                     owl:allValuesFrom o3po:InjectionFluid
+                                   ] ;
+                   CommonCoreOntologies:definition "def. a role borne by a fluid that is being injected into a well"@en ;
+                   rdfs:comment "Role assumed by a fluid that is being injected into a well."@en ;
+                   rdfs:label "injection role"@en ,
+                              "papel de injeção"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#InjectionWell
+o3po:InjectionWell rdf:type owl:Class ;
+                   rdfs:subClassOf o3po:Well ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty obo:RO_0000087 ;
+                                     owl:someValuesFrom o3po:InjectorRole
+                                   ] ;
+                   owl:disjointWith o3po:ProductionWell ;
+                   CommonCoreOntologies:definition "def. a well where fluids are injected rather than produced, the primary objective typically being to maintain reservoir pressure"@en ;
+                   rdfs:label "injection well"@en ,
+                              "poço de injeção"@pt-br ;
+                   rdfs:seeAlso "https://petrowiki.spe.org/Glossary:Injection_well" .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#InjectorRole
+o3po:InjectorRole rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000023 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty iof-core:roleOf ;
+                                    owl:someValuesFrom o3po:Well
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty iof-core:roleOf ;
+                                    owl:allValuesFrom o3po:Well
+                                  ] ;
+                  CommonCoreOntologies:definition "def. a role borne by a well that injects fluids"@en ;
+                  rdfs:label "injector role"@en ,
+                             "papel de injetor"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Manifold
+o3po:Manifold rdf:type owl:Class ;
+              rdfs:subClassOf iof-core:Assembly ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty o3po:hasComponent ;
+                                owl:someValuesFrom o3po:Tube
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty o3po:hasComponent ;
+                                owl:someValuesFrom o3po:Valve
+                              ] ;
+              dc:source "https://www.glossary.oilfield.slb.com/en/Terms/m/manifold.aspx"@en ;
+              CommonCoreOntologies:definition "def. an assembly that has disposition to connect several flowlines and designed to control, distribute and typically monitor fluid flow from or to multiple wells"@en ;
+              rdfs:comment "An arrangement of piping or valves designed to control, distribute and typically monitor fluid flow."@en ;
+              rdfs:label "manifold"@en ,
+                         "manifold"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Name
+o3po:Name rdf:type owl:Class ;
+          rdfs:subClassOf obo:BFO_0000019 ;
+          CommonCoreOntologies:definition "def. a quality that serves as a linguistic identifier for an entity"@en ;
+          rdfs:label "name"@en ,
+                     "nome"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#NaturalGas
+o3po:NaturalGas rdf:type owl:Class ;
+                rdfs:subClassOf o3po:Petroleum ;
+                owl:disjointWith o3po:Water ;
+                CommonCoreOntologies:definition "def. petroleum that is composed of a hydrocarbon gas mixture consisting primarily of methane, but commonly includes varying amounts of other higher alkanes and sometimes a usually lesser percentage of carbon dioxide, nitrogen, and/or hydrogen sulfide"@en ;
+                rdfs:label "gás natural"@pt-br ,
+                           "natural gas"@en ;
+                rdfs:seeAlso "https://en.wikipedia.org/wiki/Natural_gas" .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Nozzle
+o3po:Nozzle rdf:type owl:Class ;
+            rdfs:subClassOf iof-core:MaterialArtifact ;
+            dc:description "A nozzle is a device designed to control the direction or characteristics of a fluid flow (specially to increase velocity) as it exits (or enters) an enclosed chamber or pipe. A nozzle is often a pipe or tube of varying cross sectional area, and it can be used to direct or modify the flow of a fluid (liquid or gas). Nozzles are frequently used to control the rate of flow, speed, direction, mass, shape, and/or the pressure of the stream that emerges from them. In a nozzle, the velocity of fluid increases at the expense of its pressure energy."@en ;
+            CommonCoreOntologies:definition "def. a material artifact that has a protruding part through which a stream of fluid is directed"@en ;
+            rdfs:label "bocal"@pt-br ,
+                       "nozzle"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ObservationRole
+o3po:ObservationRole rdf:type owl:Class ;
+                     rdfs:subClassOf obo:BFO_0000023 ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty iof-core:roleOf ;
+                                       owl:someValuesFrom o3po:ObservationWell
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty iof-core:roleOf ;
+                                       owl:allValuesFrom o3po:ObservationWell
+                                     ] ;
+                     CommonCoreOntologies:definition "def. a role borne by a well used for observation"@en ;
+                     rdfs:label "observation role"@en ,
+                                "papel de observação"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell
+o3po:ObservationWell rdf:type owl:Class ;
+                     rdfs:subClassOf o3po:Well ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty iof-core:hasRole ;
+                                       owl:someValuesFrom o3po:ObservationRole
+                                     ] ;
+                     oboInOwl:source "Oil and Gas Wells, Pennsylvania Code, Title 25, Chapter 78, December 2012."@en ,
+                                     "https://iadclexicon.org/observation-well/"@en ;
+                     CommonCoreOntologies:definition "def. a well that bears an observation role"@en ;
+                     rdfs:comment "A well used to monitor the operational integrity and conditions in a gas storage reservoir, the reservoir protective area or strata above or below the gas storage horizon."@en ;
+                     rdfs:label "observation well"@en ,
+                                "poço de observação"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#PLEM
+o3po:PLEM rdf:type owl:Class ;
+          rdfs:subClassOf o3po:Manifold ;
+          oboInOwl:source "https://oilstates.com/offshore/subsea-pipeline-products/plem-plet-structures/" ;
+          CommonCoreOntologies:acronym "PLEM" ;
+          CommonCoreOntologies:definition "def. a manifold that splits the product flow into multiple routes that may feed into an FPSO, refinery and holding tanks concurrently"@en ;
+          rdfs:label "manifold de término de tubulação"@pt-br ,
+                     "pipeline end manifold"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Permeability
+o3po:Permeability rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000019 ;
+                  CommonCoreOntologies:definition "def. the measure of the ability of a porous material (often, a rock or an unconsolidated material) to allow fluids to pass through it"@en ;
+                  rdfs:label "permeabilidade (qualidade)"@pt-br ,
+                             "permeability (quality)"@en ;
+                  rdfs:seeAlso "https://en.wikipedia.org/wiki/Permeability_(Earth_sciences)"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Petroleum
+o3po:Petroleum rdf:type owl:Class ;
+               rdfs:subClassOf <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009> ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:BFO_0000051 ;
+                                 owl:someValuesFrom o3po:CrudeOil
+                               ] ;
+               owl:disjointWith o3po:Water ;
+               CommonCoreOntologies:definition "def. an earth fluid that consists of a complex mixture of hydrocarbons of various molecular weights and other liquid organic compounds, that are found in geologic formations beneath the planetary surfaces"@en ;
+               rdfs:label "petroleum"@en ,
+                          "petróleo"@pt-br ;
+               rdfs:seeAlso "https://en.wikipedia.org/wiki/Petroleum" .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Pipeline
+o3po:Pipeline rdf:type owl:Class ;
+              rdfs:subClassOf iof-core:Assembly ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty o3po:hasComponent ;
+                                owl:someValuesFrom o3po:Tube
+                              ] ;
+              owl:disjointWith o3po:Sensor ;
+              oboInOwl:source "https://petrowiki.org/Glossary:Flowline"@en ;
+              CommonCoreOntologies:definition "def. an assembly that is necessarily composed of tubes which are connected to one another in a single, maximal/end-to-end line, and that is intended for conveying liquids, gases or finely divided solids"@en ;
+              rdfs:comment "The pipe connection between the well and the separators or tank battery."@en ;
+              rdfs:label "pipeline"@en ,
+                         "tubulação"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Plant
+o3po:Plant rdf:type owl:Class ;
+           rdfs:subClassOf iof-core:EngineeredSystem ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty obo:RO_0001025 ;
+                             owl:someValuesFrom o3po:Field
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty o3po:hasComponent ;
+                             owl:someValuesFrom o3po:Platform
+                           ] ;
+           CommonCoreOntologies:definition "def. an engineered system located at a field"@en ;
+           rdfs:label "plant"@en ,
+                      "planta"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Platform
+o3po:Platform rdf:type owl:Class ;
+              rdfs:subClassOf iof-core:MaterialArtifact ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty obo:RO_0001025 ;
+                                owl:someValuesFrom o3po:Field
+                              ] ;
+              owl:disjointWith o3po:Well ;
+              oboInOwl:source "https://petrowiki.spe.org/Glossary:Platform"@en ;
+              CommonCoreOntologies:definition "def. a material artifact that is an offshore structure from which a well may be drilled or produced"@en ;
+              rdfs:comment "An offshore structure from which a well may be drilled or produced."@en ;
+              rdfs:label "plataforma"@pt-br ,
+                         "platform"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#PositiveDisplacementPump
+o3po:PositiveDisplacementPump rdf:type owl:Class ;
+                              rdfs:subClassOf o3po:Pump ;
+                              CommonCoreOntologies:definition "def. a type of fluid pump in which the displacement volume of the pump is fixed for each rotation of the pump"@en ;
+                              rdfs:label "bomba de deslocamento positivo"@pt-br ,
+                                         "positive-displacement pump"@en ;
+                              rdfs:seeAlso "https://www.glossary.oilfield.slb.com/Terms/p/positive-displacement_pump.aspx" .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Pressure
+o3po:Pressure rdf:type owl:Class ;
+              rdfs:subClassOf obo:BFO_0000019 ;
+              CommonCoreOntologies:definition "def. a BFO:Quality that corresponds to the degree/intensity of the force applied perpendicular to the surface of a BFO:Material_Entity per unit area over which that force is distributed"@en ;
+              rdfs:comment "A quality that corresponds to the degree/intensity of the force applied perpendicular to the surface of a material entity per unit area over which that force is distributed."@en ;
+              rdfs:label "pressure"@en ,
+                         "pressão"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#PressureDownstreamOfChoke
+o3po:PressureDownstreamOfChoke rdf:type owl:Class ;
+                               rdfs:subClassOf o3po:Pressure ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty obo:RO_0000080 ;
+                                                 owl:someValuesFrom o3po:Choke
+                                               ] ;
+                               CommonCoreOntologies:definition "def. a pressure measured downstream of a choke"@en ;
+                               rdfs:label "pressure downstream of choke"@en ,
+                                          "pressão à jusante do choke"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#PressureSensor
+o3po:PressureSensor rdf:type owl:Class ;
+                    rdfs:subClassOf o3po:Sensor ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty o3po:measures ;
+                                      owl:someValuesFrom o3po:Pressure
+                                    ] ;
+                    CommonCoreOntologies:definition "def. a sensor that measures the pressure of a fluid"@en ;
+                    rdfs:comment "A device for pressure measurement of gases or liquids."@en ;
+                    rdfs:label "pressure sensor"@en ,
+                               "sensor de pressão"@pt-br ;
+                    rdfs:seeAlso "https://en.wikipedia.org/wiki/Pressure_sensor"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#PressureUpstreamOfChoke
+o3po:PressureUpstreamOfChoke rdf:type owl:Class ;
+                             rdfs:subClassOf o3po:Pressure ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty obo:RO_0000080 ;
+                                               owl:someValuesFrom o3po:Choke
+                                             ] ;
+                             CommonCoreOntologies:definition "def. a pressure measured upstream of a choke"@en ;
+                             rdfs:label "pressure upstream of choke"@en ,
+                                        "pressão à montante do choke"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ProducerRole
+o3po:ProducerRole rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000023 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty iof-core:roleOf ;
+                                    owl:someValuesFrom o3po:Well
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty iof-core:roleOf ;
+                                    owl:allValuesFrom o3po:Well
+                                  ] ;
+                  CommonCoreOntologies:definition "def. a role borne by a well that produces hydrocarbons"@en ;
+                  rdfs:label "papel de produtor"@pt-br ,
+                             "producer role"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ProductionFluid
+o3po:ProductionFluid rdf:type owl:Class ;
+                     rdfs:subClassOf o3po:Fluid ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty iof-core:hasRole ;
+                                       owl:someValuesFrom o3po:ProductionRole
+                                     ] ;
+                     CommonCoreOntologies:definition "def. a fluid that has_role production_role"@en ;
+                     rdfs:comment "Fluid produced by a production well."@en ;
+                     rdfs:label "fluido de produção"@pt-br ,
+                                "production fluid"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ProductionProcess
+o3po:ProductionProcess rdf:type owl:Class ;
+                       rdfs:subClassOf o3po:Flow ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty obo:RO_0000057 ;
+                                         owl:someValuesFrom <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009>
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty obo:RO_0000057 ;
+                                         owl:someValuesFrom o3po:ProductionWell
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty obo:RO_0000057 ;
+                                         owl:someValuesFrom o3po:Reservoir
+                                       ] ;
+                       CommonCoreOntologies:definition "def. a flow that has a production well as participant and is towards a platform"@en ;
+                       rdfs:comment "The yield of an oil or gas well. Also that branch of the petroleum industry that has to do with bringing the well fluids to the surface and separating them, and with storing, gaging, and otherwise preparing the product for the pipeline."@en ;
+                       rdfs:label "production (process)"@en ,
+                                  "produção (processo)"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ProductionRole
+o3po:ProductionRole rdf:type owl:Class ;
+                    rdfs:subClassOf obo:BFO_0000023 ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty iof-core:roleOf ;
+                                      owl:someValuesFrom o3po:ProductionFluid
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty iof-core:roleOf ;
+                                      owl:allValuesFrom o3po:ProductionFluid
+                                    ] ;
+                    CommonCoreOntologies:definition "def. a role borne by a fluid that is produced by a well"@en ;
+                    rdfs:comment "Role assumed by a fluid that is produced by a well such as natural gas or crude oil that are being produced by a well."@en ;
+                    rdfs:label "papel de produção"@pt-br ,
+                               "production role"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ProductionSeparator
+o3po:ProductionSeparator rdf:type owl:Class ;
+                         rdfs:subClassOf o3po:Separator ;
+                         CommonCoreOntologies:definition "def. a separator that separates production fluids into their constituent components of crude oil, gas and water"@en ;
+                         rdfs:comment "The term separator in oilfield terminology designates a pressure vessel used for separating well fluids produced from oil and gas wells into gaseous and liquid components. A separator for petroleum production is a large vessel designed to separate production fluids into their constituent components of oil, gas and water."@en ;
+                         rdfs:label "production separator"@en ,
+                                    "separador de produção"@pt-br ;
+                         rdfs:seeAlso "https://en.wikipedia.org/wiki/Separator_(oil_production)"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ProductionWell
+o3po:ProductionWell rdf:type owl:Class ;
+                    rdfs:subClassOf o3po:Well ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty obo:RO_0000087 ;
+                                      owl:someValuesFrom o3po:ProducerRole
+                                    ] ;
+                    oboInOwl:source "https://petrowiki.spe.org/Glossary:Producing_well"@en ;
+                    CommonCoreOntologies:definition "def. a well that produces hydrocarbon in commercial quantities"@en ;
+                    rdfs:label "poço de produção"@pt-br ,
+                               "production well"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ProductionZone
+o3po:ProductionZone rdf:type owl:Class ;
+                    rdfs:subClassOf o3po:Reservoir ;
+                    CommonCoreOntologies:definition "def. a reservoir or a section of a reservoir that is drilled into and from which hydrocarbons are produced or into which fluids are injected"@en ;
+                    rdfs:label "production zone"@en ,
+                               "zona de produção"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Pump
+o3po:Pump rdf:type owl:Class ;
+          rdfs:subClassOf iof-core:MaterialArtifact ;
+          oboInOwl:source "https://www.lexico.com/en/definition/pump"@en ;
+          CommonCoreOntologies:definition "def. a material artifact that moves fluids or fluid-like amounts (e.g., slurries) by increasing pressure of the fluid or pressure difference in a fluid flow"@en ;
+          rdfs:comment "Device that moves (e.g., transfer, deliver, compress) fluids (e.g., liquids, gases) or fluid-like amounts (e.g., slurries) by increasing pressure."@en ;
+          rdfs:label "bomba"@pt-br ,
+                     "pump"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Reservoir
+o3po:Reservoir rdf:type owl:Class ;
+               rdfs:subClassOf <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008> ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:BFO_0000051 ;
+                                 owl:someValuesFrom <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009>
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:RO_0000087 ;
+                                 owl:someValuesFrom o3po:ReservoirRole
+                               ] ;
+               CommonCoreOntologies:definition "def. a rock that contains one or more individual and separate natural accumulations of petroleum that is confined (the oil, not the reservoir) by impermeable rock"@en ;
+               rdfs:comment "A rock (defined in GeoCore) containing one or more individual and separate natural accumulations of petroleum that is confined (the oil, not the reservoir) by impermeable rock."@en ;
+               rdfs:label "reservatório"@pt-br ,
+                          "reservoir"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ReservoirRole
+o3po:ReservoirRole rdf:type owl:Class ;
+                   rdfs:subClassOf obo:BFO_0000023 ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty obo:RO_0000081 ;
+                                     owl:someValuesFrom o3po:Reservoir
+                                   ] ;
+                   CommonCoreOntologies:definition "def. a role borne by a reservoir"@en ;
+                   rdfs:label "papel de reservatório"@pt-br ,
+                              "reservoir role"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Riser
+o3po:Riser rdf:type owl:Class ;
+           rdfs:subClassOf obo:BFO_0000023 ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty iof-core:roleOf ;
+                             owl:someValuesFrom o3po:Pipeline
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty iof-core:roleOf ;
+                             owl:allValuesFrom o3po:Pipeline
+                           ] ;
+           oboInOwl:source "https://petrowiki.org/Glossary:Riser"@en ;
+           CommonCoreOntologies:definition "def. a pipeline that vertically carries fluids or fluid-like amounts or artifacts (e.g., cables, pipes) and that connects a wellhead or a manifold on the seafloor to a platform"@en ,
+                                           "def. a role that has bearer some pipeline"@en ;
+           rdfs:comment "Pipe or pipeline that vertically carries materials (e.g., production fluids, drilling mud, drilling cuttings) or artifacts (e.g., cables, pipes) and that connects a wellhead or a manifold on the seafloor to a production and/or drilling platform."@en ,
+                        "Pipe through which liquid travels upward."@en ;
+           rdfs:label "papel de riser"@pt-br ,
+                      "riser"@en ,
+                      "riser"@pt-br ,
+                      "riser role"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Semisubmersible
+o3po:Semisubmersible rdf:type owl:Class ;
+                     rdfs:subClassOf o3po:Platform ;
+                     oboInOwl:source "https://www.glossary.oilfield.slb.com/Terms/s/semisubmersible.aspx"@en ;
+                     CommonCoreOntologies:definition "def. offshore platform that can be used for drilling, workover operations, and production platforms, depending on the equipment with which they are equipped"@en ;
+                     rdfs:comment "A particular type of floating vessel that is supported primarily on large pontoon-like structures submerged below the sea surface. The operating decks are elevated perhaps 100 or more feet above the pontoons on large steel columns. Semisubmersibles can operate in a wide range of water depths, including deep water."@en ;
+                     rdfs:label "semissubmersível"@pt-br ,
+                                "semisubmersible"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Sensor
+o3po:Sensor rdf:type owl:Class ;
+            rdfs:subClassOf iof-core:MaterialArtifact ;
+            obo:IAO_0000112 "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of Sensors include the human eyes."@en ;
+            CommonCoreOntologies:definition "def. a material artifact that generates a result in response to some stimulus (e.g., a change in its environment) or input data from results of prior observations, with such result corresponding to the measurement of a physical property"@en ;
+            rdfs:comment "A device that produces an output signal for the purpose of sensing of a physical phenomenon."@en ;
+            rdfs:label "sensor"@en ,
+                       "sensor"@pt-br ;
+            rdfs:seeAlso "https://en.wikipedia.org/wiki/Sensor"^^xsd:anyURI .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Separator
+o3po:Separator rdf:type owl:Class ;
+               rdfs:subClassOf iof-core:MaterialArtifact ;
+               oboInOwl:source "https://petrowiki.spe.org/Glossary:Separator"@en ;
+               CommonCoreOntologies:definition "def. a material artifact that facilitates the separation of gas, oil, and/or water from a produced fluid stream"@en ;
+               rdfs:comment "A production treating vessel designed to facilitate the separation of gas, oil, and/or water from a produced fluid stream."@en ;
+               rdfs:label "separador"@pt-br ,
+                          "separator"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#SubseaTree
+o3po:SubseaTree rdf:type owl:Class ;
+                rdfs:subClassOf o3po:ChristmasTree ;
+                obo:IAO_0000118 "subsea christmas tree"@en ;
+                CommonCoreOntologies:definition "def. a christmas tree that is projected to work at subsea"@en ;
+                rdfs:label "subsea tree"@en ,
+                           "árvore de natal molhada"@pt-br ;
+                rdfs:seeAlso "https://en.wikipedia.org/wiki/Christmas_tree_(oil_well)" .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Tag
+o3po:Tag rdf:type owl:Class ;
+         rdfs:subClassOf iof-core:Identifier ;
+         obo:IAO_0000112 "PT-001, TT-102, PCV-205"@en ;
+         CommonCoreOntologies:definition "def. an identifier used in industrial contexts to uniquely reference equipment, instruments, or systems within a plant"@en ;
+         rdfs:comment "Tags follow standardized naming conventions (e.g., ISA-5.1) to ensure consistency across engineering documentation."@en ;
+         rdfs:label "etiqueta"@pt-br ,
+                    "tag"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Temperature
+o3po:Temperature rdf:type owl:Class ;
+                 rdfs:subClassOf obo:BFO_0000019 ;
+                 CommonCoreOntologies:definition "def. a BFO:Quality that corresponds to the degree/intensity of the thermal energy of a BFO:Material_Entity"@en ;
+                 rdfs:comment "A quality that corresponds to the degree/intensity of the thermal energy of a material entity."@en ;
+                 rdfs:label "temperatura"@pt-br ,
+                            "temperature"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#TemperatureDownstreamOfChoke
+o3po:TemperatureDownstreamOfChoke rdf:type owl:Class ;
+                                  rdfs:subClassOf o3po:Temperature ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty obo:RO_0000080 ;
+                                                    owl:someValuesFrom o3po:Choke
+                                                  ] ;
+                                  CommonCoreOntologies:definition "def. a temperature measured downstream of a choke"@en ;
+                                  rdfs:label "temperatura à jusante do choke"@pt-br ,
+                                             "temperature downstream of choke"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#TemperatureSensor
+o3po:TemperatureSensor rdf:type owl:Class ;
+                       rdfs:subClassOf o3po:Sensor ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty o3po:measures ;
+                                         owl:someValuesFrom o3po:Temperature
+                                       ] ;
+                       CommonCoreOntologies:definition "def. a sensor that measures the temperature of a fluid"@en ;
+                       rdfs:comment "A device that measures temperature or a temperature gradient (the degree of hotness or coldness of an object)."@en ;
+                       rdfs:label "sensor de temperatura"@pt-br ,
+                                  "temperature sensor"@en ;
+                       rdfs:seeAlso "https://en.wikipedia.org/wiki/Thermometer"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#TemperatureUpstreamOfChoke
+o3po:TemperatureUpstreamOfChoke rdf:type owl:Class ;
+                                rdfs:subClassOf o3po:Temperature ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty obo:RO_0000080 ;
+                                                  owl:someValuesFrom o3po:Choke
+                                                ] ;
+                                CommonCoreOntologies:definition "def. a temperature measured upstream of a choke"@en ;
+                                rdfs:label "temperatura à montante do choke"@pt-br ,
+                                           "temperature upstream of choke"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#TestSeparator
+o3po:TestSeparator rdf:type owl:Class ;
+                   rdfs:subClassOf o3po:Separator ;
+                   CommonCoreOntologies:definition "def. a separator that is used to separate and meter relatively small quantities of oil and gas"@en ;
+                   rdfs:comment "A vessel used to separate and meter relatively small quantities of oil and gas. Test separators can be two-phase or three-phase, or horizontal, vertical or spherical. They can also be permanent or portable."@en ;
+                   rdfs:label "separador de teste"@pt-br ,
+                              "test separator"@en ;
+                   rdfs:seeAlso "https://glossary.oilfield.slb.com/Terms/t/test_separator.aspx"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Tube
+o3po:Tube rdf:type owl:Class ;
+          rdfs:subClassOf iof-core:MaterialArtifact ;
+          oboInOwl:hasRelatedSynonym "duct"@en ,
+                                     "pipe"@en ,
+                                     "tubular"@en ;
+          CommonCoreOntologies:definition "def. a material artifact that is long, enclosed and hollow and that acts as a passageway to carry different sorts of things (e.g., fluids, cables, other ducts)"@en ;
+          rdfs:comment "Functional Object / Material Artifact that is enclosed and hollow and that acts as a passageway to carry different sorts of things (e.g., fluids, cables, other ducts)."@en ;
+          rdfs:label "tube"@en ,
+                     "tubo"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Tubing
+o3po:Tubing rdf:type owl:Class ;
+            rdfs:subClassOf o3po:Pipeline ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty obo:RO_0000087 ;
+                              owl:someValuesFrom o3po:TubingRole
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty iof-core:componentPartOfAtSomeTime ;
+                              owl:someValuesFrom o3po:Well
+                            ] ;
+            CommonCoreOntologies:definition "def. a pipeline that is inside a well"@en ;
+            rdfs:label "coluna de produção"@pt-br ,
+                       "tubing"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholePressure
+o3po:TubingDownholePressure rdf:type owl:Class ;
+                            rdfs:subClassOf o3po:Pressure ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty iof-core:qualityOf ;
+                                              owl:someValuesFrom o3po:Tubing
+                                            ] ;
+                            CommonCoreOntologies:definition "def. a pressure measured at the downhole location of tubing"@en ;
+                            rdfs:label "pressão de fundo do tubing"@pt-br ,
+                                       "tubing downhole pressure"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholeTemperature
+o3po:TubingDownholeTemperature rdf:type owl:Class ;
+                               rdfs:subClassOf o3po:Temperature ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty iof-core:qualityOf ;
+                                                 owl:someValuesFrom o3po:Tubing
+                                               ] ;
+                               CommonCoreOntologies:definition "def. a temperature measured at the downhole location of tubing"@en ;
+                               rdfs:label "temperatura de fundo do tubing"@pt-br ,
+                                          "tubing downhole temperature"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#TubingRole
+o3po:TubingRole rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000023 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty iof-core:roleOf ;
+                                  owl:someValuesFrom o3po:Pipeline
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty iof-core:roleOf ;
+                                  owl:allValuesFrom o3po:Pipeline
+                                ] ;
+                CommonCoreOntologies:definition "def. a role borne by a pipeline that is inside a well"@en ;
+                rdfs:label "papel de tubing"@pt-br ,
+                           "tubing role"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Valve
+o3po:Valve rdf:type owl:Class ;
+           rdfs:subClassOf iof-core:MaterialArtifact ;
+           CommonCoreOntologies:definition "def. a functional complex that controls flow of fluids or fluid-like amounts (e.g., slurries, fluidized solids)"@en ;
+           rdfs:comment "Device that controls (e.g., permits, obstructs, regulates, directs) a stream/flow of fluids (e.g., gases, liquids) or fluid-like amounts (e.g., slurries, fluidized solids)."@en ;
+           rdfs:label "valve"@en ,
+                      "válvula"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Variable
+o3po:Variable rdf:type owl:Class ;
+              rdfs:subClassOf iof-core:InformationContentEntity ;
+              obo:IAO_0000112 "flow rate, pressure, temperature"@en ;
+              CommonCoreOntologies:definition "def. an information content entity that represents a measurable attribute or parameter that can change over time in a production system"@en ;
+              rdfs:label "variable"@en ,
+                         "variável"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Volume
+o3po:Volume rdf:type owl:Class ;
+            rdfs:subClassOf obo:BFO_0000019 ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty iof-core:qualityOf ;
+                              owl:someValuesFrom o3po:Fluid
+                            ] ;
+            CommonCoreOntologies:definition "def. a quality that represents the amount of three-dimensional space occupied by a fluid"@en ;
+            rdfs:label "volume"@en ,
+                       "volume"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Water
+o3po:Water rdf:type owl:Class ;
+           rdfs:subClassOf <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009> ;
+           CommonCoreOntologies:definition "def. an earth fluid that has chemical formula H2O and is inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance"@en ;
+           rdfs:comment "Water (chemical formula H2O) is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of all known living organisms."@en ;
+           rdfs:label "water"@en ,
+                      "água"@pt-br .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Well
+o3po:Well rdf:type owl:Class ;
+          rdfs:subClassOf iof-core:MaterialArtifact ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty obo:BFO_0000051 ;
+                            owl:someValuesFrom o3po:Borehole
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty obo:RO_0000086 ;
+                            owl:someValuesFrom o3po:BottomholePressure
+                          ] ;
+          oboInOwl:source "https://petrowiki.spe.org/Glossary:Completed_well"@en ;
+          CommonCoreOntologies:definition "def. a material artifact that is used to produce hydrocarbons or inject fluids and is located in a wellbore"@en ;
+          rdfs:comment "A well that has been drilled, cased and cemented and is ready to produce hydrocarbons."@en ;
+          rdfs:label "poço"@pt-br ,
+                     "well"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#WellFlowRate
+o3po:WellFlowRate rdf:type owl:Class ;
+                  rdfs:subClassOf o3po:FlowRate ;
+                  obo:IAO_0000112 "production rate of a well, injection rate of a well"@en ;
+                  CommonCoreOntologies:definition "def. the flow rate that has only crude oil and water as participants and occurs in a well"@en ;
+                  rdfs:label "vazão líquida do poço"@pt-br ,
+                             "well liquid rate"@en ;
+                  rdfs:seeAlso "https://www.glossary.oilfield.slb.com/Terms/w/well_flow_rate.aspx"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateInSituConditions
+o3po:WellLiquidRateInSituConditions rdf:type owl:Class ;
+                                    rdfs:subClassOf o3po:WellFlowRate ;
+                                    owl:disjointWith o3po:WellLiquidRateStandardConditions ;
+                                    CommonCoreOntologies:definition "def. a well flow rate measured at in-situ (reservoir) conditions"@en ;
+                                    rdfs:label "vazão de líquido do poço em condições de reservatório"@pt-br ,
+                                               "well liquid rate in-situ conditions"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateStandardConditions
+o3po:WellLiquidRateStandardConditions rdf:type owl:Class ;
+                                      rdfs:subClassOf o3po:WellFlowRate ;
+                                      CommonCoreOntologies:definition "def. a well flow rate measured at standard conditions"@en ;
+                                      rdfs:label "vazão de líquido do poço em condições padrão"@pt-br ,
+                                                 "well liquid rate standard conditions"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#WellName
+o3po:WellName rdf:type owl:Class ;
+              rdfs:subClassOf o3po:Name ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty obo:BFO_0000197 ;
+                                owl:someValuesFrom o3po:Well
+                              ] ;
+              CommonCoreOntologies:definition "def. a name that specifically denominates a well"@en ;
+              rdfs:label "nome do poço"@pt-br ,
+                         "well name"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#WellStatusFlag
+o3po:WellStatusFlag rdf:type owl:Class ;
+                    rdfs:subClassOf obo:BFO_0000019 ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty iof-core:qualityOf ;
+                                      owl:someValuesFrom o3po:Well
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty obo:RO_0000080 ;
+                                      owl:allValuesFrom o3po:Well
+                                    ] ;
+                    CommonCoreOntologies:definition "def. a quality that represents the operational status of a well as a boolean value"@en ;
+                    rdfs:label "flag de status do poço"@pt-br ,
+                               "well status flag"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Wellhead
+o3po:Wellhead rdf:type owl:Class ;
+              rdfs:subClassOf iof-core:Assembly ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty o3po:componentOf ;
+                                owl:someValuesFrom o3po:Well
+                              ] ;
+              CommonCoreOntologies:definition "def. an assembly that is located at the top of the casing strings of a well and that provide pressure control of a well, and the means for hanging and isolating the various tubular strings"@en ;
+              rdfs:comment "An equipment (or assembly) located to the top of the casing strings of a well that provide pressure control of a well, and the means for hanging and isolating the various tubular strings."@en ;
+              rdfs:label "cabeça do poço"@pt-br ,
+                         "wellhead"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#WellheadPressure
+o3po:WellheadPressure rdf:type owl:Class ;
+                      rdfs:subClassOf o3po:Pressure ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty iof-core:qualityOf ;
+                                        owl:someValuesFrom o3po:Wellhead
+                                      ] ;
+                      CommonCoreOntologies:definition "def. a pressure measured at the wellhead"@en ;
+                      rdfs:label "pressão na cabeça do poço"@pt-br ,
+                                 "wellhead pressure"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#WellheadTemperature
+o3po:WellheadTemperature rdf:type owl:Class ;
+                         rdfs:subClassOf o3po:Temperature ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty iof-core:qualityOf ;
+                                           owl:someValuesFrom o3po:Wellhead
+                                         ] ;
+                         CommonCoreOntologies:definition "def. a temperature measured at the wellhead"@en ;
+                         rdfs:label "temperatura na cabeça do poço"@pt-br ,
+                                    "wellhead temperature"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( o3po:BottomholePressure
+                o3po:CommonCloseControlLinePressure
+                o3po:ICVAnnularPressure
+                o3po:ICVDeltaPressure
+                o3po:ICVOpenControlLinePressure
+                o3po:PressureDownstreamOfChoke
+                o3po:PressureUpstreamOfChoke
+                o3po:TubingDownholePressure
+                o3po:WellheadPressure
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( o3po:Choke
+                o3po:GasLiftValve
+                o3po:ICV
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( o3po:ChristmasTree
+                o3po:Sensor
+                o3po:Separator
+                o3po:Tube
+                o3po:Valve
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( o3po:ICVAnnularTemperature
+                o3po:TemperatureDownstreamOfChoke
+                o3po:TemperatureUpstreamOfChoke
+                o3po:TubingDownholeTemperature
+                o3po:WellheadTemperature
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( o3po:ICVFlowRateICVMethod
+                o3po:ICVFlowRateIPRMethod
+                o3po:ICVFlowRateReconciledMethod
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( o3po:InjectionWell
+                o3po:ObservationWell
+                o3po:ProductionWell
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
