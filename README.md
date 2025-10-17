@@ -25,7 +25,7 @@ It provides a structured vocabulary for modeling production systems, equipment, 
 
 ## 📚 Imported Ontologies
 
-O3PO directly imports the following foundational ontologies:
+O3PO directly imports the following ontologies:
 
 | Ontology | Version / IRI | Purpose |
 |-----------|----------------|----------|
