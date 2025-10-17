@@ -1,6 +1,6 @@
 # O3PO: A domain ontology for offshore petroleum production plants
 
-The **Offshore Petroleum Production Ontology (O3PO)** is a bilingual, BFO‑aligned domain ontology that formally represents knowledge about offshore oil and gas production systems.  
+The **Offshore Petroleum Production Plant Ontology (O3PO)** is a bilingual, BFO‑aligned domain ontology that formally represents knowledge about offshore oil and gas production systems.  
 It was introduced in the paper:
 
 > **Santos, N. O., Rodrigues, F. H., Schmidt, D., Romeu, R. K., Nascimento, G., & Abel, M. (2024).**  
