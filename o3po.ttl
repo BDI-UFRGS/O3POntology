@@ -1442,6 +1442,96 @@ o3po:WellheadTemperature rdf:type owl:Class ;
                          rdfs:label "temperatura na cabeça do poço"@pt-br ,
                                     "wellhead temperature"@en .
 
+#################################################################
+#    Classes: Processing Equipment
+#################################################################
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Blower
+o3po:Blower rdf:type owl:Class ;
+    rdfs:subClassOf iof-core:MaterialArtifact ;
+    CommonCoreOntologies:definition "def. A material artifact designed to move gas with a moderate increase of pressure."@en ;
+    rdfs:comment "Blowers are used to move gas or air. They operate at a pressure ratio between that of a fan and a compressor."@en ;
+    rdfs:label "blower"@en ,
+               "soprador"@pt-br .
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Cooler
+o3po:Cooler rdf:type owl:Class ;
+    rdfs:subClassOf o3po:HeatExchanger ;
+    CommonCoreOntologies:definition "def. A heat exchanger designed to reduce the temperature of a process fluid by transferring heat to a cooling medium (air or water)."@en ;
+    rdfs:label "cooler"@en ,
+               "resfriador"@pt-br .
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Filter
+o3po:Filter rdf:type owl:Class ;
+    rdfs:subClassOf iof-core:MaterialArtifact ;
+    CommonCoreOntologies:definition "def. A material artifact containing a porous medium or screen designed to remove solid particles or liquid droplets from a fluid stream."@en ;
+    rdfs:label "filter"@en ,
+               "filtro"@pt-br .
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#CoalescingFilter
+o3po:CoalescingFilter rdf:type owl:Class ;
+    rdfs:subClassOf o3po:Filter ;
+    CommonCoreOntologies:definition "def. A filter designed to cause liquid aerosols in a gas stream to coalesce into larger droplets for removal."@en ;
+    rdfs:label "coalescing filter"@en ,
+               "filtro coalescente"@pt-br .
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#ParticulateFilter
+o3po:ParticulateFilter rdf:type owl:Class ;
+    rdfs:subClassOf o3po:Filter ;
+    CommonCoreOntologies:definition "def. A filter designed principally to remove solid particulate matter from a fluid stream."@en ;
+    rdfs:label "particulate filter"@en ,
+               "filtro de particulado"@pt-br .
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#HeatExchanger
+o3po:HeatExchanger rdf:type owl:Class ;
+    rdfs:subClassOf iof-core:MaterialArtifact ;
+    CommonCoreOntologies:definition "def. A material artifact designed to transfer thermal energy from one fluid to another without them mixing."@en ;
+    rdfs:label "heat exchanger"@en ,
+               "trocador de calor"@pt-br .
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Heater
+o3po:Heater rdf:type owl:Class ;
+    rdfs:subClassOf iof-core:MaterialArtifact ;
+    CommonCoreOntologies:definition "def. A material artifact designed to raise the temperature of a fluid, typically using an external heat source (combustion or electricity)."@en ;
+    rdfs:label "heater"@en ,
+               "aquecedor"@pt-br .
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#GasHeater
+o3po:GasHeater rdf:type owl:Class ;
+    rdfs:subClassOf o3po:Heater ;
+    CommonCoreOntologies:definition "def. A heater designed specifically to raise the temperature of a gas stream, often to prevent hydrate formation during pressure reduction."@en ;
+    rdfs:comment "Often referred to as a Line Heater in upstream operations."@en ;
+    rdfs:label "gas heater"@en ,
+               "aquecedor de gás"@pt-br .
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Vessel
+o3po:Vessel rdf:type owl:Class ;
+    rdfs:subClassOf iof-core:MaterialArtifact ;
+    CommonCoreOntologies:definition "def. A closed container designed to hold gases or liquids at a pressure substantially different from the ambient pressure."@en ;
+    rdfs:label "vessel"@en ,
+               "vaso"@pt-br ;
+    rdfs:seeAlso "https://en.wikipedia.org/wiki/Pressure_vessel" .
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#Scrubber
+o3po:Scrubber rdf:type owl:Class ;
+    rdfs:subClassOf o3po:Vessel ;
+    CommonCoreOntologies:definition "def. A vessel designed to remove liquid droplets or solid particles from a gas stream using gravity, impingement, or centrifugal force."@en ;
+    rdfs:label "scrubber"@en ,
+               "vaso depurador"@pt-br .
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#GasScrubber
+o3po:GasScrubber rdf:type owl:Class ;
+    rdfs:subClassOf o3po:Scrubber ;
+    CommonCoreOntologies:definition "def. A scrubber specifically used to clean a natural gas stream before compression or dehydration."@en ;
+    rdfs:label "gas scrubber"@en ,
+               "depurador de gás"@pt-br .
+
+###  https://www.inf.ufrgs.br/ontologies/o3po#MolecularSieveVessel
+o3po:MolecularSieveVessel rdf:type owl:Class ;
+    rdfs:subClassOf o3po:Vessel ;
+    CommonCoreOntologies:definition "def. A vessel containing molecular sieve material (zeolites) used for the precise adsorption of water (dehydration) or other impurities from a gas stream."@en ;
+    rdfs:label "molecular sieve vessel"@en ,
+               "vaso de peneira molecular"@pt-br .
 
 #################################################################
 #    General axioms
