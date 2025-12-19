@@ -45,12 +45,12 @@ jobs:
             -oops
             
           # Copia o index em inglês para ser a home page
-          if [ -f "doc/index-en.html" ]; then
-             cp doc/index-en.html doc/index.html
+          if [ -f "public/index-en.html" ]; then
+             cp public/index-en.html public/index.html
           fi
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: doc # A pasta que o Widoco gerou
+          folder: public # A pasta que o Widoco gerou
           branch: gh-pages # O branch onde o site vai morar
