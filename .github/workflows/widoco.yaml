@@ -1,3 +1,8 @@
+# Suggested replacement for .github/workflows/widoco.yaml
+# - Fix path patterns
+# - Allow manual runs (workflow_dispatch)
+# - Auto-detect a .ttl file if present (first match)
+# - Explicitly set token for deploy
 name: Deploy Ontology Docs
 
 on:
@@ -5,8 +10,9 @@ on:
     branches:
       - main
     paths:
-      - '**.ttl'
-      - '.github/workflows/widoco.yml'
+      - '**/*.ttl'
+      - '.github/workflows/widoco.yaml'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -17,6 +23,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Set up JDK 11
         uses: actions/setup-java@v3
@@ -24,48 +32,46 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      # Passo de DEBUG 1: Mostra onde estamos e o que tem na pasta
       - name: 🔍 Debug - List files in root
-        run: ls -R
+        run: |
+          echo "Workdir: $(pwd)"
+          ls -la
+          echo "--- repo tree ---"
+          find . -maxdepth 3 -type f -print
 
       - name: Download Widoco
-        # Voltando para a versão 1.4.23 que é "bala de prata" (funciona sempre)
         run: wget https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-11.jar -O widoco.jar
 
       - name: Generate Documentation
         run: |
           mkdir -p public
-          
-          # --- CONFIRME SE O NOME ESTÁ CERTO ---
-          ONTOLOGY_FILE="o3po.ttl" 
-          # -------------------------------------
 
-          # Verifica se o arquivo existe antes de rodar o Java
-          if [ ! -f "$ONTOLOGY_FILE" ]; then
-            echo "❌ ERRO CRÍTICO: O arquivo $ONTOLOGY_FILE não foi encontrado na raiz!"
+          # try to detect a TTL file in repository (first match)
+          ONTOLOGY_FILE=$(find . -maxdepth 3 -name '*.ttl' | grep -v '^./.github' | head -n1 | sed 's|^\./||')
+          if [ -z "$ONTOLOGY_FILE" ]; then
+            echo "❌ ERRO CRÍTICO: No .ttl file found in repo (searched up to depth 3)."
             exit 1
           fi
 
-          echo "🚀 Iniciando Widoco para: $ONTOLOGY_FILE"
+          echo "Detected ontology file: $ONTOLOGY_FILE"
 
-          # Removi o -oops para evitar travar
           java -jar widoco.jar \
-            -ontFile $ONTOLOGY_FILE \
+            -ontFile "$ONTOLOGY_FILE" \
             -outFolder public \
             -rewriteAll \
             -webVowl \
-            -lang en-pt \
+            -lang en,pt \
             -getOntologyMetadata
+            -oops
 
-          # Verifica se gerou algo
-          ls -l public/
+          echo "Contents of generated public/:"
+          ls -la public || true
 
-          # Copia o index em inglês para ser a home page
           if [ -f "public/index-en.html" ]; then
-             cp public/index-en.html public/index.html
-             echo "✅ index.html criado com sucesso!"
+            cp public/index-en.html public/index.html
+            echo "✅ index.html created from index-en.html"
           else
-             echo "⚠️ AVISO: index-en.html não foi gerado. O Widoco falhou?"
+            echo "⚠️ index-en.html not generated. Check Widoco output."
           fi
 
       - name: Deploy to GitHub Pages
@@ -73,3 +79,4 @@ jobs:
         with:
           folder: public
           branch: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
