@@ -1,3 +1,6 @@
+# Author: Nicolau Oyhenard dos Santos
+# Date: December 18th, 2025
+
 @prefix : <https://www.inf.ufrgs.br/ontologies/o3po#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
