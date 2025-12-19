@@ -36,10 +36,22 @@ jobs:
             -lang en-pt \
             -getOntologyMetadata \
             -oops
-            
-          # Ajusta o index.html (Inglês como padrão)
+      
+      - name: Create index.html
+        run: |
+          # Verifica quais arquivos foram gerados
+          ls -la docs/
+          
+          # Cria index.html baseado no index-en.html (ou index-pt.html como fallback)
           if [ -f "docs/index-en.html" ]; then
-             cp docs/index-en.html docs/index.html
+            cp docs/index-en.html docs/index.html
+            echo "✅ Created index.html from index-en.html"
+          elif [ -f "docs/index-pt.html" ]; then
+            cp docs/index-pt.html docs/index.html
+            echo "✅ Created index.html from index-pt.html"
+          else
+            echo "❌ No index file found!"
+            exit 1
           fi
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
