@@ -3,10 +3,10 @@ name: Deploy Ontology Docs
 on:
   push:
     branches:
-      - main  # Ou 'master', dependendo do seu repo
+      - main
     paths:
-      - '**.ttl' # Roda sempre que mudar um arquivo turtle
-      - '.github/workflows/widoco.yaml'
+      - '**.ttl'
+      - '.github/workflows/widoco.yml'
 
 permissions:
   contents: write
@@ -24,33 +24,52 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
+      # Passo de DEBUG 1: Mostra onde estamos e o que tem na pasta
+      - name: 🔍 Debug - List files in root
+        run: ls -R
+
       - name: Download Widoco
-        run: wget https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-11.jar -O widoco.jar
+        # Voltando para a versão 1.4.23 que é "bala de prata" (funciona sempre)
+        run: wget https://github.com/dgarijo/Widoco/releases/download/v1.4.23/widoco-1.4.23-jar-with-dependencies.jar -O widoco.jar
 
       - name: Generate Documentation
         run: |
           mkdir -p public
           
-          # --- AJUSTE AQUI O CAMINHO DO SEU ARQUIVO ---
+          # --- CONFIRME SE O NOME ESTÁ CERTO ---
           ONTOLOGY_FILE="o3po.ttl" 
-          # --------------------------------------------
+          # -------------------------------------
 
+          # Verifica se o arquivo existe antes de rodar o Java
+          if [ ! -f "$ONTOLOGY_FILE" ]; then
+            echo "❌ ERRO CRÍTICO: O arquivo $ONTOLOGY_FILE não foi encontrado na raiz!"
+            exit 1
+          fi
+
+          echo "🚀 Iniciando Widoco para: $ONTOLOGY_FILE"
+
+          # Removi o -oops para evitar travar
           java -jar widoco.jar \
             -ontFile $ONTOLOGY_FILE \
             -outFolder public \
             -rewriteAll \
             -webVowl \
             -lang en-pt \
-            -getOntologyMetadata \
-            -oops
-            
+            -getOntologyMetadata
+
+          # Verifica se gerou algo
+          ls -l public/
+
           # Copia o index em inglês para ser a home page
           if [ -f "public/index-en.html" ]; then
              cp public/index-en.html public/index.html
+             echo "✅ index.html criado com sucesso!"
+          else
+             echo "⚠️ AVISO: index-en.html não foi gerado. O Widoco falhou?"
           fi
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: public # A pasta que o Widoco gerou
-          branch: gh-pages # O branch onde o site vai morar
+          folder: public
+          branch: gh-pages
