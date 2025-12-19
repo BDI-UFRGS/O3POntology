@@ -30,7 +30,7 @@ jobs:
 
       - name: Download Widoco
         # Voltando para a versão 1.4.23 que é "bala de prata" (funciona sempre)
-        run: wget https://github.com/dgarijo/Widoco/releases/download/v1.4.23/widoco-1.4.23-jar-with-dependencies.jar -O widoco.jar
+        run: wget https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-11.jar -O widoco.jar
 
       - name: Generate Documentation
         run: |
