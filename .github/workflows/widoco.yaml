@@ -1,0 +1,64 @@
+name: Generate Documentation (Java Mode)
+run-name: ${{ github.actor }} is generating ontology docs via JAR ☕
+on:
+  push:
+    paths:
+      - 'o3po.ttl' # Só roda se mudar a ontologia
+      - '.github/workflows/widoco.yaml' # Ou se mudar este arquivo
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Necessário para fazer commit e push
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      
+      - name: Set up JDK 11
+        uses: actions/setup-java@v4
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+      
+      - name: Download Widoco JAR
+        run: |
+          # Baixa a última versão estável do Widoco direto do GitHub
+          wget https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-11.jar -O widoco.jar
+      
+      - name: Run Widoco
+        run: |
+          # Roda o WIDOCO gerando direto na raiz (usa "." como output)
+          java -jar widoco.jar \
+            -ontFile o3po.ttl \
+            -outFolder . \
+            -rewriteAll \
+            -webVowl \
+            -lang en-pt \
+            -getOntologyMetadata \
+            -oops
+      
+      - name: Create index.html
+        run: |
+          # Verifica a estrutura gerada
+          echo "📁 Conteúdo da pasta doc/:"
+          ls -la doc/
+          
+          # Os arquivos HTML estão em doc/
+          if [ -f "doc/index-en.html" ]; then
+            cp doc/index-en.html doc/index.html
+            echo "✅ Created index.html from index-en.html"
+          elif [ -f "doc/index-pt.html" ]; then
+            cp doc/index-pt.html doc/index.html
+            echo "✅ Created index.html from index-pt.html"
+          else
+            echo "❌ No index file found!"
+            exit 1
+          fi
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./doc
+          publish_branch: gh-pages
+          commit_message: "docs: update ontology documentation (automated)"
