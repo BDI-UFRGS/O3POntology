@@ -1,8 +1,5 @@
-# Deploy Ontology Docs (Widoco)
-# - Detects .ttl files automatically
-# - Fixes trigger globs and workflow filename
-# - Removes stray "-oops" command
-# - Moves public/doc contents to public so index.html is at the Pages root
+# .github/workflows/widoco.yaml
+# Deploy Ontology Docs (Widoco) — versão ajustada para preservar estrutura gerada
 name: Deploy Ontology Docs
 
 on:
@@ -21,7 +18,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Check out repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
@@ -32,76 +29,68 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      - name: 🔍 Debug - List repo root (short)
+      - name: Debug - show repo top files
         run: |
           echo "Workdir: $(pwd)"
           ls -la
           echo "--- repo tree (shallow) ---"
           find . -maxdepth 3 -type f -print | sed -n '1,200p'
 
-      - name: Download Widoco
+      - name: Download Widoco JAR
         run: |
           wget https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-11.jar -O widoco.jar
 
       - name: Generate Documentation
+        id: gen
         run: |
           set -euo pipefail
           mkdir -p public
 
-          # try to detect a TTL file in repository (first match)
-          ONTOLOGY_FILE=$(find . -maxdepth 3 -type f -name '*.ttl' | grep -v '^./.github' | head -n1 || true)
+          # Detect TTL (first match, avoid .github)
+          ONTOLOGY_FILE=$(find . -maxdepth 4 -type f -name '*.ttl' | grep -v '^./.github' | head -n1 || true)
           ONTOLOGY_FILE=${ONTOLOGY_FILE#./}
           if [ -z "$ONTOLOGY_FILE" ]; then
-            echo "❌ ERRO CRÍTICO: No .ttl file found in repo (searched up to depth 3)."
+            echo "❌ ERRO CRÍTICO: No .ttl file found in repo (searched up to depth 4)."
             exit 1
           fi
 
           echo "Detected ontology file: $ONTOLOGY_FILE"
 
-          # Run Widoco (no stray -oops)
+          # Run Widoco: use en-pt (hífen) e inclua -oops se quiser avaliação OOPS
           java -jar widoco.jar \
             -ontFile "$ONTOLOGY_FILE" \
             -outFolder public \
             -rewriteAll \
             -webVowl \
-            -lang en,pt \
+            -lang en-pt \
             -getOntologyMetadata \
             -oops
 
           echo "Contents generated under public/:"
-          find public -maxdepth 4 -print || true
+          find public -maxdepth 5 -print || true
 
-          # If Widoco put everything under public/doc, move it to public root so index.html and assets are at the Pages root
-          if [ -d public/doc ]; then
-            echo "Detected public/doc — moving its contents to public/ (so Pages root has index.html)..."
-            # copy all (including hidden) then remove doc folder
-            cp -a public/doc/. public/ || true
-            rm -rf public/doc || true
-          fi
-
-          # ensure a root index exists (prefer index-en.html if present)
-          if [ -f "public/index.html" ]; then
-            echo "public/index.html already exists"
-          elif [ -f "public/index-en.html" ]; then
+          # If Widoco created content under public/doc, leave it as-is (we will deploy public/doc)
+          # But ensure there is a root index inside the folder we will deploy.
+          # For convenience, if public/index-en.html exists and no public/index.html, copy it.
+          if [ -f "public/index-en.html" ] && [ ! -f "public/index.html" ]; then
             cp public/index-en.html public/index.html
             echo "✅ public/index.html created from public/index-en.html"
-          else
-            # try to find any index file and copy it
-            INDEX=$(find public -type f \( -iname 'index-*.html' -o -iname 'index.html' \) | head -n1 || true)
-            if [ -n "$INDEX" ]; then
-              cp "$INDEX" public/index.html
-              echo "✅ public/index.html created from $INDEX"
-            else
-              echo "⚠️ No index.html found under public/ after generation. Pages may 404."
-            fi
           fi
 
-          echo "Final public/ tree (partial):"
-          find public -maxdepth 3 -print | sed -n '1,500p'
+      - name: Determine folder to deploy
+        id: set-folder
+        run: |
+          if [ -d public/doc ]; then
+            echo "folder=public/doc" >> $GITHUB_OUTPUT
+            echo "Deploying public/doc (Widoco produced doc/ subfolder)"
+          else
+            echo "folder=public" >> $GITHUB_OUTPUT
+            echo "Deploying public (Widoco produced files directly in public/)"
+          fi
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: public
+          folder: ${{ steps.set-folder.outputs.folder }}
           branch: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
