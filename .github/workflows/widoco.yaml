@@ -6,7 +6,7 @@ on:
       - main  # Ou 'master', dependendo do seu repo
     paths:
       - '**.ttl' # Roda sempre que mudar um arquivo turtle
-      - '.github/workflows/widoco.yml'
+      - '.github/workflows/widoco.yaml'
 
 permissions:
   contents: write
@@ -52,5 +52,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: public # A pasta que o Widoco gerou
+          folder: doc # A pasta que o Widoco gerou
           branch: gh-pages # O branch onde o site vai morar
