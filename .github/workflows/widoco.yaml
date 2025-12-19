@@ -27,10 +27,10 @@ jobs:
       
       - name: Run Widoco
         run: |
-          # Roda o WIDOCO (ele cria automaticamente a pasta doc/)
+          # Roda o WIDOCO gerando direto na raiz (usa "." como output)
           java -jar widoco.jar \
             -ontFile o3po.ttl \
-            -outFolder doc \
+            -outFolder . \
             -rewriteAll \
             -webVowl \
             -lang en-pt \
@@ -39,11 +39,11 @@ jobs:
       
       - name: Create index.html
         run: |
-          # Verifica quais arquivos foram gerados
+          # Verifica a estrutura gerada
           echo "📁 Conteúdo da pasta doc/:"
           ls -la doc/
           
-          # Cria index.html baseado no index-en.html (ou index-pt.html como fallback)
+          # Os arquivos HTML estão em doc/
           if [ -f "doc/index-en.html" ]; then
             cp doc/index-en.html doc/index.html
             echo "✅ Created index.html from index-en.html"
