@@ -61,7 +61,7 @@ jobs:
             -rewriteAll \
             -webVowl \
             -lang en,pt \
-            -getOntologyMetadata
+            -getOntologyMetadata \
             -oops
 
           echo "Contents of generated public/:"
