@@ -45,8 +45,8 @@ jobs:
             -oops
             
           # Copia o index em inglês para ser a home page
-          if [ -f "public/index-en.html" ]; then
-             cp public/index-en.html public/index.html
+          if [ -f "doc/index-en.html" ]; then
+             cp doc/index-en.html doc/index.html
           fi
 
       - name: Deploy to GitHub Pages
