@@ -1,0 +1,1557 @@
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo/2020/bfo.owl> .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl> .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://www.w3.org/2002/07/owl#imports> <https://spec.industrialontologies.org/ontology/202401/core/Core/> .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://www.w3.org/2002/07/owl#imports> <https://www.inf.ufrgs.br/bdi/ontologies/geocore/releases/2024-04-06/geocore.owl> .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://purl.org/dc/elements/1.1/contributor> "Fabrício H. Rodrigues"@en .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://purl.org/dc/elements/1.1/contributor> "Haroldo Rojas"@en .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://purl.org/dc/elements/1.1/contributor> "Mara Abel"@en .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://purl.org/dc/elements/1.1/creator> "Nicolau Santos"@en .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://purl.org/dc/elements/1.1/description> "A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies."@en .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://purl.org/dc/elements/1.1/description> "Uma ontologia de domínio para plantas de produção de petróleo offshore foi estabelecida utilizando BFO como a ontologia de topo e incorporando IOF-Core e GeoCore como ontologias de nível intermediário."@pt-br .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://purl.org/dc/elements/1.1/license> "MIT License\n\nCopyright (c) 2025 Nicolau Oyhenard dos Santos\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."@en .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://purl.org/dc/elements/1.1/title> "Offshore Petroleum Production Plant Ontology (O3PO)"@en .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://purl.org/dc/elements/1.1/title> "Ontologia de Planta de Produção de Petróleo Offshore (O3PO)"@pt-br .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://purl.org/dc/terms/abstract> "A comprehensive domain ontology for modeling offshore petroleum production plants, their components, processes, and operational relationships."@en .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://purl.org/dc/terms/created> "2023-01-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://purl.org/dc/terms/modified> "2025-01-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://purl.org/dc/terms/publisher> "Federal University of Rio Grande do Sul (UFRGS) - Institute of Informatics"@en .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://www.w3.org/2000/01/rdf-schema#comment> "O3PO provides a comprehensive formal representation of offshore petroleum production systems based on BFO. The ontology follows aristotelian definition patterns as recommended in Barry Smith's 'Building Ontologies with Basic Formal Ontology'."@en .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> <https://www.petwin.org/O3PO/o3po/> .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://www.w3.org/2002/07/owl#versionInfo> "2.0" .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <http://xmlns.com/foaf/0.1/homepage> <https://www.inf.ufrgs.br/ontologies/o3po> .
+<https://spec.industrialontologies.org/ontology/202401/core/Core/> <https://schema.org/codeRepository> <https://github.com/BDI-UFRGS/O3POntology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.geneontology.org/formats/oboInOwl#source
+<http://www.geneontology.org/formats/oboInOwl#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontologyrepository.com/CommonCoreOntologies/acronym
+<http://www.ontologyrepository.com/CommonCoreOntologies/acronym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontologyrepository.com/CommonCoreOntologies/definition
+<http://www.ontologyrepository.com/CommonCoreOntologies/definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/codeRepository
+<https://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#componentOf
+<https://www.inf.ufrgs.br/ontologies/o3po#componentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#componentOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000050> .
+<https://www.inf.ufrgs.br/ontologies/o3po#componentOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.inf.ufrgs.br/ontologies/o3po#hasComponent> .
+<https://www.inf.ufrgs.br/ontologies/o3po#componentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#componentOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000040> .
+<https://www.inf.ufrgs.br/ontologies/o3po#componentOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000040> .
+<https://www.inf.ufrgs.br/ontologies/o3po#componentOf> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a part of relation that holds between two material entities"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#componentOf> <http://www.w3.org/2000/01/rdf-schema#label> "component of"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#componentOf> <http://www.w3.org/2000/01/rdf-schema#label> "componente de"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#connectedTo
+<https://www.inf.ufrgs.br/ontologies/o3po#connectedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#connectedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#connectedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000040> .
+<https://www.inf.ufrgs.br/ontologies/o3po#connectedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000040> .
+<https://www.inf.ufrgs.br/ontologies/o3po#connectedTo> <http://www.w3.org/2000/01/rdf-schema#label> "conectado a"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#connectedTo> <http://www.w3.org/2000/01/rdf-schema#label> "connected to"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#exchangesFluidWith
+<https://www.inf.ufrgs.br/ontologies/o3po#exchangesFluidWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#exchangesFluidWith> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.inf.ufrgs.br/ontologies/o3po#connectedTo> .
+<https://www.inf.ufrgs.br/ontologies/o3po#exchangesFluidWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#exchangesFluidWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000040> .
+<https://www.inf.ufrgs.br/ontologies/o3po#exchangesFluidWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000040> .
+<https://www.inf.ufrgs.br/ontologies/o3po#exchangesFluidWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between two things which have a fluid exchange connection"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#exchangesFluidWith> <http://www.w3.org/2000/01/rdf-schema#label> "exchanges fluid with"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#exchangesFluidWith> <http://www.w3.org/2000/01/rdf-schema#label> "troca fluido com"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#exchangesFluidWith> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://www.w3id.org/fso"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#feedsFluidTo
+<https://www.inf.ufrgs.br/ontologies/o3po#feedsFluidTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#feedsFluidTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.inf.ufrgs.br/ontologies/o3po#exchangesFluidWith> .
+<https://www.inf.ufrgs.br/ontologies/o3po#feedsFluidTo> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.inf.ufrgs.br/ontologies/o3po#hasFluidFedBy> .
+<https://www.inf.ufrgs.br/ontologies/o3po#feedsFluidTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation from a thing feeding fluid to the thing it is feeding fluid to."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#feedsFluidTo> <http://www.w3.org/2000/01/rdf-schema#label> "alimenta fluido para"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#feedsFluidTo> <http://www.w3.org/2000/01/rdf-schema#label> "feeds fluid to"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#feedsFluidTo> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://www.w3id.org/fso"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#hasComponent
+<https://www.inf.ufrgs.br/ontologies/o3po#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasComponent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/BFO_0000051> .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasComponent> <http://www.w3.org/2000/01/rdf-schema#label> "has component"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasComponent> <http://www.w3.org/2000/01/rdf-schema#label> "tem componente"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#hasFluidFedBy
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidFedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidFedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.inf.ufrgs.br/ontologies/o3po#exchangesFluidWith> .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidFedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation from a thing that is fed fluid to the thing feeding the fluid."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidFedBy> <http://www.w3.org/2000/01/rdf-schema#label> "has fluid fed by"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidFedBy> <http://www.w3.org/2000/01/rdf-schema#label> "tem fluido alimentado por"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidFedBy> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://www.w3id.org/fso"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#hasFluidReturnedBy
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidReturnedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidReturnedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.inf.ufrgs.br/ontologies/o3po#feedsFluidTo> .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidReturnedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.inf.ufrgs.br/ontologies/o3po#returnsFluidTo> .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidReturnedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a thing that has fluid returned to it and the thing returning the fluid."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidReturnedBy> <http://www.w3.org/2000/01/rdf-schema#label> "has fluid returned by"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidReturnedBy> <http://www.w3.org/2000/01/rdf-schema#label> "tem fluido retornado por"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidReturnedBy> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://www.w3id.org/fso"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#hasFluidSuppliedBy
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidSuppliedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidSuppliedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.inf.ufrgs.br/ontologies/o3po#feedsFluidTo> .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidSuppliedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.inf.ufrgs.br/ontologies/o3po#suppliesFluidTo> .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidSuppliedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a thing that has fluid supplied to it and the thing supplying the fluid."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidSuppliedBy> <http://www.w3.org/2000/01/rdf-schema#label> "has fluid supplied by"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidSuppliedBy> <http://www.w3.org/2000/01/rdf-schema#label> "tem fluido fornecido por"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFluidSuppliedBy> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://www.w3id.org/fso"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#injects
+<https://www.inf.ufrgs.br/ontologies/o3po#injects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#injects> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.inf.ufrgs.br/ontologies/o3po#isInjectedBy> .
+<https://www.inf.ufrgs.br/ontologies/o3po#injects> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. to introduce (something) into a passage, cavity, or solid material under pressure"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#injects> <http://www.w3.org/2000/01/rdf-schema#label> "injects"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#injects> <http://www.w3.org/2000/01/rdf-schema#label> "injeta"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#injects> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.lexico.com/en/definition/inject"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#isInjectedBy
+<https://www.inf.ufrgs.br/ontologies/o3po#isInjectedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#isInjectedBy> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. inverse of injects"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#isInjectedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is injected by"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#isInjectedBy> <http://www.w3.org/2000/01/rdf-schema#label> "é injetado por"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#isProducedBy
+<https://www.inf.ufrgs.br/ontologies/o3po#isProducedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#isProducedBy> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. inverse of produces"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#isProducedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is produced by"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#isProducedBy> <http://www.w3.org/2000/01/rdf-schema#label> "é produzido por"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#isSeparatedBy
+<https://www.inf.ufrgs.br/ontologies/o3po#isSeparatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#isSeparatedBy> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. inverse of separates"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#isSeparatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is separated by"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#isSeparatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "é separado por"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#isTreatedBy
+<https://www.inf.ufrgs.br/ontologies/o3po#isTreatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#isTreatedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.inf.ufrgs.br/ontologies/o3po#treats> .
+<https://www.inf.ufrgs.br/ontologies/o3po#isTreatedBy> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. inverse of treats"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#isTreatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is treated by"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#isTreatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "é tratado por"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#measures
+<https://www.inf.ufrgs.br/ontologies/o3po#measures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#measures> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.inf.ufrgs.br/ontologies/o3po#Sensor> .
+<https://www.inf.ufrgs.br/ontologies/o3po#measures> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/BFO_0000019> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#measures> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a relation between a sensor and a quality that the sensor is designed to measure"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#measures> <http://www.w3.org/2000/01/rdf-schema#label> "measures"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#measures> <http://www.w3.org/2000/01/rdf-schema#label> "mede"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#returnsFluidTo
+<https://www.inf.ufrgs.br/ontologies/o3po#returnsFluidTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#returnsFluidTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.inf.ufrgs.br/ontologies/o3po#hasFluidFedBy> .
+<https://www.inf.ufrgs.br/ontologies/o3po#returnsFluidTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation implying logical return flow from a thing to another."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#returnsFluidTo> <http://www.w3.org/2000/01/rdf-schema#label> "retorna fluido para"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#returnsFluidTo> <http://www.w3.org/2000/01/rdf-schema#label> "returns fluid to"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#returnsFluidTo> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://www.w3id.org/fso"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#suppliesFluidTo
+<https://www.inf.ufrgs.br/ontologies/o3po#suppliesFluidTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#suppliesFluidTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.inf.ufrgs.br/ontologies/o3po#hasFluidFedBy> .
+<https://www.inf.ufrgs.br/ontologies/o3po#suppliesFluidTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation implying logical supply flow from a thing to another."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#suppliesFluidTo> <http://www.w3.org/2000/01/rdf-schema#label> "fornece fluido para"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#suppliesFluidTo> <http://www.w3.org/2000/01/rdf-schema#label> "supplies fluid to"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#suppliesFluidTo> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://www.w3id.org/fso"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#transports
+<https://www.inf.ufrgs.br/ontologies/o3po#transports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#transports> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. the action of transporting something or the state of being transported"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#transports> <http://www.w3.org/2000/01/rdf-schema#label> "transporta"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#transports> <http://www.w3.org/2000/01/rdf-schema#label> "transports"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#transports> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.lexico.com/en/definition/transport"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#treats
+<https://www.inf.ufrgs.br/ontologies/o3po#treats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#treats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#treats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#treats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#treats> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. to apply a process or a substance to (something) to protect or preserve it or to give it particular properties"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#treats> <http://www.w3.org/2000/01/rdf-schema#label> "trata"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#treats> <http://www.w3.org/2000/01/rdf-schema#label> "treats"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#treats> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.lexico.com/en/definition/treat"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#hasFlowRateValue
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFlowRateValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFlowRateValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.inf.ufrgs.br/ontologies/o3po#FlowRate> .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFlowRateValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFlowRateValue> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a relation between a flow rate and a float value representing the volumetric flow magnitude"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFlowRateValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Flow rate typically expressed in cubic meters per day (m³/d) or barrels per day (bbl/d)."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFlowRateValue> <http://www.w3.org/2000/01/rdf-schema#label> "has flow rate value"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#hasFlowRateValue> <http://www.w3.org/2000/01/rdf-schema#label> "tem valor de vazão"@pt-br .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Annulus
+<https://www.inf.ufrgs.br/ontologies/o3po#Annulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Annulus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000029> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Annulus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/BFO_0000050> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Annulus> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a BFO:Site that occupies a well and is delimited by any void between any piping, tubing or casing and the piping, tubing, or casing immediately surrounding it"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Annulus> <http://www.w3.org/2000/01/rdf-schema#comment> "The annulus of an oil well or water well is any void between any piping, tubing or casing and the piping, tubing, or casing immediately surrounding it."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Annulus> <http://www.w3.org/2000/01/rdf-schema#label> "annulus"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Annulus> <http://www.w3.org/2000/01/rdf-schema#label> "anular"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Basin
+<https://www.inf.ufrgs.br/ontologies/o3po#Basin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Basin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000146> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Basin> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a two-dimensional continuant faunal boundary"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Basin> <http://www.w3.org/2000/01/rdf-schema#label> "bacia"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Basin> <http://www.w3.org/2000/01/rdf-schema#label> "basin"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#BeingOperatedCapability
+<https://www.inf.ufrgs.br/ontologies/o3po#BeingOperatedCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#BeingOperatedCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/Capability> .
+<https://www.inf.ufrgs.br/ontologies/o3po#BeingOperatedCapability> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a capability to be operated"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#BeingOperatedCapability> <http://www.w3.org/2000/01/rdf-schema#label> "being operated capability"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#BeingOperatedCapability> <http://www.w3.org/2000/01/rdf-schema#label> "capacidade de ser operado"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Blower
+<https://www.inf.ufrgs.br/ontologies/o3po#Blower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Blower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Blower> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. A material artifact designed to move gas with a moderate increase of pressure."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Blower> <http://www.w3.org/2000/01/rdf-schema#comment> "Blowers are used to move gas or air. They operate at a pressure ratio between that of a fan and a compressor."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Blower> <http://www.w3.org/2000/01/rdf-schema#label> "blower"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Blower> <http://www.w3.org/2000/01/rdf-schema#label> "soprador"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Borehole
+<https://www.inf.ufrgs.br/ontologies/o3po#Borehole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Borehole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000029> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Borehole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/BFO_0000050> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Borehole> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "borehole"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Borehole> <http://www.geneontology.org/formats/oboInOwl#source> "https://www.lexico.com/en/definition/well"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Borehole> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a BFO:Site that is a boring in the Earth designed to bring oil, gas or water to the surface"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Borehole> <http://www.w3.org/2000/01/rdf-schema#comment> "A shaft sunk into the ground to obtain water, oil, or gas."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Borehole> <http://www.w3.org/2000/01/rdf-schema#label> "furo do poço"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Borehole> <http://www.w3.org/2000/01/rdf-schema#label> "wellbore"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#BottomholePressure
+<https://www.inf.ufrgs.br/ontologies/o3po#BottomholePressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#BottomholePressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Pressure> .
+<https://www.inf.ufrgs.br/ontologies/o3po#BottomholePressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/qualityOf> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#BottomholePressure> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. pressure at the bottom of the well"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#BottomholePressure> <http://www.w3.org/2000/01/rdf-schema#label> "bottomhole pressure"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#BottomholePressure> <http://www.w3.org/2000/01/rdf-schema#label> "pressão de fundo"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#BottomholePressure> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.glossary.oilfield.slb.com/Terms/b/bottomhole_pressure.aspx"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Casing
+<https://www.inf.ufrgs.br/ontologies/o3po#Casing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Casing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Casing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://www.inf.ufrgs.br/ontologies/o3po#componentOf> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Casing> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a material artifact that is a component of a well and provides structural integrity to the wellbore"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Casing> <http://www.w3.org/2000/01/rdf-schema#label> "casing"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Casing> <http://www.w3.org/2000/01/rdf-schema#label> "revestimento"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#CentrifugalPump
+<https://www.inf.ufrgs.br/ontologies/o3po#CentrifugalPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#CentrifugalPump> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Pump> .
+<https://www.inf.ufrgs.br/ontologies/o3po#CentrifugalPump> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.inf.ufrgs.br/ontologies/o3po#PositiveDisplacementPump> .
+<https://www.inf.ufrgs.br/ontologies/o3po#CentrifugalPump> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a pump where the rotary motion applies centrifugal force to discharge fluids from the pump"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#CentrifugalPump> <http://www.w3.org/2000/01/rdf-schema#label> "bomba centrífuga"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#CentrifugalPump> <http://www.w3.org/2000/01/rdf-schema#label> "centrifugal pump"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#CentrifugalPump> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.glossary.oilfield.slb.com/Terms/c/centrifugal_pump.aspx" .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Choke
+<https://www.inf.ufrgs.br/ontologies/o3po#Choke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Choke> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Valve> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Choke> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.inf.ufrgs.br/ontologies/o3po#ICV> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Choke> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a valve that restricts flow"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Choke> <http://www.w3.org/2000/01/rdf-schema#label> "choke valve"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Choke> <http://www.w3.org/2000/01/rdf-schema#label> "válvula de choke"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ChokePosition
+<https://www.inf.ufrgs.br/ontologies/o3po#ChokePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChokePosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChokePosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Choke> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000080> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChokePosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Choke> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/qualityOf> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChokePosition> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a quality that represents the position of a choke"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChokePosition> <http://www.w3.org/2000/01/rdf-schema#label> "choke position"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChokePosition> <http://www.w3.org/2000/01/rdf-schema#label> "posição do choke"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ChokeSize
+<https://www.inf.ufrgs.br/ontologies/o3po#ChokeSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChokeSize> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChokeSize> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Choke> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/qualityOf> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChokeSize> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Choke> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/qualityOf> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChokeSize> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a quality that represents the size of a choke"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChokeSize> <http://www.w3.org/2000/01/rdf-schema#label> "choke size"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChokeSize> <http://www.w3.org/2000/01/rdf-schema#label> "tamanho do choke"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree
+<https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/Assembly> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Valve> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "Tree"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree> <http://www.geneontology.org/formats/oboInOwl#source> <https://en.wikipedia.org/wiki/Christmas_tree_(oil_well)> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. an assembly that is composed of valves and that is located above a well and that is directly or indirectly connected to the well to control the flow of fluids from/into the well"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree> <http://www.w3.org/2000/01/rdf-schema#comment> "In petroleum and natural gas extraction, a Christmas tree, or 'tree', is an assembly of valves, spools, and fittings used to regulate the flow of pipes in an oil well, gas well, water injection well, water disposal well, gas injection well, condensate well and other types of wells."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree> <http://www.w3.org/2000/01/rdf-schema#label> "christmas tree"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree> <http://www.w3.org/2000/01/rdf-schema#label> "árvore de natal"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#CoalescingFilter
+<https://www.inf.ufrgs.br/ontologies/o3po#CoalescingFilter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#CoalescingFilter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Filter> .
+<https://www.inf.ufrgs.br/ontologies/o3po#CoalescingFilter> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. A filter designed to cause liquid aerosols in a gas stream to coalesce into larger droplets for removal."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#CoalescingFilter> <http://www.w3.org/2000/01/rdf-schema#label> "coalescing filter"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#CoalescingFilter> <http://www.w3.org/2000/01/rdf-schema#label> "filtro coalescente"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#CommonCloseControlLinePressure
+<https://www.inf.ufrgs.br/ontologies/o3po#CommonCloseControlLinePressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#CommonCloseControlLinePressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Pressure> .
+<https://www.inf.ufrgs.br/ontologies/o3po#CommonCloseControlLinePressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ControlLine> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000080> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#CommonCloseControlLinePressure> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a pressure in a control line"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#CommonCloseControlLinePressure> <http://www.w3.org/2000/01/rdf-schema#label> "common close control line pressure"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#CommonCloseControlLinePressure> <http://www.w3.org/2000/01/rdf-schema#label> "pressão de linha de controle comum de fechamento"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Condensate
+<https://www.inf.ufrgs.br/ontologies/o3po#Condensate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Condensate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#CrudeOil> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Condensate> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.inf.ufrgs.br/ontologies/o3po#Water> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Condensate> <http://www.geneontology.org/formats/oboInOwl#source> "https://www.mckinseyenergyinsights.com/resources/refinery-reference-desk/condensate/"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Condensate> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. crude oil that is a mixture of light liquid hydrocarbons, similar to a very light crude oil"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Condensate> <http://www.w3.org/2000/01/rdf-schema#comment> "Condensate is a mixture of light liquid hydrocarbons, similar to a very light (high API) crude oil. It is typically separated out of a natural gas stream at the point of production (field separation) when the temperature and pressure of the gas is dropped to atmospheric conditions."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Condensate> <http://www.w3.org/2000/01/rdf-schema#label> "condensado"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Condensate> <http://www.w3.org/2000/01/rdf-schema#label> "condensate"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ControlLine
+<https://www.inf.ufrgs.br/ontologies/o3po#ControlLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ControlLine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Tube> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ControlLine> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a tube that is a small-diameter hydraulic line used to operate downhole completion equipment"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ControlLine> <http://www.w3.org/2000/01/rdf-schema#comment> "A small-diameter hydraulic line used to operate downhole completion equipment such as the surface controlled subsurface safety valve (SCSSV). Most systems operated by control line operate on a fail-safe basis."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ControlLine> <http://www.w3.org/2000/01/rdf-schema#label> "control line"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ControlLine> <http://www.w3.org/2000/01/rdf-schema#label> "linha de controle"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Cooler
+<https://www.inf.ufrgs.br/ontologies/o3po#Cooler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Cooler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#HeatExchanger> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Cooler> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. A heat exchanger designed to reduce the temperature of a process fluid by transferring heat to a cooling medium (air or water)."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Cooler> <http://www.w3.org/2000/01/rdf-schema#label> "cooler"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Cooler> <http://www.w3.org/2000/01/rdf-schema#label> "resfriador"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#CrudeOil
+<https://www.inf.ufrgs.br/ontologies/o3po#CrudeOil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#CrudeOil> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Petroleum> .
+<https://www.inf.ufrgs.br/ontologies/o3po#CrudeOil> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Petroleum> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/BFO_0000050> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#CrudeOil> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.inf.ufrgs.br/ontologies/o3po#NaturalGas> .
+<https://www.inf.ufrgs.br/ontologies/o3po#CrudeOil> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. petroleum that exists as a liquid in underground geologic formations and remains a liquid when brought to the surface"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#CrudeOil> <http://www.w3.org/2000/01/rdf-schema#label> "crude oil"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#CrudeOil> <http://www.w3.org/2000/01/rdf-schema#label> "óleo cru"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#CrudeOil> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Petroleum" .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#DeltaPressure
+<https://www.inf.ufrgs.br/ontologies/o3po#DeltaPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#DeltaPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000145> .
+<https://www.inf.ufrgs.br/ontologies/o3po#DeltaPressure> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a relational quality that is a pressure difference"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#DeltaPressure> <http://www.w3.org/2000/01/rdf-schema#label> "delta pressure"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#DeltaPressure> <http://www.w3.org/2000/01/rdf-schema#label> "diferencial de pressão"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#FPSO
+<https://www.inf.ufrgs.br/ontologies/o3po#FPSO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#FPSO> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Platform> .
+<https://www.inf.ufrgs.br/ontologies/o3po#FPSO> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.inf.ufrgs.br/ontologies/o3po#Semisubmersible> .
+<https://www.inf.ufrgs.br/ontologies/o3po#FPSO> <http://www.geneontology.org/formats/oboInOwl#source> "https://www.glossary.oilfield.slb.com/Terms/f/fpso.aspx"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#FPSO> <http://www.ontologyrepository.com/CommonCoreOntologies/acronym> "FPSO"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#FPSO> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. an offshore platform that serves as gathering, processing and storage facilities for fluids produced from subsea wells"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#FPSO> <http://www.w3.org/2000/01/rdf-schema#comment> "Abbreviation for floating production, storage, and offloading vessel. FPSOs are commonly deployed for offshore production in locations that have little infrastructure. They serve as gathering, processing and storage facilities for fluids produced from subsea wells. Processed using equipment on the ship's deck, the fluids are then stored in the ship's hull before they are offloaded to pipelines, barges, or ships."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#FPSO> <http://www.w3.org/2000/01/rdf-schema#label> "FPSO"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#FPSO> <http://www.w3.org/2000/01/rdf-schema#label> "floating production, storage, and offloading vessel"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Field
+<https://www.inf.ufrgs.br/ontologies/o3po#Field> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Field> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000146> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Field> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Basin> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0001025> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Field> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a two-dimensional continuant faunal boundary that is an area where one or more reservoirs, grouped on by the same individual geological structural feature and/or stratigraphic condition, exist in the subsurface with the possibility of sufficient economic benefit worthy of commercial attention for exploration and production of hydrocarbons"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Field> <http://www.w3.org/2000/01/rdf-schema#label> "campo"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Field> <http://www.w3.org/2000/01/rdf-schema#label> "field"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#FieldName
+<https://www.inf.ufrgs.br/ontologies/o3po#FieldName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#FieldName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Name> .
+<https://www.inf.ufrgs.br/ontologies/o3po#FieldName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Field> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/BFO_0000197> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#FieldName> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a name that specifically denominates a field"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#FieldName> <http://www.w3.org/2000/01/rdf-schema#label> "field name"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#FieldName> <http://www.w3.org/2000/01/rdf-schema#label> "nome do campo"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Filter
+<https://www.inf.ufrgs.br/ontologies/o3po#Filter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Filter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Filter> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. A material artifact containing a porous medium or screen designed to remove solid particles or liquid droplets from a fluid stream."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Filter> <http://www.w3.org/2000/01/rdf-schema#label> "filter"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Filter> <http://www.w3.org/2000/01/rdf-schema#label> "filtro"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Flow
+<https://www.inf.ufrgs.br/ontologies/o3po#Flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Fluid> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000057> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flow> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "fluid flow"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flow> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a process that has participant some fluid and the fluid is in continuous movement"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flow> <http://www.w3.org/2000/01/rdf-schema#comment> "The continuous movement characteristic of a liquid or gas."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flow> <http://www.w3.org/2000/01/rdf-schema#label> "flow"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flow> <http://www.w3.org/2000/01/rdf-schema#label> "fluxo"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#FlowRate
+<https://www.inf.ufrgs.br/ontologies/o3po#FlowRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#FlowRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic> .
+<https://www.inf.ufrgs.br/ontologies/o3po#FlowRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Flow> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/processCharacteristicOf> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#FlowRate> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a IOF:process characteristic that is volume of fluid which flows per unit of time"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#FlowRate> <http://www.w3.org/2000/01/rdf-schema#comment> "The volume of fluid which flows per unit of time"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#FlowRate> <http://www.w3.org/2000/01/rdf-schema#label> "flow rate"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#FlowRate> <http://www.w3.org/2000/01/rdf-schema#label> "vazão"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#FlowRateMeasurementDatum
+<https://www.inf.ufrgs.br/ontologies/o3po#FlowRateMeasurementDatum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#FlowRateMeasurementDatum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity> .
+<https://www.inf.ufrgs.br/ontologies/o3po#FlowRateMeasurementDatum> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a measurement information content entity about flow rate"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#FlowRateMeasurementDatum> <http://www.w3.org/2000/01/rdf-schema#label> "dado de medição de vazão"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#FlowRateMeasurementDatum> <http://www.w3.org/2000/01/rdf-schema#label> "flow rate measurement datum"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Flowline
+<https://www.inf.ufrgs.br/ontologies/o3po#Flowline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flowline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Pipeline> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flowline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://www.inf.ufrgs.br/ontologies/o3po#connectedTo> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flowline> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a pipeline that carries oil, gas or water that connects the wellhead to a manifold or to a platform"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flowline> <http://www.w3.org/2000/01/rdf-schema#label> "flowline"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flowline> <http://www.w3.org/2000/01/rdf-schema#label> "linha de fluxo"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Flowmeter
+<https://www.inf.ufrgs.br/ontologies/o3po#Flowmeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flowmeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Sensor> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flowmeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#FlowRate> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://www.inf.ufrgs.br/ontologies/o3po#measures> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flowmeter> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a sensor that measures the flow rate of fluids through a pipeline"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flowmeter> <http://www.w3.org/2000/01/rdf-schema#comment> "An instrument that measures the flow rate of fluids through a pipeline."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flowmeter> <http://www.w3.org/2000/01/rdf-schema#label> "flowmeter"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flowmeter> <http://www.w3.org/2000/01/rdf-schema#label> "medidor de vazão"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Flowmeter> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://glossary.oilfield.slb.com/en/Terms/f/flowmeter.aspx"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Fluid
+<https://www.inf.ufrgs.br/ontologies/o3po#Fluid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Fluid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Fluid> <http://purl.obolibrary.org/obo/IAO_0000112> "A puddle of water, this particular pile of sand, a barrel of oil."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Fluid> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a BFO:Object that is in liquid or gas form and is able to flow in response to external pressure and has no fixed shape"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Fluid> <http://www.w3.org/2000/01/rdf-schema#comment> "Portion of Substance (e.g., liquid or gas) that tends/is able to flow in response to external pressure and has no fixed shape."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Fluid> <http://www.w3.org/2000/01/rdf-schema#label> "fluid (portion of)"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Fluid> <http://www.w3.org/2000/01/rdf-schema#label> "fluido (porção de)"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#GasHeater
+<https://www.inf.ufrgs.br/ontologies/o3po#GasHeater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#GasHeater> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Heater> .
+<https://www.inf.ufrgs.br/ontologies/o3po#GasHeater> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. A heater designed specifically to raise the temperature of a gas stream, often to prevent hydrate formation during pressure reduction."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#GasHeater> <http://www.w3.org/2000/01/rdf-schema#comment> "Often referred to as a Line Heater in upstream operations."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#GasHeater> <http://www.w3.org/2000/01/rdf-schema#label> "aquecedor de gás"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#GasHeater> <http://www.w3.org/2000/01/rdf-schema#label> "gas heater"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#GasLiftValve
+<https://www.inf.ufrgs.br/ontologies/o3po#GasLiftValve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#GasLiftValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Valve> .
+<https://www.inf.ufrgs.br/ontologies/o3po#GasLiftValve> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a valve used in gas-lift operations"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#GasLiftValve> <http://www.w3.org/2000/01/rdf-schema#label> "gas-lift valve"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#GasLiftValve> <http://www.w3.org/2000/01/rdf-schema#label> "válvula de gas-lift"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#GasScrubber
+<https://www.inf.ufrgs.br/ontologies/o3po#GasScrubber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#GasScrubber> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Scrubber> .
+<https://www.inf.ufrgs.br/ontologies/o3po#GasScrubber> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. A scrubber specifically used to clean a natural gas stream before compression or dehydration."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#GasScrubber> <http://www.w3.org/2000/01/rdf-schema#label> "depurador de gás"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#GasScrubber> <http://www.w3.org/2000/01/rdf-schema#label> "gas scrubber"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#HeatExchanger
+<https://www.inf.ufrgs.br/ontologies/o3po#HeatExchanger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#HeatExchanger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> .
+<https://www.inf.ufrgs.br/ontologies/o3po#HeatExchanger> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. A material artifact designed to transfer thermal energy from one fluid to another without them mixing."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#HeatExchanger> <http://www.w3.org/2000/01/rdf-schema#label> "heat exchanger"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#HeatExchanger> <http://www.w3.org/2000/01/rdf-schema#label> "trocador de calor"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Heater
+<https://www.inf.ufrgs.br/ontologies/o3po#Heater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Heater> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Heater> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. A material artifact designed to raise the temperature of a fluid, typically using an external heat source (combustion or electricity)."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Heater> <http://www.w3.org/2000/01/rdf-schema#label> "aquecedor"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Heater> <http://www.w3.org/2000/01/rdf-schema#label> "heater"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ICV
+<https://www.inf.ufrgs.br/ontologies/o3po#ICV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Valve> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularPressure> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/hasQuality> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularTemperature> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/hasQuality> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ICVDeltaPressure> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/hasQuality> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ICVOpenControlLinePressure> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/hasQuality> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Tubing> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://www.inf.ufrgs.br/ontologies/o3po#componentOf> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICV> <http://purl.obolibrary.org/obo/IAO_0000118> "válvula de completação inteligente"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICV> <http://www.ontologyrepository.com/CommonCoreOntologies/acronym> "ICV"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICV> <http://www.w3.org/2000/01/rdf-schema#label> "inflow control valve"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICV> <http://www.w3.org/2000/01/rdf-schema#label> "válvula de controle de influxo"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularPressure
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Pressure> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ICV> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000080> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularPressure> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a pressure quality that inheres in the annular space of an ICV"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularPressure> <http://www.w3.org/2000/01/rdf-schema#label> "ICV annular pressure"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularPressure> <http://www.w3.org/2000/01/rdf-schema#label> "pressão no anular do ICV"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularTemperature
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Temperature> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ICV> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000080> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularTemperature> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a temperature quality that inheres in the annular space of an ICV"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "ICV annular temperature"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "temperatura no anular do ICV"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ICVDeltaPressure
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVDeltaPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVDeltaPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Pressure> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVDeltaPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ICV> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000080> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVDeltaPressure> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a pressure quality that represents the pressure difference across an ICV"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVDeltaPressure> <http://www.w3.org/2000/01/rdf-schema#label> "ICV delta pressure"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVDeltaPressure> <http://www.w3.org/2000/01/rdf-schema#label> "pressão delta do ICV"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRate
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#FlowRate> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRate> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.inf.ufrgs.br/ontologies/o3po#WellFlowRate> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRate> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a flow rate that is a process characteristic of a flow that occurs inside an ICV"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRate> <http://www.w3.org/2000/01/rdf-schema#comment> "the rate of a flow that occurs inside an ICV"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRate> <http://www.w3.org/2000/01/rdf-schema#label> "ICV flow rate"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRate> <http://www.w3.org/2000/01/rdf-schema#label> "vazão na ICV"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateICVMethod
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateICVMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateICVMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#FlowRateMeasurementDatum> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateICVMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRate> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/isAbout> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateICVMethod> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a flow rate measurement datum about ICV flow rate determined using the ICV method"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateICVMethod> <http://www.w3.org/2000/01/rdf-schema#label> "ICV flow rate ICV method"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateICVMethod> <http://www.w3.org/2000/01/rdf-schema#label> "vazão da ICV método ICV"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateIPRMethod
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateIPRMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateIPRMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#FlowRateMeasurementDatum> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateIPRMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRate> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/isAbout> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateIPRMethod> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a flow rate measurement datum about ICV flow rate determined using the IPR (Inflow Performance Relationship) method"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateIPRMethod> <http://www.w3.org/2000/01/rdf-schema#label> "ICV flow rate IPR method"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateIPRMethod> <http://www.w3.org/2000/01/rdf-schema#label> "vazão da ICV método IPR"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateReconciledMethod
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateReconciledMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateReconciledMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#FlowRateMeasurementDatum> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateReconciledMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRate> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/isAbout> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateReconciledMethod> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a flow rate measurement datum about ICV flow rate determined using a reconciled method that combines multiple measurement sources"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateReconciledMethod> <http://www.w3.org/2000/01/rdf-schema#label> "ICV flow rate reconciled method"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateReconciledMethod> <http://www.w3.org/2000/01/rdf-schema#label> "vazão da ICV método reconciliado"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ICVOpenControlLinePressure
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVOpenControlLinePressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVOpenControlLinePressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Pressure> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVOpenControlLinePressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ICV> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000080> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVOpenControlLinePressure> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a pressure quality that inheres in the open control line of an ICV"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVOpenControlLinePressure> <http://www.w3.org/2000/01/rdf-schema#label> "ICV open control line pressure"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ICVOpenControlLinePressure> <http://www.w3.org/2000/01/rdf-schema#label> "pressão na linha de controle aberta do ICV"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#InjectionFluid
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionFluid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionFluid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Fluid> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionFluid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#InjectionRole> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/hasRole> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionFluid> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.inf.ufrgs.br/ontologies/o3po#ProductionFluid> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionFluid> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a fluid that has role some injection role"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionFluid> <http://www.w3.org/2000/01/rdf-schema#comment> "Fluid injected by an injection well."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionFluid> <http://www.w3.org/2000/01/rdf-schema#label> "fluido de injeção"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionFluid> <http://www.w3.org/2000/01/rdf-schema#label> "injection fluid"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#InjectionProcess
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Flow> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Fluid> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000057> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#InjectionWell> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000057> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Reservoir> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000057> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionProcess> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.inf.ufrgs.br/ontologies/o3po#ProductionProcess> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionProcess> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a flow that has an injection well as participant and is towards a reservoir"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "Injection of gases or liquids into a reservoir to force oil toward and into producing wells."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionProcess> <http://www.w3.org/2000/01/rdf-schema#label> "injection (process)"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionProcess> <http://www.w3.org/2000/01/rdf-schema#label> "injeção (processo)"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#InjectionRole
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#InjectionFluid> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/roleOf> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#InjectionFluid> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/roleOf> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionRole> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a role borne by a fluid that is being injected into a well"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionRole> <http://www.w3.org/2000/01/rdf-schema#comment> "Role assumed by a fluid that is being injected into a well."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionRole> <http://www.w3.org/2000/01/rdf-schema#label> "injection role"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionRole> <http://www.w3.org/2000/01/rdf-schema#label> "papel de injeção"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#InjectionWell
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionWell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionWell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionWell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#InjectorRole> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000087> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionWell> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.inf.ufrgs.br/ontologies/o3po#ProductionWell> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionWell> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a well where fluids are injected rather than produced, the primary objective typically being to maintain reservoir pressure"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionWell> <http://www.w3.org/2000/01/rdf-schema#label> "injection well"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionWell> <http://www.w3.org/2000/01/rdf-schema#label> "poço de injeção"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectionWell> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://petrowiki.spe.org/Glossary:Injection_well" .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#InjectorRole
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectorRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectorRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectorRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/roleOf> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectorRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/roleOf> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectorRole> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a role borne by a well that injects fluids"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectorRole> <http://www.w3.org/2000/01/rdf-schema#label> "injector role"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#InjectorRole> <http://www.w3.org/2000/01/rdf-schema#label> "papel de injetor"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Manifold
+<https://www.inf.ufrgs.br/ontologies/o3po#Manifold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Manifold> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/Assembly> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Manifold> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Tube> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://www.inf.ufrgs.br/ontologies/o3po#hasComponent> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Manifold> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Valve> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://www.inf.ufrgs.br/ontologies/o3po#hasComponent> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Manifold> <http://purl.org/dc/elements/1.1/source> "https://www.glossary.oilfield.slb.com/en/Terms/m/manifold.aspx"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Manifold> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. an assembly that has disposition to connect several flowlines and designed to control, distribute and typically monitor fluid flow from or to multiple wells"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Manifold> <http://www.w3.org/2000/01/rdf-schema#comment> "An arrangement of piping or valves designed to control, distribute and typically monitor fluid flow."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Manifold> <http://www.w3.org/2000/01/rdf-schema#label> "manifold"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Manifold> <http://www.w3.org/2000/01/rdf-schema#label> "manifold"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#MolecularSieveVessel
+<https://www.inf.ufrgs.br/ontologies/o3po#MolecularSieveVessel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#MolecularSieveVessel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Vessel> .
+<https://www.inf.ufrgs.br/ontologies/o3po#MolecularSieveVessel> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. A vessel containing molecular sieve material (zeolites) used for the precise adsorption of water (dehydration) or other impurities from a gas stream."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#MolecularSieveVessel> <http://www.w3.org/2000/01/rdf-schema#label> "molecular sieve vessel"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#MolecularSieveVessel> <http://www.w3.org/2000/01/rdf-schema#label> "vaso de peneira molecular"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Name
+<https://www.inf.ufrgs.br/ontologies/o3po#Name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Name> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Name> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a quality that serves as a linguistic identifier for an entity"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Name> <http://www.w3.org/2000/01/rdf-schema#label> "nome"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#NaturalGas
+<https://www.inf.ufrgs.br/ontologies/o3po#NaturalGas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#NaturalGas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Petroleum> .
+<https://www.inf.ufrgs.br/ontologies/o3po#NaturalGas> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.inf.ufrgs.br/ontologies/o3po#Water> .
+<https://www.inf.ufrgs.br/ontologies/o3po#NaturalGas> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. petroleum that is composed of a hydrocarbon gas mixture consisting primarily of methane, but commonly includes varying amounts of other higher alkanes and sometimes a usually lesser percentage of carbon dioxide, nitrogen, and/or hydrogen sulfide"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#NaturalGas> <http://www.w3.org/2000/01/rdf-schema#label> "gás natural"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#NaturalGas> <http://www.w3.org/2000/01/rdf-schema#label> "natural gas"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#NaturalGas> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Natural_gas" .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Nozzle
+<https://www.inf.ufrgs.br/ontologies/o3po#Nozzle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Nozzle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Nozzle> <http://purl.org/dc/elements/1.1/description> "A nozzle is a device designed to control the direction or characteristics of a fluid flow (specially to increase velocity) as it exits (or enters) an enclosed chamber or pipe. A nozzle is often a pipe or tube of varying cross sectional area, and it can be used to direct or modify the flow of a fluid (liquid or gas). Nozzles are frequently used to control the rate of flow, speed, direction, mass, shape, and/or the pressure of the stream that emerges from them. In a nozzle, the velocity of fluid increases at the expense of its pressure energy."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Nozzle> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a material artifact that has a protruding part through which a stream of fluid is directed"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Nozzle> <http://www.w3.org/2000/01/rdf-schema#label> "bocal"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Nozzle> <http://www.w3.org/2000/01/rdf-schema#label> "nozzle"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ObservationRole
+<https://www.inf.ufrgs.br/ontologies/o3po#ObservationRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ObservationRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ObservationRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/roleOf> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ObservationRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/roleOf> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ObservationRole> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a role borne by a well used for observation"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ObservationRole> <http://www.w3.org/2000/01/rdf-schema#label> "observation role"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ObservationRole> <http://www.w3.org/2000/01/rdf-schema#label> "papel de observação"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell
+<https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ObservationRole> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/hasRole> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell> <http://www.geneontology.org/formats/oboInOwl#source> "Oil and Gas Wells, Pennsylvania Code, Title 25, Chapter 78, December 2012."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell> <http://www.geneontology.org/formats/oboInOwl#source> "https://iadclexicon.org/observation-well/"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a well that bears an observation role"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell> <http://www.w3.org/2000/01/rdf-schema#comment> "A well used to monitor the operational integrity and conditions in a gas storage reservoir, the reservoir protective area or strata above or below the gas storage horizon."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell> <http://www.w3.org/2000/01/rdf-schema#label> "observation well"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell> <http://www.w3.org/2000/01/rdf-schema#label> "poço de observação"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#PLEM
+<https://www.inf.ufrgs.br/ontologies/o3po#PLEM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#PLEM> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Manifold> .
+<https://www.inf.ufrgs.br/ontologies/o3po#PLEM> <http://www.geneontology.org/formats/oboInOwl#source> "https://oilstates.com/offshore/subsea-pipeline-products/plem-plet-structures/" .
+<https://www.inf.ufrgs.br/ontologies/o3po#PLEM> <http://www.ontologyrepository.com/CommonCoreOntologies/acronym> "PLEM" .
+<https://www.inf.ufrgs.br/ontologies/o3po#PLEM> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a manifold that splits the product flow into multiple routes that may feed into an FPSO, refinery and holding tanks concurrently"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#PLEM> <http://www.w3.org/2000/01/rdf-schema#label> "manifold de término de tubulação"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#PLEM> <http://www.w3.org/2000/01/rdf-schema#label> "pipeline end manifold"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ParticulateFilter
+<https://www.inf.ufrgs.br/ontologies/o3po#ParticulateFilter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ParticulateFilter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Filter> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ParticulateFilter> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. A filter designed principally to remove solid particulate matter from a fluid stream."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ParticulateFilter> <http://www.w3.org/2000/01/rdf-schema#label> "filtro de particulado"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#ParticulateFilter> <http://www.w3.org/2000/01/rdf-schema#label> "particulate filter"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Permeability
+<https://www.inf.ufrgs.br/ontologies/o3po#Permeability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Permeability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Permeability> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. the measure of the ability of a porous material (often, a rock or an unconsolidated material) to allow fluids to pass through it"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Permeability> <http://www.w3.org/2000/01/rdf-schema#label> "permeabilidade (qualidade)"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Permeability> <http://www.w3.org/2000/01/rdf-schema#label> "permeability (quality)"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Permeability> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Permeability_(Earth_sciences)"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Petroleum
+<https://www.inf.ufrgs.br/ontologies/o3po#Petroleum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Petroleum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Petroleum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#CrudeOil> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/BFO_0000051> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Petroleum> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.inf.ufrgs.br/ontologies/o3po#Water> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Petroleum> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. an earth fluid that consists of a complex mixture of hydrocarbons of various molecular weights and other liquid organic compounds, that are found in geologic formations beneath the planetary surfaces"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Petroleum> <http://www.w3.org/2000/01/rdf-schema#label> "petroleum"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Petroleum> <http://www.w3.org/2000/01/rdf-schema#label> "petróleo"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Petroleum> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Petroleum" .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Pipeline
+<https://www.inf.ufrgs.br/ontologies/o3po#Pipeline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pipeline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/Assembly> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pipeline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Tube> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://www.inf.ufrgs.br/ontologies/o3po#hasComponent> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pipeline> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.inf.ufrgs.br/ontologies/o3po#Sensor> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pipeline> <http://www.geneontology.org/formats/oboInOwl#source> "https://petrowiki.org/Glossary:Flowline"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pipeline> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. an assembly that is necessarily composed of tubes which are connected to one another in a single, maximal/end-to-end line, and that is intended for conveying liquids, gases or finely divided solids"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pipeline> <http://www.w3.org/2000/01/rdf-schema#comment> "The pipe connection between the well and the separators or tank battery."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pipeline> <http://www.w3.org/2000/01/rdf-schema#label> "pipeline"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pipeline> <http://www.w3.org/2000/01/rdf-schema#label> "tubulação"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Plant
+<https://www.inf.ufrgs.br/ontologies/o3po#Plant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Plant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Plant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Field> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0001025> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Plant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Platform> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://www.inf.ufrgs.br/ontologies/o3po#hasComponent> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Plant> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. an engineered system located at a field"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Plant> <http://www.w3.org/2000/01/rdf-schema#label> "plant"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Plant> <http://www.w3.org/2000/01/rdf-schema#label> "planta"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Platform
+<https://www.inf.ufrgs.br/ontologies/o3po#Platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Platform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Platform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Field> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0001025> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Platform> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Platform> <http://www.geneontology.org/formats/oboInOwl#source> "https://petrowiki.spe.org/Glossary:Platform"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Platform> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a material artifact that is an offshore structure from which a well may be drilled or produced"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Platform> <http://www.w3.org/2000/01/rdf-schema#comment> "An offshore structure from which a well may be drilled or produced."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Platform> <http://www.w3.org/2000/01/rdf-schema#label> "plataforma"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Platform> <http://www.w3.org/2000/01/rdf-schema#label> "platform"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#PositiveDisplacementPump
+<https://www.inf.ufrgs.br/ontologies/o3po#PositiveDisplacementPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#PositiveDisplacementPump> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Pump> .
+<https://www.inf.ufrgs.br/ontologies/o3po#PositiveDisplacementPump> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a type of fluid pump in which the displacement volume of the pump is fixed for each rotation of the pump"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#PositiveDisplacementPump> <http://www.w3.org/2000/01/rdf-schema#label> "bomba de deslocamento positivo"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#PositiveDisplacementPump> <http://www.w3.org/2000/01/rdf-schema#label> "positive-displacement pump"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#PositiveDisplacementPump> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.glossary.oilfield.slb.com/Terms/p/positive-displacement_pump.aspx" .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Pressure
+<https://www.inf.ufrgs.br/ontologies/o3po#Pressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pressure> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a BFO:Quality that corresponds to the degree/intensity of the force applied perpendicular to the surface of a BFO:Material_Entity per unit area over which that force is distributed"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pressure> <http://www.w3.org/2000/01/rdf-schema#comment> "A quality that corresponds to the degree/intensity of the force applied perpendicular to the surface of a material entity per unit area over which that force is distributed."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pressure> <http://www.w3.org/2000/01/rdf-schema#label> "pressure"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pressure> <http://www.w3.org/2000/01/rdf-schema#label> "pressão"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#PressureDownstreamOfChoke
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureDownstreamOfChoke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureDownstreamOfChoke> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Pressure> .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureDownstreamOfChoke> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Choke> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000080> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureDownstreamOfChoke> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a pressure measured downstream of a choke"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureDownstreamOfChoke> <http://www.w3.org/2000/01/rdf-schema#label> "pressure downstream of choke"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureDownstreamOfChoke> <http://www.w3.org/2000/01/rdf-schema#label> "pressão à jusante do choke"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#PressureSensor
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Sensor> .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Pressure> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://www.inf.ufrgs.br/ontologies/o3po#measures> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureSensor> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a sensor that measures the pressure of a fluid"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A device for pressure measurement of gases or liquids."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "pressure sensor"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "sensor de pressão"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureSensor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Pressure_sensor"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#PressureUpstreamOfChoke
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureUpstreamOfChoke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureUpstreamOfChoke> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Pressure> .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureUpstreamOfChoke> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Choke> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000080> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureUpstreamOfChoke> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a pressure measured upstream of a choke"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureUpstreamOfChoke> <http://www.w3.org/2000/01/rdf-schema#label> "pressure upstream of choke"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#PressureUpstreamOfChoke> <http://www.w3.org/2000/01/rdf-schema#label> "pressão à montante do choke"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ProducerRole
+<https://www.inf.ufrgs.br/ontologies/o3po#ProducerRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProducerRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProducerRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/roleOf> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProducerRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/roleOf> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProducerRole> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a role borne by a well that produces hydrocarbons"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProducerRole> <http://www.w3.org/2000/01/rdf-schema#label> "papel de produtor"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProducerRole> <http://www.w3.org/2000/01/rdf-schema#label> "producer role"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ProductionFluid
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionFluid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionFluid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Fluid> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionFluid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ProductionRole> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/hasRole> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionFluid> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a fluid that has_role production_role"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionFluid> <http://www.w3.org/2000/01/rdf-schema#comment> "Fluid produced by a production well."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionFluid> <http://www.w3.org/2000/01/rdf-schema#label> "fluido de produção"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionFluid> <http://www.w3.org/2000/01/rdf-schema#label> "production fluid"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ProductionProcess
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Flow> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000057> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ProductionWell> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000057> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Reservoir> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000057> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionProcess> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a flow that has a production well as participant and is towards a platform"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "The yield of an oil or gas well. Also that branch of the petroleum industry that has to do with bringing the well fluids to the surface and separating them, and with storing, gaging, and otherwise preparing the product for the pipeline."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionProcess> <http://www.w3.org/2000/01/rdf-schema#label> "production (process)"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionProcess> <http://www.w3.org/2000/01/rdf-schema#label> "produção (processo)"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ProductionRole
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ProductionFluid> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/roleOf> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ProductionFluid> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/roleOf> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionRole> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a role borne by a fluid that is produced by a well"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionRole> <http://www.w3.org/2000/01/rdf-schema#comment> "Role assumed by a fluid that is produced by a well such as natural gas or crude oil that are being produced by a well."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionRole> <http://www.w3.org/2000/01/rdf-schema#label> "papel de produção"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionRole> <http://www.w3.org/2000/01/rdf-schema#label> "production role"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ProductionSeparator
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionSeparator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionSeparator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Separator> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionSeparator> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a separator that separates production fluids into their constituent components of crude oil, gas and water"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionSeparator> <http://www.w3.org/2000/01/rdf-schema#comment> "The term separator in oilfield terminology designates a pressure vessel used for separating well fluids produced from oil and gas wells into gaseous and liquid components. A separator for petroleum production is a large vessel designed to separate production fluids into their constituent components of oil, gas and water."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionSeparator> <http://www.w3.org/2000/01/rdf-schema#label> "production separator"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionSeparator> <http://www.w3.org/2000/01/rdf-schema#label> "separador de produção"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionSeparator> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Separator_(oil_production)"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ProductionWell
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionWell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionWell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionWell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ProducerRole> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000087> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionWell> <http://www.geneontology.org/formats/oboInOwl#source> "https://petrowiki.spe.org/Glossary:Producing_well"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionWell> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a well that produces hydrocarbon in commercial quantities"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionWell> <http://www.w3.org/2000/01/rdf-schema#label> "poço de produção"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionWell> <http://www.w3.org/2000/01/rdf-schema#label> "production well"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ProductionZone
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionZone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Reservoir> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionZone> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a reservoir or a section of a reservoir that is drilled into and from which hydrocarbons are produced or into which fluids are injected"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionZone> <http://www.w3.org/2000/01/rdf-schema#label> "production zone"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ProductionZone> <http://www.w3.org/2000/01/rdf-schema#label> "zona de produção"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Pump
+<https://www.inf.ufrgs.br/ontologies/o3po#Pump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pump> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pump> <http://www.geneontology.org/formats/oboInOwl#source> "https://www.lexico.com/en/definition/pump"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pump> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a material artifact that moves fluids or fluid-like amounts (e.g., slurries) by increasing pressure of the fluid or pressure difference in a fluid flow"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pump> <http://www.w3.org/2000/01/rdf-schema#comment> "Device that moves (e.g., transfer, deliver, compress) fluids (e.g., liquids, gases) or fluid-like amounts (e.g., slurries) by increasing pressure."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pump> <http://www.w3.org/2000/01/rdf-schema#label> "bomba"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Pump> <http://www.w3.org/2000/01/rdf-schema#label> "pump"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Reservoir
+<https://www.inf.ufrgs.br/ontologies/o3po#Reservoir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Reservoir> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Reservoir> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/BFO_0000051> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Reservoir> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#ReservoirRole> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000087> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Reservoir> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a rock that contains one or more individual and separate natural accumulations of petroleum that is confined (the oil, not the reservoir) by impermeable rock"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Reservoir> <http://www.w3.org/2000/01/rdf-schema#comment> "A rock (defined in GeoCore) containing one or more individual and separate natural accumulations of petroleum that is confined (the oil, not the reservoir) by impermeable rock."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Reservoir> <http://www.w3.org/2000/01/rdf-schema#label> "reservatório"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Reservoir> <http://www.w3.org/2000/01/rdf-schema#label> "reservoir"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#ReservoirRole
+<https://www.inf.ufrgs.br/ontologies/o3po#ReservoirRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ReservoirRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ReservoirRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Reservoir> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000081> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#ReservoirRole> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a role borne by a reservoir"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#ReservoirRole> <http://www.w3.org/2000/01/rdf-schema#label> "papel de reservatório"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#ReservoirRole> <http://www.w3.org/2000/01/rdf-schema#label> "reservoir role"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Riser
+<https://www.inf.ufrgs.br/ontologies/o3po#Riser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Riser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Riser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Pipeline> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/roleOf> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Riser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Pipeline> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/roleOf> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Riser> <http://www.geneontology.org/formats/oboInOwl#source> "https://petrowiki.org/Glossary:Riser"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Riser> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a pipeline that vertically carries fluids or fluid-like amounts or artifacts (e.g., cables, pipes) and that connects a wellhead or a manifold on the seafloor to a platform"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Riser> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a role that has bearer some pipeline"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Riser> <http://www.w3.org/2000/01/rdf-schema#comment> "Pipe or pipeline that vertically carries materials (e.g., production fluids, drilling mud, drilling cuttings) or artifacts (e.g., cables, pipes) and that connects a wellhead or a manifold on the seafloor to a production and/or drilling platform."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Riser> <http://www.w3.org/2000/01/rdf-schema#comment> "Pipe through which liquid travels upward."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Riser> <http://www.w3.org/2000/01/rdf-schema#label> "papel de riser"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Riser> <http://www.w3.org/2000/01/rdf-schema#label> "riser"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Riser> <http://www.w3.org/2000/01/rdf-schema#label> "riser"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Riser> <http://www.w3.org/2000/01/rdf-schema#label> "riser role"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Scrubber
+<https://www.inf.ufrgs.br/ontologies/o3po#Scrubber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Scrubber> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Vessel> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Scrubber> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. A vessel designed to remove liquid droplets or solid particles from a gas stream using gravity, impingement, or centrifugal force."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Scrubber> <http://www.w3.org/2000/01/rdf-schema#label> "scrubber"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Scrubber> <http://www.w3.org/2000/01/rdf-schema#label> "vaso depurador"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Semisubmersible
+<https://www.inf.ufrgs.br/ontologies/o3po#Semisubmersible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Semisubmersible> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Platform> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Semisubmersible> <http://www.geneontology.org/formats/oboInOwl#source> "https://www.glossary.oilfield.slb.com/Terms/s/semisubmersible.aspx"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Semisubmersible> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. offshore platform that can be used for drilling, workover operations, and production platforms, depending on the equipment with which they are equipped"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Semisubmersible> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular type of floating vessel that is supported primarily on large pontoon-like structures submerged below the sea surface. The operating decks are elevated perhaps 100 or more feet above the pontoons on large steel columns. Semisubmersibles can operate in a wide range of water depths, including deep water."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Semisubmersible> <http://www.w3.org/2000/01/rdf-schema#label> "semissubmersível"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Semisubmersible> <http://www.w3.org/2000/01/rdf-schema#label> "semisubmersible"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Sensor
+<https://www.inf.ufrgs.br/ontologies/o3po#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Sensor> <http://purl.obolibrary.org/obo/IAO_0000112> "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of Sensors include the human eyes."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Sensor> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a material artifact that generates a result in response to some stimulus (e.g., a change in its environment) or input data from results of prior observations, with such result corresponding to the measurement of a physical property"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that produces an output signal for the purpose of sensing of a physical phenomenon."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "sensor"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "sensor"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Sensor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Sensor"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Separator
+<https://www.inf.ufrgs.br/ontologies/o3po#Separator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Separator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Separator> <http://www.geneontology.org/formats/oboInOwl#source> "https://petrowiki.spe.org/Glossary:Separator"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Separator> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a material artifact that facilitates the separation of gas, oil, and/or water from a produced fluid stream"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Separator> <http://www.w3.org/2000/01/rdf-schema#comment> "A production treating vessel designed to facilitate the separation of gas, oil, and/or water from a produced fluid stream."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Separator> <http://www.w3.org/2000/01/rdf-schema#label> "separador"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Separator> <http://www.w3.org/2000/01/rdf-schema#label> "separator"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#SubseaTree
+<https://www.inf.ufrgs.br/ontologies/o3po#SubseaTree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#SubseaTree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree> .
+<https://www.inf.ufrgs.br/ontologies/o3po#SubseaTree> <http://purl.obolibrary.org/obo/IAO_0000118> "subsea christmas tree"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#SubseaTree> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a christmas tree that is projected to work at subsea"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#SubseaTree> <http://www.w3.org/2000/01/rdf-schema#label> "subsea tree"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#SubseaTree> <http://www.w3.org/2000/01/rdf-schema#label> "árvore de natal molhada"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#SubseaTree> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Christmas_tree_(oil_well)" .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Tag
+<https://www.inf.ufrgs.br/ontologies/o3po#Tag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tag> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/Identifier> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tag> <http://purl.obolibrary.org/obo/IAO_0000112> "PT-001, TT-102, PCV-205"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tag> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. an identifier used in industrial contexts to uniquely reference equipment, instruments, or systems within a plant"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tag> <http://www.w3.org/2000/01/rdf-schema#comment> "Tags follow standardized naming conventions (e.g., ISA-5.1) to ensure consistency across engineering documentation."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tag> <http://www.w3.org/2000/01/rdf-schema#label> "etiqueta"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tag> <http://www.w3.org/2000/01/rdf-schema#label> "tag"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Temperature
+<https://www.inf.ufrgs.br/ontologies/o3po#Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Temperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Temperature> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a BFO:Quality that corresponds to the degree/intensity of the thermal energy of a BFO:Material_Entity"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Temperature> <http://www.w3.org/2000/01/rdf-schema#comment> "A quality that corresponds to the degree/intensity of the thermal energy of a material entity."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Temperature> <http://www.w3.org/2000/01/rdf-schema#label> "temperatura"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Temperature> <http://www.w3.org/2000/01/rdf-schema#label> "temperature"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#TemperatureDownstreamOfChoke
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureDownstreamOfChoke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureDownstreamOfChoke> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Temperature> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureDownstreamOfChoke> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Choke> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000080> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureDownstreamOfChoke> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a temperature measured downstream of a choke"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureDownstreamOfChoke> <http://www.w3.org/2000/01/rdf-schema#label> "temperatura à jusante do choke"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureDownstreamOfChoke> <http://www.w3.org/2000/01/rdf-schema#label> "temperature downstream of choke"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#TemperatureSensor
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Sensor> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Temperature> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://www.inf.ufrgs.br/ontologies/o3po#measures> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureSensor> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a sensor that measures the temperature of a fluid"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that measures temperature or a temperature gradient (the degree of hotness or coldness of an object)."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "sensor de temperatura"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "temperature sensor"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Thermometer"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#TemperatureUpstreamOfChoke
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureUpstreamOfChoke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureUpstreamOfChoke> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Temperature> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureUpstreamOfChoke> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
+_:genid71 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Choke> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000080> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureUpstreamOfChoke> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a temperature measured upstream of a choke"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureUpstreamOfChoke> <http://www.w3.org/2000/01/rdf-schema#label> "temperatura à montante do choke"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#TemperatureUpstreamOfChoke> <http://www.w3.org/2000/01/rdf-schema#label> "temperature upstream of choke"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#TestSeparator
+<https://www.inf.ufrgs.br/ontologies/o3po#TestSeparator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TestSeparator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Separator> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TestSeparator> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a separator that is used to separate and meter relatively small quantities of oil and gas"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#TestSeparator> <http://www.w3.org/2000/01/rdf-schema#comment> "A vessel used to separate and meter relatively small quantities of oil and gas. Test separators can be two-phase or three-phase, or horizontal, vertical or spherical. They can also be permanent or portable."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#TestSeparator> <http://www.w3.org/2000/01/rdf-schema#label> "separador de teste"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#TestSeparator> <http://www.w3.org/2000/01/rdf-schema#label> "test separator"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#TestSeparator> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://glossary.oilfield.slb.com/Terms/t/test_separator.aspx"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Tube
+<https://www.inf.ufrgs.br/ontologies/o3po#Tube> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tube> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tube> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "duct"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tube> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "pipe"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tube> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "tubular"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tube> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a material artifact that is long, enclosed and hollow and that acts as a passageway to carry different sorts of things (e.g., fluids, cables, other ducts)"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tube> <http://www.w3.org/2000/01/rdf-schema#comment> "Functional Object / Material Artifact that is enclosed and hollow and that acts as a passageway to carry different sorts of things (e.g., fluids, cables, other ducts)."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tube> <http://www.w3.org/2000/01/rdf-schema#label> "tube"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tube> <http://www.w3.org/2000/01/rdf-schema#label> "tubo"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Tubing
+<https://www.inf.ufrgs.br/ontologies/o3po#Tubing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tubing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Pipeline> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tubing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+_:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#TubingRole> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000087> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tubing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
+_:genid73 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tubing> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a pipeline that is inside a well"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tubing> <http://www.w3.org/2000/01/rdf-schema#label> "coluna de produção"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Tubing> <http://www.w3.org/2000/01/rdf-schema#label> "tubing"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholePressure
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholePressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholePressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Pressure> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholePressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Tubing> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/qualityOf> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholePressure> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a pressure measured at the downhole location of tubing"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholePressure> <http://www.w3.org/2000/01/rdf-schema#label> "pressão de fundo do tubing"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholePressure> <http://www.w3.org/2000/01/rdf-schema#label> "tubing downhole pressure"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholeTemperature
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholeTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholeTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Temperature> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholeTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
+_:genid75 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Tubing> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/qualityOf> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholeTemperature> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a temperature measured at the downhole location of tubing"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholeTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "temperatura de fundo do tubing"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholeTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "tubing downhole temperature"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#TubingRole
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
+_:genid76 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Pipeline> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/roleOf> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
+_:genid77 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Pipeline> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/roleOf> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingRole> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a role borne by a pipeline that is inside a well"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingRole> <http://www.w3.org/2000/01/rdf-schema#label> "papel de tubing"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#TubingRole> <http://www.w3.org/2000/01/rdf-schema#label> "tubing role"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Valve
+<https://www.inf.ufrgs.br/ontologies/o3po#Valve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Valve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Valve> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a functional complex that controls flow of fluids or fluid-like amounts (e.g., slurries, fluidized solids)"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Valve> <http://www.w3.org/2000/01/rdf-schema#comment> "Device that controls (e.g., permits, obstructs, regulates, directs) a stream/flow of fluids (e.g., gases, liquids) or fluid-like amounts (e.g., slurries, fluidized solids)."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Valve> <http://www.w3.org/2000/01/rdf-schema#label> "valve"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Valve> <http://www.w3.org/2000/01/rdf-schema#label> "válvula"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Variable
+<https://www.inf.ufrgs.br/ontologies/o3po#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Variable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Variable> <http://purl.obolibrary.org/obo/IAO_0000112> "flow rate, pressure, temperature"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Variable> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. an information content entity that represents a measurable attribute or parameter that can change over time in a production system"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Variable> <http://www.w3.org/2000/01/rdf-schema#label> "variable"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Variable> <http://www.w3.org/2000/01/rdf-schema#label> "variável"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Vessel
+<https://www.inf.ufrgs.br/ontologies/o3po#Vessel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Vessel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Vessel> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. A closed container designed to hold gases or liquids at a pressure substantially different from the ambient pressure."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Vessel> <http://www.w3.org/2000/01/rdf-schema#label> "vaso"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Vessel> <http://www.w3.org/2000/01/rdf-schema#label> "vessel"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Vessel> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Pressure_vessel" .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Volume
+<https://www.inf.ufrgs.br/ontologies/o3po#Volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Volume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Volume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Fluid> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/qualityOf> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Volume> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a quality that represents the amount of three-dimensional space occupied by a fluid"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Volume> <http://www.w3.org/2000/01/rdf-schema#label> "volume"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Volume> <http://www.w3.org/2000/01/rdf-schema#label> "volume"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Water
+<https://www.inf.ufrgs.br/ontologies/o3po#Water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Water> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Water> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. an earth fluid that has chemical formula H2O and is inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Water> <http://www.w3.org/2000/01/rdf-schema#comment> "Water (chemical formula H2O) is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of all known living organisms."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Water> <http://www.w3.org/2000/01/rdf-schema#label> "water"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Water> <http://www.w3.org/2000/01/rdf-schema#label> "água"@pt-br .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Well
+<https://www.inf.ufrgs.br/ontologies/o3po#Well> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Well> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Well> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Borehole> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/BFO_0000051> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Well> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#BottomholePressure> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000086> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Well> <http://www.geneontology.org/formats/oboInOwl#source> "https://petrowiki.spe.org/Glossary:Completed_well"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Well> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a material artifact that is used to produce hydrocarbons or inject fluids and is located in a wellbore"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Well> <http://www.w3.org/2000/01/rdf-schema#comment> "A well that has been drilled, cased and cemented and is ready to produce hydrocarbons."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Well> <http://www.w3.org/2000/01/rdf-schema#label> "poço"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Well> <http://www.w3.org/2000/01/rdf-schema#label> "well"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#WellFlowRate
+<https://www.inf.ufrgs.br/ontologies/o3po#WellFlowRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellFlowRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#FlowRate> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellFlowRate> <http://purl.obolibrary.org/obo/IAO_0000112> "production rate of a well, injection rate of a well"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellFlowRate> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. the flow rate that has only crude oil and water as participants and occurs in a well"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellFlowRate> <http://www.w3.org/2000/01/rdf-schema#label> "vazão líquida do poço"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellFlowRate> <http://www.w3.org/2000/01/rdf-schema#label> "well liquid rate"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellFlowRate> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.glossary.oilfield.slb.com/Terms/w/well_flow_rate.aspx"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateInSituConditions
+<https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateInSituConditions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateInSituConditions> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#WellFlowRate> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateInSituConditions> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateStandardConditions> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateInSituConditions> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a well flow rate measured at in-situ (reservoir) conditions"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateInSituConditions> <http://www.w3.org/2000/01/rdf-schema#label> "vazão de líquido do poço em condições de reservatório"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateInSituConditions> <http://www.w3.org/2000/01/rdf-schema#label> "well liquid rate in-situ conditions"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateStandardConditions
+<https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateStandardConditions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateStandardConditions> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#WellFlowRate> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateStandardConditions> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a well flow rate measured at standard conditions"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateStandardConditions> <http://www.w3.org/2000/01/rdf-schema#label> "vazão de líquido do poço em condições padrão"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateStandardConditions> <http://www.w3.org/2000/01/rdf-schema#label> "well liquid rate standard conditions"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#WellName
+<https://www.inf.ufrgs.br/ontologies/o3po#WellName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Name> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+_:genid81 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/BFO_0000197> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellName> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a name that specifically denominates a well"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellName> <http://www.w3.org/2000/01/rdf-schema#label> "nome do poço"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellName> <http://www.w3.org/2000/01/rdf-schema#label> "well name"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#WellStatusFlag
+<https://www.inf.ufrgs.br/ontologies/o3po#WellStatusFlag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellStatusFlag> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellStatusFlag> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/qualityOf> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellStatusFlag> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+_:genid83 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000080> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellStatusFlag> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a quality that represents the operational status of a well as a boolean value"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellStatusFlag> <http://www.w3.org/2000/01/rdf-schema#label> "flag de status do poço"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellStatusFlag> <http://www.w3.org/2000/01/rdf-schema#label> "well status flag"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#Wellhead
+<https://www.inf.ufrgs.br/ontologies/o3po#Wellhead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Wellhead> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.industrialontologies.org/ontology/core/Core/Assembly> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Wellhead> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
+_:genid84 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Well> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <https://www.inf.ufrgs.br/ontologies/o3po#componentOf> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#Wellhead> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. an assembly that is located at the top of the casing strings of a well and that provide pressure control of a well, and the means for hanging and isolating the various tubular strings"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Wellhead> <http://www.w3.org/2000/01/rdf-schema#comment> "An equipment (or assembly) located to the top of the casing strings of a well that provide pressure control of a well, and the means for hanging and isolating the various tubular strings."@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#Wellhead> <http://www.w3.org/2000/01/rdf-schema#label> "cabeça do poço"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#Wellhead> <http://www.w3.org/2000/01/rdf-schema#label> "wellhead"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#WellheadPressure
+<https://www.inf.ufrgs.br/ontologies/o3po#WellheadPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellheadPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Pressure> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellheadPressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
+_:genid85 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Wellhead> .
+_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/qualityOf> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellheadPressure> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a pressure measured at the wellhead"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellheadPressure> <http://www.w3.org/2000/01/rdf-schema#label> "pressão na cabeça do poço"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellheadPressure> <http://www.w3.org/2000/01/rdf-schema#label> "wellhead pressure"@en .
+# 
+# https://www.inf.ufrgs.br/ontologies/o3po#WellheadTemperature
+<https://www.inf.ufrgs.br/ontologies/o3po#WellheadTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellheadTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.inf.ufrgs.br/ontologies/o3po#Temperature> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellheadTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
+_:genid86 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.inf.ufrgs.br/ontologies/o3po#Wellhead> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <https://spec.industrialontologies.org/ontology/core/Core/qualityOf> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellheadTemperature> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "def. a temperature measured at the wellhead"@en .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellheadTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "temperatura na cabeça do poço"@pt-br .
+<https://www.inf.ufrgs.br/ontologies/o3po#WellheadTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "wellhead temperature"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid87 <http://www.w3.org/2002/07/owl#members> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#WellheadPressure> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholePressure> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#PressureUpstreamOfChoke> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#PressureDownstreamOfChoke> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#ICVOpenControlLinePressure> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#ICVDeltaPressure> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularPressure> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#CommonCloseControlLinePressure> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#BottomholePressure> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid97 <http://www.w3.org/2002/07/owl#members> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#ICV> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#GasLiftValve> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#Choke> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid101 <http://www.w3.org/2002/07/owl#members> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#Valve> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#Tube> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#Separator> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#Sensor> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid107 <http://www.w3.org/2002/07/owl#members> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#WellheadTemperature> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholeTemperature> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#TemperatureUpstreamOfChoke> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#TemperatureDownstreamOfChoke> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularTemperature> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid113 <http://www.w3.org/2002/07/owl#members> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateReconciledMethod> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateIPRMethod> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateICVMethod> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid117 <http://www.w3.org/2002/07/owl#members> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#ProductionWell> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.ufrgs.br/ontologies/o3po#InjectionWell> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,3723 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.obolibrary.org/obo/BFO_0000019"
+    }, {
+      "@id" : "https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/qualityOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Choke"
+  } ]
+}, {
+  "@id" : "_:genid101",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Sensor"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Separator"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Tube"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Valve"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid107",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularTemperature"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#TemperatureDownstreamOfChoke"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#TemperatureUpstreamOfChoke"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholeTemperature"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#WellheadTemperature"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Choke"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/qualityOf"
+  } ]
+}, {
+  "@id" : "_:genid113",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateICVMethod"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateIPRMethod"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateReconciledMethod"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid117",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#InjectionWell"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ProductionWell"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Valve"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000080"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ControlLine"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000050"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Petroleum"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0001025"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Basin"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000197"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Field"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000057"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Fluid"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/processCharacteristicOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Flow"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#connectedTo"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#measures"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#FlowRate"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/hasQuality"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularPressure"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/hasQuality"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularTemperature"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/hasQuality"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVDeltaPressure"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/hasQuality"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVOpenControlLinePressure"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#componentOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Tubing"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000080"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICV"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000080"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICV"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000080"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICV"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/isAbout"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRate"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/isAbout"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRate"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/isAbout"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRate"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000080"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICV"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/hasRole"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#InjectionRole"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000057"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Fluid"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000057"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#InjectionWell"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000057"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Reservoir"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/roleOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#InjectionFluid"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#InjectionFluid"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/roleOf"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#InjectorRole"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000050"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/roleOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/roleOf"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#hasComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Tube"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#hasComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Valve"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/roleOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/roleOf"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/hasRole"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ObservationRole"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000051"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#CrudeOil"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#hasComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Tube"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0001025"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Field"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000050"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#hasComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Platform"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0001025"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Field"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000080"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Choke"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#measures"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pressure"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000080"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Choke"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/roleOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/roleOf"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/hasRole"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ProductionRole"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000057"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000057"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ProductionWell"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/qualityOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000057"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Reservoir"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/roleOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ProductionFluid"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ProductionFluid"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/roleOf"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ProducerRole"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000051"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ReservoirRole"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000081"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Reservoir"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/roleOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pipeline"
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pipeline"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/roleOf"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000080"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Choke"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#componentOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#measures"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Temperature"
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000080"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Choke"
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000087"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#TubingRole"
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/qualityOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Tubing"
+  } ]
+}, {
+  "@id" : "_:genid75",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/qualityOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Tubing"
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/roleOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pipeline"
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pipeline"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/roleOf"
+  } ]
+}, {
+  "@id" : "_:genid78",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/qualityOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Fluid"
+  } ]
+}, {
+  "@id" : "_:genid79",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000051"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Borehole"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000080"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Choke"
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000086"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#BottomholePressure"
+  } ]
+}, {
+  "@id" : "_:genid81",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000197"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/qualityOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/RO_0000080"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#componentOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  } ]
+}, {
+  "@id" : "_:genid85",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/qualityOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Wellhead"
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/qualityOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Wellhead"
+  } ]
+}, {
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#BottomholePressure"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#CommonCloseControlLinePressure"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularPressure"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVDeltaPressure"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVOpenControlLinePressure"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#PressureDownstreamOfChoke"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#PressureUpstreamOfChoke"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholePressure"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#WellheadPressure"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Choke"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/qualityOf"
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Choke"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#GasLiftValve"
+    }, {
+      "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICV"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.geneontology.org/formats/oboInOwl#source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/acronym",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "https://schema.org/codeRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://spec.industrialontologies.org/ontology/202401/core/Core/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@language" : "en",
+    "@value" : "Fabrício H. Rodrigues"
+  }, {
+    "@language" : "en",
+    "@value" : "Haroldo Rojas"
+  }, {
+    "@language" : "en",
+    "@value" : "Mara Abel"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@language" : "en",
+    "@value" : "Nicolau Santos"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies."
+  }, {
+    "@language" : "pt-br",
+    "@value" : "Uma ontologia de domínio para plantas de produção de petróleo offshore foi estabelecida utilizando BFO como a ontologia de topo e incorporando IOF-Core e GeoCore como ontologias de nível intermediário."
+  } ],
+  "http://purl.org/dc/elements/1.1/license" : [ {
+    "@language" : "en",
+    "@value" : "MIT License\n\nCopyright (c) 2025 Nicolau Oyhenard dos Santos\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "Offshore Petroleum Production Plant Ontology (O3PO)"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "Ontologia de Planta de Produção de Petróleo Offshore (O3PO)"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@language" : "en",
+    "@value" : "A comprehensive domain ontology for modeling offshore petroleum production plants, their components, processes, and operational relationships."
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-01-15"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-01-15"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@language" : "en",
+    "@value" : "Federal University of Rio Grande do Sul (UFRGS) - Institute of Informatics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "O3PO provides a comprehensive formal representation of offshore petroleum production systems based on BFO. The ontology follows aristotelian definition patterns as recommended in Barry Smith's 'Building Ontologies with Basic Formal Ontology'."
+  } ],
+  "http://www.w3.org/2002/07/owl#backwardCompatibleWith" : [ {
+    "@id" : "https://www.petwin.org/O3PO/o3po/"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/bfo/2020/bfo.owl"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl"
+  }, {
+    "@id" : "https://spec.industrialontologies.org/ontology/202401/core/Core/"
+  }, {
+    "@id" : "https://www.inf.ufrgs.br/bdi/ontologies/geocore/releases/2024-04-06/geocore.owl"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "2.0"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po"
+  } ],
+  "https://schema.org/codeRepository" : [ {
+    "@id" : "https://github.com/BDI-UFRGS/O3POntology"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Annulus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a BFO:Site that occupies a well and is delimited by any void between any piping, tubing or casing and the piping, tubing, or casing immediately surrounding it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The annulus of an oil well or water well is any void between any piping, tubing or casing and the piping, tubing, or casing immediately surrounding it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "annulus"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "anular"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000029"
+  }, {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Basin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a two-dimensional continuant faunal boundary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "bacia"
+  }, {
+    "@language" : "en",
+    "@value" : "basin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000146"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#BeingOperatedCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a capability to be operated"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "being operated capability"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "capacidade de ser operado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/Capability"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Blower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. A material artifact designed to move gas with a moderate increase of pressure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Blowers are used to move gas or air. They operate at a pressure ratio between that of a fan and a compressor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "blower"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "soprador"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Borehole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" : [ {
+    "@language" : "en",
+    "@value" : "borehole"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#source" : [ {
+    "@language" : "en",
+    "@value" : "https://www.lexico.com/en/definition/well"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a BFO:Site that is a boring in the Earth designed to bring oil, gas or water to the surface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A shaft sunk into the ground to obtain water, oil, or gas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "furo do poço"
+  }, {
+    "@language" : "en",
+    "@value" : "wellbore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000029"
+  }, {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#BottomholePressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. pressure at the bottom of the well"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "bottomhole pressure"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "pressão de fundo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "https://www.glossary.oilfield.slb.com/Terms/b/bottomhole_pressure.aspx"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pressure"
+  }, {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Casing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a material artifact that is a component of a well and provides structural integrity to the wellbore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "casing"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "revestimento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"
+  }, {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#CentrifugalPump",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a pump where the rotary motion applies centrifugal force to discharge fluids from the pump"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "bomba centrífuga"
+  }, {
+    "@language" : "en",
+    "@value" : "centrifugal pump"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.glossary.oilfield.slb.com/Terms/c/centrifugal_pump.aspx"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pump"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#PositiveDisplacementPump"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Choke",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a valve that restricts flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "choke valve"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "válvula de choke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Valve"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICV"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ChokePosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a quality that represents the position of a choke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "choke position"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "posição do choke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000019"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ChokeSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a quality that represents the size of a choke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "choke size"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "tamanho do choke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000019"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" : [ {
+    "@language" : "en",
+    "@value" : "Tree"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#source" : [ {
+    "@id" : "https://en.wikipedia.org/wiki/Christmas_tree_(oil_well)"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. an assembly that is composed of valves and that is located above a well and that is directly or indirectly connected to the well to control the flow of fluids from/into the well"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "In petroleum and natural gas extraction, a Christmas tree, or 'tree', is an assembly of valves, spools, and fittings used to regulate the flow of pipes in an oil well, gas well, water injection well, water disposal well, gas injection well, condensate well and other types of wells."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "christmas tree"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "árvore de natal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/Assembly"
+  }, {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#CoalescingFilter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. A filter designed to cause liquid aerosols in a gas stream to coalesce into larger droplets for removal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "coalescing filter"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "filtro coalescente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Filter"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#CommonCloseControlLinePressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a pressure in a control line"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "common close control line pressure"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "pressão de linha de controle comum de fechamento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pressure"
+  }, {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Condensate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.geneontology.org/formats/oboInOwl#source" : [ {
+    "@language" : "en",
+    "@value" : "https://www.mckinseyenergyinsights.com/resources/refinery-reference-desk/condensate/"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. crude oil that is a mixture of light liquid hydrocarbons, similar to a very light crude oil"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Condensate is a mixture of light liquid hydrocarbons, similar to a very light (high API) crude oil. It is typically separated out of a natural gas stream at the point of production (field separation) when the temperature and pressure of the gas is dropped to atmospheric conditions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "condensado"
+  }, {
+    "@language" : "en",
+    "@value" : "condensate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#CrudeOil"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Water"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ControlLine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a tube that is a small-diameter hydraulic line used to operate downhole completion equipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A small-diameter hydraulic line used to operate downhole completion equipment such as the surface controlled subsurface safety valve (SCSSV). Most systems operated by control line operate on a fail-safe basis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "control line"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "linha de controle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Tube"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Cooler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. A heat exchanger designed to reduce the temperature of a process fluid by transferring heat to a cooling medium (air or water)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cooler"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "resfriador"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#HeatExchanger"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#CrudeOil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. petroleum that exists as a liquid in underground geologic formations and remains a liquid when brought to the surface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "crude oil"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "óleo cru"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Petroleum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Petroleum"
+  }, {
+    "@id" : "_:genid14"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#NaturalGas"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#DeltaPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a relational quality that is a pressure difference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "delta pressure"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "diferencial de pressão"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000145"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#FPSO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.geneontology.org/formats/oboInOwl#source" : [ {
+    "@language" : "en",
+    "@value" : "https://www.glossary.oilfield.slb.com/Terms/f/fpso.aspx"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/acronym" : [ {
+    "@language" : "en",
+    "@value" : "FPSO"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. an offshore platform that serves as gathering, processing and storage facilities for fluids produced from subsea wells"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abbreviation for floating production, storage, and offloading vessel. FPSOs are commonly deployed for offshore production in locations that have little infrastructure. They serve as gathering, processing and storage facilities for fluids produced from subsea wells. Processed using equipment on the ship's deck, the fluids are then stored in the ship's hull before they are offloaded to pipelines, barges, or ships."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "FPSO"
+  }, {
+    "@language" : "en",
+    "@value" : "floating production, storage, and offloading vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Platform"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Semisubmersible"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Field",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a two-dimensional continuant faunal boundary that is an area where one or more reservoirs, grouped on by the same individual geological structural feature and/or stratigraphic condition, exist in the subsurface with the possibility of sufficient economic benefit worthy of commercial attention for exploration and production of hydrocarbons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "campo"
+  }, {
+    "@language" : "en",
+    "@value" : "field"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000146"
+  }, {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#FieldName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a name that specifically denominates a field"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "field name"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "nome do campo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Name"
+  }, {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Filter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. A material artifact containing a porous medium or screen designed to remove solid particles or liquid droplets from a fluid stream."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "filter"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "filtro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Flow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" : [ {
+    "@language" : "en",
+    "@value" : "fluid flow"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a process that has participant some fluid and the fluid is in continuous movement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The continuous movement characteristic of a liquid or gas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "flow"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "fluxo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  }, {
+    "@id" : "_:genid17"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#FlowRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a IOF:process characteristic that is volume of fluid which flows per unit of time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The volume of fluid which flows per unit of time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "flow rate"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "vazão"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic"
+  }, {
+    "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#FlowRateMeasurementDatum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a measurement information content entity about flow rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "dado de medição de vazão"
+  }, {
+    "@language" : "en",
+    "@value" : "flow rate measurement datum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Flowline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a pipeline that carries oil, gas or water that connects the wellhead to a manifold or to a platform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "flowline"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "linha de fluxo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pipeline"
+  }, {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Flowmeter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a sensor that measures the flow rate of fluids through a pipeline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An instrument that measures the flow rate of fluids through a pipeline."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "flowmeter"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "medidor de vazão"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "https://glossary.oilfield.slb.com/en/Terms/f/flowmeter.aspx"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Sensor"
+  }, {
+    "@id" : "_:genid20"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Fluid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000112" : [ {
+    "@language" : "en",
+    "@value" : "A puddle of water, this particular pile of sand, a barrel of oil."
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a BFO:Object that is in liquid or gas form and is able to flow in response to external pressure and has no fixed shape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Portion of Substance (e.g., liquid or gas) that tends/is able to flow in response to external pressure and has no fixed shape."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "fluid (portion of)"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "fluido (porção de)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000030"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#GasHeater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. A heater designed specifically to raise the temperature of a gas stream, often to prevent hydrate formation during pressure reduction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Often referred to as a Line Heater in upstream operations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "aquecedor de gás"
+  }, {
+    "@language" : "en",
+    "@value" : "gas heater"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Heater"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#GasLiftValve",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a valve used in gas-lift operations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "gas-lift valve"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "válvula de gas-lift"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Valve"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#GasScrubber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. A scrubber specifically used to clean a natural gas stream before compression or dehydration."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "depurador de gás"
+  }, {
+    "@language" : "en",
+    "@value" : "gas scrubber"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Scrubber"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#HeatExchanger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. A material artifact designed to transfer thermal energy from one fluid to another without them mixing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "heat exchanger"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "trocador de calor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Heater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. A material artifact designed to raise the temperature of a fluid, typically using an external heat source (combustion or electricity)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "aquecedor"
+  }, {
+    "@language" : "en",
+    "@value" : "heater"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICV",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000118" : [ {
+    "@language" : "pt-br",
+    "@value" : "válvula de completação inteligente"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/acronym" : [ {
+    "@language" : "en",
+    "@value" : "ICV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "inflow control valve"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "válvula de controle de influxo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Valve"
+  }, {
+    "@id" : "_:genid21"
+  }, {
+    "@id" : "_:genid22"
+  }, {
+    "@id" : "_:genid23"
+  }, {
+    "@id" : "_:genid24"
+  }, {
+    "@id" : "_:genid25"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a pressure quality that inheres in the annular space of an ICV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ICV annular pressure"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "pressão no anular do ICV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pressure"
+  }, {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVAnnularTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a temperature quality that inheres in the annular space of an ICV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ICV annular temperature"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "temperatura no anular do ICV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Temperature"
+  }, {
+    "@id" : "_:genid27"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVDeltaPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a pressure quality that represents the pressure difference across an ICV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ICV delta pressure"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "pressão delta do ICV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pressure"
+  }, {
+    "@id" : "_:genid28"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a flow rate that is a process characteristic of a flow that occurs inside an ICV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the rate of a flow that occurs inside an ICV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ICV flow rate"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "vazão na ICV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#FlowRate"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#WellFlowRate"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateICVMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a flow rate measurement datum about ICV flow rate determined using the ICV method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ICV flow rate ICV method"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "vazão da ICV método ICV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#FlowRateMeasurementDatum"
+  }, {
+    "@id" : "_:genid29"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateIPRMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a flow rate measurement datum about ICV flow rate determined using the IPR (Inflow Performance Relationship) method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ICV flow rate IPR method"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "vazão da ICV método IPR"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#FlowRateMeasurementDatum"
+  }, {
+    "@id" : "_:genid30"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVFlowRateReconciledMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a flow rate measurement datum about ICV flow rate determined using a reconciled method that combines multiple measurement sources"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ICV flow rate reconciled method"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "vazão da ICV método reconciliado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#FlowRateMeasurementDatum"
+  }, {
+    "@id" : "_:genid31"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ICVOpenControlLinePressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a pressure quality that inheres in the open control line of an ICV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ICV open control line pressure"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "pressão na linha de controle aberta do ICV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pressure"
+  }, {
+    "@id" : "_:genid32"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#InjectionFluid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a fluid that has role some injection role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Fluid injected by an injection well."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "fluido de injeção"
+  }, {
+    "@language" : "en",
+    "@value" : "injection fluid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Fluid"
+  }, {
+    "@id" : "_:genid33"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ProductionFluid"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#InjectionProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a flow that has an injection well as participant and is towards a reservoir"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Injection of gases or liquids into a reservoir to force oil toward and into producing wells."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "injection (process)"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "injeção (processo)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Flow"
+  }, {
+    "@id" : "_:genid34"
+  }, {
+    "@id" : "_:genid35"
+  }, {
+    "@id" : "_:genid36"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ProductionProcess"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#InjectionRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a role borne by a fluid that is being injected into a well"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Role assumed by a fluid that is being injected into a well."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "injection role"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "papel de injeção"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
+  }, {
+    "@id" : "_:genid37"
+  }, {
+    "@id" : "_:genid38"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#InjectionWell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a well where fluids are injected rather than produced, the primary objective typically being to maintain reservoir pressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "injection well"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "poço de injeção"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://petrowiki.spe.org/Glossary:Injection_well"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  }, {
+    "@id" : "_:genid39"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ProductionWell"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#InjectorRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a role borne by a well that injects fluids"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "injector role"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "papel de injetor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
+  }, {
+    "@id" : "_:genid40"
+  }, {
+    "@id" : "_:genid41"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Manifold",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@language" : "en",
+    "@value" : "https://www.glossary.oilfield.slb.com/en/Terms/m/manifold.aspx"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. an assembly that has disposition to connect several flowlines and designed to control, distribute and typically monitor fluid flow from or to multiple wells"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An arrangement of piping or valves designed to control, distribute and typically monitor fluid flow."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "manifold"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "manifold"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/Assembly"
+  }, {
+    "@id" : "_:genid42"
+  }, {
+    "@id" : "_:genid43"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#MolecularSieveVessel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. A vessel containing molecular sieve material (zeolites) used for the precise adsorption of water (dehydration) or other impurities from a gas stream."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "molecular sieve vessel"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "vaso de peneira molecular"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Vessel"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a quality that serves as a linguistic identifier for an entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "name"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "nome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000019"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#NaturalGas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. petroleum that is composed of a hydrocarbon gas mixture consisting primarily of methane, but commonly includes varying amounts of other higher alkanes and sometimes a usually lesser percentage of carbon dioxide, nitrogen, and/or hydrogen sulfide"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "gás natural"
+  }, {
+    "@language" : "en",
+    "@value" : "natural gas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Natural_gas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Petroleum"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Water"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Nozzle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "A nozzle is a device designed to control the direction or characteristics of a fluid flow (specially to increase velocity) as it exits (or enters) an enclosed chamber or pipe. A nozzle is often a pipe or tube of varying cross sectional area, and it can be used to direct or modify the flow of a fluid (liquid or gas). Nozzles are frequently used to control the rate of flow, speed, direction, mass, shape, and/or the pressure of the stream that emerges from them. In a nozzle, the velocity of fluid increases at the expense of its pressure energy."
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a material artifact that has a protruding part through which a stream of fluid is directed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "bocal"
+  }, {
+    "@language" : "en",
+    "@value" : "nozzle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ObservationRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a role borne by a well used for observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "observation role"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "papel de observação"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
+  }, {
+    "@id" : "_:genid44"
+  }, {
+    "@id" : "_:genid45"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ObservationWell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.geneontology.org/formats/oboInOwl#source" : [ {
+    "@language" : "en",
+    "@value" : "Oil and Gas Wells, Pennsylvania Code, Title 25, Chapter 78, December 2012."
+  }, {
+    "@language" : "en",
+    "@value" : "https://iadclexicon.org/observation-well/"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a well that bears an observation role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A well used to monitor the operational integrity and conditions in a gas storage reservoir, the reservoir protective area or strata above or below the gas storage horizon."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "observation well"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "poço de observação"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  }, {
+    "@id" : "_:genid46"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#PLEM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.geneontology.org/formats/oboInOwl#source" : [ {
+    "@value" : "https://oilstates.com/offshore/subsea-pipeline-products/plem-plet-structures/"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/acronym" : [ {
+    "@value" : "PLEM"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a manifold that splits the product flow into multiple routes that may feed into an FPSO, refinery and holding tanks concurrently"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "manifold de término de tubulação"
+  }, {
+    "@language" : "en",
+    "@value" : "pipeline end manifold"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Manifold"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ParticulateFilter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. A filter designed principally to remove solid particulate matter from a fluid stream."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "filtro de particulado"
+  }, {
+    "@language" : "en",
+    "@value" : "particulate filter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Filter"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Permeability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. the measure of the ability of a porous material (often, a rock or an unconsolidated material) to allow fluids to pass through it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "permeabilidade (qualidade)"
+  }, {
+    "@language" : "en",
+    "@value" : "permeability (quality)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "https://en.wikipedia.org/wiki/Permeability_(Earth_sciences)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000019"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Petroleum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. an earth fluid that consists of a complex mixture of hydrocarbons of various molecular weights and other liquid organic compounds, that are found in geologic formations beneath the planetary surfaces"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "petroleum"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "petróleo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Petroleum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009"
+  }, {
+    "@id" : "_:genid47"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Water"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pipeline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.geneontology.org/formats/oboInOwl#source" : [ {
+    "@language" : "en",
+    "@value" : "https://petrowiki.org/Glossary:Flowline"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. an assembly that is necessarily composed of tubes which are connected to one another in a single, maximal/end-to-end line, and that is intended for conveying liquids, gases or finely divided solids"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The pipe connection between the well and the separators or tank battery."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "pipeline"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "tubulação"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/Assembly"
+  }, {
+    "@id" : "_:genid48"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Sensor"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Plant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. an engineered system located at a field"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "plant"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "planta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem"
+  }, {
+    "@id" : "_:genid49"
+  }, {
+    "@id" : "_:genid50"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Platform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.geneontology.org/formats/oboInOwl#source" : [ {
+    "@language" : "en",
+    "@value" : "https://petrowiki.spe.org/Glossary:Platform"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a material artifact that is an offshore structure from which a well may be drilled or produced"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An offshore structure from which a well may be drilled or produced."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "plataforma"
+  }, {
+    "@language" : "en",
+    "@value" : "platform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"
+  }, {
+    "@id" : "_:genid51"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#PositiveDisplacementPump",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a type of fluid pump in which the displacement volume of the pump is fixed for each rotation of the pump"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "bomba de deslocamento positivo"
+  }, {
+    "@language" : "en",
+    "@value" : "positive-displacement pump"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.glossary.oilfield.slb.com/Terms/p/positive-displacement_pump.aspx"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pump"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a BFO:Quality that corresponds to the degree/intensity of the force applied perpendicular to the surface of a BFO:Material_Entity per unit area over which that force is distributed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A quality that corresponds to the degree/intensity of the force applied perpendicular to the surface of a material entity per unit area over which that force is distributed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "pressure"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "pressão"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000019"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#PressureDownstreamOfChoke",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a pressure measured downstream of a choke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "pressure downstream of choke"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "pressão à jusante do choke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pressure"
+  }, {
+    "@id" : "_:genid52"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#PressureSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a sensor that measures the pressure of a fluid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A device for pressure measurement of gases or liquids."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "pressure sensor"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "sensor de pressão"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "https://en.wikipedia.org/wiki/Pressure_sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Sensor"
+  }, {
+    "@id" : "_:genid53"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#PressureUpstreamOfChoke",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a pressure measured upstream of a choke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "pressure upstream of choke"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "pressão à montante do choke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pressure"
+  }, {
+    "@id" : "_:genid54"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ProducerRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a role borne by a well that produces hydrocarbons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "papel de produtor"
+  }, {
+    "@language" : "en",
+    "@value" : "producer role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
+  }, {
+    "@id" : "_:genid55"
+  }, {
+    "@id" : "_:genid56"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ProductionFluid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a fluid that has_role production_role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Fluid produced by a production well."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "fluido de produção"
+  }, {
+    "@language" : "en",
+    "@value" : "production fluid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Fluid"
+  }, {
+    "@id" : "_:genid57"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ProductionProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a flow that has a production well as participant and is towards a platform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The yield of an oil or gas well. Also that branch of the petroleum industry that has to do with bringing the well fluids to the surface and separating them, and with storing, gaging, and otherwise preparing the product for the pipeline."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "production (process)"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "produção (processo)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Flow"
+  }, {
+    "@id" : "_:genid58"
+  }, {
+    "@id" : "_:genid59"
+  }, {
+    "@id" : "_:genid60"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ProductionRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a role borne by a fluid that is produced by a well"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Role assumed by a fluid that is produced by a well such as natural gas or crude oil that are being produced by a well."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "papel de produção"
+  }, {
+    "@language" : "en",
+    "@value" : "production role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
+  }, {
+    "@id" : "_:genid61"
+  }, {
+    "@id" : "_:genid62"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ProductionSeparator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a separator that separates production fluids into their constituent components of crude oil, gas and water"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The term separator in oilfield terminology designates a pressure vessel used for separating well fluids produced from oil and gas wells into gaseous and liquid components. A separator for petroleum production is a large vessel designed to separate production fluids into their constituent components of oil, gas and water."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "production separator"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "separador de produção"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "https://en.wikipedia.org/wiki/Separator_(oil_production)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Separator"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ProductionWell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.geneontology.org/formats/oboInOwl#source" : [ {
+    "@language" : "en",
+    "@value" : "https://petrowiki.spe.org/Glossary:Producing_well"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a well that produces hydrocarbon in commercial quantities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "poço de produção"
+  }, {
+    "@language" : "en",
+    "@value" : "production well"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well"
+  }, {
+    "@id" : "_:genid63"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ProductionZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a reservoir or a section of a reservoir that is drilled into and from which hydrocarbons are produced or into which fluids are injected"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "production zone"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "zona de produção"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Reservoir"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pump",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.geneontology.org/formats/oboInOwl#source" : [ {
+    "@language" : "en",
+    "@value" : "https://www.lexico.com/en/definition/pump"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a material artifact that moves fluids or fluid-like amounts (e.g., slurries) by increasing pressure of the fluid or pressure difference in a fluid flow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device that moves (e.g., transfer, deliver, compress) fluids (e.g., liquids, gases) or fluid-like amounts (e.g., slurries) by increasing pressure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "bomba"
+  }, {
+    "@language" : "en",
+    "@value" : "pump"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Reservoir",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a rock that contains one or more individual and separate natural accumulations of petroleum that is confined (the oil, not the reservoir) by impermeable rock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A rock (defined in GeoCore) containing one or more individual and separate natural accumulations of petroleum that is confined (the oil, not the reservoir) by impermeable rock."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "reservatório"
+  }, {
+    "@language" : "en",
+    "@value" : "reservoir"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008"
+  }, {
+    "@id" : "_:genid64"
+  }, {
+    "@id" : "_:genid65"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ReservoirRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a role borne by a reservoir"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "papel de reservatório"
+  }, {
+    "@language" : "en",
+    "@value" : "reservoir role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
+  }, {
+    "@id" : "_:genid66"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Riser",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.geneontology.org/formats/oboInOwl#source" : [ {
+    "@language" : "en",
+    "@value" : "https://petrowiki.org/Glossary:Riser"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a pipeline that vertically carries fluids or fluid-like amounts or artifacts (e.g., cables, pipes) and that connects a wellhead or a manifold on the seafloor to a platform"
+  }, {
+    "@language" : "en",
+    "@value" : "def. a role that has bearer some pipeline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Pipe or pipeline that vertically carries materials (e.g., production fluids, drilling mud, drilling cuttings) or artifacts (e.g., cables, pipes) and that connects a wellhead or a manifold on the seafloor to a production and/or drilling platform."
+  }, {
+    "@language" : "en",
+    "@value" : "Pipe through which liquid travels upward."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "papel de riser"
+  }, {
+    "@language" : "en",
+    "@value" : "riser"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "riser"
+  }, {
+    "@language" : "en",
+    "@value" : "riser role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
+  }, {
+    "@id" : "_:genid67"
+  }, {
+    "@id" : "_:genid68"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Scrubber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. A vessel designed to remove liquid droplets or solid particles from a gas stream using gravity, impingement, or centrifugal force."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "scrubber"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "vaso depurador"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Vessel"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Semisubmersible",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.geneontology.org/formats/oboInOwl#source" : [ {
+    "@language" : "en",
+    "@value" : "https://www.glossary.oilfield.slb.com/Terms/s/semisubmersible.aspx"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. offshore platform that can be used for drilling, workover operations, and production platforms, depending on the equipment with which they are equipped"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A particular type of floating vessel that is supported primarily on large pontoon-like structures submerged below the sea surface. The operating decks are elevated perhaps 100 or more feet above the pontoons on large steel columns. Semisubmersibles can operate in a wide range of water depths, including deep water."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "semissubmersível"
+  }, {
+    "@language" : "en",
+    "@value" : "semisubmersible"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Platform"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000112" : [ {
+    "@language" : "en",
+    "@value" : "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of Sensors include the human eyes."
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a material artifact that generates a result in response to some stimulus (e.g., a change in its environment) or input data from results of prior observations, with such result corresponding to the measurement of a physical property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A device that produces an output signal for the purpose of sensing of a physical phenomenon."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "sensor"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://en.wikipedia.org/wiki/Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Separator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.geneontology.org/formats/oboInOwl#source" : [ {
+    "@language" : "en",
+    "@value" : "https://petrowiki.spe.org/Glossary:Separator"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a material artifact that facilitates the separation of gas, oil, and/or water from a produced fluid stream"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A production treating vessel designed to facilitate the separation of gas, oil, and/or water from a produced fluid stream."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "separador"
+  }, {
+    "@language" : "en",
+    "@value" : "separator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#SubseaTree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000118" : [ {
+    "@language" : "en",
+    "@value" : "subsea christmas tree"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a christmas tree that is projected to work at subsea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "subsea tree"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "árvore de natal molhada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Christmas_tree_(oil_well)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#ChristmasTree"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Tag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000112" : [ {
+    "@language" : "en",
+    "@value" : "PT-001, TT-102, PCV-205"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. an identifier used in industrial contexts to uniquely reference equipment, instruments, or systems within a plant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Tags follow standardized naming conventions (e.g., ISA-5.1) to ensure consistency across engineering documentation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "etiqueta"
+  }, {
+    "@language" : "en",
+    "@value" : "tag"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/Identifier"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Temperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a BFO:Quality that corresponds to the degree/intensity of the thermal energy of a BFO:Material_Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A quality that corresponds to the degree/intensity of the thermal energy of a material entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "temperatura"
+  }, {
+    "@language" : "en",
+    "@value" : "temperature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000019"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#TemperatureDownstreamOfChoke",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a temperature measured downstream of a choke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "temperatura à jusante do choke"
+  }, {
+    "@language" : "en",
+    "@value" : "temperature downstream of choke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Temperature"
+  }, {
+    "@id" : "_:genid69"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#TemperatureSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a sensor that measures the temperature of a fluid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A device that measures temperature or a temperature gradient (the degree of hotness or coldness of an object)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "sensor de temperatura"
+  }, {
+    "@language" : "en",
+    "@value" : "temperature sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "https://en.wikipedia.org/wiki/Thermometer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Sensor"
+  }, {
+    "@id" : "_:genid70"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#TemperatureUpstreamOfChoke",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a temperature measured upstream of a choke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "temperatura à montante do choke"
+  }, {
+    "@language" : "en",
+    "@value" : "temperature upstream of choke"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Temperature"
+  }, {
+    "@id" : "_:genid71"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#TestSeparator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a separator that is used to separate and meter relatively small quantities of oil and gas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A vessel used to separate and meter relatively small quantities of oil and gas. Test separators can be two-phase or three-phase, or horizontal, vertical or spherical. They can also be permanent or portable."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "separador de teste"
+  }, {
+    "@language" : "en",
+    "@value" : "test separator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "https://glossary.oilfield.slb.com/Terms/t/test_separator.aspx"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Separator"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Tube",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" : [ {
+    "@language" : "en",
+    "@value" : "duct"
+  }, {
+    "@language" : "en",
+    "@value" : "pipe"
+  }, {
+    "@language" : "en",
+    "@value" : "tubular"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a material artifact that is long, enclosed and hollow and that acts as a passageway to carry different sorts of things (e.g., fluids, cables, other ducts)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Functional Object / Material Artifact that is enclosed and hollow and that acts as a passageway to carry different sorts of things (e.g., fluids, cables, other ducts)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "tube"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "tubo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Tubing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a pipeline that is inside a well"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "coluna de produção"
+  }, {
+    "@language" : "en",
+    "@value" : "tubing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pipeline"
+  }, {
+    "@id" : "_:genid72"
+  }, {
+    "@id" : "_:genid73"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholePressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a pressure measured at the downhole location of tubing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "pressão de fundo do tubing"
+  }, {
+    "@language" : "en",
+    "@value" : "tubing downhole pressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pressure"
+  }, {
+    "@id" : "_:genid74"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#TubingDownholeTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a temperature measured at the downhole location of tubing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "temperatura de fundo do tubing"
+  }, {
+    "@language" : "en",
+    "@value" : "tubing downhole temperature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Temperature"
+  }, {
+    "@id" : "_:genid75"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#TubingRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a role borne by a pipeline that is inside a well"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "papel de tubing"
+  }, {
+    "@language" : "en",
+    "@value" : "tubing role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
+  }, {
+    "@id" : "_:genid76"
+  }, {
+    "@id" : "_:genid77"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Valve",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a functional complex that controls flow of fluids or fluid-like amounts (e.g., slurries, fluidized solids)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device that controls (e.g., permits, obstructs, regulates, directs) a stream/flow of fluids (e.g., gases, liquids) or fluid-like amounts (e.g., slurries, fluidized solids)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "valve"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "válvula"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Variable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000112" : [ {
+    "@language" : "en",
+    "@value" : "flow rate, pressure, temperature"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. an information content entity that represents a measurable attribute or parameter that can change over time in a production system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "variable"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "variável"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Vessel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. A closed container designed to hold gases or liquids at a pressure substantially different from the ambient pressure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "vaso"
+  }, {
+    "@language" : "en",
+    "@value" : "vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Pressure_vessel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Volume",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a quality that represents the amount of three-dimensional space occupied by a fluid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "volume"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "volume"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000019"
+  }, {
+    "@id" : "_:genid78"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Water",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. an earth fluid that has chemical formula H2O and is inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Water (chemical formula H2O) is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of all known living organisms."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "water"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "água"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Well",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.geneontology.org/formats/oboInOwl#source" : [ {
+    "@language" : "en",
+    "@value" : "https://petrowiki.spe.org/Glossary:Completed_well"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a material artifact that is used to produce hydrocarbons or inject fluids and is located in a wellbore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A well that has been drilled, cased and cemented and is ready to produce hydrocarbons."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "poço"
+  }, {
+    "@language" : "en",
+    "@value" : "well"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"
+  }, {
+    "@id" : "_:genid79"
+  }, {
+    "@id" : "_:genid80"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#WellFlowRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000112" : [ {
+    "@language" : "en",
+    "@value" : "production rate of a well, injection rate of a well"
+  } ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. the flow rate that has only crude oil and water as participants and occurs in a well"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "vazão líquida do poço"
+  }, {
+    "@language" : "en",
+    "@value" : "well liquid rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "https://www.glossary.oilfield.slb.com/Terms/w/well_flow_rate.aspx"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#FlowRate"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateInSituConditions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a well flow rate measured at in-situ (reservoir) conditions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "vazão de líquido do poço em condições de reservatório"
+  }, {
+    "@language" : "en",
+    "@value" : "well liquid rate in-situ conditions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#WellFlowRate"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateStandardConditions"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#WellLiquidRateStandardConditions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a well flow rate measured at standard conditions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "vazão de líquido do poço em condições padrão"
+  }, {
+    "@language" : "en",
+    "@value" : "well liquid rate standard conditions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#WellFlowRate"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#WellName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a name that specifically denominates a well"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "nome do poço"
+  }, {
+    "@language" : "en",
+    "@value" : "well name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Name"
+  }, {
+    "@id" : "_:genid81"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#WellStatusFlag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a quality that represents the operational status of a well as a boolean value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "flag de status do poço"
+  }, {
+    "@language" : "en",
+    "@value" : "well status flag"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000019"
+  }, {
+    "@id" : "_:genid82"
+  }, {
+    "@id" : "_:genid83"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Wellhead",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. an assembly that is located at the top of the casing strings of a well and that provide pressure control of a well, and the means for hanging and isolating the various tubular strings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An equipment (or assembly) located to the top of the casing strings of a well that provide pressure control of a well, and the means for hanging and isolating the various tubular strings."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "cabeça do poço"
+  }, {
+    "@language" : "en",
+    "@value" : "wellhead"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.industrialontologies.org/ontology/core/Core/Assembly"
+  }, {
+    "@id" : "_:genid84"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#WellheadPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a pressure measured at the wellhead"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "pressão na cabeça do poço"
+  }, {
+    "@language" : "en",
+    "@value" : "wellhead pressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Pressure"
+  }, {
+    "@id" : "_:genid85"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#WellheadTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a temperature measured at the wellhead"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "temperatura na cabeça do poço"
+  }, {
+    "@language" : "en",
+    "@value" : "wellhead temperature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Temperature"
+  }, {
+    "@id" : "_:genid86"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#componentOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a part of relation that holds between two material entities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000040"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "component of"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "componente de"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000040"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000050"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#hasComponent"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#connectedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000040"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "conectado a"
+  }, {
+    "@language" : "en",
+    "@value" : "connected to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000040"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#exchangesFluidWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation between two things which have a fluid exchange connection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000040"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "exchanges fluid with"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "troca fluido com"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000040"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#connectedTo"
+  } ],
+  "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom" : [ {
+    "@language" : "en",
+    "@value" : "http://www.w3id.org/fso"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#feedsFluidTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation from a thing feeding fluid to the thing it is feeding fluid to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "alimenta fluido para"
+  }, {
+    "@language" : "en",
+    "@value" : "feeds fluid to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#exchangesFluidWith"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#hasFluidFedBy"
+  } ],
+  "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom" : [ {
+    "@language" : "en",
+    "@value" : "http://www.w3id.org/fso"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#hasComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has component"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "tem componente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000051"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#hasFlowRateValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a relation between a flow rate and a float value representing the volumetric flow magnitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Flow rate typically expressed in cubic meters per day (m³/d) or barrels per day (bbl/d)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#FlowRate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has flow rate value"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "tem valor de vazão"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#hasFluidFedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation from a thing that is fed fluid to the thing feeding the fluid."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has fluid fed by"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "tem fluido alimentado por"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#exchangesFluidWith"
+  } ],
+  "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom" : [ {
+    "@language" : "en",
+    "@value" : "http://www.w3id.org/fso"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#hasFluidReturnedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation between a thing that has fluid returned to it and the thing returning the fluid."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has fluid returned by"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "tem fluido retornado por"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#feedsFluidTo"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#returnsFluidTo"
+  } ],
+  "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom" : [ {
+    "@language" : "en",
+    "@value" : "http://www.w3id.org/fso"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#hasFluidSuppliedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation between a thing that has fluid supplied to it and the thing supplying the fluid."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has fluid supplied by"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "tem fluido fornecido por"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#feedsFluidTo"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#suppliesFluidTo"
+  } ],
+  "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom" : [ {
+    "@language" : "en",
+    "@value" : "http://www.w3id.org/fso"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#injects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. to introduce (something) into a passage, cavity, or solid material under pressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "injects"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "injeta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "https://www.lexico.com/en/definition/inject"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#isInjectedBy"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#isInjectedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. inverse of injects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is injected by"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "é injetado por"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#isProducedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. inverse of produces"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is produced by"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "é produzido por"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#isSeparatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. inverse of separates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is separated by"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "é separado por"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#isTreatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. inverse of treats"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is treated by"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "é tratado por"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#treats"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#measures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. a relation between a sensor and a quality that the sensor is designed to measure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "measures"
+  }, {
+    "@language" : "pt-br",
+    "@value" : "mede"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#returnsFluidTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation implying logical return flow from a thing to another."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "retorna fluido para"
+  }, {
+    "@language" : "en",
+    "@value" : "returns fluid to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#hasFluidFedBy"
+  } ],
+  "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom" : [ {
+    "@language" : "en",
+    "@value" : "http://www.w3id.org/fso"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#suppliesFluidTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation implying logical supply flow from a thing to another."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "fornece fluido para"
+  }, {
+    "@language" : "en",
+    "@value" : "supplies fluid to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#hasFluidFedBy"
+  } ],
+  "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom" : [ {
+    "@language" : "en",
+    "@value" : "http://www.w3id.org/fso"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#transports",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. the action of transporting something or the state of being transported"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "transporta"
+  }, {
+    "@language" : "en",
+    "@value" : "transports"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "https://www.lexico.com/en/definition/transport"
+  } ]
+}, {
+  "@id" : "https://www.inf.ufrgs.br/ontologies/o3po#treats",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.ontologyrepository.com/CommonCoreOntologies/definition" : [ {
+    "@language" : "en",
+    "@value" : "def. to apply a process or a substance to (something) to protect or preserve it or to give it particular properties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt-br",
+    "@value" : "trata"
+  }, {
+    "@language" : "en",
+    "@value" : "treats"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "https://www.lexico.com/en/definition/treat"
+  } ]
+} ]

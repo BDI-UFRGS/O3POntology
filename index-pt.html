@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+<link rel="icon" type="image/png" href="resources/rdf.icon"/> <title>Offshore Petroleum Production Plant Ontology (O3PO)</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://spec.industrialontologies.org/ontology/202401/core/Core/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://spec.industrialontologies.org/ontology/202401/core/Core/","name":"Offshore Petroleum Production Plant Ontology (O3PO)", "headline":"A comprehensive domain ontology for modeling offshore petroleum production plants, their components, processes, and operational relationships.", "dateReleased":"2023-01-15", "dateModified":"2025-01-15", "version":"2.0", "codeRepository":"https://github.com/BDI-UFRGS/O3POntology", "author":[{"@type":"Person","name":"Nicolau Santos"}], "contributor":[{"@type":"Person","name":"Fabrício H. Rodrigues"},{"@type":"Person","name":"Haroldo Rojas"},{"@type":"Person","name":"Mara Abel"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Tabela de conte&uacute;dos</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+ $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ };    $(function(){
+      $("#abstract").load("sections/abstract-pt.html"); 
+      $("#introduction").load("sections/introduction-pt.html"); 
+      $("#nstable").load("sections/ns-pt.html"); 
+      $("#overview").load("sections/overview-pt.html"); 
+      $("#description").load("sections/description-pt.html"); 
+      $("#references").load("sections/references-pt.html"); 
+      $("#crossref").load("sections/crossref-pt.html", null, loadHash); 
+    });
+    </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-pt.html"><b>pt</b></a> <a href="index-en.html"><b>en</b></a> </div>
+<h1>Offshore Petroleum Production Plant Ontology (O3PO)</h1>
+<h2>Data de cria&ccedil;ao: 2023-01-15</h2>
+
+
+<dl>
+<dt>Data modificada: 2025-01-15</dt>
+<dt>Revis&atilde;o:</dt>
+<dd>2.0</dd>
+<dt>Autores:</dt>
+<dd>Nicolau Santos</dd>
+
+<dt>Contribuintes:</dt>
+<dd>Fabrício H. Rodrigues</dd><dd>Haroldo Rojas</dd><dd>Mara Abel</dd>
+
+<dt>Editor:</dt>
+<dd>Federal University of Rio Grande do Sul (UFRGS) - Institute of Informatics</dd>
+<dt>Ontologias prolongadas:</dt>
+<dd><a href="http://purl.obolibrary.org/obo/bfo.owl">bfo.owl</a></dd><dd><a href="http://purl.obolibrary.org/obo/iao.owl">iao.owl</a></dd><dd><a href="https://spec.industrialontologies.org/ontology/core/Core/">&lt;https://spec.industrialontologies.org/ontology/core/Core/&gt;</a></dd><dd><a href="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">&lt;https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/&gt;</a></dd><dd><a href="https://www.inf.ufrgs.br/bdi/ontologies/geocore.owl">geocore.owl</a></dd>
+
+<dt>Descargar serializacion:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>Licen&ccedil;a:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-nome%20de%20licen&ccedil;a%20vai%20aqui-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
+</dd><dt>Display:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd><dt>Cite como:</dt>
+<dd>Nicolau Santos. Offshore Petroleum Production Plant Ontology (O3PO). Revision: 2.0.</dd>
+<dt>compat&iacute;vel com:</dt>
+<dd><a href="https://www.petwin.org/O3PO/o3po/">https://www.petwin.org/O3PO/o3po/</a></dd>
+<dt>Vocabul&aacute;rio mantido em:</dt>
+<dd><a href="https://github.com/BDI-UFRGS/O3POntology">https://github.com/BDI-UFRGS/O3POntology</a></dd>
+</dl>
+
+<a href="provenance/provenance-pt.html" target="_blank">Hist&oacute;ria desta p&aacute;gina</a><hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"></div>
+<div id="toc"></div>     <div id="introduction"></div>
+	  <div id="nstable"></div>
+     <div id="overview"></div>
+     <div id="description"></div>
+     <div id="crossref"></div>
+     <div id="references"></div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Agradecimentos <span class="backlink"> de volta a <a href="#toc">&iacute;ndice</a></span></h2>
+<p>Os autores gostariam de agradecer a <a href="http://www.essepuntato.it/">Silvio Peroni</a> para o desenvolvimento de <a href="http://www.essepuntato.it/lode">LODE</a>, documenta&ccedil;&atilde;o ambiente para OWL que &eacute; usada para gerar a descri&ccedil;&atilde;o de ontologias termos aqui descritos; e <a href="http://purl.org/net/dgarijo">Daniel Garijo</a> para o desenvolvimento de <a href="https://github.com/dgarijo/Widoco">Widoco</a>, o programa usado para criar o modelo de documento utilizado nesta documenta&ccedil;&atilde;o.</p>
+</div>
+
+
+</div>
+</body>
+</html>
