@@ -30,7 +30,7 @@ jobs:
           # Roda o WIDOCO gerando direto na raiz (usa "." como output)
           java -jar widoco.jar \
             -ontFile o3po.ttl \
-            -outFolder . \
+            -outFolder doc/ \
             -rewriteAll \
             -webVowl \
             -lang en-pt \
