@@ -1,96 +1,50 @@
-# .github/workflows/widoco.yaml
-# Deploy Ontology Docs (Widoco) — versão ajustada para preservar estrutura gerada
-name: Deploy Ontology Docs
-
+name: Generate Documentation (Java Mode)
+run-name: ${{ github.actor }} is generating ontology docs via JAR ☕
 on:
   push:
-    branches:
-      - main
     paths:
-      - '**/*.ttl'
-      - '.github/workflows/widoco.yaml'
-  workflow_dispatch:
-
-permissions:
-  contents: write
-
+      - 'o3po.ttl' # Só roda se mudar a ontologia
+      - '.github/workflows/widoco.yaml' # Ou se mudar este arquivo
 jobs:
-  build-and-deploy:
+  build-docs:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Necessário para fazer commit e push
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
+      - name: Check out repository code
+        uses: actions/checkout@v4
       - name: Set up JDK 11
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           java-version: '11'
           distribution: 'temurin'
-
-      - name: Debug - show repo top files
-        run: |
-          echo "Workdir: $(pwd)"
-          ls -la
-          echo "--- repo tree (shallow) ---"
-          find . -maxdepth 3 -type f -print | sed -n '1,200p'
-
       - name: Download Widoco JAR
         run: |
+          # Baixa a última versão estável do Widoco direto do GitHub
           wget https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-11.jar -O widoco.jar
-
-      - name: Generate Documentation
-        id: gen
+      - name: Run Widoco
         run: |
-          set -euo pipefail
-          mkdir -p public
-
-          # Detect TTL (first match, avoid .github)
-          ONTOLOGY_FILE=$(find . -maxdepth 4 -type f -name '*.ttl' | grep -v '^./.github' | head -n1 || true)
-          ONTOLOGY_FILE=${ONTOLOGY_FILE#./}
-          if [ -z "$ONTOLOGY_FILE" ]; then
-            echo "❌ ERRO CRÍTICO: No .ttl file found in repo (searched up to depth 4)."
-            exit 1
-          fi
-
-          echo "Detected ontology file: $ONTOLOGY_FILE"
-
-          # Run Widoco: use en-pt (hífen) e inclua -oops se quiser avaliação OOPS
+          # Cria a pasta de saída
+          mkdir -p docs
+          
+          # Roda o Java direto (sem Docker)
           java -jar widoco.jar \
-            -ontFile "$ONTOLOGY_FILE" \
-            -outFolder public \
+            -ontFile o3po.ttl \
+            -outFolder docs \
             -rewriteAll \
             -webVowl \
             -lang en-pt \
             -getOntologyMetadata \
             -oops
-
-          echo "Contents generated under public/:"
-          find public -maxdepth 5 -print || true
-
-          # If Widoco created content under public/doc, leave it as-is (we will deploy public/doc)
-          # But ensure there is a root index inside the folder we will deploy.
-          # For convenience, if public/index-en.html exists and no public/index.html, copy it.
-          if [ -f "public/index-en.html" ] && [ ! -f "public/index.html" ]; then
-            cp public/index-en.html public/index.html
-            echo "✅ public/index.html created from public/index-en.html"
+            
+          # Ajusta o index.html (Inglês como padrão)
+          if [ -f "docs/index-en.html" ]; then
+             cp docs/index-en.html docs/index.html
           fi
-
-      - name: Determine folder to deploy
-        id: set-folder
-        run: |
-          if [ -d public/doc ]; then
-            echo "folder=public/doc" >> $GITHUB_OUTPUT
-            echo "Deploying public/doc (Widoco produced doc/ subfolder)"
-          else
-            echo "folder=public" >> $GITHUB_OUTPUT
-            echo "Deploying public (Widoco produced files directly in public/)"
-          fi
-
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          folder: ${{ steps.set-folder.outputs.folder }}
-          branch: gh-pages
-          token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          commit_message: "docs: update ontology documentation (automated)"
